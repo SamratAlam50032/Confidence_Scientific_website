@@ -23,7 +23,6 @@ window.SHOP={
     "c1s2",
     "c1s3",
     "c1s4",
-    "c1s5",
     "c1s6"
    ]
   },
@@ -65,31 +64,21 @@ window.SHOP={
    "name": "School /College Lab Items",
    "prefix": "CS",
    "image": "",
-   "subs": [
-    "c5s1",
-    "c5s2"
-   ]
+   "subs": []
   },
   {
    "id": "c6",
    "name": "Hatchery item",
    "prefix": "CS",
    "image": "",
-   "subs": [
-    "c6s1",
-    "c6s2"
-   ]
+   "subs": []
   },
   {
    "id": "c7",
    "name": "Textile Items",
    "prefix": "CS",
    "image": "",
-   "subs": [
-    "c7s1",
-    "c7s2",
-    "c7s3"
-   ]
+   "subs": []
   },
   {
    "id": "c16",
@@ -132,7 +121,8 @@ window.SHOP={
    "name": "Hanna HI98301 DiST-1 TDS Meter (0-2000 ppm) with Auto Cal.",
    "sub": "c2s2",
    "subs": [
-    "c2s2"
+    "c2s2",
+    "c1s1"
    ],
    "short": "Waterproof pocket TDS tester, 0 to 2000 ppm, 1 ppm resolution, one-touch auto calibration.",
    "long": "Pocket-size, rugged TDS tester for lab and field use. A large two-level LCD shows TDS and temperature together, and the exposed temperature sensor gives fast automatic temperature compensation. The graphite electrode resists oxidation and polarization better than stainless steel pins. Calibration is automatic at 1382 ppm with a single button press, and a stability tag disappears when the reading has settled. Used for drinking water, hydroponics, aquariums, water treatment and general water checks.\n\nSpecifications\n• TDS range: 0 to 2000 ppm (mg/L), resolution 1 ppm, accuracy ±2% of full scale\n• Calibration: automatic, one point at 1382 ppm\n• Temperature compensation: automatic, 0 to 50°C, EC to TDS factor 0.5\n• Temperature display: 0.0 to 50.0°C (°C or °F), ±0.5°C\n• Battery: CR2032, about 250 hours of continuous use, low battery indicator\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 68 g (without battery)\n\nIn the box\n• HI98301 DiST 1 tester\n• CR2032 battery\n• 1382 ppm calibration solution sachets (4)\n• Protective cap\n• Instruction manual and quality certificate",
@@ -140,7 +130,10 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "images": [
-    "images/hn-002-pjqkbq9g.jpg"
+    "images/hn-002-pjqkbq9g.jpg",
+    "images/hn-002-whnvjzl2.jpg",
+    "images/hn-002-rk8fs2zm.jpg",
+    "images/hn-002-1ofs5uyx.jpg"
    ]
   },
   {
@@ -153,10 +146,7 @@ window.SHOP={
    "price": 11499,
    "stock": "ask",
    "featured": 0,
-   "images": [
-    "images/hn-003-6vf6uutu.jpg",
-    "images/hn-003-2vvbbxa4.jpg"
-   ]
+   "images": []
   },
   {
    "code": "HN-004",
@@ -246,31 +236,27 @@ window.SHOP={
  "subs": [
   {
    "id": "c1s2",
-   "name": "Test Kits"
-  },
-  {
-   "id": "c1s3",
-   "name": "All Solutions"
+   "name": "Hanna Test Kits"
   },
   {
    "id": "c1s1",
-   "name": "Meters"
+   "name": "Hanna Meters"
   },
   {
-   "id": "c1s4",
-   "name": "Soil Kits & Meters"
-  },
-  {
-   "id": "c1s5",
-   "name": "Reagents"
+   "id": "c1s3",
+   "name": "Hanna Reagents & Solutions"
   },
   {
    "id": "c1s6",
-   "name": "Accessories"
+   "name": "Hanna Electrodes"
   },
   {
    "id": "c2s1",
    "name": "pH Meters"
+  },
+  {
+   "id": "c1s4",
+   "name": "Soil Kits & Meters"
   },
   {
    "id": "c2s2",
@@ -303,34 +289,6 @@ window.SHOP={
   {
    "id": "sf8t0p4",
    "name": "HIMEDIA(India)"
-  },
-  {
-   "id": "c5s1",
-   "name": "Lux Meters"
-  },
-  {
-   "id": "c5s2",
-   "name": "Sound Level Meters"
-  },
-  {
-   "id": "c6s1",
-   "name": "Vernier Calipers"
-  },
-  {
-   "id": "c6s2",
-   "name": "Micrometers"
-  },
-  {
-   "id": "c7s1",
-   "name": "Digital Thermometers"
-  },
-  {
-   "id": "c7s2",
-   "name": "Thermo-Hygrometers"
-  },
-  {
-   "id": "c7s3",
-   "name": "Glass Thermometers"
   },
   {
    "id": "c16s1",
