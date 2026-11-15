@@ -151,126 +151,6 @@ window.SHOP={
    ]
   },
   {
-   "id": "c8",
-   "name": "Milk Testing Meters",
-   "prefix": "CS",
-   "subs": [
-    {
-     "id": "c8s1",
-     "name": "Lactometers"
-    },
-    {
-     "id": "c8s2",
-     "name": "Milk Analyzers"
-    }
-   ]
-  },
-  {
-   "id": "c9",
-   "name": "Paper, Grain & Wood Testers",
-   "prefix": "CS",
-   "subs": [
-    {
-     "id": "c9s1",
-     "name": "Grain Moisture"
-    },
-    {
-     "id": "c9s2",
-     "name": "Paper & Wood Moisture"
-    }
-   ]
-  },
-  {
-   "id": "c10",
-   "name": "Stopwatch & Timers",
-   "prefix": "CS",
-   "subs": [
-    {
-     "id": "c10s1",
-     "name": "Stopwatches"
-    },
-    {
-     "id": "c10s2",
-     "name": "Lab Timers"
-    }
-   ]
-  },
-  {
-   "id": "c11",
-   "name": "Soil Testing Meters",
-   "prefix": "CS",
-   "subs": [
-    {
-     "id": "c11s1",
-     "name": "Soil pH & Moisture"
-    },
-    {
-     "id": "c11s2",
-     "name": "Soil EC"
-    }
-   ]
-  },
-  {
-   "id": "c12",
-   "name": "Refractometers & Analyzer",
-   "prefix": "CS",
-   "subs": [
-    {
-     "id": "c12s1",
-     "name": "Brix Refractometers"
-    },
-    {
-     "id": "c12s2",
-     "name": "Salinity Refractometers"
-    }
-   ]
-  },
-  {
-   "id": "c13",
-   "name": "Magnetic Compass",
-   "prefix": "CS",
-   "subs": [
-    {
-     "id": "c13s1",
-     "name": "Liquid-Filled"
-    },
-    {
-     "id": "c13s2",
-     "name": "Pocket Compass"
-    }
-   ]
-  },
-  {
-   "id": "c14",
-   "name": "Tachometer & Megger",
-   "prefix": "CS",
-   "subs": [
-    {
-     "id": "c14s1",
-     "name": "Tachometers"
-    },
-    {
-     "id": "c14s2",
-     "name": "Insulation Testers"
-    }
-   ]
-  },
-  {
-   "id": "c15",
-   "name": "Thickness & Dia-Meters",
-   "prefix": "CS",
-   "subs": [
-    {
-     "id": "c15s1",
-     "name": "Coating Thickness"
-    },
-    {
-     "id": "c15s2",
-     "name": "Ultrasonic Thickness"
-    }
-   ]
-  },
-  {
    "id": "c16",
    "name": "Other Meters & Accessories",
    "prefix": "CS",
@@ -284,6 +164,12 @@ window.SHOP={
      "name": "Pipettes"
     }
    ]
+  },
+  {
+   "id": "ciniu03",
+   "name": "Weight scale/Digital Balance",
+   "prefix": "BL",
+   "subs": []
   }
  ],
  "products": [
@@ -297,9 +183,7 @@ window.SHOP={
    "price": 6799,
    "stock": "in",
    "featured": 0,
-   "images": [
-    "images/hn-001-k0svafj8.jpg"
-   ]
+   "images": []
   }
  ]
 };
