@@ -102,7 +102,7 @@ window.SHOP={
   },
   {
    "id": "c5",
-   "name": "Light & Sound Meter",
+   "name": "School /College Lab Items",
    "prefix": "CS",
    "subs": [
     {
