@@ -4,7 +4,7 @@ window.SHOP={
   "tagline": "Laboratory instruments",
   "headline": "Lab and testing instruments, ready when you need them.",
   "intro": "Water testing, temperature, moisture, electrical and dimensional meters for labs, dairies, farms and factories.",
-  "whatsapp": "8801819277821",
+  "whatsapp": "0181927782101960643299",
   "phones": [
    "01819277821",
    "01960643299"
