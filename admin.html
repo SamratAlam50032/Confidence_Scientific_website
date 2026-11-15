@@ -87,7 +87,7 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
 <body>
 <header class="top"><div class="wrap">
   <div class="hbar">
-    <h1>Shop admin<small id="shopname">Confidence Scientific</small></h1>
+    <h1>Shop admin <span style="font:500 11px var(--f-body);color:var(--muted)">v7</span><small id="shopname">Confidence Scientific</small></h1>
     <span class="pill ok" id="status" role="status">Loading</span>
     <button class="btn ghost" id="dlBtn" type="button">Download data.js</button>
     <button class="btn" id="pubBtn" type="button">Publish to website</button>
@@ -107,7 +107,8 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
     <div class="split" id="split">
       <div class="listpane">
         <div class="tools"><input id="ps" type="search" placeholder="Search name or code" aria-label="Search products"><select id="pf" aria-label="Filter by sub category" style="flex:1 1 140px"></select></div>
-        <button class="btn" id="pnew" type="button" style="width:100%;margin-bottom:10px">+ New product</button>
+        <button class="btn" id="pnew" type="button" style="width:100%;margin-bottom:8px">+ New product</button>
+        <button class="btn ghost" id="pimp" type="button" style="width:100%;margin-bottom:10px">Import products from file</button><input id="pimpf" type="file" accept=".json,application/json" class="hid" aria-label="Product file">
         <div id="plist"></div>
       </div>
       <div class="card" id="pedit" hidden></div>
@@ -213,11 +214,11 @@ function setTab(t){tab=t;document.querySelectorAll(".tabs button").forEach(funct
 document.querySelectorAll(".tabs button").forEach(function(b){b.onclick=function(){hideMsg();setTab(b.dataset.tab)}});
 
 /* ---------- products list ---------- */
-function renderFilter(){var f=$("#pf"),cur=f.value;f.textContent="";f.append(el("option",{value:"",text:"All sub categories"}));
-  D.subs.forEach(function(c){f.append(el("option",{value:c.id,text:c.name}))});f.value=subById(cur)?cur:""}
+function renderFilter(){var f=$("#pf"),cur=f.value;f.textContent="";f.append(el("option",{value:"",text:"All sub categories"}));f.append(el("option",{value:"__none",text:"No sub category yet"}));
+  D.subs.forEach(function(c){f.append(el("option",{value:c.id,text:c.name}))});f.value=(cur==="__none"||subById(cur))?cur:""}
 function renderList(){
   var t=$("#ps").value.trim().toLowerCase(),f=$("#pf").value,box=$("#plist");box.textContent="";
-  var items=D.products.map(function(p,i){return {p:p,i:i}}).filter(function(x){return (!f||x.p.subs.indexOf(f)>=0)&&(!t||(x.p.name+" "+x.p.code).toLowerCase().indexOf(t)>=0)});
+  var items=D.products.map(function(p,i){return {p:p,i:i}}).filter(function(x){return (!f||(f==="__none"?!x.p.subs.length:x.p.subs.indexOf(f)>=0))&&(!t||(x.p.name+" "+x.p.code).toLowerCase().indexOf(t)>=0)});
   if(!items.length){box.append(el("div",{class:"empty",text:D.products.length?"No product matches.":"No products yet. Press + New product."}));return}
   items.forEach(function(x){var p=x.p,th=el("span",{class:"th"});if(p.images[0])th.append(el("img",{src:imgSrc(p.images[0]),alt:""}));
     box.append(el("button",{class:"prow"+(x.i===edIdx?" on":""),type:"button",onclick:function(){openEditor(x.i)}},th,
@@ -225,6 +226,16 @@ function renderList(){
       el("span",{class:"pm"},el("span",{text:p.price?"৳"+Number(p.price).toLocaleString("en-US"):"No price"}),el("span",{class:"chip "+p.stock,text:STOCK[p.stock]||""}),p.featured?el("span",{class:"chip feat",text:"Featured"}):null)))});
 }
 $("#ps").oninput=renderList;$("#pf").onchange=renderList;$("#pnew").onclick=function(){hideMsg();openEditor(-1)};
+$("#pimp").onclick=function(){$("#pimpf").click()};
+$("#pimpf").onchange=async function(){var f=this.files[0];this.value="";if(!f)return;
+  try{var j=JSON.parse(await f.text()),list=Array.isArray(j)?j:j.products;if(!Array.isArray(list))throw 0;
+    var have={};D.products.forEach(function(p){have[p.code]=1});var add=0,skip=[];
+    list.forEach(function(p){var c=String(p.code||"").trim().toUpperCase();if(!c||!p.name)return;if(have[c]){skip.push(c);return}
+      var sl=(p.subs||[]).filter(function(x){return !!subById(x)});
+      D.products.push({code:c,name:String(p.name),sub:sl[0]||"",subs:sl,short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"ask",featured:p.featured?1:0,images:[]});have[c]=1;add++});
+    if(ed)closeEditor();persist();renderStatus();renderFilter();renderList();
+    showMsg(add+" product(s) added."+(skip.length?" Skipped (code already exists): "+skip.join(", ")+".":"")+" Now open each one and choose its sub categories, then press Publish. Use the filter No sub category yet to find them.","ok")}
+  catch(e){showMsg("This file could not be read. Use the new-products file I sent.","bad")}};
 
 /* ---------- product editor ---------- */
 function fld(id,label,ctrl,hint){return el("div",{class:"f"},el("label",{"for":id,text:label}),ctrl,hint?el("small",{text:hint}):null)}
