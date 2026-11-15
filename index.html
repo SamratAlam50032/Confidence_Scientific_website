@@ -158,15 +158,16 @@ header.top{padding:10px 0 0}
 .modal{position:fixed;inset:0;z-index:40;background:rgba(5,15,22,.6);overflow:auto;padding:calc(16px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
 .mbox{max-width:900px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}
 .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:10px}
-.gmain{aspect-ratio:1/1;background:#fff;border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;overflow:hidden;color:var(--accent)}
-.gmain img{width:100%;height:100%;object-fit:contain}.gmain svg{width:30%}
-.gthumbs{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
-.gthumbs button{width:64px;height:64px;border:1px solid var(--line);background:#fff;border-radius:6px;padding:2px;cursor:pointer}
+.gmain{position:relative;aspect-ratio:1/1;background:#fff;border:1px solid var(--line);border-radius:8px;display:grid;place-items:center;overflow:hidden;color:var(--accent)}
+.gmain img{width:100%;height:100%;object-fit:contain}.gmain .track{display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}.gmain .track::-webkit-scrollbar{display:none}.gmain .slide{flex:0 0 100%;height:100%;scroll-snap-align:center}
+.garr{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.9);color:var(--ink);font:22px/1 system-ui;cursor:pointer;padding:0 0 3px}.gprev{left:8px}.gnext{right:8px}.gpg{position:absolute;right:8px;bottom:8px;background:rgba(0,0,0,.55);color:#fff;font-size:11px;padding:2px 8px;border-radius:99px}.gmain svg{width:30%}
+.gthumbs{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.gthumbs button{width:40px;height:40px;border:1px solid var(--line);background:#fff;border-radius:6px;padding:2px;cursor:pointer}
 .gthumbs button[aria-pressed="true"]{border-color:var(--accent);outline:2px solid var(--accent)}
 .gthumbs img{width:100%;height:100%;object-fit:contain}
 .info{display:flex;flex-direction:column;gap:8px;min-width:0}
 .info h2{font-size:22px}.mdesc{color:var(--muted);font-size:14px}
-.mtop{display:flex;justify-content:flex-end}
+.mtop{display:flex;justify-content:flex-end;gap:8px;align-items:center;flex-wrap:wrap}
 @media(max-width:700px){.mgrid{grid-template-columns:1fr}}
 
 .mdesc{white-space:pre-line;line-height:1.6}
@@ -249,7 +250,7 @@ header.top{padding:10px 0 0}
   </div></div></div>
 
 <div class="modal" id="orderModal" hidden><div class="mbox small" role="dialog" aria-modal="true" aria-label="Buy now">
-  <div class="mtop"><h2 style="margin-right:auto;font-size:20px">Buy now</h2><button class="btn ghost" id="oclose" type="button">Close</button></div>
+  <div class="mtop"><h2 style="margin-right:auto;font-size:20px">Buy now</h2><button class="btn ghost" id="ocontact" type="button">Contact us</button><button class="btn ghost" id="oclose" type="button">Close</button></div>
   <div class="osum" id="osum"></div>
   <form id="oform" novalidate>
     <div class="f"><label for="oq">Quantity</label><input id="oq" type="number" min="1" value="1" inputmode="numeric"></div>
@@ -277,14 +278,15 @@ function migrate(d){
     if(!byName[k]){byName[k]=s.id;subs.push({id:s.id,name:s.name})}map[s.id]=byName[k]})});
   d.categories=(d.categories||[]).map(function(c){var seen={},ids=[];(c.subs||[]).forEach(function(s){var g=map[s.id];if(!seen[g]){seen[g]=1;ids.push(g)}});
     var o={};for(var k in c)o[k]=c[k];o.subs=ids;return o});
-  d.products=(d.products||[]).map(function(p){var o={};for(var k in p)o[k]=p[k];o.sub=map[p.sub]||p.sub;delete o.cat;delete o.places;return o});
+  d.products=(d.products||[]).map(function(p){var o={};for(var k in p)o[k]=p[k];var sl=[];(p.places||[]).forEach(function(x){var g=map[x.sub];if(g&&sl.indexOf(g)<0)sl.push(g)});var m0=map[p.sub]||p.sub;if(m0&&sl.indexOf(m0)<0)sl.unshift(m0);
+    o.sub=sl[0]||"";o.subs=sl;delete o.cat;delete o.places;return o});
   d.subs=subs;return d}
 const SH=migrate(JSON.parse(JSON.stringify(window.SHOP||{settings:{},categories:[],products:[]})));
 SH.subs=SH.subs||[];SH.categories=SH.categories||[];SH.products=SH.products||[];
 const S=SH.settings||{};
 const sIdx=id=>SH.subs.findIndex(x=>x.id===id);
 const C=SH.categories.map(c=>{const ids=SH.subs.map(x=>x.id).filter(id=>(c.subs||[]).indexOf(id)>=0);return [c.name,ids.map(id=>SH.subs[sIdx(id)].name),c.image||"",ids]});
-const P=SH.products.map(p=>{const pl=[];C.forEach((c,ci)=>{const j=c[3].indexOf(p.sub);if(j>=0)pl.push([ci,j])});
+const P=SH.products.map(p=>{const pl=[];C.forEach((c,ci)=>{(p.subs&&p.subs.length?p.subs:[p.sub]).forEach(sb=>{const j=c[3].indexOf(sb);if(j>=0)pl.push([ci,j])})});
   return [p.name,pl.length?pl[0][0]:-1,pl.length?pl[0][1]:-1,p.short||"",p.stock||"ask",p.featured?1:0,p.code,p.price||null,p.long||"",p.images||[],pl]}).filter(p=>p[10].length);
 const ICONS=[
 '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>',
@@ -311,20 +313,26 @@ const svg=i=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
 const priceTxt=p=>p[7]?"৳"+Number(p[7]).toLocaleString("en-US"):"Price on request";
 function stockTag(t,v){t.textContent=v==="in"?"In stock":v==="order"?"On order":"Ask availability";t.className="tag "+(v==="in"?"in":"order")}
 function card(p){const d=document.createElement("article");d.className="card";
-  d.innerHTML='<div class="thumb"></div><div class="body"><h3><button class="lnk" type="button"></button></h3><p></p><div class="row"><span class="tag"></span><span class="price"></span><button class="btn" type="button"></button></div></div>';
+  d.innerHTML='<div class="thumb"></div><div class="body"><h3><button class="lnk" type="button"></button></h3><p></p><div class="row"><span class="tag"></span><span class="price"></span></div></div>';
   const th=d.querySelector(".thumb"); if(p[9]&&p[9][0]){th.classList.add("has");const i=document.createElement("img");i.src=p[9][0];i.alt=p[0];i.loading="lazy";th.appendChild(i)}else th.innerHTML=svg(p[1]);
   d.querySelector(".lnk").textContent=p[0]; d.querySelector("p").textContent=p[3];
   stockTag(d.querySelector(".tag"),p[4]); d.querySelector(".price").textContent=priceTxt(p);
-  const b=d.querySelector(".btn"); b.textContent="Buy now"; b.onclick=()=>openOrder(p);
   th.onclick=d.querySelector(".lnk").onclick=()=>openProd(p); return d}
 function openProd(p){
   $("#mcat").textContent=C[p[1]][1][p[2]]; $("#mname").textContent=p[0]; $("#mcode").textContent="Product code: "+p[6]; $("#mprice").textContent=priceTxt(p);
   stockTag($("#mtag"),p[4]); $("#mdesc").textContent=p[8]||p[3];
-  const gm=$("#gmain"),gt=$("#gthumbs"),im=p[9]||[]; gt.textContent="";
-  const show=k=>{gm.textContent="";if(im[k]){const i=document.createElement("img");i.src=im[k];i.alt=p[0];gm.appendChild(i)}else gm.innerHTML=svg(p[1]);
-    [...gt.children].forEach((x,j)=>x.setAttribute("aria-pressed",j===k))};
-  im.forEach((u,k)=>{const b=document.createElement("button");b.type="button";b.setAttribute("aria-label","Photo "+(k+1));const i=document.createElement("img");i.src=u;i.alt="";b.appendChild(i);b.onclick=()=>show(k);gt.appendChild(b)});
-  show(0);
+  const gm=$("#gmain"),gt=$("#gthumbs"),im=p[9]||[]; gt.textContent="";gm.textContent="";
+  let cur=0,tm=0;
+  const mark=k=>{cur=k;[...gt.children].forEach((x,j)=>x.setAttribute("aria-pressed",j===k));const pg=gm.querySelector(".gpg");if(pg)pg.textContent=(k+1)+" / "+im.length};
+  if(!im.length)gm.innerHTML=svg(p[1]);
+  else{const tr=document.createElement("div");tr.className="track";
+    im.forEach(u=>{const sl=document.createElement("div");sl.className="slide";const i=document.createElement("img");i.src=u;i.alt=p[0];sl.appendChild(i);tr.appendChild(sl)});gm.appendChild(tr);
+    const go=k=>{k=Math.max(0,Math.min(im.length-1,k));tr.scrollTo({left:k*tr.clientWidth,behavior:"smooth"});mark(k)};
+    tr.addEventListener("scroll",()=>{clearTimeout(tm);tm=setTimeout(()=>{const k=Math.round(tr.scrollLeft/(tr.clientWidth||1));if(k!==cur)mark(k)},60)});
+    if(im.length>1){[["‹","gprev",-1],["›","gnext",1]].forEach(([t,c,d])=>{const b=document.createElement("button");b.type="button";b.className="garr "+c;b.textContent=t;b.setAttribute("aria-label",d<0?"Previous photo":"Next photo");b.onclick=()=>go(cur+d);gm.appendChild(b)});
+      const pg=document.createElement("span");pg.className="gpg";gm.appendChild(pg)}
+    im.forEach((u,k)=>{const b=document.createElement("button");b.type="button";b.setAttribute("aria-label","Photo "+(k+1));const i=document.createElement("img");i.src=u;i.alt="";b.appendChild(i);b.onclick=()=>go(k);gt.appendChild(b)});
+    mark(0)}
   $("#mbuy").onclick=()=>{$("#modal").hidden=true;openOrder(p)};$("#mcontact").onclick=()=>openContact();
   $("#modal").hidden=false; $("#mclose").focus()}
 $("#mclose").onclick=()=>$("#modal").hidden=true;
@@ -364,6 +372,7 @@ let curP=null;
 function openOrder(p){curP=p;$("#osum").innerHTML="<b></b><span></span>";$("#osum b").textContent=p[0];$("#osum span").textContent="Code: "+p[6]+"  |  "+priceTxt(p);
   $("#oform").hidden=false;$("#odone").hidden=true;$("#oerr").hidden=true;$("#orderModal").hidden=false;$("#oname").focus()}
 $("#oclose").onclick=()=>$("#orderModal").hidden=true;
+$("#ocontact").onclick=()=>{$("#orderModal").hidden=true;openContact()};
 $("#oform").addEventListener("submit",e=>{e.preventDefault();
   const v=id=>$("#"+id).value.trim(),qn=parseInt(v("oq"),10),ph=v("ophone").replace(/[\s-]/g,"");let m="";
   if(!(qn>=1))m="Enter a quantity of 1 or more.";else if(!v("oname"))m="Enter your name.";else if(!/^(\+?88)?01[3-9]\d{8}$/.test(ph))m="Enter a valid Bangladesh mobile number, like 01XXXXXXXXX.";
