@@ -137,9 +137,9 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
         <li>Permissions, Repository permissions, Contents: Read and write.</li>
         <li>Generate the token, copy it and paste it below.</li>
       </ol>
-      <div class="g3"><div class="f"><label for="gowner">GitHub username</label><input id="gowner" type="text" autocomplete="off"></div><div class="f"><label for="grepo">Repository name</label><input id="grepo" type="text" autocomplete="off"></div><div class="f"><label for="gbranch">Branch</label><input id="gbranch" type="text" value="main" autocomplete="off"></div></div>
-      <div class="f"><label for="gtoken">Access token</label><input id="gtoken" type="password" autocomplete="off"><small>The token is stored only in this browser. Do not use this on a shared computer.</small></div>
-      <div class="bar"><button class="btn" id="gsave" type="button">Save</button><button class="btn ghost" id="gtest" type="button">Test connection</button></div>
+      <form id="gform" autocomplete="on"><div class="g3"><div class="f"><label for="gowner">GitHub username</label><input id="gowner" name="username" type="text" autocomplete="username"></div><div class="f"><label for="grepo">Repository name</label><input id="grepo" type="text" autocomplete="off"></div><div class="f"><label for="gbranch">Branch</label><input id="gbranch" type="text" value="main" autocomplete="off"></div></div>
+      <div class="f"><label for="gtoken">Access token</label><input id="gtoken" name="password" type="password" autocomplete="current-password"><small>Paste it once. If your browser asks to save the password, press Save so it fills in next time. Do not use this on a shared computer.</small></div>
+      <div class="bar"><button class="btn" id="gsave" type="submit">Save</button><button class="btn ghost" id="gtest" type="button">Test connection</button></div></form>
       <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
       <p class="hint" style="margin:0 0 8px">Your edits are kept as a draft in this browser until you publish. If you changed the data from another computer, reload the published data and drop this draft.</p>
       <button class="btn danger sm" id="reset" type="button">Discard draft and reload published data</button>
@@ -329,10 +329,11 @@ $("#saveshop").onclick=function(){var g=function(id){return $("#"+id).value.trim
   persist();showMsg("Shop info saved. Press Publish to update the website.","ok")};
 
 /* ---------- GitHub ---------- */
-function fillGh(){$("#gowner").value=cfg.owner||"";$("#grepo").value=cfg.repo||"";$("#gbranch").value=cfg.branch||"main";$("#gtoken").value=cfg.token||""}
+function guessRepo(){var m=/^([^.]+)\.github\.io$/.exec(location.hostname);if(!m)return;if(!cfg.owner)cfg.owner=m[1];var seg=location.pathname.split("/")[1];if(!cfg.repo&&seg&&!/\.html?$/.test(seg))cfg.repo=decodeURIComponent(seg)}
+function fillGh(){guessRepo();$("#gowner").value=cfg.owner||"";$("#grepo").value=cfg.repo||"";$("#gbranch").value=cfg.branch||"main";$("#gtoken").value=cfg.token||""}
 function readGh(){cfg={owner:$("#gowner").value.trim(),repo:$("#grepo").value.trim().replace(/\.git$/,""),branch:$("#gbranch").value.trim()||"main",token:$("#gtoken").value.trim()};
   try{localStorage.setItem("cs-gh",JSON.stringify(cfg))}catch(e){}}
-$("#gsave").onclick=function(){readGh();showMsg("GitHub details saved in this browser.","ok")};
+$("#gform").onsubmit=function(e){e.preventDefault();readGh();showMsg("GitHub details saved in this browser.","ok")};
 function ghH(){return {Authorization:"Bearer "+cfg.token,Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"}}
 function api(p){return "https://api.github.com/repos/"+encodeURIComponent(cfg.owner)+"/"+encodeURIComponent(cfg.repo)+(p?"/"+p:"")}
 async function ghErr(r){var m="";try{m=(await r.json()).message}catch(e){}
@@ -353,7 +354,7 @@ async function putData(text){for(var a=0;a<2;a++){var sha=await ghGetSha("data.j
   try{await ghPut("data.js",b64(text),"Update products",sha);return}catch(e){if(a===0&&/error (409|422)/.test(e.message))continue;throw e}}}
 async function publish(){
   if(busy)return;readGh();
-  if(!cfg.owner||!cfg.repo||!cfg.token){setTab("github");showMsg("Fill in the GitHub tab first, then press Publish again.","bad");return}
+  if(!cfg.owner||!cfg.repo||!cfg.token){setTab("github");fillGh();showMsg(cfg.token?"Fill in the GitHub tab first, then press Publish again.":"Paste your GitHub token once in the GitHub tab, press Save, then press Publish again.","bad");if(!cfg.token)$("#gtoken").focus();return}
   if(ed)closeEditor();
   busy=true;renderStatus();
   try{
