@@ -22,7 +22,6 @@ window.SHOP={
     "c1s1",
     "c1s2",
     "c1s3",
-    "c1s4",
     "c1s6"
    ]
   },
@@ -257,7 +256,7 @@ window.SHOP={
   },
   {
    "id": "c1s6",
-   "name": "Accessories"
+   "name": "Hanna Electrode"
   },
   {
    "id": "c2s1",
