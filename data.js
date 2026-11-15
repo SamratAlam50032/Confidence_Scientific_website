@@ -6,7 +6,8 @@ window.SHOP={
   "intro": "Water testing, temperature, moisture, electrical and dimensional meters for labs, dairies, farms and factories.",
   "whatsapp": "8801819277821",
   "phones": [
-   "01819277821"
+   "01819277821",
+   "01960643299"
   ],
   "email": "confidencesci@gmail.com",
   "address": "34,Hatkhola Road ,Tikatuli , Dhaka-1203"
