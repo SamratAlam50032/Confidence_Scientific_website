@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Confidence Scientific Admin</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+:root{--bg:#F4F7F9;--surface:#FFFFFF;--ink:#0C2231;--muted:#53697A;--line:#D5DFE6;--accent:#0B7A85;--accent-ink:#FFFFFF;--tint:#E3F1F3;
+ --warn:#7A4A00;--warnbg:#FFEFCF;--okc:#17673D;--okbg:#DDF2E6;--bad:#A3241C;--badbg:#FBE3E0;--infoc:#0B5A63;--infobg:#DCEFF1;
+ --f-head:"Space Grotesk",system-ui,sans-serif;--f-body:Inter,system-ui,sans-serif;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#0A1720;--surface:#112431;--ink:#E7EFF4;--muted:#93A9B8;--line:#244052;--accent:#3FC1CD;--accent-ink:#06222A;--tint:#143743;
+ --warn:#F5C675;--warnbg:#3A2B0E;--okc:#7FDDA9;--okbg:#10331F;--bad:#FF9C94;--badbg:#3F1714;--infoc:#8FDCE5;--infobg:#0F3640;color-scheme:dark}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body)}
+h1,h2,h3{font-family:var(--f-head);margin:0;line-height:1.2}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(16px,env(safe-area-inset-left)) 0 max(16px,env(safe-area-inset-right))}
+header.top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.hbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:10px 0}
+.hbar h1{font-size:18px;margin-right:auto}.hbar h1 small{display:block;font:500 11px var(--f-body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pill{font-size:12.5px;font-weight:600;padding:4px 10px;border-radius:99px}
+.pill.ok{background:var(--okbg);color:var(--okc)}.pill.warn{background:var(--warnbg);color:var(--warn)}.pill.info{background:var(--infobg);color:var(--infoc)}
+.btn{font:600 14px var(--f-body);border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);padding:9px 14px;border-radius:8px;cursor:pointer}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.danger{background:transparent;color:var(--bad);border-color:var(--bad)}
+.btn.sm{padding:5px 9px;font-size:13px}
+.tabs{display:flex;gap:4px;overflow-x:auto}
+.tabs button{font:600 14px var(--f-body);background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:10px 14px;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--accent);border-color:var(--accent)}
+#msg{margin:14px 0 0;padding:10px 14px;border-radius:8px;font-size:14px}
+#msg.ok{background:var(--okbg);color:var(--okc)}#msg.bad{background:var(--badbg);color:var(--bad)}#msg.info{background:var(--infobg);color:var(--infoc)}
+main{padding:18px 0 60px}
+.split{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:18px;align-items:start}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.tools input{flex:1 1 140px;min-width:0}
+input[type=text],input[type=search],input[type=number],input[type=password],select,textarea{width:100%;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:14px var(--f-body);padding:9px 10px}
+textarea{resize:vertical}
+#pedit{scroll-margin-top:140px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px}
+.prow{display:flex;gap:10px;align-items:center;width:100%;text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px;margin-bottom:8px;cursor:pointer;color:var(--ink);font:inherit}
+.prow:hover,.prow.on{border-color:var(--accent)}
+.prow.on{outline:2px solid var(--accent)}
+.th{width:48px;height:48px;border-radius:6px;background:#fff;border:1px solid var(--line);flex:none;display:grid;place-items:center;overflow:hidden}
+.th img{width:100%;height:100%;object-fit:contain}
+.pi{min-width:0;flex:1}.pi b{display:block;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.pi small{color:var(--muted);display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pm{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12.5px;font-variant-numeric:tabular-nums}
+.chip{font-size:11px;font-weight:600;padding:1px 7px;border-radius:99px;background:var(--tint);color:var(--accent)}
+.chip.in{background:var(--okbg);color:var(--okc)}.chip.order,.chip.ask{background:var(--warnbg);color:var(--warn)}.chip.feat{background:var(--infobg);color:var(--infoc)}
+.empty{color:var(--muted);padding:20px 4px}
+.f{display:flex;flex-direction:column;gap:4px;margin-bottom:12px;min-width:0}
+.f label{font-size:13px;font-weight:600}.f small{color:var(--muted);font-size:12.5px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.chk{display:flex;gap:8px;align-items:center;font-weight:600;margin-bottom:12px}.chk input{width:18px;height:18px}
+.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px;margin-bottom:10px}
+.tile{border:1px solid var(--line);border-radius:8px;padding:6px;background:var(--surface);display:flex;flex-direction:column;gap:6px}
+.tile .pic{aspect-ratio:1/1;background:#fff;border-radius:6px;display:grid;place-items:center;overflow:hidden;position:relative}
+.tile img{width:100%;height:100%;object-fit:contain}
+.tile .main{position:absolute;left:4px;top:4px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:600;padding:1px 6px;border-radius:99px}
+.tile .tb{display:flex;gap:4px;justify-content:space-between}
+.tile .tb button{flex:1;padding:4px 0;font-size:13px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;cursor:pointer}
+.drop{border:2px dashed var(--line);border-radius:10px;padding:16px;text-align:center;color:var(--muted);cursor:pointer;display:block}
+.drop.over{border-color:var(--accent);background:var(--tint)}
+.drop input{display:none}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}
+.cat{margin-bottom:12px}
+.chead{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end}
+.chead>input{flex:1 1 200px;font-weight:600}
+.pfl{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:2px}.pfl input{width:90px}
+.subrow{display:flex;gap:6px;margin-top:8px;align-items:center}.subrow input{flex:1;min-width:0}
+.subs{margin:10px 0 0 14px;padding-left:12px;border-left:2px solid var(--line)}
+.hint{color:var(--muted);font-size:13.5px}
+ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}ol.steps li{margin-bottom:4px}
+@media(max-width:900px){.split{grid-template-columns:1fr}.editing .listpane{display:none}}
+@media(max-width:560px){.g2,.g3{grid-template-columns:1fr}.hbar .btn{flex:1 1 auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="hbar">
+    <h1>Shop admin<small id="shopname">Confidence Scientific</small></h1>
+    <span class="pill ok" id="status" role="status">Loading</span>
+    <button class="btn ghost" id="dlBtn" type="button">Download data.js</button>
+    <button class="btn" id="pubBtn" type="button">Publish to website</button>
+  </div>
+  <div class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" type="button" data-tab="products" aria-selected="true">Products</button>
+    <button role="tab" type="button" data-tab="categories" aria-selected="false">Categories</button>
+    <button role="tab" type="button" data-tab="shop" aria-selected="false">Shop info</button>
+    <button role="tab" type="button" data-tab="github" aria-selected="false">GitHub</button>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <div id="msg" role="status" hidden></div>
+
+  <section id="p-products" style="margin-top:16px">
+    <div class="split" id="split">
+      <div class="listpane">
+        <div class="tools"><input id="ps" type="search" placeholder="Search name or code" aria-label="Search products"><select id="pf" aria-label="Filter by category" style="flex:1 1 140px"></select></div>
+        <button class="btn" id="pnew" type="button" style="width:100%;margin-bottom:10px">+ New product</button>
+        <div id="plist"></div>
+      </div>
+      <div class="card" id="pedit" hidden></div>
+    </div>
+  </section>
+
+  <section id="p-categories" hidden style="margin-top:16px">
+    <p class="hint">Categories and sub categories appear in the website menu in this order. The code prefix is used to make product codes, like HN-001.</p>
+    <div id="clist"></div>
+    <div class="card"><div class="subrow" style="margin-top:0"><input id="newcat" type="text" placeholder="New category name" aria-label="New category name"><button class="btn" id="addcat" type="button">Add category</button></div></div>
+  </section>
+
+  <section id="p-shop" hidden style="margin-top:16px">
+    <div class="card" style="max-width:720px">
+      <div class="g2"><div class="f"><label for="sname">Shop name</label><input id="sname" type="text"></div><div class="f"><label for="stag">Short tagline</label><input id="stag" type="text"></div></div>
+      <div class="f"><label for="shead">Homepage headline</label><input id="shead" type="text"></div>
+      <div class="f"><label for="sintro">Homepage intro text</label><textarea id="sintro" rows="2"></textarea></div>
+      <div class="f"><label for="swa">WhatsApp number</label><input id="swa" type="text" placeholder="01XXXXXXXXX"><small id="swahint">Orders from Buy now are sent to this number.</small></div>
+      <div class="f"><label for="sphones">Phone numbers</label><input id="sphones" type="text" placeholder="01XXXXXXXXX, 01XXXXXXXXX"><small>Separate with commas.</small></div>
+      <div class="g2"><div class="f"><label for="semail">Email</label><input id="semail" type="text" placeholder="name@example.com"></div><div class="f"><label for="saddr">Address</label><input id="saddr" type="text"></div></div>
+      <button class="btn" id="saveshop" type="button">Save shop info</button>
+    </div>
+  </section>
+
+  <section id="p-github" hidden style="margin-top:16px">
+    <div class="card" style="max-width:720px">
+      <h2 style="font-size:18px;margin-bottom:8px">Connect to GitHub</h2>
+      <p class="hint" style="margin-top:0">Publish saves your products and photos into your GitHub repository, and GitHub Pages shows them on the website. Do this once.</p>
+      <ol class="steps">
+        <li>On GitHub open Settings, Developer settings, Personal access tokens, Fine-grained tokens, Generate new token.</li>
+        <li>Repository access: Only select repositories, then pick your website repository.</li>
+        <li>Permissions, Repository permissions, Contents: Read and write.</li>
+        <li>Generate the token, copy it and paste it below.</li>
+      </ol>
+      <div class="g3"><div class="f"><label for="gowner">GitHub username</label><input id="gowner" type="text" autocomplete="off"></div><div class="f"><label for="grepo">Repository name</label><input id="grepo" type="text" autocomplete="off"></div><div class="f"><label for="gbranch">Branch</label><input id="gbranch" type="text" value="main" autocomplete="off"></div></div>
+      <div class="f"><label for="gtoken">Access token</label><input id="gtoken" type="password" autocomplete="off"><small>The token is stored only in this browser. Do not use this on a shared computer.</small></div>
+      <div class="bar"><button class="btn" id="gsave" type="button">Save</button><button class="btn ghost" id="gtest" type="button">Test connection</button></div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+      <p class="hint" style="margin:0 0 8px">Your edits are kept as a draft in this browser until you publish. If you changed the data from another computer, reload the published data and drop this draft.</p>
+      <button class="btn danger sm" id="reset" type="button">Discard draft and reload published data</button>
+    </div>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script>
+(function(){
+"use strict";
+var $=function(s){return document.querySelector(s)};
+function el(t,a){a=a||{};var e=document.createElement(t);Object.keys(a).forEach(function(k){var v=a[k];if(k==="class")e.className=v;else if(k==="text")e.textContent=v;else if(k.indexOf("on")===0)e[k]=v;else if(v!==false&&v!=null)e.setAttribute(k,v===true?"":v)});
+  for(var i=2;i<arguments.length;i++){var c=arguments[i];if(c==null)continue;if(Array.isArray(c))c.forEach(function(x){if(x!=null)e.append(x.nodeType?x:document.createTextNode(x))});else e.append(c.nodeType?c:document.createTextNode(c))}return e}
+var uid=function(p){return p+Math.random().toString(36).slice(2,8)};
+var STOCK={"in":"In stock","order":"On order","ask":"Ask availability"};
+var D,pend={},base="",ed=null,edIdx=-1,codeTouched=false,busy=false,idbOk=true,tab="products";
+var cfg={owner:"",repo:"",branch:"main",token:""};
+try{Object.assign(cfg,JSON.parse(localStorage.getItem("cs-gh")||"{}"))}catch(e){}
+
+/* ---------- draft storage (IndexedDB) ---------- */
+var dbp=null;
+function db(){if(!dbp)dbp=new Promise(function(res,rej){try{var r=indexedDB.open("cs-admin",1);r.onupgradeneeded=function(){r.result.createObjectStore("kv")};r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)}}catch(e){rej(e)}});return dbp}
+function kvGet(k){return db().then(function(d){return new Promise(function(res,rej){var q=d.transaction("kv").objectStore("kv").get(k);q.onsuccess=function(){res(q.result)};q.onerror=function(){rej(q.error)}})})}
+function kvSet(k,v){return db().then(function(d){return new Promise(function(res,rej){var t=d.transaction("kv","readwrite");t.objectStore("kv").put(v,k);t.oncomplete=function(){res()};t.onerror=function(){rej(t.error)}})})}
+function saveNow(){return kvSet("draft",{D:D,pend:pend,base:base}).catch(function(){idbOk=false})}
+var st;function persist(){clearTimeout(st);st=setTimeout(saveNow,50);renderStatus()}
+
+/* ---------- data helpers ---------- */
+function normalise(d){
+  d.settings=Object.assign({name:"",tagline:"",headline:"",intro:"",whatsapp:"",phones:[],email:"",address:""},d.settings||{});
+  d.categories=(d.categories||[]).map(function(c){return {id:c.id||uid("c"),name:c.name||"",prefix:c.prefix||"CS",subs:(c.subs||[]).map(function(s){return {id:s.id||uid("s"),name:s.name||""}})}});
+  d.products=(d.products||[]).map(function(p){return {code:p.code||"",name:p.name||"",cat:p.cat||"",sub:p.sub||"",short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"ask",featured:p.featured?1:0,images:p.images||[]}});
+  return d}
+function catById(id){return D.categories.find(function(c){return c.id===id})}
+function subOf(cid,sid){var c=catById(cid);return c&&c.subs.find(function(s){return s.id===sid})}
+function catLabel(p){var c=catById(p.cat),s=subOf(p.cat,p.sub);return (c?c.name:"No category")+(s?" / "+s.name:"")}
+function imgSrc(x){return x.indexOf("pending:")===0?(pend[x.slice(8)]||""):x}
+function dirty(){return JSON.stringify(D)!==base}
+function nextCode(cid){var c=catById(cid),pre=c?c.prefix:"CS",mx=0,re=new RegExp("^"+pre.replace(/[^A-Z0-9]/g,"")+"-(\\d+)$");D.products.forEach(function(p){var m=re.exec(p.code);if(m)mx=Math.max(mx,parseInt(m[1],10))});return pre+"-"+String(mx+1).padStart(3,"0")}
+function prunePend(){var used={};D.products.forEach(function(p){p.images.forEach(function(x){if(x.indexOf("pending:")===0)used[x.slice(8)]=1})});Object.keys(pend).forEach(function(k){if(!used[k])delete pend[k]})}
+function showMsg(t,kind){var m=$("#msg");m.textContent=t;m.className=kind||"info";m.hidden=false;if(kind==="ok")setTimeout(function(){if(m.textContent===t)m.hidden=true},9000)}
+function hideMsg(){$("#msg").hidden=true}
+
+/* ---------- status / tabs ---------- */
+function renderStatus(){var d=dirty(),s=$("#status");
+  s.textContent=busy?"Publishing...":d?"Unpublished changes":"All changes published";
+  s.className="pill "+(busy?"info":d?"warn":"ok");$("#pubBtn").disabled=busy||!d;$("#shopname").textContent=D.settings.name||"Shop admin"}
+function setTab(t){tab=t;document.querySelectorAll(".tabs button").forEach(function(b){b.setAttribute("aria-selected",b.dataset.tab===t)});
+  ["products","categories","shop","github"].forEach(function(n){$("#p-"+n).hidden=n!==t})}
+document.querySelectorAll(".tabs button").forEach(function(b){b.onclick=function(){hideMsg();setTab(b.dataset.tab)}});
+
+/* ---------- products list ---------- */
+function renderFilter(){var f=$("#pf"),cur=f.value;f.textContent="";f.append(el("option",{value:"",text:"All categories"}));
+  D.categories.forEach(function(c){f.append(el("option",{value:c.id,text:c.name}))});f.value=catById(cur)?cur:""}
+function renderList(){
+  var t=$("#ps").value.trim().toLowerCase(),f=$("#pf").value,box=$("#plist");box.textContent="";
+  var items=D.products.map(function(p,i){return {p:p,i:i}}).filter(function(x){return (!f||x.p.cat===f)&&(!t||(x.p.name+" "+x.p.code).toLowerCase().indexOf(t)>=0)});
+  if(!items.length){box.append(el("div",{class:"empty",text:D.products.length?"No product matches.":"No products yet. Press + New product."}));return}
+  items.forEach(function(x){var p=x.p,th=el("span",{class:"th"});if(p.images[0])th.append(el("img",{src:imgSrc(p.images[0]),alt:""}));
+    box.append(el("button",{class:"prow"+(x.i===edIdx?" on":""),type:"button",onclick:function(){openEditor(x.i)}},th,
+      el("span",{class:"pi"},el("b",{text:p.name||"(no name)"}),el("small",{text:p.code+" · "+catLabel(p)})),
+      el("span",{class:"pm"},el("span",{text:p.price?"৳"+Number(p.price).toLocaleString("en-US"):"No price"}),el("span",{class:"chip "+p.stock,text:STOCK[p.stock]||""}),p.featured?el("span",{class:"chip feat",text:"Featured"}):null)))});
+}
+$("#ps").oninput=renderList;$("#pf").onchange=renderList;$("#pnew").onclick=function(){hideMsg();openEditor(-1)};
+
+/* ---------- product editor ---------- */
+function fld(id,label,ctrl,hint){return el("div",{class:"f"},el("label",{"for":id,text:label}),ctrl,hint?el("small",{text:hint}):null)}
+function openEditor(idx){
+  if(!D.categories.length){setTab("categories");showMsg("Add a category and a sub category first.","bad");return}
+  edIdx=idx;codeTouched=false;
+  if(idx>=0)ed=JSON.parse(JSON.stringify(D.products[idx]));
+  else{var c=D.categories[0];ed={code:"",name:"",cat:c.id,sub:c.subs[0]?c.subs[0].id:"",short:"",long:"",price:null,stock:"in",featured:0,images:[]};ed.code=nextCode(ed.cat)}
+  document.body.classList.add("editing");renderEditor();renderList();
+  $("#pedit").scrollIntoView({block:"start"});
+}
+function closeEditor(){ed=null;edIdx=-1;$("#pedit").hidden=true;document.body.classList.remove("editing");renderList()}
+function fillSubs(){var s=$("#esub");s.textContent="";var c=catById(ed.cat);
+  if(!c||!c.subs.length){s.append(el("option",{value:"",text:"No sub category. Add one in Categories."}));ed.sub="";return}
+  c.subs.forEach(function(x){s.append(el("option",{value:x.id,text:x.name}))});
+  if(!subOf(ed.cat,ed.sub))ed.sub=c.subs[0].id;s.value=ed.sub}
+function renderEditor(){
+  var box=$("#pedit");box.textContent="";box.hidden=false;
+  var top=el("div",{class:"bar",style:"margin:0 0 12px;justify-content:space-between"},el("h2",{style:"font-size:18px",text:edIdx>=0?"Edit product":"New product"}),el("button",{class:"btn ghost sm",type:"button",text:"Back to list",onclick:closeEditor}));
+  var name=el("input",{id:"ename",type:"text",maxlength:"160"});name.value=ed.name;
+  var code=el("input",{id:"ecode",type:"text",maxlength:"30"});code.value=ed.code;code.oninput=function(){codeTouched=true};
+  var cat=el("select",{id:"ecat"});D.categories.forEach(function(c){cat.append(el("option",{value:c.id,text:c.name}))});cat.value=ed.cat;
+  var sub=el("select",{id:"esub"});
+  cat.onchange=function(){ed.cat=cat.value;fillSubs();if(edIdx<0&&!codeTouched)code.value=nextCode(ed.cat)};
+  sub.onchange=function(){ed.sub=sub.value};
+  var sh=el("input",{id:"eshort",type:"text",maxlength:"200"});sh.value=ed.short;
+  var lg=el("textarea",{id:"elong",rows:"12"});lg.value=ed.long;
+  var pr=el("input",{id:"eprice",type:"text",inputmode:"decimal",placeholder:"Leave empty for Price on request"});pr.value=ed.price==null?"":String(ed.price);
+  var sk=el("select",{id:"estock"});Object.keys(STOCK).forEach(function(k){sk.append(el("option",{value:k,text:STOCK[k]}))});sk.value=ed.stock;
+  var ft=el("input",{id:"efeat",type:"checkbox"});ft.checked=!!ed.featured;
+  var imgs=el("div",{class:"imgs",id:"eimgs"});
+  var file=el("input",{id:"efile",type:"file",accept:"image/*",multiple:true});
+  var drop=el("label",{class:"drop","for":"efile",id:"edrop"},"Tap to choose photos, or drop them here. The first photo is the main one.",file);
+  file.onchange=function(){addFiles(file.files);file.value=""};
+  drop.ondragover=function(e){e.preventDefault();drop.classList.add("over")};drop.ondragleave=function(){drop.classList.remove("over")};
+  drop.ondrop=function(e){e.preventDefault();drop.classList.remove("over");addFiles(e.dataTransfer.files)};
+  var save=el("button",{class:"btn",type:"button",text:"Save product",onclick:saveProduct});
+  var del=null;
+  if(edIdx>=0){del=el("button",{class:"btn danger",type:"button",text:"Delete product"});var armed=false;
+    del.onclick=function(){if(!armed){armed=true;del.textContent="Click again to delete";setTimeout(function(){armed=false;del.textContent="Delete product"},3500);return}
+      D.products.splice(edIdx,1);prunePend();persist();closeEditor();showMsg("Product deleted. Press Publish to remove it from the website.","ok")}}
+  box.append(top,fld("ename","Product name",name),
+    el("div",{class:"g2"},fld("ecode","Product code",code,"Your internal code. Search finds it."),fld("estock","Stock",sk)),
+    el("div",{class:"g2"},fld("ecat","Category",cat),fld("esub","Sub category",sub)),
+    fld("eshort","Short description",sh,"One line shown on the product card."),
+    fld("elong","Full description",lg,"Shown on the product page. Leave a blank line between parts. Start lines with • for bullet points."),
+    el("div",{class:"g2"},fld("eprice","Price (BDT)",pr),el("div",{class:"f"},el("label",{text:"Show on homepage"}),el("label",{class:"chk",style:"margin-top:8px"},ft,"Featured product"))),
+    el("div",{class:"f"},el("label",{text:"Photos"}),imgs,drop,el("small",{text:"Photos are resized to 1400 px and saved as high quality JPEG. Up to 8 photos."})),
+    el("div",{class:"bar"},save,el("button",{class:"btn ghost",type:"button",text:"Cancel",onclick:closeEditor}),del));
+  fillSubs();renderImgs();
+}
+function renderImgs(){var box=$("#eimgs");if(!box)return;box.textContent="";
+  ed.images.forEach(function(x,i){
+    var pic=el("div",{class:"pic"},el("img",{src:imgSrc(x),alt:"Photo "+(i+1)}),i===0?el("span",{class:"main",text:"Main"}):null);
+    var b=function(t,l,f,dis){return el("button",{type:"button",text:t,"aria-label":l,disabled:dis,onclick:f})};
+    box.append(el("div",{class:"tile"},pic,el("div",{class:"tb"},
+      b("◀","Move earlier",function(){mvImg(i,-1)},i===0),b("▶","Move later",function(){mvImg(i,1)},i===ed.images.length-1),b("✕","Remove photo",function(){ed.images.splice(i,1);renderImgs()}))))})}
+function mvImg(i,d){var j=i+d;if(j<0||j>=ed.images.length)return;var t=ed.images[i];ed.images[i]=ed.images[j];ed.images[j]=t;renderImgs()}
+function fileToJpeg(file){
+  return new Promise(function(res,rej){var url=URL.createObjectURL(file),im=new Image();
+    im.onload=function(){try{var MAX=1400,w=im.naturalWidth,h=im.naturalHeight,k=Math.min(1,MAX/Math.max(w,h));w=Math.round(w*k);h=Math.round(h*k);
+      var c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,w,h);x.imageSmoothingQuality="high";x.drawImage(im,0,0,w,h);
+      URL.revokeObjectURL(url);res(c.toDataURL("image/jpeg",0.88))}catch(e){rej(e)}};
+    im.onerror=function(){URL.revokeObjectURL(url);rej(new Error("Could not read "+file.name+". Use a JPG or PNG photo."))};im.src=url})}
+async function addFiles(list){
+  var files=Array.prototype.slice.call(list||[]).filter(function(f){return /^image\//.test(f.type)});
+  if(!files.length){showMsg("Choose image files (JPG or PNG).","bad");return}
+  for(var i=0;i<files.length;i++){
+    if(ed.images.length>=8){showMsg("A product can have up to 8 photos.","bad");break}
+    try{var data=await fileToJpeg(files[i]),id=uid("i");pend[id]=data;ed.images.push("pending:"+id);renderImgs()}catch(e){showMsg(e.message,"bad")}}
+  persist()}
+function saveProduct(){
+  var g=function(id){return $("#"+id)},err=function(m){showMsg(m,"bad");return false};
+  var name=g("ename").value.trim(),code=g("ecode").value.trim().toUpperCase().replace(/\s+/g,"-"),pr=g("eprice").value.trim().replace(/,/g,""),price=null;
+  if(!name)return err("Enter the product name.");
+  if(!code)return err("Enter a product code.");
+  if(D.products.some(function(p,i){return p.code===code&&i!==edIdx}))return err("The code "+code+" is already used by another product.");
+  if(!catById(ed.cat))return err("Choose a category.");
+  if(!subOf(ed.cat,ed.sub))return err("Choose a sub category. Add one in the Categories tab if there is none.");
+  if(pr!==""){price=Number(pr);if(!isFinite(price)||price<0)return err("Price must be a number, like 6799.")}
+  var prod={code:code,name:name,cat:ed.cat,sub:ed.sub,short:g("eshort").value.trim(),long:g("elong").value.trim(),price:price||null,stock:g("estock").value,featured:g("efeat").checked?1:0,images:ed.images.slice()};
+  if(edIdx>=0)D.products[edIdx]=prod;else D.products.push(prod);
+  prunePend();persist();closeEditor();showMsg("Saved "+code+". Press Publish to put it on the website.","ok")}
+
+/* ---------- categories ---------- */
+function delBtn(label,fn){var b=el("button",{class:"btn danger sm",type:"button",text:label}),armed=false;
+  b.onclick=function(){if(!armed){armed=true;b.textContent="Click again";setTimeout(function(){armed=false;b.textContent=label},3500);return}fn()};return b}
+function mv(arr,i,after){var u=el("button",{class:"btn ghost sm",type:"button",text:"↑","aria-label":"Move up",disabled:i===0,onclick:function(){var t=arr[i];arr[i]=arr[i-1];arr[i-1]=t;after()}});
+  var d=el("button",{class:"btn ghost sm",type:"button",text:"↓","aria-label":"Move down",disabled:i===arr.length-1,onclick:function(){var t=arr[i];arr[i]=arr[i+1];arr[i+1]=t;after()}});return [u,d]}
+function catsChanged(){persist();renderCats();renderFilter();renderList()}
+function renderCats(){
+  var box=$("#clist");box.textContent="";
+  D.categories.forEach(function(c,ci){
+    var used=D.products.filter(function(p){return p.cat===c.id}).length;
+    var nm=el("input",{type:"text","aria-label":"Category name"});nm.value=c.name;
+    nm.onchange=function(){var v=nm.value.trim();if(!v){nm.value=c.name;return}c.name=v;catsChanged()};
+    var pf=el("input",{type:"text","aria-label":"Code prefix",maxlength:"6"});pf.value=c.prefix;
+    pf.onchange=function(){c.prefix=pf.value.trim().toUpperCase().replace(/[^A-Z0-9]/g,"")||"CS";pf.value=c.prefix;persist()};
+    var head=el("div",{class:"chead"},nm,el("label",{class:"pfl"},"Code prefix",pf),mv(D.categories,ci,catsChanged),
+      delBtn("Delete",function(){if(used){showMsg("\""+c.name+"\" still has "+used+" product(s). Move or delete them first.","bad");return}D.categories.splice(ci,1);catsChanged()}));
+    var subs=el("div",{class:"subs"});
+    c.subs.forEach(function(s,si){var sn=el("input",{type:"text","aria-label":"Sub category name"});sn.value=s.name;
+      sn.onchange=function(){var v=sn.value.trim();if(!v){sn.value=s.name;return}s.name=v;catsChanged()};
+      var sused=D.products.filter(function(p){return p.sub===s.id}).length;
+      subs.append(el("div",{class:"subrow"},sn,mv(c.subs,si,catsChanged),delBtn("✕",function(){if(sused){showMsg("\""+s.name+"\" still has "+sused+" product(s). Move or delete them first.","bad");return}c.subs.splice(si,1);catsChanged()})))});
+    var ns=el("input",{type:"text",placeholder:"New sub category","aria-label":"New sub category name"});
+    var add=function(){var v=ns.value.trim();if(!v)return;c.subs.push({id:uid("s"),name:v});catsChanged()};
+    ns.onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();add()}};
+    subs.append(el("div",{class:"subrow"},ns,el("button",{class:"btn ghost sm",type:"button",text:"Add sub category",onclick:add})));
+    box.append(el("div",{class:"card cat"},head,el("div",{class:"hint",style:"margin-top:6px",text:used+" product(s)"}),subs))})}
+$("#addcat").onclick=function(){var v=$("#newcat").value.trim();if(!v)return;
+  var pre=v.replace(/[^A-Za-z]/g,"").slice(0,2).toUpperCase()||"CS";D.categories.push({id:uid("c"),name:v,prefix:pre,subs:[]});$("#newcat").value="";catsChanged()};
+$("#newcat").onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();$("#addcat").click()}};
+
+/* ---------- shop info ---------- */
+function normWA(v){var d=String(v).replace(/\D/g,"");if(/^01\d{9}$/.test(d))d="88"+d;return d}
+function fillShop(){var s=D.settings,v=function(id,x){$("#"+id).value=x||""};
+  v("sname",s.name);v("stag",s.tagline);v("shead",s.headline);v("sintro",s.intro);v("swa",s.whatsapp?(s.whatsapp.indexOf("880")===0?"0"+s.whatsapp.slice(3):s.whatsapp):"");v("sphones",(s.phones||[]).join(", "));v("semail",s.email);v("saddr",s.address)}
+$("#saveshop").onclick=function(){var g=function(id){return $("#"+id).value.trim()},s=D.settings;
+  s.name=g("sname");s.tagline=g("stag");s.headline=g("shead");s.intro=g("sintro");s.whatsapp=normWA(g("swa"));
+  s.phones=g("sphones").split(/[,\n]/).map(function(x){return x.trim()}).filter(Boolean);s.email=g("semail");s.address=g("saddr");
+  persist();showMsg("Shop info saved. Press Publish to update the website.","ok")};
+
+/* ---------- GitHub ---------- */
+function fillGh(){$("#gowner").value=cfg.owner||"";$("#grepo").value=cfg.repo||"";$("#gbranch").value=cfg.branch||"main";$("#gtoken").value=cfg.token||""}
+function readGh(){cfg={owner:$("#gowner").value.trim(),repo:$("#grepo").value.trim().replace(/\.git$/,""),branch:$("#gbranch").value.trim()||"main",token:$("#gtoken").value.trim()};
+  try{localStorage.setItem("cs-gh",JSON.stringify(cfg))}catch(e){}}
+$("#gsave").onclick=function(){readGh();showMsg("GitHub details saved in this browser.","ok")};
+function ghH(){return {Authorization:"Bearer "+cfg.token,Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"}}
+function api(p){return "https://api.github.com/repos/"+encodeURIComponent(cfg.owner)+"/"+encodeURIComponent(cfg.repo)+(p?"/"+p:"")}
+async function ghErr(r){var m="";try{m=(await r.json()).message}catch(e){}
+  var hint=r.status===401?"The token was rejected. Make a new token and paste it in the GitHub tab.":r.status===403?"The token cannot write to this repository. It needs Contents: Read and write.":r.status===404?"Repository or branch not found. Check the username, repository name and branch.":(r.status===409||r.status===422)?"GitHub says the file changed. Press Publish again.":"";
+  return new Error("GitHub error "+r.status+(m?": "+m:"")+(hint?". "+hint:""))}
+async function ghGetSha(path){var r=await fetch(api("contents/"+path)+"?ref="+encodeURIComponent(cfg.branch),{headers:ghH()});if(r.status===404)return null;if(!r.ok)throw await ghErr(r);return (await r.json()).sha}
+async function ghPut(path,b64,msg,sha){var body={message:msg,content:b64,branch:cfg.branch};if(sha)body.sha=sha;
+  var r=await fetch(api("contents/"+path),{method:"PUT",headers:Object.assign({"Content-Type":"application/json"},ghH()),body:JSON.stringify(body)});if(!r.ok)throw await ghErr(r);return r.json()}
+function b64(s){var b=new TextEncoder().encode(s),bin="";for(var i=0;i<b.length;i+=0x8000)bin+=String.fromCharCode.apply(null,b.subarray(i,i+0x8000));return btoa(bin)}
+$("#gtest").onclick=async function(){readGh();if(!cfg.owner||!cfg.repo||!cfg.token){showMsg("Fill in username, repository and token first.","bad");return}
+  showMsg("Testing...","info");
+  try{var r=await fetch(api(""),{headers:ghH()});if(!r.ok)throw await ghErr(r);
+    var sha=await ghGetSha("data.js");showMsg("Connected to "+cfg.owner+"/"+cfg.repo+". "+(sha?"data.js found in branch "+cfg.branch+".":"data.js was not found in branch "+cfg.branch+". It will be created when you publish."),"ok")}
+  catch(e){showMsg(e.message,"bad")}};
+
+/* ---------- publish ---------- */
+async function putData(text){for(var a=0;a<2;a++){var sha=await ghGetSha("data.js");
+  try{await ghPut("data.js",b64(text),"Update products",sha);return}catch(e){if(a===0&&/error (409|422)/.test(e.message))continue;throw e}}}
+async function publish(){
+  if(busy)return;readGh();
+  if(!cfg.owner||!cfg.repo||!cfg.token){setTab("github");showMsg("Fill in the GitHub tab first, then press Publish again.","bad");return}
+  if(ed)closeEditor();
+  busy=true;renderStatus();
+  try{
+    prunePend();var ids=Object.keys(pend),n=0;
+    for(var k=0;k<ids.length;k++){var id=ids[k];n++;showMsg("Uploading photo "+n+" of "+ids.length+"...","info");
+      var owner=D.products.find(function(p){return p.images.indexOf("pending:"+id)>=0});if(!owner){delete pend[id];continue}
+      var path="images/"+(owner.code||"item").toLowerCase().replace(/[^a-z0-9-]/g,"")+"-"+id.slice(-5)+Date.now().toString(36).slice(-3)+".jpg";
+      await ghPut(path,pend[id].split(",")[1],"Add photo for "+owner.code);
+      D.products.forEach(function(p){p.images=p.images.map(function(x){return x==="pending:"+id?path:x})});
+      delete pend[id];await saveNow()}
+    showMsg("Saving product data...","info");
+    await putData("window.SHOP="+JSON.stringify(D,null,1)+";\n");
+    base=JSON.stringify(D);await saveNow();
+    showMsg("Published. The website shows the changes in about a minute.","ok");
+  }catch(e){showMsg(e.message||String(e),"bad")}
+  busy=false;renderAll()}
+$("#pubBtn").onclick=publish;
+$("#dlBtn").onclick=function(){
+  if(Object.keys(pend).length){showMsg("There are new photos that are not uploaded yet. Use Publish, because data.js alone would point to missing photos.","bad");return}
+  var a=el("a",{href:URL.createObjectURL(new Blob(["window.SHOP="+JSON.stringify(D,null,1)+";\n"],{type:"text/javascript"})),download:"data.js"});document.body.append(a);a.click();a.remove()};
+var resetArmed=false;
+$("#reset").onclick=async function(){var b=$("#reset");if(!resetArmed){resetArmed=true;b.textContent="Click again to discard the draft";setTimeout(function(){resetArmed=false;b.textContent="Discard draft and reload published data"},4000);return}
+  try{await kvSet("draft",null)}catch(e){}location.reload()};
+
+/* ---------- start ---------- */
+function renderAll(){renderStatus();renderFilter();renderList();renderCats()}
+async function init(){
+  var orig=normalise(JSON.parse(JSON.stringify(window.SHOP||{})));
+  var saved=null;try{saved=await kvGet("draft")}catch(e){idbOk=false}
+  if(saved&&saved.D&&!(JSON.stringify(saved.D)===saved.base&&!Object.keys(saved.pend||{}).length)){D=normalise(saved.D);pend=saved.pend||{};base=saved.base||JSON.stringify(orig)}
+  else{D=orig;base=JSON.stringify(orig)}
+  fillShop();fillGh();renderAll();
+  if(!idbOk)showMsg("This browser blocks saving drafts. Keep this page open until you press Publish.","bad");
+  else if(dirty())showMsg("Your unpublished draft was restored.","info")}
+init();
+})();
+</script>
+</body>
+</html>
