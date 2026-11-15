@@ -270,10 +270,21 @@ header.top{padding:10px 0 0}
 
 <script src="data.js"></script>
 <script>
-const SH=window.SHOP||{settings:{},categories:[],products:[]};
+function migrate(d){
+  if(!d||d.subs)return d;
+  var subs=[],byName={},map={};
+  (d.categories||[]).forEach(function(c){(c.subs||[]).forEach(function(s){var k=String(s.name||"").trim().toLowerCase();
+    if(!byName[k]){byName[k]=s.id;subs.push({id:s.id,name:s.name})}map[s.id]=byName[k]})});
+  d.categories=(d.categories||[]).map(function(c){var seen={},ids=[];(c.subs||[]).forEach(function(s){var g=map[s.id];if(!seen[g]){seen[g]=1;ids.push(g)}});
+    var o={};for(var k in c)o[k]=c[k];o.subs=ids;return o});
+  d.products=(d.products||[]).map(function(p){var o={};for(var k in p)o[k]=p[k];o.sub=map[p.sub]||p.sub;delete o.cat;delete o.places;return o});
+  d.subs=subs;return d}
+const SH=migrate(JSON.parse(JSON.stringify(window.SHOP||{settings:{},categories:[],products:[]})));
+SH.subs=SH.subs||[];SH.categories=SH.categories||[];SH.products=SH.products||[];
 const S=SH.settings||{};
-const C=SH.categories.map(c=>[c.name,c.subs.map(x=>x.name),c.image||""]);
-const P=SH.products.map(p=>{const seen={},pl=[];(p.places&&p.places.length?p.places:[{cat:p.cat,sub:p.sub}]).forEach(x=>{const ci=SH.categories.findIndex(c=>c.id===x.cat);const si=ci<0?-1:SH.categories[ci].subs.findIndex(y=>y.id===x.sub);if(ci>=0&&si>=0&&!seen[ci+"|"+si]){seen[ci+"|"+si]=1;pl.push([ci,si])}});
+const sIdx=id=>SH.subs.findIndex(x=>x.id===id);
+const C=SH.categories.map(c=>{const ids=SH.subs.map(x=>x.id).filter(id=>(c.subs||[]).indexOf(id)>=0);return [c.name,ids.map(id=>SH.subs[sIdx(id)].name),c.image||"",ids]});
+const P=SH.products.map(p=>{const pl=[];C.forEach((c,ci)=>{const j=c[3].indexOf(p.sub);if(j>=0)pl.push([ci,j])});
   return [p.name,pl.length?pl[0][0]:-1,pl.length?pl[0][1]:-1,p.short||"",p.stock||"ask",p.featured?1:0,p.code,p.price||null,p.long||"",p.images||[],pl]}).filter(p=>p[10].length);
 const ICONS=[
 '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>',
@@ -300,14 +311,14 @@ const svg=i=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
 const priceTxt=p=>p[7]?"৳"+Number(p[7]).toLocaleString("en-US"):"Price on request";
 function stockTag(t,v){t.textContent=v==="in"?"In stock":v==="order"?"On order":"Ask availability";t.className="tag "+(v==="in"?"in":"order")}
 function card(p){const d=document.createElement("article");d.className="card";
-  d.innerHTML='<div class="thumb"></div><div class="body"><div class="cat"></div><h3><button class="lnk" type="button"></button></h3><div class="code"></div><p></p><div class="row"><span class="tag"></span><span class="price"></span><button class="btn" type="button"></button></div></div>';
+  d.innerHTML='<div class="thumb"></div><div class="body"><h3><button class="lnk" type="button"></button></h3><p></p><div class="row"><span class="tag"></span><span class="price"></span><button class="btn" type="button"></button></div></div>';
   const th=d.querySelector(".thumb"); if(p[9]&&p[9][0]){th.classList.add("has");const i=document.createElement("img");i.src=p[9][0];i.alt=p[0];i.loading="lazy";th.appendChild(i)}else th.innerHTML=svg(p[1]);
-  d.querySelector(".cat").textContent=plc(p); d.querySelector(".lnk").textContent=p[0]; d.querySelector(".code").textContent="Code: "+p[6]; d.querySelector("p").textContent=p[3];
+  d.querySelector(".lnk").textContent=p[0]; d.querySelector("p").textContent=p[3];
   stockTag(d.querySelector(".tag"),p[4]); d.querySelector(".price").textContent=priceTxt(p);
   const b=d.querySelector(".btn"); b.textContent="Buy now"; b.onclick=()=>openOrder(p);
   th.onclick=d.querySelector(".lnk").onclick=()=>openProd(p); return d}
 function openProd(p){
-  $("#mcat").textContent=p[10].map(x=>C[x[0]][0]+" / "+C[x[0]][1][x[1]]).join("  ·  "); $("#mname").textContent=p[0]; $("#mcode").textContent="Product code: "+p[6]; $("#mprice").textContent=priceTxt(p);
+  $("#mcat").textContent=C[p[1]][1][p[2]]; $("#mname").textContent=p[0]; $("#mcode").textContent="Product code: "+p[6]; $("#mprice").textContent=priceTxt(p);
   stockTag($("#mtag"),p[4]); $("#mdesc").textContent=p[8]||p[3];
   const gm=$("#gmain"),gt=$("#gthumbs"),im=p[9]||[]; gt.textContent="";
   const show=k=>{gm.textContent="";if(im[k]){const i=document.createElement("img");i.src=im[k];i.alt=p[0];gm.appendChild(i)}else gm.innerHTML=svg(p[1]);
@@ -340,7 +351,7 @@ function draw(){
   if(q)add("Search: "+q+"  ✕",()=>{q="";$("#q").value="";draw()});
   $("#empty").hidden=list.length>0;$("#empty").textContent=P.length?"No product matches. Try a shorter word or clear the filter.":"Products are being added. Please check back soon or contact us.";
   const g=$("#grid");g.textContent="";list.forEach(p=>g.appendChild(card(p)));
-  const f=$("#fgrid");f.textContent="";$("#featured").hidden=!P.some(p=>p[5]);P.filter(p=>p[5]).forEach(p=>{const c=card(p);const s=document.createElement("div");s.className="star";s.textContent="Featured";c.querySelector(".cat").before(s);f.appendChild(c)});
+  const f=$("#fgrid");f.textContent="";$("#featured").hidden=!P.some(p=>p[5]);P.filter(p=>p[5]).forEach(p=>{const c=card(p);const s=document.createElement("div");s.className="star";s.textContent="Featured";c.querySelector("h3").before(s);f.appendChild(c)});
 }
 $("#q").addEventListener("input",e=>{q=e.target.value;if(q)cat=sub=-1;draw()});
 $("#q").addEventListener("keydown",e=>{if(e.key==="Enter"&&sugIdx<0){$("#sug").hidden=true;$("#all").scrollIntoView({behavior:"smooth"})}});
