@@ -65,12 +65,12 @@ window.SHOP={
   },
   {
    "id": "c3",
-   "name": "Length & Distance Meter",
+   "name": "Glassware",
    "prefix": "CS",
    "subs": [
     {
      "id": "c3s1",
-     "name": "Laser Distance Meters"
+     "name": "Glass items"
     },
     {
      "id": "c3s2",
@@ -80,16 +80,24 @@ window.SHOP={
   },
   {
    "id": "c4",
-   "name": "Multimeter & Clamp Meter",
+   "name": "Chemicals",
    "prefix": "CS",
    "subs": [
     {
      "id": "c4s1",
-     "name": "Digital Multimeters"
+     "name": "MERCK(Germany)"
     },
     {
      "id": "c4s2",
-     "name": "Clamp Meters"
+     "name": "Research Lab (India)"
+    },
+    {
+     "id": "s0amlle",
+     "name": "SRL(India)"
+    },
+    {
+     "id": "sf8t0p4",
+     "name": "HIMEDIA(India)"
     }
    ]
   },
