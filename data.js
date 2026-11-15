@@ -181,6 +181,36 @@ window.SHOP={
    ]
   },
   {
+   "id": "c10",
+   "name": "Stopwatch & Timers",
+   "prefix": "CS",
+   "subs": [
+    {
+     "id": "c10s1",
+     "name": "Stopwatches"
+    },
+    {
+     "id": "c10s2",
+     "name": "Lab Timers"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "name": "Soil Testing Meters",
+   "prefix": "CS",
+   "subs": [
+    {
+     "id": "c11s1",
+     "name": "Soil pH & Moisture"
+    },
+    {
+     "id": "c11s2",
+     "name": "Soil EC"
+    }
+   ]
+  },
+  {
    "id": "c12",
    "name": "Refractometers & Analyzer",
    "prefix": "CS",
@@ -192,6 +222,51 @@ window.SHOP={
     {
      "id": "c12s2",
      "name": "Salinity Refractometers"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "name": "Magnetic Compass",
+   "prefix": "CS",
+   "subs": [
+    {
+     "id": "c13s1",
+     "name": "Liquid-Filled"
+    },
+    {
+     "id": "c13s2",
+     "name": "Pocket Compass"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "name": "Tachometer & Megger",
+   "prefix": "CS",
+   "subs": [
+    {
+     "id": "c14s1",
+     "name": "Tachometers"
+    },
+    {
+     "id": "c14s2",
+     "name": "Insulation Testers"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "name": "Thickness & Dia-Meters",
+   "prefix": "CS",
+   "subs": [
+    {
+     "id": "c15s1",
+     "name": "Coating Thickness"
+    },
+    {
+     "id": "c15s2",
+     "name": "Ultrasonic Thickness"
     }
    ]
   },
@@ -222,7 +297,9 @@ window.SHOP={
    "price": 6799,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-001-k0svafj8.jpg"
+   ]
   }
  ]
 };
