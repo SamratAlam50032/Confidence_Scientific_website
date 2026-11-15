@@ -4,13 +4,13 @@ window.SHOP={
   "tagline": "Laboratory instruments",
   "headline": "Lab and testing instruments, ready when you need them.",
   "intro": "Water testing, temperature, moisture, electrical and dimensional meters for labs, dairies, farms and factories.",
-  "whatsapp": "8801819277821",
+  "whatsapp": "0181927782101960643299",
   "phones": [
    "01819277821",
    "01960643299"
   ],
-  "email": "",
-  "address": ""
+  "email": "confidencesci@gmail.com",
+  "address": "34,Hatkhola Road ,Tikatuli , Dhaka-1203"
  },
  "categories": [
   {
@@ -295,7 +295,7 @@ window.SHOP={
    "short": "Pocket pH tester, 0.0 to 14.0 pH, 0.1 resolution, automatic temperature compensation.",
    "long": "Slim pocket pH tester from the Hanna pHep series. A large LCD shows pH and temperature together, and two-button operation with automatic 1 or 2 point calibration keeps setup quick. The cloth junction electrode has a larger surface area than a standard ceramic junction and can be taken out for cleaning. Used for drinking water, aquariums, pools and ponds.\n\nSpecifications\n• pH range: 0.0 to 14.0, resolution 0.1 pH, accuracy ±0.2 pH at 25°C\n• Calibration: automatic, 1 or 2 points (pH 4.01, 7.01, 10.01)\n• Temperature: 0.0 to 50.0°C, ±0.5°C, automatic compensation, °C or °F display\n• Battery: CR2032, about 1000 hours of continuous use\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 75 g\n\nIn the box\n• pHep pH tester\n• CR2032 battery\n• pH 4.01 buffer sachet (1)\n• pH 7.01 buffer sachets (2)\n• Electrode cleaning solution sachet\n• Protective sleeve\n• Instruction manual and quality certificate",
    "price": 6799,
-   "stock": "ask",
+   "stock": "in",
    "featured": 0,
    "images": []
   }
