@@ -120,10 +120,11 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "images": [
-    "images/hn-001-if0pl0ty.jpg",
-    "images/hn-001-mrujj2i5.jpg",
-    "images/hn-001-7x8c63zd.jpg",
-    "images/hn-001-bkt0l5i2.jpg"
+    "images/hn-001-smw5zjdp.jpg",
+    "images/hn-001-cc3j1l1d.jpg",
+    "images/hn-001-o9ifwmi6.jpg",
+    "images/hn-001-wuex7nxe.jpg",
+    "images/hn-001-1esxtpey.jpg"
    ]
   },
   {
