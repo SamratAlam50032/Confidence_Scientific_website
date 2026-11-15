@@ -183,7 +183,12 @@ window.SHOP={
    "price": 6799,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-001-if0pl0ty.jpg",
+    "images/hn-001-mrujj2i5.jpg",
+    "images/hn-001-7x8c63zd.jpg",
+    "images/hn-001-bkt0l5i2.jpg"
+   ]
   }
  ]
 };
