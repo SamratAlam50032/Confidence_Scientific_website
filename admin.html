@@ -68,6 +68,11 @@ textarea{resize:vertical}
 .drop input{display:none}
 .bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}
 .cat{margin-bottom:12px}
+.plrow{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin-bottom:8px;align-items:center}.plrow select{min-width:0;width:100%}@media(max-width:560px){.plrow{grid-template-columns:1fr auto}.plrow select:nth-child(2){grid-column:1}}
+.cpicbox{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.cpic{width:56px;height:56px;border:1px solid var(--line);border-radius:8px;background:#fff;display:grid;place-items:center;overflow:hidden;color:#6A6C70;font-size:11px}
+.cpic img{width:100%;height:100%;object-fit:cover}
+.hid{display:none}
 .chead{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end}
 .chead>input{flex:1 1 200px;font-weight:600}
 .pfl{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:2px}.pfl input{width:90px}
@@ -110,7 +115,7 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
   </section>
 
   <section id="p-categories" hidden style="margin-top:16px">
-    <p class="hint">Categories and sub categories appear in the website menu in this order. The code prefix is used to make product codes, like HN-001.</p>
+    <p class="hint">Categories and sub categories appear in the website menu in this order. The code prefix is used to make product codes, like HN-001. Add a small picture to each category. It shows on the website in Shop by category.</p>
     <div id="clist"></div>
     <div class="card"><div class="subrow" style="margin-top:0"><input id="newcat" type="text" placeholder="New category name" aria-label="New category name"><button class="btn" id="addcat" type="button">Add category</button></div></div>
   </section>
@@ -171,16 +176,20 @@ var st;function persist(){clearTimeout(st);st=setTimeout(saveNow,50);renderStatu
 /* ---------- data helpers ---------- */
 function normalise(d){
   d.settings=Object.assign({name:"",tagline:"",headline:"",intro:"",whatsapp:"",phones:[],email:"",address:""},d.settings||{});
-  d.categories=(d.categories||[]).map(function(c){return {id:c.id||uid("c"),name:c.name||"",prefix:c.prefix||"CS",subs:(c.subs||[]).map(function(s){return {id:s.id||uid("s"),name:s.name||""}})}});
-  d.products=(d.products||[]).map(function(p){return {code:p.code||"",name:p.name||"",cat:p.cat||"",sub:p.sub||"",short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"ask",featured:p.featured?1:0,images:p.images||[]}});
+  d.categories=(d.categories||[]).map(function(c){return {id:c.id||uid("c"),name:c.name||"",prefix:c.prefix||"CS",image:c.image||"",subs:(c.subs||[]).map(function(s){return {id:s.id||uid("s"),name:s.name||""}})}});
+  d.products=(d.products||[]).map(function(p){var pl=(p.places&&p.places.length?p.places:[{cat:p.cat||"",sub:p.sub||""}]).map(function(x){return {cat:x.cat||"",sub:x.sub||""}});
+    return {code:p.code||"",name:p.name||"",cat:pl[0].cat,sub:pl[0].sub,places:pl,short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"ask",featured:p.featured?1:0,images:p.images||[]}});
   return d}
 function catById(id){return D.categories.find(function(c){return c.id===id})}
 function subOf(cid,sid){var c=catById(cid);return c&&c.subs.find(function(s){return s.id===sid})}
-function catLabel(p){var c=catById(p.cat),s=subOf(p.cat,p.sub);return (c?c.name:"No category")+(s?" / "+s.name:"")}
+function plLabel(x){var c=catById(x.cat),s=subOf(x.cat,x.sub);return (c?c.name:"No category")+(s?" / "+s.name:"")}
+function catLabel(p){return (p.places||[]).map(plLabel).join("  |  ")}
+function inCat(p,id){return (p.places||[]).some(function(x){return x.cat===id})}
+function inSub(p,id){return (p.places||[]).some(function(x){return x.sub===id})}
 function imgSrc(x){return x.indexOf("pending:")===0?(pend[x.slice(8)]||""):x}
 function dirty(){return JSON.stringify(D)!==base}
 function nextCode(cid){var c=catById(cid),pre=c?c.prefix:"CS",mx=0,re=new RegExp("^"+pre.replace(/[^A-Z0-9]/g,"")+"-(\\d+)$");D.products.forEach(function(p){var m=re.exec(p.code);if(m)mx=Math.max(mx,parseInt(m[1],10))});return pre+"-"+String(mx+1).padStart(3,"0")}
-function prunePend(){var used={};D.products.forEach(function(p){p.images.forEach(function(x){if(x.indexOf("pending:")===0)used[x.slice(8)]=1})});Object.keys(pend).forEach(function(k){if(!used[k])delete pend[k]})}
+function prunePend(){var used={};D.categories.forEach(function(c){if(c.image&&c.image.indexOf("pending:")===0)used[c.image.slice(8)]=1});D.products.forEach(function(p){p.images.forEach(function(x){if(x.indexOf("pending:")===0)used[x.slice(8)]=1})});Object.keys(pend).forEach(function(k){if(!used[k])delete pend[k]})}
 function showMsg(t,kind){var m=$("#msg");m.textContent=t;m.className=kind||"info";m.hidden=false;if(kind==="ok")setTimeout(function(){if(m.textContent===t)m.hidden=true},9000)}
 function hideMsg(){$("#msg").hidden=true}
 
@@ -197,7 +206,7 @@ function renderFilter(){var f=$("#pf"),cur=f.value;f.textContent="";f.append(el(
   D.categories.forEach(function(c){f.append(el("option",{value:c.id,text:c.name}))});f.value=catById(cur)?cur:""}
 function renderList(){
   var t=$("#ps").value.trim().toLowerCase(),f=$("#pf").value,box=$("#plist");box.textContent="";
-  var items=D.products.map(function(p,i){return {p:p,i:i}}).filter(function(x){return (!f||x.p.cat===f)&&(!t||(x.p.name+" "+x.p.code).toLowerCase().indexOf(t)>=0)});
+  var items=D.products.map(function(p,i){return {p:p,i:i}}).filter(function(x){return (!f||inCat(x.p,f))&&(!t||(x.p.name+" "+x.p.code).toLowerCase().indexOf(t)>=0)});
   if(!items.length){box.append(el("div",{class:"empty",text:D.products.length?"No product matches.":"No products yet. Press + New product."}));return}
   items.forEach(function(x){var p=x.p,th=el("span",{class:"th"});if(p.images[0])th.append(el("img",{src:imgSrc(p.images[0]),alt:""}));
     box.append(el("button",{class:"prow"+(x.i===edIdx?" on":""),type:"button",onclick:function(){openEditor(x.i)}},th,
@@ -212,24 +221,27 @@ function openEditor(idx){
   if(!D.categories.length){setTab("categories");showMsg("Add a category and a sub category first.","bad");return}
   edIdx=idx;codeTouched=false;
   if(idx>=0)ed=JSON.parse(JSON.stringify(D.products[idx]));
-  else{var c=D.categories[0];ed={code:"",name:"",cat:c.id,sub:c.subs[0]?c.subs[0].id:"",short:"",long:"",price:null,stock:"in",featured:0,images:[]};ed.code=nextCode(ed.cat)}
+  else{var c=D.categories[0];ed={code:"",name:"",cat:c.id,sub:c.subs[0]?c.subs[0].id:"",places:[{cat:c.id,sub:c.subs[0]?c.subs[0].id:""}],short:"",long:"",price:null,stock:"in",featured:0,images:[]};ed.code=nextCode(ed.cat)}
   document.body.classList.add("editing");renderEditor();renderList();
   $("#pedit").scrollIntoView({block:"start"});
 }
 function closeEditor(){ed=null;edIdx=-1;$("#pedit").hidden=true;document.body.classList.remove("editing");renderList()}
-function fillSubs(){var s=$("#esub");s.textContent="";var c=catById(ed.cat);
-  if(!c||!c.subs.length){s.append(el("option",{value:"",text:"No sub category. Add one in Categories."}));ed.sub="";return}
-  c.subs.forEach(function(x){s.append(el("option",{value:x.id,text:x.name}))});
-  if(!subOf(ed.cat,ed.sub))ed.sub=c.subs[0].id;s.value=ed.sub}
+function renderPlaces(){var box=$("#eplaces");if(!box)return;box.textContent="";
+  ed.places.forEach(function(x,i){
+    var cs=el("select",{"aria-label":"Category "+(i+1)});D.categories.forEach(function(c){cs.append(el("option",{value:c.id,text:c.name}))});cs.value=x.cat;
+    var ss=el("select",{"aria-label":"Sub category "+(i+1)});
+    var fill=function(){ss.textContent="";var c=catById(x.cat);
+      if(!c||!c.subs.length){ss.append(el("option",{value:"",text:"No sub category. Add one in Categories."}));x.sub="";return}
+      c.subs.forEach(function(y){ss.append(el("option",{value:y.id,text:y.name}))});if(!subOf(x.cat,x.sub))x.sub=c.subs[0].id;ss.value=x.sub};
+    cs.onchange=function(){x.cat=cs.value;fill();if(i===0&&edIdx<0&&!codeTouched&&$("#ecode"))$("#ecode").value=nextCode(x.cat)};
+    ss.onchange=function(){x.sub=ss.value};fill();
+    box.append(el("div",{class:"plrow"},cs,ss,i>0?el("button",{class:"btn ghost sm",type:"button",text:"✕","aria-label":"Remove this category",onclick:function(){ed.places.splice(i,1);renderPlaces()}}):el("span",{class:"hint",text:"Main"})))});
+  box.append(el("button",{class:"btn ghost sm",type:"button",text:"+ Show in another category",onclick:function(){var c=D.categories[0];ed.places.push({cat:c.id,sub:c.subs[0]?c.subs[0].id:""});renderPlaces()}}))}
 function renderEditor(){
   var box=$("#pedit");box.textContent="";box.hidden=false;
   var top=el("div",{class:"bar",style:"margin:0 0 12px;justify-content:space-between"},el("h2",{style:"font-size:18px",text:edIdx>=0?"Edit product":"New product"}),el("button",{class:"btn ghost sm",type:"button",text:"Back to list",onclick:closeEditor}));
   var name=el("input",{id:"ename",type:"text",maxlength:"160"});name.value=ed.name;
   var code=el("input",{id:"ecode",type:"text",maxlength:"30"});code.value=ed.code;code.oninput=function(){codeTouched=true};
-  var cat=el("select",{id:"ecat"});D.categories.forEach(function(c){cat.append(el("option",{value:c.id,text:c.name}))});cat.value=ed.cat;
-  var sub=el("select",{id:"esub"});
-  cat.onchange=function(){ed.cat=cat.value;fillSubs();if(edIdx<0&&!codeTouched)code.value=nextCode(ed.cat)};
-  sub.onchange=function(){ed.sub=sub.value};
   var sh=el("input",{id:"eshort",type:"text",maxlength:"200"});sh.value=ed.short;
   var lg=el("textarea",{id:"elong",rows:"12"});lg.value=ed.long;
   var pr=el("input",{id:"eprice",type:"text",inputmode:"decimal",placeholder:"Leave empty for Price on request"});pr.value=ed.price==null?"":String(ed.price);
@@ -248,13 +260,13 @@ function renderEditor(){
       D.products.splice(edIdx,1);prunePend();persist();closeEditor();showMsg("Product deleted. Press Publish to remove it from the website.","ok")}}
   box.append(top,fld("ename","Product name",name),
     el("div",{class:"g2"},fld("ecode","Product code",code,"Your internal code. Search finds it."),fld("estock","Stock",sk)),
-    el("div",{class:"g2"},fld("ecat","Category",cat),fld("esub","Sub category",sub)),
+    el("div",{class:"f"},el("label",{text:"Category and sub category"}),el("div",{id:"eplaces"}),el("small",{text:"A product can be shown in more than one category, for example Meters under Hanna and under School items."})),
     fld("eshort","Short description",sh,"One line shown on the product card."),
     fld("elong","Full description",lg,"Shown on the product page. Leave a blank line between parts. Start lines with • for bullet points."),
     el("div",{class:"g2"},fld("eprice","Price (BDT)",pr),el("div",{class:"f"},el("label",{text:"Show on homepage"}),el("label",{class:"chk",style:"margin-top:8px"},ft,"Featured product"))),
     el("div",{class:"f"},el("label",{text:"Photos"}),imgs,drop,el("small",{text:"Photos are resized to 1400 px and saved as high quality JPEG. Up to 8 photos."})),
     el("div",{class:"bar"},save,el("button",{class:"btn ghost",type:"button",text:"Cancel",onclick:closeEditor}),del));
-  fillSubs();renderImgs();
+  renderPlaces();renderImgs();
 }
 function renderImgs(){var box=$("#eimgs");if(!box)return;box.textContent="";
   ed.images.forEach(function(x,i){
@@ -263,6 +275,12 @@ function renderImgs(){var box=$("#eimgs");if(!box)return;box.textContent="";
     box.append(el("div",{class:"tile"},pic,el("div",{class:"tb"},
       b("◀","Move earlier",function(){mvImg(i,-1)},i===0),b("▶","Move later",function(){mvImg(i,1)},i===ed.images.length-1),b("✕","Remove photo",function(){ed.images.splice(i,1);renderImgs()}))))})}
 function mvImg(i,d){var j=i+d;if(j<0||j>=ed.images.length)return;var t=ed.images[i];ed.images[i]=ed.images[j];ed.images[j]=t;renderImgs()}
+function fileToSquare(file,S){
+  return new Promise(function(res,rej){var url=URL.createObjectURL(file),im=new Image();
+    im.onload=function(){try{var k=Math.min(1,S/im.naturalWidth,S/im.naturalHeight),w=Math.round(im.naturalWidth*k),h=Math.round(im.naturalHeight*k);
+      var c=document.createElement("canvas");c.width=S;c.height=S;var x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,S,S);x.imageSmoothingQuality="high";x.drawImage(im,Math.round((S-w)/2),Math.round((S-h)/2),w,h);
+      URL.revokeObjectURL(url);res(c.toDataURL("image/jpeg",0.9))}catch(e){rej(e)}};
+    im.onerror=function(){URL.revokeObjectURL(url);rej(new Error("Could not read "+file.name+". Use a JPG or PNG photo."))};im.src=url})}
 function fileToJpeg(file){
   return new Promise(function(res,rej){var url=URL.createObjectURL(file),im=new Image();
     im.onload=function(){try{var MAX=1400,w=im.naturalWidth,h=im.naturalHeight,k=Math.min(1,MAX/Math.max(w,h));w=Math.round(w*k);h=Math.round(h*k);
@@ -282,10 +300,13 @@ function saveProduct(){
   if(!name)return err("Enter the product name.");
   if(!code)return err("Enter a product code.");
   if(D.products.some(function(p,i){return p.code===code&&i!==edIdx}))return err("The code "+code+" is already used by another product.");
-  if(!catById(ed.cat))return err("Choose a category.");
-  if(!subOf(ed.cat,ed.sub))return err("Choose a sub category. Add one in the Categories tab if there is none.");
+  var seen={},pl=[];
+  for(var k=0;k<ed.places.length;k++){var x=ed.places[k];
+    if(!catById(x.cat))return err("Choose a category.");
+    if(!subOf(x.cat,x.sub))return err("Choose a sub category for "+catById(x.cat).name+". Add one in the Categories tab if there is none.");
+    if(!seen[x.cat+"|"+x.sub]){seen[x.cat+"|"+x.sub]=1;pl.push({cat:x.cat,sub:x.sub})}}
   if(pr!==""){price=Number(pr);if(!isFinite(price)||price<0)return err("Price must be a number, like 6799.")}
-  var prod={code:code,name:name,cat:ed.cat,sub:ed.sub,short:g("eshort").value.trim(),long:g("elong").value.trim(),price:price||null,stock:g("estock").value,featured:g("efeat").checked?1:0,images:ed.images.slice()};
+  var prod={code:code,name:name,cat:pl[0].cat,sub:pl[0].sub,places:pl,short:g("eshort").value.trim(),long:g("elong").value.trim(),price:price||null,stock:g("estock").value,featured:g("efeat").checked?1:0,images:ed.images.slice()};
   if(edIdx>=0)D.products[edIdx]=prod;else D.products.push(prod);
   prunePend();persist();closeEditor();showMsg("Saved "+code+". Press Publish to put it on the website.","ok")}
 
@@ -298,17 +319,23 @@ function catsChanged(){persist();renderCats();renderFilter();renderList()}
 function renderCats(){
   var box=$("#clist");box.textContent="";
   D.categories.forEach(function(c,ci){
-    var used=D.products.filter(function(p){return p.cat===c.id}).length;
+    var used=D.products.filter(function(p){return inCat(p,c.id)}).length;
     var nm=el("input",{type:"text","aria-label":"Category name"});nm.value=c.name;
     nm.onchange=function(){var v=nm.value.trim();if(!v){nm.value=c.name;return}c.name=v;catsChanged()};
     var pf=el("input",{type:"text","aria-label":"Code prefix",maxlength:"6"});pf.value=c.prefix;
     pf.onchange=function(){c.prefix=pf.value.trim().toUpperCase().replace(/[^A-Z0-9]/g,"")||"CS";pf.value=c.prefix;persist()};
-    var head=el("div",{class:"chead"},nm,el("label",{class:"pfl"},"Code prefix",pf),mv(D.categories,ci,catsChanged),
+    var pic=el("span",{class:"cpic",text:c.image?"":"No pic"});if(c.image)pic.append(el("img",{src:imgSrc(c.image),alt:""}));
+    var cf=el("input",{type:"file",accept:"image/*",class:"hid","aria-label":"Category picture for "+c.name});
+    cf.onchange=async function(){var f=cf.files[0];cf.value="";if(!f)return;if(!/^image\//.test(f.type)){showMsg("Choose an image file (JPG or PNG).","bad");return}
+      try{var d=await fileToSquare(f,400),id=uid("i");pend[id]=d;c.image="pending:"+id;prunePend();catsChanged()}catch(e){showMsg(e.message,"bad")}};
+    var cbox=el("div",{class:"cpicbox"},pic,el("button",{class:"btn ghost sm",type:"button",text:c.image?"Change picture":"Add picture",onclick:function(){cf.click()}}),
+      c.image?el("button",{class:"btn ghost sm",type:"button",text:"Remove",onclick:function(){c.image="";prunePend();catsChanged()}}):null,cf);
+    var head=el("div",{class:"chead"},cbox,nm,el("label",{class:"pfl"},"Code prefix",pf),mv(D.categories,ci,catsChanged),
       delBtn("Delete",function(){if(used){showMsg("\""+c.name+"\" still has "+used+" product(s). Move or delete them first.","bad");return}D.categories.splice(ci,1);catsChanged()}));
     var subs=el("div",{class:"subs"});
     c.subs.forEach(function(s,si){var sn=el("input",{type:"text","aria-label":"Sub category name"});sn.value=s.name;
       sn.onchange=function(){var v=sn.value.trim();if(!v){sn.value=s.name;return}s.name=v;catsChanged()};
-      var sused=D.products.filter(function(p){return p.sub===s.id}).length;
+      var sused=D.products.filter(function(p){return inSub(p,s.id)}).length;
       subs.append(el("div",{class:"subrow"},sn,mv(c.subs,si,catsChanged),delBtn("✕",function(){if(sused){showMsg("\""+s.name+"\" still has "+sused+" product(s). Move or delete them first.","bad");return}c.subs.splice(si,1);catsChanged()})))});
     var ns=el("input",{type:"text",placeholder:"New sub category","aria-label":"New sub category name"});
     var add=function(){var v=ns.value.trim();if(!v)return;c.subs.push({id:uid("s"),name:v});catsChanged()};
@@ -360,10 +387,13 @@ async function publish(){
   try{
     prunePend();var ids=Object.keys(pend),n=0;
     for(var k=0;k<ids.length;k++){var id=ids[k];n++;showMsg("Uploading photo "+n+" of "+ids.length+"...","info");
-      var owner=D.products.find(function(p){return p.images.indexOf("pending:"+id)>=0});if(!owner){delete pend[id];continue}
-      var path="images/"+(owner.code||"item").toLowerCase().replace(/[^a-z0-9-]/g,"")+"-"+id.slice(-5)+Date.now().toString(36).slice(-3)+".jpg";
-      await ghPut(path,pend[id].split(",")[1],"Add photo for "+owner.code);
-      D.products.forEach(function(p){p.images=p.images.map(function(x){return x==="pending:"+id?path:x})});
+      var ref="pending:"+id,owner=D.products.find(function(p){return p.images.indexOf(ref)>=0}),cown=D.categories.find(function(c){return c.image===ref});
+      if(!owner&&!cown){delete pend[id];continue}
+      var slug=owner?(owner.code||"item"):"cat-"+(cown.name||"x");
+      var path="images/"+slug.toLowerCase().replace(/[^a-z0-9-]/g,"")+"-"+id.slice(-5)+Date.now().toString(36).slice(-3)+".jpg";
+      await ghPut(path,pend[id].split(",")[1],"Add photo for "+(owner?owner.code:cown.name));
+      D.products.forEach(function(p){p.images=p.images.map(function(x){return x===ref?path:x})});
+      D.categories.forEach(function(c){if(c.image===ref)c.image=path});
       delete pend[id];await saveNow()}
     showMsg("Saving product data...","info");
     await putData("window.SHOP="+JSON.stringify(D,null,1)+";\n");

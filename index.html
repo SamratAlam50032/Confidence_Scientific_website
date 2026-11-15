@@ -86,6 +86,8 @@ textarea{width:100%;min-height:90px;border:1px solid var(--line);border-radius:8
 .sec{padding:30px 0 6px}.sec>h2{font-size:24px;margin-bottom:4px}.sec>.sub{color:var(--muted);margin:0 0 16px}
 .cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
 .ccard{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.ccard{font:inherit;color:inherit;text-align:left;cursor:pointer;width:100%}.ccard:hover{border-color:var(--accent)}
+.subbar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.sc{font:13px var(--f-body);border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;padding:5px 12px;cursor:pointer}.sc:hover{border-color:var(--accent)}.sc.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .ccard .t{display:flex;gap:12px;align-items:center;background:none;border:0;color:var(--ink);cursor:pointer;text-align:left;padding:0;font:inherit}
 .ccard .ic{width:46px;height:46px;border-radius:8px;background:var(--tint);color:var(--ink);display:grid;place-items:center;flex:none}
 .ccard .ic svg{width:26px;height:26px}
@@ -130,7 +132,7 @@ header.top{padding:10px 0 0}
 .sec>.sub{display:none}
 .cgrid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
 .ccard{padding:12px;gap:8px}
-.ccard .ic{width:38px;height:38px}.ccard .ic svg{width:22px;height:22px}
+.ccard .ic{width:48px;height:48px;background:#fff;border:1px solid var(--line);overflow:hidden}.ccard .ic img{width:100%;height:100%;object-fit:cover}
 .ccard h3{font-size:14px}.subs button{font-size:12px;padding:3px 8px}
 .grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
 .thumb{aspect-ratio:1/0.8}.thumb svg{width:36%}
@@ -210,11 +212,12 @@ header.top{padding:10px 0 0}
     <div class="rl" aria-hidden="true"></div>
   </section>
   
-  <section class="sec" id="categories"><h2>Shop by category</h2><p class="sub">Pick a category or a sub category to see its products.</p><div class="cgrid" id="cgrid"></div></section>
+  <section class="sec" id="categories"><h2>Shop by category</h2><p class="sub">Pick a category.</p><div class="cgrid" id="cgrid"></div></section>
 
   <section class="sec" id="featured"><h2>Featured products</h2><p class="sub">Our most requested instruments.</p><div class="grid" id="fgrid"></div></section>
 
   <section class="sec" id="all"><h2>All products</h2>
+    <div class="subbar" id="subbar" hidden></div>
     <div class="crumb" id="crumb"></div>
     <div class="grid" id="grid"></div>
     <div class="empty" id="empty" hidden>No product matches. Try a shorter word or clear the filter.</div>
@@ -269,9 +272,9 @@ header.top{padding:10px 0 0}
 <script>
 const SH=window.SHOP||{settings:{},categories:[],products:[]};
 const S=SH.settings||{};
-const C=SH.categories.map(c=>[c.name,c.subs.map(x=>x.name)]);
-const P=SH.products.map(p=>{const ci=SH.categories.findIndex(c=>c.id===p.cat);const si=ci<0?-1:SH.categories[ci].subs.findIndex(x=>x.id===p.sub);
-  return [p.name,ci,si,p.short||"",p.stock||"ask",p.featured?1:0,p.code,p.price||null,p.long||"",p.images||[]]}).filter(p=>p[1]>=0&&p[2]>=0);
+const C=SH.categories.map(c=>[c.name,c.subs.map(x=>x.name),c.image||""]);
+const P=SH.products.map(p=>{const seen={},pl=[];(p.places&&p.places.length?p.places:[{cat:p.cat,sub:p.sub}]).forEach(x=>{const ci=SH.categories.findIndex(c=>c.id===x.cat);const si=ci<0?-1:SH.categories[ci].subs.findIndex(y=>y.id===x.sub);if(ci>=0&&si>=0&&!seen[ci+"|"+si]){seen[ci+"|"+si]=1;pl.push([ci,si])}});
+  return [p.name,pl.length?pl[0][0]:-1,pl.length?pl[0][1]:-1,p.short||"",p.stock||"ask",p.featured?1:0,p.code,p.price||null,p.long||"",p.images||[],pl]}).filter(p=>p[10].length);
 const ICONS=[
 '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>',
 '<path d="M12 3c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10z"/>',
@@ -291,18 +294,20 @@ const ICONS=[
 '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>'
 ];
 const $=s=>document.querySelector(s); let cat=-1,sub=-1,q="";
+const inC=(p,c)=>p[10].some(x=>x[0]===c), inS=(p,c,s)=>p[10].some(x=>x[0]===c&&x[1]===s);
+const plc=p=>{const x=cat>=0?(p[10].find(y=>y[0]===cat&&(sub<0||y[1]===sub))||p[10][0]):p[10][0];return C[x[0]][0]+" / "+C[x[0]][1][x[1]]};
 const svg=i=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+ICONS[i%ICONS.length]+'</svg>';
 const priceTxt=p=>p[7]?"৳"+Number(p[7]).toLocaleString("en-US"):"Price on request";
 function stockTag(t,v){t.textContent=v==="in"?"In stock":v==="order"?"On order":"Ask availability";t.className="tag "+(v==="in"?"in":"order")}
 function card(p){const d=document.createElement("article");d.className="card";
   d.innerHTML='<div class="thumb"></div><div class="body"><div class="cat"></div><h3><button class="lnk" type="button"></button></h3><div class="code"></div><p></p><div class="row"><span class="tag"></span><span class="price"></span><button class="btn" type="button"></button></div></div>';
   const th=d.querySelector(".thumb"); if(p[9]&&p[9][0]){th.classList.add("has");const i=document.createElement("img");i.src=p[9][0];i.alt=p[0];i.loading="lazy";th.appendChild(i)}else th.innerHTML=svg(p[1]);
-  d.querySelector(".cat").textContent=C[p[1]][0]+" / "+C[p[1]][1][p[2]]; d.querySelector(".lnk").textContent=p[0]; d.querySelector(".code").textContent="Code: "+p[6]; d.querySelector("p").textContent=p[3];
+  d.querySelector(".cat").textContent=plc(p); d.querySelector(".lnk").textContent=p[0]; d.querySelector(".code").textContent="Code: "+p[6]; d.querySelector("p").textContent=p[3];
   stockTag(d.querySelector(".tag"),p[4]); d.querySelector(".price").textContent=priceTxt(p);
   const b=d.querySelector(".btn"); b.textContent="Buy now"; b.onclick=()=>openOrder(p);
   th.onclick=d.querySelector(".lnk").onclick=()=>openProd(p); return d}
 function openProd(p){
-  $("#mcat").textContent=C[p[1]][0]+" / "+C[p[1]][1][p[2]]; $("#mname").textContent=p[0]; $("#mcode").textContent="Product code: "+p[6]; $("#mprice").textContent=priceTxt(p);
+  $("#mcat").textContent=p[10].map(x=>C[x[0]][0]+" / "+C[x[0]][1][x[1]]).join("  ·  "); $("#mname").textContent=p[0]; $("#mcode").textContent="Product code: "+p[6]; $("#mprice").textContent=priceTxt(p);
   stockTag($("#mtag"),p[4]); $("#mdesc").textContent=p[8]||p[3];
   const gm=$("#gmain"),gt=$("#gthumbs"),im=p[9]||[]; gt.textContent="";
   const show=k=>{gm.textContent="";if(im[k]){const i=document.createElement("img");i.src=im[k];i.alt=p[0];gm.appendChild(i)}else gm.innerHTML=svg(p[1]);
@@ -316,15 +321,19 @@ $("#modal").addEventListener("click",e=>{if(e.target.id==="modal")e.target.hidde
 document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".modal").forEach(m=>m.hidden=true)});document.querySelectorAll(".modal").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)m.hidden=true}));
 function go(c,s){cat=c;sub=s;draw();$("#all").scrollIntoView({behavior:"smooth"})}
 function drawCats(){const g=$("#cgrid");g.textContent="";
-  C.forEach((c,i)=>{const d=document.createElement("div");d.className="ccard";
-    d.innerHTML='<button class="t" type="button"><span class="ic">'+svg(i)+'</span><span><h3></h3><small></small></span></button><div class="subs"></div>';
-    d.querySelector("h3").textContent=c[0]; d.querySelector("small").textContent=P.filter(p=>p[1]===i).length+" products";
-    d.querySelector(".t").onclick=()=>go(i,-1);
-    c[1].forEach((s,j)=>{const b=document.createElement("button");b.type="button";b.textContent=s;b.onclick=()=>go(i,j);d.querySelector(".subs").appendChild(b)});
+  C.forEach((c,i)=>{const d=document.createElement("button");d.type="button";d.className="ccard";
+    d.innerHTML='<span class="t"><span><h3></h3><small></small></span></span>';
+    if(c[2]){const ic=document.createElement("span");ic.className="ic";const im=document.createElement("img");im.src=c[2];im.alt="";im.loading="lazy";ic.appendChild(im);d.querySelector(".t").prepend(ic)}
+    d.querySelector("h3").textContent=c[0]; const n=P.filter(p=>inC(p,i)).length; d.querySelector("small").textContent=n+(n===1?" product":" products")+(c[1].length?" · "+c[1].length+(c[1].length===1?" type":" types"):"");
+    d.onclick=()=>go(i,-1);
     g.appendChild(d)})}
+function drawSubs(){const b=$("#subbar");b.textContent="";b.hidden=cat<0||!C[cat][1].length;if(b.hidden)return;
+  const mk=(txt,n,on,fn)=>{const x=document.createElement("button");x.type="button";x.className="sc"+(on?" on":"");x.textContent=txt+" ("+n+")";x.onclick=fn;b.appendChild(x)};
+  mk("All "+C[cat][0],P.filter(p=>inC(p,cat)).length,sub<0,()=>{sub=-1;draw()});
+  C[cat][1].forEach((s,j)=>mk(s,P.filter(p=>inS(p,cat,j)).length,sub===j,()=>{sub=j;draw()}))}
 function draw(){
-  const t=q.toLowerCase(), list=P.filter(p=>(cat<0||p[1]===cat)&&(sub<0||p[2]===sub)&&(!t||(p[0]+" "+p[6]+" "+p[3]+" "+C[p[1]][0]+" "+C[p[1]][1][p[2]]).toLowerCase().includes(t)));
-  const cr=$("#crumb");cr.textContent="";
+  const t=q.toLowerCase(), list=P.filter(p=>(cat<0||(sub<0?inC(p,cat):inS(p,cat,sub)))&&(!t||(p[0]+" "+p[6]+" "+p[3]+" "+p[10].map(x=>C[x[0]][0]+" "+C[x[0]][1][x[1]]).join(" ")).toLowerCase().includes(t)));
+  drawSubs();const cr=$("#crumb");cr.textContent="";
   const add=(txt,fn)=>{const b=document.createElement("button");b.type="button";b.textContent=txt;b.onclick=fn;cr.appendChild(b)};
   const sp=document.createElement("span");sp.textContent=list.length+" items";cr.appendChild(sp);
   if(cat>=0)add(C[cat][0]+(sub>=0?" / "+C[cat][1][sub]:"")+"  ✕",()=>{cat=-1;sub=-1;draw()});
