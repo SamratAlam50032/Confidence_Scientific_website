@@ -137,7 +137,9 @@ window.SHOP={
    "price": 8199,
    "stock": "ask",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-002-pjqkbq9g.jpg"
+   ]
   },
   {
    "code": "HN-003",
