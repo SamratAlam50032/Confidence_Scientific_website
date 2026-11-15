@@ -17,11 +17,12 @@ window.SHOP={
    "id": "c1",
    "name": "Hanna Instruments",
    "prefix": "HN",
-   "image": "",
+   "image": "images/cat-hannainstruments-lw5q5zlo.jpg",
    "subs": [
     "c1s1",
     "c1s2",
     "c1s3",
+    "c1s4",
     "c1s5",
     "c1s6"
    ]
@@ -65,6 +66,7 @@ window.SHOP={
    "prefix": "CS",
    "image": "",
    "subs": [
+    "c5s1",
     "c5s2"
    ]
   },
@@ -74,6 +76,7 @@ window.SHOP={
    "prefix": "CS",
    "image": "",
    "subs": [
+    "c6s1",
     "c6s2"
    ]
   },
@@ -138,7 +141,11 @@ window.SHOP={
   },
   {
    "id": "c1s3",
-   "name": "Hanna Reagents & Solutions"
+   "name": "All Solutions"
+  },
+  {
+   "id": "c1s4",
+   "name": "Soil Kits & Meters"
   },
   {
    "id": "c1s5",
@@ -146,7 +153,7 @@ window.SHOP={
   },
   {
    "id": "c1s6",
-   "name": "HannaAccessories"
+   "name": "Accessories"
   },
   {
    "id": "c2s1",
@@ -185,8 +192,16 @@ window.SHOP={
    "name": "HIMEDIA(India)"
   },
   {
+   "id": "c5s1",
+   "name": "Lux Meters"
+  },
+  {
    "id": "c5s2",
    "name": "Sound Level Meters"
+  },
+  {
+   "id": "c6s1",
+   "name": "Vernier Calipers"
   },
   {
    "id": "c6s2",
