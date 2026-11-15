@@ -96,10 +96,7 @@ window.SHOP={
    "name": "Other Meters & Accessories",
    "prefix": "CS",
    "image": "",
-   "subs": [
-    "c16s1",
-    "c16s2"
-   ]
+   "subs": []
   },
   {
    "id": "ciniu03",
@@ -132,16 +129,16 @@ window.SHOP={
  ],
  "subs": [
   {
-   "id": "c1s1",
-   "name": "Meters"
-  },
-  {
    "id": "c1s2",
    "name": "Test Kits"
   },
   {
    "id": "c1s3",
    "name": "All Solutions"
+  },
+  {
+   "id": "c1s1",
+   "name": "Meters"
   },
   {
    "id": "c1s4",
