@@ -118,7 +118,7 @@ window.SHOP={
   },
   {
    "id": "c6",
-   "name": "Slide Calipers & Screw Gauge",
+   "name": "Hatchery item",
    "prefix": "CS",
    "subs": [
     {
@@ -133,7 +133,7 @@ window.SHOP={
   },
   {
    "id": "c7",
-   "name": "Thermometer & Hygrometer",
+   "name": "Textile Items",
    "prefix": "CS",
    "subs": [
     {
