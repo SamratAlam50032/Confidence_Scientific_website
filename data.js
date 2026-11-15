@@ -137,7 +137,7 @@ window.SHOP={
    "short": "Waterproof pocket TDS tester, 0 to 2000 ppm, 1 ppm resolution, one-touch auto calibration.",
    "long": "Pocket-size, rugged TDS tester for lab and field use. A large two-level LCD shows TDS and temperature together, and the exposed temperature sensor gives fast automatic temperature compensation. The graphite electrode resists oxidation and polarization better than stainless steel pins. Calibration is automatic at 1382 ppm with a single button press, and a stability tag disappears when the reading has settled. Used for drinking water, hydroponics, aquariums, water treatment and general water checks.\n\nSpecifications\n• TDS range: 0 to 2000 ppm (mg/L), resolution 1 ppm, accuracy ±2% of full scale\n• Calibration: automatic, one point at 1382 ppm\n• Temperature compensation: automatic, 0 to 50°C, EC to TDS factor 0.5\n• Temperature display: 0.0 to 50.0°C (°C or °F), ±0.5°C\n• Battery: CR2032, about 250 hours of continuous use, low battery indicator\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 68 g (without battery)\n\nIn the box\n• HI98301 DiST 1 tester\n• CR2032 battery\n• 1382 ppm calibration solution sachets (4)\n• Protective cap\n• Instruction manual and quality certificate",
    "price": 8199,
-   "stock": "in",
+   "stock": "ask",
    "featured": 0,
    "images": [
     "images/hn-002-pjqkbq9g.jpg"
