@@ -146,12 +146,14 @@ window.SHOP={
   {
    "code": "HN-003",
    "name": "Hanna Dissolved Oxygen Test Kit (DO Test Kit) HI-3810",
-   "sub": "",
-   "subs": [],
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
    "short": "Dissolved oxygen chemical test kit, 0.0 to 10.0 mg/L, about 110 tests.",
    "long": "Titration based chemical test kit for dissolved oxygen in water, using the modified Winkler method with a starch indicator. A water sample is fixed with reagents, then titrated until the colour changes, and the dissolved oxygen is read directly from the syringe. Useful for aquaculture and fish ponds, boiler and process water, environmental monitoring and education. The kit includes all reagents and equipment for about 110 tests.\n\nSpecifications\n• Range: 0.0 to 10.0 mg/L (ppm)\n• Smallest increment: 0.1 mg/L (ppm)\n• Method: modified Winkler titration\n• Number of tests: about 110\n• Replacement reagents: HI3810-100\n\nIn the box\n• Manganous sulfate solution, 30 mL\n• Alkali-azide reagent, 30 mL\n• Sulfuric acid solution, 2 x 30 mL\n• Starch indicator, 10 mL\n• Titrant solution, 120 mL\n• Glass bottle with stopper\n• 10 mL calibrated vessel\n• Calibrated syringe with tip",
    "price": 11499,
-   "stock": "ask",
+   "stock": "in",
    "featured": 0,
    "images": []
   },
