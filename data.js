@@ -47,7 +47,7 @@ window.SHOP={
   {
    "id": "c2",
    "name": "Water Testing Meters",
-   "prefix": "CS",
+   "prefix": "WT",
    "subs": [
     {
      "id": "c2s1",
@@ -65,8 +65,8 @@ window.SHOP={
   },
   {
    "id": "c3",
-   "name": "Glassware",
-   "prefix": "CS",
+   "name": "GlassWare",
+   "prefix": "GW",
    "subs": [
     {
      "id": "c3s1",
@@ -81,7 +81,7 @@ window.SHOP={
   {
    "id": "c4",
    "name": "Chemicals",
-   "prefix": "CS",
+   "prefix": "C",
    "subs": [
     {
      "id": "c4s1",
