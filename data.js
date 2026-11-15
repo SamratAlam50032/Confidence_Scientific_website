@@ -146,7 +146,10 @@ window.SHOP={
    "price": 11499,
    "stock": "ask",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-003-ngdwcupt.jpg",
+    "images/hn-003-p5505wo4.jpg"
+   ]
   },
   {
    "code": "HN-004",
