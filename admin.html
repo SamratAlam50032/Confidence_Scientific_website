@@ -58,6 +58,7 @@ textarea{resize:vertical}
 .tile{border:1px solid var(--line);border-radius:8px;padding:6px;background:var(--surface);display:flex;flex-direction:column;gap:6px}
 .tile .pic{aspect-ratio:1/1;background:#fff;border-radius:6px;display:grid;place-items:center;overflow:hidden;position:relative}
 .tile img{width:100%;height:100%;object-fit:contain}
+.tile .newb{position:absolute;left:4px;bottom:4px;background:var(--warnbg);color:var(--warn);font-size:10px;font-weight:600;padding:1px 6px;border-radius:99px}
 .tile .main{position:absolute;left:4px;top:4px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:600;padding:1px 6px;border-radius:99px}
 .tile .tb{display:flex;gap:4px;justify-content:space-between}
 .tile .tb button{flex:1;padding:4px 0;font-size:13px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;cursor:pointer}
@@ -270,17 +271,18 @@ function renderEditor(){
     fld("eshort","Short description",sh,"One line shown on the product card."),
     fld("elong","Full description",lg,"Shown on the product page. Leave a blank line between parts. Start lines with • for bullet points."),
     el("div",{class:"g2"},fld("eprice","Price (BDT)",pr),el("div",{class:"f"},el("label",{text:"Show on homepage"}),el("label",{class:"chk",style:"margin-top:8px"},ft,"Featured product"))),
-    el("div",{class:"f"},el("label",{text:"Photos"}),imgs,drop,el("small",{text:"Photos are resized to 1400 px and saved as high quality JPEG. Up to 8 photos."})),
+    el("div",{class:"f"},el("label",{text:"Photos"}),imgs,drop,el("small",{text:"Photos stay in this browser as a draft. When you press Publish they are uploaded to the images folder of your GitHub site. Photos marked Not published are not on the website yet. Resized to 1400 px, high quality JPEG, up to 8 photos."})),
     el("div",{class:"bar"},save,el("button",{class:"btn ghost",type:"button",text:"Cancel",onclick:closeEditor}),del));
   renderImgs();
 }
+function syncImgs(){if(ed&&edIdx>=0&&D.products[edIdx])D.products[edIdx].images=ed.images.slice();persist()}
 function renderImgs(){var box=$("#eimgs");if(!box)return;box.textContent="";
   ed.images.forEach(function(x,i){
-    var pic=el("div",{class:"pic"},el("img",{src:imgSrc(x),alt:"Photo "+(i+1)}),i===0?el("span",{class:"main",text:"Main"}):null);
+    var pic=el("div",{class:"pic"},el("img",{src:imgSrc(x),alt:"Photo "+(i+1)}),i===0?el("span",{class:"main",text:"Main"}):null,x.indexOf("pending:")===0?el("span",{class:"newb",text:"Not published"}):null);
     var b=function(t,l,f,dis){return el("button",{type:"button",text:t,"aria-label":l,disabled:dis,onclick:f})};
     box.append(el("div",{class:"tile"},pic,el("div",{class:"tb"},
-      b("◀","Move earlier",function(){mvImg(i,-1)},i===0),b("▶","Move later",function(){mvImg(i,1)},i===ed.images.length-1),b("✕","Remove photo",function(){ed.images.splice(i,1);renderImgs()}))))})}
-function mvImg(i,d){var j=i+d;if(j<0||j>=ed.images.length)return;var t=ed.images[i];ed.images[i]=ed.images[j];ed.images[j]=t;renderImgs()}
+      b("◀","Move earlier",function(){mvImg(i,-1)},i===0),b("▶","Move later",function(){mvImg(i,1)},i===ed.images.length-1),b("✕","Remove photo",function(){ed.images.splice(i,1);renderImgs();syncImgs()}))))})}
+function mvImg(i,d){var j=i+d;if(j<0||j>=ed.images.length)return;var t=ed.images[i];ed.images[i]=ed.images[j];ed.images[j]=t;renderImgs();syncImgs()}
 function fileToSquare(file,S){
   return new Promise(function(res,rej){var url=URL.createObjectURL(file),im=new Image();
     im.onload=function(){try{var k=Math.min(1,S/im.naturalWidth,S/im.naturalHeight),w=Math.round(im.naturalWidth*k),h=Math.round(im.naturalHeight*k);
@@ -293,12 +295,15 @@ function fileToJpeg(file){
       var c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,w,h);x.imageSmoothingQuality="high";x.drawImage(im,0,0,w,h);
       URL.revokeObjectURL(url);res(c.toDataURL("image/jpeg",0.88))}catch(e){rej(e)}};
     im.onerror=function(){URL.revokeObjectURL(url);rej(new Error("Could not read "+file.name+". Use a JPG or PNG photo."))};im.src=url})}
-async function addFiles(list){
+async function addFiles(list){var skipped=0;
   var files=Array.prototype.slice.call(list||[]).filter(function(f){return /^image\//.test(f.type)});
   if(!files.length){showMsg("Choose image files (JPG or PNG).","bad");return}
   for(var i=0;i<files.length;i++){
     if(ed.images.length>=8){showMsg("A product can have up to 8 photos.","bad");break}
-    try{var data=await fileToJpeg(files[i]),id=uid("i");pend[id]=data;ed.images.push("pending:"+id);renderImgs()}catch(e){showMsg(e.message,"bad")}}
+    try{var data=await fileToJpeg(files[i]),dup=ed.images.some(function(x){return x.indexOf("pending:")===0&&pend[x.slice(8)]===data});
+      if(dup){skipped++;continue}
+      var id=uid("i");pend[id]=data;ed.images.push("pending:"+id);renderImgs();syncImgs()}catch(e){showMsg(e.message,"bad")}}
+  if(skipped)showMsg(skipped+" photo(s) skipped because the same photo is already added.","info");
   persist()}
 function saveProduct(){
   var g=function(id){return $("#"+id)},err=function(m){showMsg(m,"bad");return false};
