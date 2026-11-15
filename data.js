@@ -132,7 +132,8 @@ window.SHOP={
    "images": [
     "images/hn-002-pjqkbq9g.jpg",
     "images/hn-002-whnvjzl2.jpg",
-    "images/hn-002-rk8fs2zm.jpg"
+    "images/hn-002-rk8fs2zm.jpg",
+    "images/hn-002-1ofs5uyx.jpg"
    ]
   },
   {
