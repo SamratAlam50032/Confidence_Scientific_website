@@ -978,6 +978,22 @@ window.SHOP={
   {
    "id": "c16s2",
    "name": "Pipettes"
+  },
+  {
+   "id": "s2n9u18",
+   "name": "Multifiber/Fabrics"
+  },
+  {
+   "id": "sllqrmv",
+   "name": "Textile Detergents"
+  },
+  {
+   "id": "szxirb6",
+   "name": "GSM Cutter/Blade"
+  },
+  {
+   "id": "seja7me",
+   "name": "Thermometer"
   }
  ]
 };
