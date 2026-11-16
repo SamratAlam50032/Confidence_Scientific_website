@@ -449,6 +449,412 @@ window.SHOP={
    "images": [
     "images/hn-020-junwofzm.jpg"
    ]
+  },
+  {
+   "code": "HN-021",
+   "name": "Hanna HI70300 pH Electrode Storage Solution, 500mL",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "Storage solution for pH electrodes, 500 mL bottle.",
+   "long": "Ready-to-use storage solution for pH electrodes. Keeping the glass bulb and junction in this solution between measurements keeps the electrode hydrated and responsive and helps extend its working life. Never store a pH electrode in distilled or deionized water.\n\nSpecifications\n• Type: pH electrode storage solution\n• Volume: 500 mL bottle\n• Use: storage of pH electrodes between measurements and during transport\n• Suitable for Hanna and other standard pH electrodes\n\nIn the box\n• Hanna HI70300 storage solution, 500 mL bottle",
+   "price": 2399,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-021-1xg6xtmp.jpg"
+   ]
+  },
+  {
+   "code": "HN-022",
+   "name": "Hanna HI7061L General Purpose Cleaning Solution (500 mL)",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "General purpose electrode cleaning solution, 500 mL bottle.",
+   "long": "General purpose cleaning solution for pH electrodes. It removes common deposits and contaminants from the glass bulb and junction so that the electrode regains a fast, stable response. Used during regular electrode maintenance in laboratories, water testing and food or process work.\n\nSpecifications\n• Type: general purpose electrode cleaning solution\n• Volume: 500 mL bottle\n• Use: soak the electrode for about 15 minutes, rinse with water, then recondition in storage solution\n• Not for use on electrodes with special cleaning requirements – check the electrode manual\n\nIn the box\n• Hanna HI7061L cleaning solution, 500 mL bottle",
+   "price": 2399,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-022-3nq19v5v.jpg"
+   ]
+  },
+  {
+   "code": "HN-023",
+   "name": "Hanna 3.5M KCl Electrolyte Solution 30ml for Double Junction Electrodes (30ml)",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "3.5M KCl refilling electrolyte, 30 ml, for double junction electrodes.",
+   "long": "3.5M potassium chloride electrolyte for refillable double junction pH and ORP electrodes. Topping up the reference chamber with fresh electrolyte keeps the reference potential stable and gives dependable readings over the life of the electrode.\n\nSpecifications\n• Type: KCl reference electrolyte\n• Concentration: 3.5 M KCl\n• Volume: 30 ml\n• Use: refilling the reference chamber of refillable double junction electrodes\n\nIn the box\n• 3.5M KCl electrolyte solution, 30 ml bottle",
+   "price": 2499,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-023-7idl6wpf.jpg"
+   ]
+  },
+  {
+   "code": "HN-024",
+   "name": "Hanna Iron Test Kit HI-3834 Romania",
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
+   "short": "Hanna HI3834 chemical test kit for iron in water.",
+   "long": "Hanna chemical test kit for determining iron in water samples. The kit is designed for quick on-site checks without an instrument and is commonly used for drinking water, boiler water and general water quality work.\n\nSpecifications\n• Parameter: Iron\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI3834\n\nIn the box\n• Iron test kit HI3834 with reagents and accessories\n• Instruction sheet",
+   "price": 3499,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-025",
+   "name": "Hanna HI-721 Iron Checker Handheld Colorimeter 0.00 to 5.00 ppm Range",
+   "sub": "c1s1",
+   "subs": [
+    "c1s1"
+   ],
+   "short": "Checker HC handheld colorimeter for iron, 0.00 to 5.00 ppm.",
+   "long": "Handheld Checker HC colorimeter dedicated to iron. Single-button operation, a fixed-wavelength LED light source and a silicon photodetector give repeatable results that are more reliable than visual test kits. Used for water treatment, boiler water, drinking water and industrial process checks.\n\nSpecifications\n• Parameter: Iron\n• Range: 0.00 to 5.00 ppm (mg/L)\n• Resolution: 0.01 ppm\n• Method: colorimetric\n• Light source: LED, silicon photocell detector\n• Auto shut-off: after 10 minutes of non-use\n• Power: 1.5 V AAA battery\n• Size and weight: 86 x 61 x 37.5 mm, about 64 g\n\nIn the box\n• HI721 Checker HC\n• Sample cuvettes with caps (2)\n• Iron reagents starter set\n• 1.5 V AAA battery\n• Instruction manual and quick start guide",
+   "price": 8199,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-025-a8il6xzq.jpg",
+    "images/hn-025-hlmitzez.jpg"
+   ]
+  },
+  {
+   "code": "HN-026",
+   "name": "Hanna Alkalinity Test Kit HI-3811 (100 Tests)",
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
+   "short": "Hanna HI3811 alkalinity test kit, 100 tests.",
+   "long": "Chemical titration test kit for measuring total alkalinity of water. It is quick to use on site and is suited to drinking water, aquaculture, pools, boilers and general water quality checks.\n\nSpecifications\n• Parameter: Alkalinity\n• Number of tests: 100\n• Type: chemical test kit (titration)\n• Manufacturer: Hanna Instruments\n• Model: HI3811\n\nIn the box\n• Alkalinity reagents for 100 tests\n• Sample vial and accessories\n• Instruction sheet",
+   "price": 6799,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-026-o0reo0ua.jpg",
+    "images/hn-026-zh2je2e4.jpg"
+   ]
+  },
+  {
+   "code": "HN-027",
+   "name": "Hanna Alkalinity Checker meter HI-772",
+   "sub": "c1s1",
+   "subs": [
+    "c1s1"
+   ],
+   "short": "Marine alkalinity Checker HC, 0.0 to 20.0 dKH.",
+   "long": "Handheld Checker HC colorimeter that reads alkalinity directly in dKH. Zero the checker with your sample, add the reagent, insert the vial and press the button. Designed as a more accurate alternative to chemical test kits for saltwater aquariums and marine applications.\n\nSpecifications\n• Parameter: Marine alkalinity\n• Range: 0.0 to 20.0 dKH\n• Resolution: 0.1 dKH\n• Accuracy at 25°C: ±0.3 dKH ±5% of reading\n• Light source: LED at 610 nm, silicon photocell detector\n• Auto shut-off: after 10 minutes\n• Power: 1.5 V AAA battery\n\nIn the box\n• HI772 Checker HC\n• Sample cuvettes with caps (2)\n• Alkalinity reagent starter kit (25 tests)\n• Syringe with tip\n• 1.5 V AAA battery\n• Instruction manual and quick start guide",
+   "price": 8199,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-027-z8isz3or.jpg",
+    "images/hn-027-c02bw55o.jpg"
+   ]
+  },
+  {
+   "code": "HN-028",
+   "name": "Nitrate Test kit Hanna HI-3874 (100 tests)",
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
+   "short": "Hanna HI3874 nitrate test kit, 100 tests.",
+   "long": "Chemical test kit for determining nitrate in water. Simple colour-based procedure for fast results on site, used in drinking water, aquaculture, agriculture and environmental checks.\n\nSpecifications\n• Parameter: Nitrate\n• Number of tests: 100\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI3874\n\nIn the box\n• Nitrate reagents for 100 tests\n• Sample vials and accessories\n• Colour reference and instruction sheet",
+   "price": 6599,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-028-tsj0n6n7.jpg",
+    "images/hn-028-1zbx98ck.jpg"
+   ]
+  },
+  {
+   "code": "HN-029",
+   "name": "Nitrite Test kit Hanna-HI3873 (100 tests)",
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
+   "short": "Hanna HI3873 nitrite test kit, 100 tests.",
+   "long": "Chemical test kit for determining nitrite in water. Easy procedure with fast results, suited to aquaculture, drinking water, cooling water and general water quality monitoring.\n\nSpecifications\n• Parameter: Nitrite\n• Number of tests: 100\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI3873\n\nIn the box\n• Nitrite reagents for 100 tests\n• Sample vials and accessories\n• Colour reference and instruction sheet",
+   "price": 6499,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-029-rrw47a0d.jpg",
+    "images/hn-029-qciw4blo.jpg"
+   ]
+  },
+  {
+   "code": "HN-030",
+   "name": "Sulphate Test kit Hanna-HI38000(100 tests)",
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
+   "short": "Hanna HI38000 sulphate test kit, 100 tests.",
+   "long": "Chemical test kit for determining sulphate in water samples. Used for water treatment, boiler and cooling water, irrigation water and general laboratory screening where a quick field result is needed.\n\nSpecifications\n• Parameter: Sulphate\n• Number of tests: 100\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI38000\n\nIn the box\n• Sulphate reagents for 100 tests\n• Sample vials and accessories\n• Instruction sheet",
+   "price": 13999,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-030-pbceydaa.jpg",
+    "images/hn-030-qtladen0.jpg"
+   ]
+  },
+  {
+   "code": "HN-031",
+   "name": "Sulfite Chemical Test Kit Hanna–HI3822 (110 Tests)",
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
+   "short": "Hanna HI3822 sulfite test kit, 110 tests.",
+   "long": "Chemical test kit for determining sulfite in water. Commonly used to check sulfite levels in boiler water treatment, where residual sulfite protects against dissolved oxygen corrosion.\n\nSpecifications\n• Parameter: Sulfite\n• Number of tests: 110\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI3822\n\nIn the box\n• Sulfite reagents for 110 tests\n• Sample vial and accessories\n• Instruction sheet",
+   "price": 12999,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-031-8zj1qg15.jpg",
+    "images/hn-031-d9zw3hn5.jpg"
+   ]
+  },
+  {
+   "code": "HN-032",
+   "name": "Hanna Glass pH Electrode HI-1131B with BNC Connector",
+   "sub": "c1s4",
+   "subs": [
+    "c1s4"
+   ],
+   "short": "Refillable glass-body pH electrode with BNC connector.",
+   "long": "Refillable glass-body pH electrode with a BNC connector, suitable for general purpose laboratory pH measurement with standard benchtop pH meters. Regular cleaning, correct storage and fresh electrolyte keep the response fast and stable.\n\nSpecifications\n• Type: pH electrode, glass body, refillable\n• Connector: BNC\n• Use: general purpose laboratory pH measurement\n• Storage: in electrode storage solution, never in distilled water\n\nIn the box\n• HI1131B pH electrode\n• Protective cap\n• Instruction sheet",
+   "price": 20199,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-032-cp784j5y.jpg",
+    "images/hn-032-p6o2lkno.jpg"
+   ]
+  },
+  {
+   "code": "HN-033",
+   "name": "Hanna PEI Body pH Electrode-HI1230B with BNC Connector",
+   "sub": "c1s6",
+   "subs": [
+    "c1s6"
+   ],
+   "short": "Rugged PEI-body pH electrode with BNC connector.",
+   "long": "Rugged pH electrode with a PEI plastic body that resists breakage, making it a good choice for field use and busy laboratories. Supplied with a BNC connector for use with standard pH meters.\n\nSpecifications\n• Type: pH electrode, PEI body\n• Connector: BNC\n• Use: laboratory and field pH measurement\n• Storage: in electrode storage solution, never in distilled water\n\nIn the box\n• HI1230B pH electrode\n• Protective cap\n• Instruction sheet",
+   "price": 15500,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-033-zvwhqm8n.jpg",
+    "images/hn-033-wcnafnzj.jpg"
+   ]
+  },
+  {
+   "code": "HN-034",
+   "name": "Hanna pH Electrode HI11310 for edge pH Meter",
+   "sub": "c1s6",
+   "subs": [
+    "c1s6"
+   ],
+   "short": "Digital pH electrode for the Hanna edge pH meter.",
+   "long": "Digital pH electrode designed for the Hanna edge meter. The electrode connects through the edge’s digital input and stores calibration information, so it can be moved between meters without losing its settings.\n\nSpecifications\n• Type: digital pH electrode\n• Compatible with: Hanna edge pH meter\n• Use: laboratory pH measurement\n• Storage: in electrode storage solution, never in distilled water\n\nIn the box\n• HI11310 pH electrode\n• Protective cap\n• Instruction sheet",
+   "price": 23999,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "pending:iiqunfa",
+    "pending:izvij23"
+   ]
+  },
+  {
+   "code": "HN-035",
+   "name": "Hanna DO(Dissolved Oxygen/Zero Oxygen solution-HI7040L",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "Zero oxygen solution for dissolved oxygen probe calibration.",
+   "long": "Zero oxygen solution used to calibrate the zero point of dissolved oxygen probes and meters. Used together with an air-saturated calibration point for accurate dissolved oxygen readings.\n\nSpecifications\n• Type: dissolved oxygen zero solution\n• Model: HI7040L\n• Use: zero point calibration of DO probes\n• Keep the bottle tightly closed after use\n\nIn the box\n• HI7040L zero oxygen solution bottle",
+   "price": 2999,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-036",
+   "name": "James Heal ECE Phosphate Reference Detergent (B) 2kg Tub",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "James Heal ECE phosphate reference detergent (B), 2 kg tub.",
+   "long": "Phosphate-containing ECE reference detergent (B) from James Heal for standard textile laboratory washing. It is used in colour fastness to washing and domestic laundering shrinkage tests, so that results are comparable between laboratories.\n\nSpecifications\n• Type: ECE reference detergent with phosphate (B)\n• Pack size: 2 kg tub\n• Use: colour fastness to washing and dimensional change tests\n• Brand: James Heal\n\nIn the box\n• ECE phosphate reference detergent (B), 2 kg tub",
+   "price": 2399,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-037",
+   "name": "James Heal ECE (A) Non-Phosphate Detergent 2kg Tub",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "James Heal ECE (A) non-phosphate reference detergent, 2 kg tub.",
+   "long": "Non-phosphate ECE reference detergent (A) from James Heal for standard textile laboratory washing. Used in colour fastness to washing and domestic laundering shrinkage tests where a standard reference detergent is required.\n\nSpecifications\n• Type: ECE reference detergent, non-phosphate (A)\n• Pack size: 2 kg tub\n• Use: colour fastness to washing and dimensional change tests\n• Brand: James Heal\n\nIn the box\n• ECE non-phosphate reference detergent (A), 2 kg tub",
+   "price": 2799,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-038",
+   "name": "ISO Crocking Cloth James Heal (5x5cm)",
+   "sub": "",
+   "subs": [],
+   "short": "James Heal ISO crocking cloth, 5 x 5 cm squares.",
+   "long": "Standard white cotton rubbing cloth cut in 5 x 5 cm squares for colour fastness to rubbing (crocking) tests. Used with a crockmeter to assess colour transfer from a fabric surface under dry and wet conditions.\n\nSpecifications\n• Type: ISO crocking (rubbing) cloth\n• Size: 5 x 5 cm\n• Use: colour fastness to rubbing with a crockmeter\n• Brand: James Heal\n\nIn the box\n• ISO crocking cloth squares, 5 x 5 cm",
+   "price": 1799,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-039",
+   "name": "Multifibre DW SDC 10 Mtr. Roll",
+   "sub": "",
+   "subs": [],
+   "short": "SDC multifibre DW adjacent fabric, 10 metre roll.",
+   "long": "Multifibre adjacent fabric woven with strips of different fibres, used in colour fastness tests to show which fibre types a dye stains. Supplied as a 10 metre roll that can be cut to the size needed for each test.\n\nSpecifications\n• Type: multifibre adjacent fabric (DW)\n• Length: 10 metre roll\n• Use: colour fastness to washing, perspiration and other staining tests\n• Brand: SDC\n\nIn the box\n• Multifibre DW fabric, 10 metre roll",
+   "price": 3199,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-040",
+   "name": "Multifibre James Heal DW 10 Meter. Roll",
+   "sub": "",
+   "subs": [],
+   "short": "James Heal multifibre DW adjacent fabric, 10 metre roll.",
+   "long": "Multifibre adjacent fabric from James Heal woven with strips of different fibres. In colour fastness testing it shows how much a dye stains each fibre type. Supplied as a 10 metre roll that can be cut to size.\n\nSpecifications\n• Type: multifibre adjacent fabric (DW)\n• Length: 10 metre roll\n• Use: colour fastness to washing, perspiration and other staining tests\n• Brand: James Heal\n\nIn the box\n• Multifibre DW fabric, 10 metre roll",
+   "price": 3599,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-041",
+   "name": "SDC ISO Crocking Cloth Rubbing Fabric 5 x 5cm",
+   "sub": "",
+   "subs": [],
+   "short": "SDC ISO crocking cloth, 5 x 5 cm rubbing fabric.",
+   "long": "Standard rubbing fabric cut in 5 x 5 cm squares for colour fastness to rubbing (crocking) tests with a crockmeter. Used to assess how much colour transfers from a dyed or printed fabric under dry and wet rubbing.\n\nSpecifications\n• Type: ISO crocking (rubbing) cloth\n• Size: 5 x 5 cm\n• Use: colour fastness to rubbing with a crockmeter\n• Brand: SDC\n\nIn the box\n• ISO crocking cloth squares, 5 x 5 cm",
+   "price": 1199,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-042",
+   "name": "Testfabrics AATCC Crocking Cloth 1000ps box",
+   "sub": "",
+   "subs": [],
+   "short": "Testfabrics AATCC crocking cloth, box of 1000 pieces.",
+   "long": "AATCC crocking cloth from Testfabrics for colour fastness to crocking tests, supplied as a box of 1000 pre-cut pieces. Suitable for dry and wet crocking tests with a crockmeter following AATCC methods.\n\nSpecifications\n• Type: AATCC crocking cloth\n• Pack size: box of 1000 pieces\n• Use: colour fastness to crocking with a crockmeter\n• Brand: Testfabrics\n\nIn the box\n• AATCC crocking cloth, 1000 pieces",
+   "price": 1190,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-043",
+   "name": "Thermo Paper Strip or Temperature Strips",
+   "sub": "",
+   "subs": [],
+   "short": "Thermo paper temperature indicator strips.",
+   "long": "Thermo paper strips that change colour at set temperatures, giving a simple record that a surface or process has reached a particular temperature. Handy for checking temperatures in dyeing, heat setting, autoclaves, ovens and other process steps.\n\nSpecifications\n• Type: thermo (temperature indicator) paper strip\n• Use: quick visual indication of temperature reached\n• Read the result against the colour or marking on the strip\n\nIn the box\n• Temperature indicator strips",
+   "price": 2050,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-044",
+   "name": "pH Paper Strips for PH Measuring Merck, Germany",
+   "sub": "",
+   "subs": [],
+   "short": "Merck pH indicator paper strips for quick pH measurement.",
+   "long": "pH indicator paper strips from Merck, Germany, for quick colour-based pH measurement of liquids. Dip the strip in the sample, wait for the colour to develop and compare it to the colour scale on the pack.\n\nSpecifications\n• Type: pH indicator strips\n• Make: Merck, Germany\n• Use: quick pH measurement of aqueous samples\n• Read the result against the colour scale on the pack\n\nIn the box\n• pH indicator strips with colour scale",
+   "price": 920,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-045",
+   "name": "Universal pH Test Paper Strip (pH 0-14) pH Paper, China",
+   "sub": "",
+   "subs": [],
+   "short": "Universal pH test paper strips, pH 0 to 14.",
+   "long": "Universal pH test paper that covers the full pH 0–14 range. A low-cost way to get a quick idea of whether a liquid is acidic, neutral or alkaline using the colour chart supplied.\n\nSpecifications\n• Type: universal pH test paper\n• Range: pH 0 to 14\n• Use: quick pH check of liquid samples\n• Read the result against the colour chart\n\nIn the box\n• pH test paper with colour chart",
+   "price": 300,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-046",
+   "name": "Hydraulic GSM Cutter with Round Blade Knife",
+   "sub": "",
+   "subs": [],
+   "short": "Hydraulic GSM cutter with round blade knife for fabric sampling.",
+   "long": "Hydraulic GSM cutter that cuts a fabric specimen of exact area with a round blade, so that fabric weight in grams per square metre (GSM) can be calculated quickly after weighing. Used in textile laboratories and garment factories for fabric quality control.\n\nSpecifications\n• Type: hydraulic GSM cutter\n• Cutting tool: round blade knife\n• Use: cutting fabric specimens of fixed area for GSM calculation\n• Suitable for woven and knitted fabrics\n\nIn the box\n• Hydraulic GSM cutter with round blade knife",
+   "price": 21000,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-047",
+   "name": "GSM Cutter Machine",
+   "sub": "",
+   "subs": [],
+   "short": "GSM cutter for cutting fabric samples of fixed area.",
+   "long": "GSM cutter used to cut a fabric sample of fixed area so its weight per square metre (GSM) can be worked out after weighing the specimen. A routine tool in textile quality control.\n\nSpecifications\n• Type: GSM cutter\n• Use: cutting fabric specimens of fixed area for GSM calculation\n• Suitable for woven and knitted fabrics\n\nIn the box\n• GSM cutter machine",
+   "price": 2600,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-048",
+   "name": "GSM Cutter Blade",
+   "sub": "",
+   "subs": [],
+   "short": "Replacement blade for GSM cutter.",
+   "long": "Replacement round cutting blade for GSM cutters. A sharp blade gives a clean cut and an accurate sample area, which keeps GSM results reliable.\n\nSpecifications\n• Type: GSM cutter replacement blade\n• Use: replacing a worn or damaged blade on a GSM cutter\n• Handle carefully – the blade is sharp\n\nIn the box\n• GSM cutter blade",
+   "price": 22,
+   "stock": "in",
+   "featured": 0,
+   "images": []
   }
  ],
  "subs": [
