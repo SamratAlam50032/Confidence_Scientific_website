@@ -32,7 +32,14 @@ header.top{background:var(--surface);border-bottom:1px solid var(--line);positio
 #msg{margin:14px 0 0;padding:10px 14px;border-radius:8px;font-size:14px}
 #msg.ok{background:var(--okbg);color:var(--okc)}#msg.bad{background:var(--badbg);color:var(--bad)}#msg.info{background:var(--infobg);color:var(--infoc)}
 main{padding:18px 0 60px}
-.split{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:18px;align-items:start}
+.split{display:block}
+#plist{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+#plist .prow{margin:0;min-width:0}
+#plist .empty{grid-column:1/-1}
+body.editing .split{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:18px;align-items:start}
+body.editing .split>*{min-width:0}
+body.editing #plist{grid-template-columns:minmax(0,1fr)}
+#pedit{max-width:880px}
 .tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
 .tools input{flex:1 1 140px;min-width:0}
 input[type=text],input[type=search],input[type=number],input[type=password],select,textarea{width:100%;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:14px var(--f-body);padding:9px 10px}
@@ -80,8 +87,11 @@ textarea{resize:vertical}
 .hint{color:var(--muted);font-size:13.5px}
 .tgs{display:flex;flex-wrap:wrap;gap:6px}.tg{font:13px var(--f-body);border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;padding:5px 12px;cursor:pointer}.tg.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}ol.steps li{margin-bottom:4px}
-@media(max-width:900px){.split{grid-template-columns:1fr}.editing .listpane{display:none}}
+@media(max-width:900px){body.editing .split{display:block}body.editing .listpane{display:none}}
 @media(max-width:560px){.g2,.g3{grid-template-columns:1fr}.hbar .btn{flex:1 1 auto}}
+.vcard{border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:10px;background:var(--bg)}
+.vrow{display:grid;grid-template-columns:minmax(0,1fr) 140px auto;gap:8px;align-items:center;margin-bottom:8px}
+@media(max-width:560px){.vrow{grid-template-columns:1fr 1fr}.vrow input:first-child{grid-column:1/-1}}
 </style>
 </head>
 <body>
@@ -154,7 +164,7 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
   </section>
 </main>
 
-<script src="data.js"></script>
+<script>document.write('<script src="data.js?v='+Date.now()+'"><\/script>')</script>
 <script>
 (function(){
 "use strict";
@@ -191,7 +201,7 @@ function normalise(d){
   d.settings=Object.assign({name:"",tagline:"",headline:"",intro:"",whatsapp:"",phones:[],email:"",address:""},d.settings||{});
   d.subs=(d.subs||[]).map(function(x){return {id:x.id||uid("s"),name:x.name||""}});
   d.categories=(d.categories||[]).map(function(c){var seen={};return {id:c.id||uid("c"),name:c.name||"",prefix:c.prefix||"CS",image:c.image||"",subs:(c.subs||[]).filter(function(x){if(seen[x])return false;seen[x]=1;return true})}});
-  d.products=(d.products||[]).map(function(p){var sl=(p.subs&&p.subs.length?p.subs:(p.sub?[p.sub]:[])).filter(function(x,i,a){return a.indexOf(x)===i});return {code:p.code||"",name:p.name||"",sub:sl[0]||"",subs:sl,short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"ask",featured:p.featured?1:0,images:p.images||[]}});
+  d.products=(d.products||[]).map(function(p){var sl=(p.subs&&p.subs.length?p.subs:(p.sub?[p.sub]:[])).filter(function(x,i,a){return a.indexOf(x)===i});return {code:p.code||"",name:p.name||"",sub:sl[0]||"",subs:sl,short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"in",featured:p.featured?1:0,images:p.images||[],variants:(p.variants||[]).map(function(v){return {name:v.name||"",price:(v.price==null||v.price==="")?null:v.price,images:v.images||[]}})}});
   return d}
 function catById(id){return D.categories.find(function(c){return c.id===id})}
 function subById(id){return D.subs.find(function(x){return x.id===id})}
@@ -200,8 +210,8 @@ function catsOfP(subs){return D.categories.filter(function(c){return subs.some(f
 function catLabel(p){var n=(p.subs||[]).map(function(i){var x=subById(i);return x?x.name:""}).filter(Boolean),cs=catsOfP(p.subs||[]);return (n.join(", ")||"No sub category")+" · "+(cs.length?"in "+cs.map(function(c){return c.name}).join(", "):"not in any category (hidden)")}
 function imgSrc(x){return x.indexOf("pending:")===0?(pend[x.slice(8)]||""):x}
 function dirty(){return JSON.stringify(D)!==base}
-function nextCode(){var pre="CS",last=D.products[D.products.length-1],lm=last&&/^([A-Z]+)-\d+$/.exec(last.code);if(lm)pre=lm[1];var mx=0,re=new RegExp("^"+pre+"-(\\d+)$");D.products.forEach(function(p){var m=re.exec(p.code);if(m)mx=Math.max(mx,parseInt(m[1],10))});return pre+"-"+String(mx+1).padStart(3,"0")}
-function prunePend(){var used={};D.categories.forEach(function(c){if(c.image&&c.image.indexOf("pending:")===0)used[c.image.slice(8)]=1});D.products.forEach(function(p){p.images.forEach(function(x){if(x.indexOf("pending:")===0)used[x.slice(8)]=1})});Object.keys(pend).forEach(function(k){if(!used[k])delete pend[k]})}
+function nextCode(pf){var pre=pf||"CS",last=D.products[D.products.length-1],lm=!pf&&last&&/^([A-Z]+)-\d+$/.exec(last.code);if(lm)pre=lm[1];var mx=0,re=new RegExp("^"+pre+"-(\\d+)$");D.products.forEach(function(p){var m=re.exec(p.code);if(m)mx=Math.max(mx,parseInt(m[1],10))});return pre+"-"+String(mx+1).padStart(3,"0")}
+function prunePend(){var used={};D.categories.forEach(function(c){if(c.image&&c.image.indexOf("pending:")===0)used[c.image.slice(8)]=1});D.products.forEach(function(p){p.images.forEach(function(x){if(x.indexOf("pending:")===0)used[x.slice(8)]=1});(p.variants||[]).forEach(function(v){v.images.forEach(function(x){if(x.indexOf("pending:")===0)used[x.slice(8)]=1})})});Object.keys(pend).forEach(function(k){if(!used[k])delete pend[k]})}
 function showMsg(t,kind){var m=$("#msg");m.textContent=t;m.className=kind||"info";m.hidden=false;if(kind==="ok")setTimeout(function(){if(m.textContent===t)m.hidden=true},9000)}
 function hideMsg(){$("#msg").hidden=true}
 
@@ -227,15 +237,49 @@ function renderList(){
 }
 $("#ps").oninput=renderList;$("#pf").onchange=renderList;$("#pnew").onclick=function(){hideMsg();openEditor(-1)};
 $("#pimp").onclick=function(){$("#pimpf").click()};
+function nk(s){return String(s||"").trim().toLowerCase().replace(/\s+/g," ")}
+function toJpeg(u){return new Promise(function(res,rej){var im=new Image();im.onload=function(){var M=1400,w=im.naturalWidth,h=im.naturalHeight,k=Math.min(1,M/Math.max(w,h));w=Math.round(w*k);h=Math.round(h*k);
+  var c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,w,h);x.drawImage(im,0,0,w,h);res(c.toDataURL("image/jpeg",0.9))};
+  im.onerror=function(){rej(new Error("bad image"))};im.src=u})}
 $("#pimpf").onchange=async function(){var f=this.files[0];this.value="";if(!f)return;
-  try{var j=JSON.parse(await f.text()),list=Array.isArray(j)?j:j.products;if(!Array.isArray(list))throw 0;
-    var have={};D.products.forEach(function(p){have[p.code]=1});var add=0,skip=[];
-    list.forEach(function(p){var c=String(p.code||"").trim().toUpperCase();if(!c||!p.name)return;if(have[c]){skip.push(c);return}
-      var sl=(p.subs||[]).filter(function(x){return !!subById(x)});
-      D.products.push({code:c,name:String(p.name),sub:sl[0]||"",subs:sl,short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"ask",featured:p.featured?1:0,images:[]});have[c]=1;add++});
-    if(ed)closeEditor();persist();renderStatus();renderFilter();renderList();
-    showMsg(add+" product(s) added."+(skip.length?" Skipped (code already exists): "+skip.join(", ")+".":"")+" Now open each one and choose its sub categories, then press Publish. Use the filter No sub category yet to find them.","ok")}
-  catch(e){showMsg("This file could not be read. Use the new-products file I sent.","bad")}};
+  var data,list;
+  try{data=JSON.parse(await f.text())}catch(e){showMsg("This is not a valid import file.","bad");return}
+  list=Array.isArray(data)?data:(data&&data.products);
+  if(!Array.isArray(list)||!list.length){showMsg("No products found in this file.","bad");return}
+  showMsg("Importing "+list.length+" products...","info");
+  var add=0,skip=[],photos=0,byName={},byCode={};
+  D.products.forEach(function(p){byName[nk(p.name)]=p;byCode[p.code]=p});
+  for(var n=0;n<list.length;n++){
+    var it=list[n]||{},name=String(it.name||"").trim();if(!name)continue;
+    var imgs=[],src=Array.isArray(it.images)?it.images:[];
+    for(var k=0;k<src.length&&imgs.length<8;k++){var u=src[k];if(typeof u!=="string")continue;
+      if(/^data:image\/jpeg;base64,/.test(u)){var id=uid("i");pend[id]=u;imgs.push("pending:"+id)}
+      else if(/^data:image\//.test(u)){try{var jj=await toJpeg(u),id2=uid("i");pend[id2]=jj;imgs.push("pending:"+id2)}catch(e){}}
+      else if(/^images\/[\w.\-]+$/.test(u))imgs.push(u)}
+    var code=String(it.code||"").trim().toUpperCase().replace(/\s+/g,"-");
+    var ex=byName[nk(name)]||(code&&byCode[code]);
+    if(ex){if(!ex.images.length&&imgs.length){ex.images=imgs;photos++}skip.push(name);continue}
+    /* category by name (optional) */
+    var cat=null,cname=String(it.category||"").trim();
+    if(cname){cat=D.categories.find(function(c){return nk(c.name)===nk(cname)});
+      if(!cat){cat={id:uid("c"),name:cname,prefix:cname.replace(/[^A-Za-z]/g,"").slice(0,2).toUpperCase()||"CS",image:"",subs:[]};D.categories.push(cat)}}
+    /* sub categories: by name, or by existing id */
+    var names=[];if(Array.isArray(it.subs))names=it.subs;else if(it.sub)names=[it.sub];
+    var sl=[];names.forEach(function(s){s=String(s||"").trim();if(!s)return;
+      var x=subById(s)||D.subs.find(function(y){return nk(y.name)===nk(s)});
+      if(!x){x={id:uid("s"),name:s};D.subs.push(x)}
+      if(sl.indexOf(x.id)<0)sl.push(x.id)});
+    if(!sl.length){var g=D.subs.find(function(y){return nk(y.name)==="general"});if(!g){g={id:uid("s"),name:"General"};D.subs.push(g)}sl.push(g.id)}
+    if(cat)sl.forEach(function(s){if(cat.subs.indexOf(s)<0)cat.subs.push(s)});
+    if(!code||byCode[code])code=nextCode(cat?cat.prefix:"");
+    var pr=(it.price==null||it.price==="")?null:Number(String(it.price).replace(/,/g,""));if(!isFinite(pr)||pr<=0)pr=null;
+    var prod={code:code,name:name,sub:sl[0],subs:sl,short:String(it.short||"").trim(),long:String(it.long||"").trim(),price:pr,stock:STOCK[it.stock]?it.stock:"in",featured:it.featured?1:0,images:imgs,variants:(Array.isArray(it.variants)?it.variants:[]).filter(function(v){return v&&String(v.name||"").trim()}).map(function(v){var vp=(v.price==null||v.price==="")?null:Number(String(v.price).replace(/,/g,""));return {name:String(v.name).trim(),price:(isFinite(vp)&&vp>0)?vp:null,images:[]}})};
+    D.products.push(prod);byName[nk(name)]=prod;byCode[code]=prod;add++}
+  if(ed)closeEditor();prunePend();persist();renderFilter();renderList();renderCats();
+  var t="Imported "+add+" new product"+(add===1?"":"s")+".";
+  if(photos)t+=" Added photos to "+photos+" existing product"+(photos===1?"":"s")+".";
+  if(skip.length)t+=" Skipped "+skip.length+" that already exist: "+skip.slice(0,4).join(", ")+(skip.length>4?" and more":"")+".";
+  showMsg(t+" Press Publish to put them on the website.",add||photos?"ok":"info")};
 
 /* ---------- product editor ---------- */
 function fld(id,label,ctrl,hint){return el("div",{class:"f"},el("label",{"for":id,text:label}),ctrl,hint?el("small",{text:hint}):null)}
@@ -243,7 +287,7 @@ function openEditor(idx){
   if(!D.subs.length){setTab("categories");showMsg("Add a sub category first (product types like Meters).","bad");return}
   edIdx=idx;codeTouched=false;
   if(idx>=0)ed=JSON.parse(JSON.stringify(D.products[idx]));
-  else{ed={code:"",name:"",sub:D.subs[0].id,subs:[D.subs[0].id],short:"",long:"",price:null,stock:"in",featured:0,images:[]};ed.code=nextCode()}
+  else{ed={code:"",name:"",sub:D.subs[0].id,subs:[D.subs[0].id],short:"",long:"",price:null,stock:"in",featured:0,images:[],variants:[]};ed.code=nextCode()}
   document.body.classList.add("editing");renderEditor();renderList();
   $("#pedit").scrollIntoView({block:"start"});
 }
@@ -271,6 +315,9 @@ function renderEditor(){
   file.onchange=function(){addFiles(file.files);file.value=""};
   drop.ondragover=function(e){e.preventDefault();drop.classList.add("over")};drop.ondragleave=function(){drop.classList.remove("over")};
   drop.ondrop=function(e){e.preventDefault();drop.classList.remove("over");addFiles(e.dataTransfer.files)};
+  ed.variants=ed.variants||[];
+  var vbox=el("div",{id:"evars"});
+  var vadd=el("button",{class:"btn ghost sm",type:"button",text:"+ Add size / option",onclick:function(){ed.variants.push({name:"",price:null,images:[]});renderVars();syncVars()}});
   var save=el("button",{class:"btn",type:"button",text:"Save product",onclick:saveProduct});
   var del=null;
   if(edIdx>=0){del=el("button",{class:"btn danger",type:"button",text:"Delete product"});var armed=false;
@@ -283,9 +330,30 @@ function renderEditor(){
     fld("elong","Full description",lg,"Shown on the product page. Leave a blank line between parts. Start lines with • for bullet points."),
     el("div",{class:"g2"},fld("eprice","Price (BDT)",pr),el("div",{class:"f"},el("label",{text:"Show on homepage"}),el("label",{class:"chk",style:"margin-top:8px"},ft,"Featured product"))),
     el("div",{class:"f"},el("label",{text:"Photos"}),imgs,drop,el("small",{text:"Photos stay in this browser as a draft. When you press Publish they are uploaded to the images folder of your GitHub site. Photos marked Not published are not on the website yet. Resized to 1400 px, high quality JPEG, up to 8 photos."})),
+    el("div",{class:"f"},el("label",{text:"Sizes / options (optional)"}),vbox,el("div",{class:"bar",style:"margin-top:0"},vadd),el("small",{text:"For things like S, M, L or 50 ml, 100 ml. Each option can have its own price and its own photos. Leave the price empty to use the product price. Leave photos empty to use the product photos."})),
     el("div",{class:"bar"},save,el("button",{class:"btn ghost",type:"button",text:"Cancel",onclick:closeEditor}),del));
-  renderImgs();
+  renderImgs();renderVars();
 }
+function varsClean(list){return (list||[]).map(function(v){var t=String(v.price==null?"":v.price).trim().replace(/,/g,""),n=t===""?null:Number(t);return {name:String(v.name||""),price:(n!=null&&isFinite(n)&&n>0)?n:null,images:(v.images||[]).slice()}})}
+function syncVars(){if(ed&&edIdx>=0&&D.products[edIdx])D.products[edIdx].variants=varsClean(ed.variants);persist()}
+function renderVars(){var box=$("#evars");if(!box)return;box.textContent="";
+  ed.variants.forEach(function(v,i){
+    var nm=el("input",{type:"text",placeholder:"Size or option, e.g. M or 100 ml","aria-label":"Option name",maxlength:"60"});nm.value=v.name;nm.oninput=function(){v.name=nm.value};
+    var pr=el("input",{type:"text",inputmode:"decimal",placeholder:"Price (optional)","aria-label":"Option price"});pr.value=v.price==null?"":String(v.price);pr.oninput=function(){v.price=pr.value};pr.onchange=syncVars;
+    var rm=el("button",{class:"btn danger sm",type:"button",text:"Remove",onclick:function(){ed.variants.splice(i,1);renderVars();syncVars()}});
+    var tiles=el("div",{class:"imgs"});
+    v.images.forEach(function(x,k){tiles.append(el("div",{class:"tile"},el("div",{class:"pic"},el("img",{src:imgSrc(x),alt:"Photo "+(k+1)}),x.indexOf("pending:")===0?el("span",{class:"newb",text:"Not published"}):null),
+      el("div",{class:"tb"},el("button",{type:"button","aria-label":"Remove photo",text:"✕",onclick:function(){v.images.splice(k,1);renderVars();syncVars()}}))))});
+    var f=el("input",{type:"file",accept:"image/*",multiple:true,class:"hid","aria-label":"Photos for this option"});
+    f.onchange=function(){addVarFiles(f.files,v);f.value=""};
+    box.append(el("div",{class:"vcard"},el("div",{class:"vrow"},nm,pr,rm),tiles,el("button",{class:"btn ghost sm",type:"button",text:"+ Add photos for this option",onclick:function(){f.click()}}),f))})}
+async function addVarFiles(list,v){
+  var files=Array.prototype.slice.call(list||[]).filter(function(x){return /^image\//.test(x.type)});
+  if(!files.length){showMsg("Choose image files (JPG or PNG).","bad");return}
+  for(var i=0;i<files.length;i++){
+    if(v.images.length>=8){showMsg("An option can have up to 8 photos.","bad");break}
+    try{var data=await fileToJpeg(files[i]),id=uid("i");pend[id]=data;v.images.push("pending:"+id);renderVars();syncVars()}catch(e){showMsg(e.message,"bad")}}
+  persist()}
 function syncImgs(){if(ed&&edIdx>=0&&D.products[edIdx])D.products[edIdx].images=ed.images.slice();persist()}
 function renderImgs(){var box=$("#eimgs");if(!box)return;box.textContent="";
   ed.images.forEach(function(x,i){
@@ -325,7 +393,13 @@ function saveProduct(){
   ed.subs=ed.subs.filter(function(x){return !!subById(x)});ed.sub=ed.subs[0]||"";
   if(!ed.subs.length)return err("Choose at least one sub category. Add one in the Categories tab if there is none.");
   if(pr!==""){price=Number(pr);if(!isFinite(price)||price<0)return err("Price must be a number, like 6799.")}
-  var prod={code:code,name:name,sub:ed.sub,subs:ed.subs.slice(),short:g("eshort").value.trim(),long:g("elong").value.trim(),price:price||null,stock:g("estock").value,featured:g("efeat").checked?1:0,images:ed.images.slice()};
+  var vl=[];
+  for(var vi=0;vi<ed.variants.length;vi++){var v=ed.variants[vi],vn=String(v.name||"").trim(),vp=String(v.price==null?"":v.price).trim().replace(/,/g,"");
+    if(!vn&&!vp&&!v.images.length)continue;
+    if(!vn)return err("Give every size or option a name, or remove the empty one.");
+    var vpn=null;if(vp!==""){vpn=Number(vp);if(!isFinite(vpn)||vpn<0)return err("Option price must be a number, like 6799.");if(vpn===0)vpn=null}
+    vl.push({name:vn,price:vpn,images:v.images.slice()})}
+  var prod={code:code,name:name,variants:vl,sub:ed.sub,subs:ed.subs.slice(),short:g("eshort").value.trim(),long:g("elong").value.trim(),price:price||null,stock:g("estock").value,featured:g("efeat").checked?1:0,images:ed.images.slice()};
   if(edIdx>=0)D.products[edIdx]=prod;else D.products.push(prod);
   prunePend();persist();closeEditor();showMsg("Saved "+code+". Press Publish to put it on the website.","ok")}
 
@@ -413,14 +487,15 @@ async function publish(){
   try{
     prunePend();var ids=Object.keys(pend),n=0;
     for(var k=0;k<ids.length;k++){var id=ids[k];n++;showMsg("Uploading photo "+n+" of "+ids.length+"...","info");
-      var ref="pending:"+id,owner=D.products.find(function(p){return p.images.indexOf(ref)>=0}),cown=D.categories.find(function(c){return c.image===ref});
+      var ref="pending:"+id,owner=D.products.find(function(p){return p.images.indexOf(ref)>=0||(p.variants||[]).some(function(v){return v.images.indexOf(ref)>=0})}),cown=D.categories.find(function(c){return c.image===ref});
       if(!owner&&!cown){delete pend[id];continue}
       var slug=owner?(owner.code||"item"):"cat-"+(cown.name||"x");
       var path="images/"+slug.toLowerCase().replace(/[^a-z0-9-]/g,"")+"-"+id.slice(-5)+Date.now().toString(36).slice(-3)+".jpg";
       await ghPut(path,pend[id].split(",")[1],"Add photo for "+(owner?owner.code:cown.name));
-      D.products.forEach(function(p){p.images=p.images.map(function(x){return x===ref?path:x})});
+      D.products.forEach(function(p){p.images=p.images.map(function(x){return x===ref?path:x});(p.variants||[]).forEach(function(v){v.images=v.images.map(function(x){return x===ref?path:x})})});
       D.categories.forEach(function(c){if(c.image===ref)c.image=path});
       delete pend[id];await saveNow()}
+    D.products.forEach(function(p){p.variants=varsClean(p.variants).filter(function(v){return v.name.trim()})});
     showMsg("Saving product data...","info");
     await putData("window.SHOP="+JSON.stringify(D,null,1)+";\n");
     base=JSON.stringify(D);await saveNow();
@@ -437,13 +512,23 @@ $("#reset").onclick=async function(){var b=$("#reset");if(!resetArmed){resetArme
 
 /* ---------- start ---------- */
 function renderAll(){renderStatus();renderFilter();renderList();renderCats()}
+async function fetchRemote(){
+  if(!cfg.owner||!cfg.repo||!cfg.token)return null;
+  try{var r=await fetch(api("contents/data.js")+"?ref="+encodeURIComponent(cfg.branch),{headers:Object.assign({},ghH(),{Accept:"application/vnd.github.raw+json"}),cache:"no-store"});
+    if(!r.ok)return null;var t=await r.text(),m=/^\s*window\.SHOP\s*=\s*([\s\S]*?);\s*$/.exec(t);if(!m)return null;
+    return normalise(JSON.parse(m[1]))}catch(e){return null}}
 async function init(){
   var orig=normalise(JSON.parse(JSON.stringify(window.SHOP||{})));
+  var remote=await fetchRemote(),pub=remote||orig;
   var saved=null;try{saved=await kvGet("draft")}catch(e){idbOk=false}
-  if(saved&&saved.D&&!(JSON.stringify(saved.D)===saved.base&&!Object.keys(saved.pend||{}).length)){D=normalise(saved.D);pend=saved.pend||{};base=saved.base||JSON.stringify(orig)}
-  else{D=orig;base=JSON.stringify(orig)}
+  var hasDraft=saved&&saved.D&&(JSON.stringify(saved.D)!==saved.base||Object.keys(saved.pend||{}).length>0);
+  var warn="";
+  if(hasDraft){D=normalise(saved.D);pend=saved.pend||{};base=saved.base||JSON.stringify(pub);
+    if(remote&&JSON.stringify(remote)!==base)warn="The website data was changed after you started this draft. Publishing now will overwrite those changes. To start again from the published version, use Discard draft in the GitHub tab."}
+  else{D=JSON.parse(JSON.stringify(pub));base=JSON.stringify(pub)}
   fillShop();fillGh();renderAll();
   if(!idbOk)showMsg("This browser blocks saving drafts. Keep this page open until you press Publish.","bad");
+  else if(warn)showMsg(warn,"bad");
   else if(dirty())showMsg("Your unpublished draft was restored.","info")}
 init();
 })();

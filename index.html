@@ -190,6 +190,19 @@ header.top{padding:10px 0 0}
 .f input,.f select,.f textarea,#omsg{width:100%;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:14px var(--f-body);padding:9px 10px}
 .f2{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:480px){.f2{grid-template-columns:1fr}}
 .err{color:#B3261E;font-size:13px;margin-bottom:8px}
+
+.vars{display:flex;gap:6px;flex-wrap:wrap}
+.vars button{font:600 13px var(--f-body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
+.vars button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+/* category slider: boxed items + brown scrollbar */
+:root{--brown:#8B5A2B;--brown-soft:#EADDCB}
+.catnav{gap:8px;padding:10px 2px 12px;scrollbar-width:auto}
+.catnav::-webkit-scrollbar{height:12px}
+.catnav::-webkit-scrollbar-track{background:var(--brown-soft);border-radius:99px}
+.catnav::-webkit-scrollbar-thumb{background:var(--brown);border-radius:99px;border:2px solid var(--brown-soft)}
+@supports not selector(::-webkit-scrollbar){.catnav{scrollbar-color:var(--brown) var(--brown-soft)}}
+.mi>button{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:9px 14px}
+.mi>button:hover,.mi>button:focus-visible{border-color:var(--brown);color:var(--brown)}
 </style>
 
 </head>
@@ -240,7 +253,7 @@ header.top{padding:10px 0 0}
   <div class="mtop"><button class="btn ghost" id="mclose" type="button">Close</button></div>
   <div class="mgrid">
     <div><div class="gmain" id="gmain"></div><div class="gthumbs" id="gthumbs"></div></div>
-    <div class="info"><div class="cat" id="mcat"></div><h2 id="mname"></h2><div class="code" id="mcode"></div><div class="price" id="mprice"></div><div><span class="tag" id="mtag"></span></div><div class="mdesc" id="mdesc"></div><div class="acts"><button class="btn" id="mbuy" type="button">Buy now</button><button class="btn ghost" id="mcontact" type="button">Contact us</button></div></div>
+    <div class="info"><div class="cat" id="mcat"></div><h2 id="mname"></h2><div class="code" id="mcode"></div><div class="price" id="mprice"></div><div id="mvwrap" hidden><div class="k">Size / option</div><div class="vars" id="mvars"></div></div><div><span class="tag" id="mtag"></span></div><div class="mdesc" id="mdesc"></div><div class="acts"><button class="btn" id="mbuy" type="button">Buy now</button><button class="btn ghost" id="mcontact" type="button">Contact us</button></div></div>
   </div></div></div>
 
 <div class="modal" id="contactModal" hidden><div class="mbox small" role="dialog" aria-modal="true" aria-label="Contact us">
@@ -271,7 +284,7 @@ header.top{padding:10px 0 0}
   </div>
 </div></div>
 
-<script src="data.js"></script>
+<script>document.write('<script src="data.js?v='+Math.floor(Date.now()/60000)+'"><\/script>')</script>
 <script>
 function migrate(d){
   if(!d||d.subs)return d;
@@ -289,7 +302,7 @@ const S=SH.settings||{};
 const sIdx=id=>SH.subs.findIndex(x=>x.id===id);
 const C=SH.categories.map(c=>{const ids=SH.subs.map(x=>x.id).filter(id=>(c.subs||[]).indexOf(id)>=0);return [c.name,ids.map(id=>SH.subs[sIdx(id)].name),c.image||"",ids]});
 const P=SH.products.map(p=>{const pl=[];C.forEach((c,ci)=>{(p.subs&&p.subs.length?p.subs:[p.sub]).forEach(sb=>{const j=c[3].indexOf(sb);if(j>=0)pl.push([ci,j])})});
-  return [p.name,pl.length?pl[0][0]:-1,pl.length?pl[0][1]:-1,p.short||"",p.stock||"ask",p.featured?1:0,p.code,p.price||null,p.long||"",p.images||[],pl]}).filter(p=>p[10].length);
+  return [p.name,pl.length?pl[0][0]:-1,pl.length?pl[0][1]:-1,p.short||"",p.stock||"ask",p.featured?1:0,p.code,p.price||null,p.long||"",p.images||[],pl,(p.variants||[]).filter(v=>v&&v.name)]}).filter(p=>p[10].length);
 const ICONS=[
 '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>',
 '<path d="M12 3c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10z"/>',
@@ -312,7 +325,9 @@ const $=s=>document.querySelector(s); let cat=-1,sub=-1,q="";
 const inC=(p,c)=>p[10].some(x=>x[0]===c), inS=(p,c,s)=>p[10].some(x=>x[0]===c&&x[1]===s);
 const plc=p=>{const x=cat>=0?(p[10].find(y=>y[0]===cat&&(sub<0||y[1]===sub))||p[10][0]):p[10][0];return C[x[0]][0]+" / "+C[x[0]][1][x[1]]};
 const svg=i=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+ICONS[i%ICONS.length]+'</svg>';
-const priceTxt=p=>p[7]?"৳"+Number(p[7]).toLocaleString("en-US"):"Price on request";
+const pt=n=>"৳"+Number(n).toLocaleString("en-US");
+const priceTxt=p=>{if(p[7])return pt(p[7]);const vp=(p[11]||[]).map(v=>v.price).filter(Boolean);return vp.length?"From "+pt(Math.min(...vp)):"Price on request"};
+let curVr=null;
 function stockTag(t,v){t.textContent=v==="in"?"In stock":v==="order"?"On order":"Ask availability";t.className="tag "+(v==="in"?"in":"order")}
 function card(p){const d=document.createElement("article");d.className="card";
   d.innerHTML='<div class="thumb"></div><div class="body"><h3><button class="lnk" type="button"></button></h3><p></p><div class="row"><span class="tag"></span><span class="price"></span></div></div>';
@@ -323,19 +338,25 @@ function card(p){const d=document.createElement("article");d.className="card";
 function openProd(p){
   $("#mcat").textContent=C[p[1]][1][p[2]]; $("#mname").textContent=p[0]; $("#mcode").textContent="Product code: "+p[6]; $("#mprice").textContent=priceTxt(p);
   stockTag($("#mtag"),p[4]); $("#mdesc").textContent=p[8]||p[3];
-  const gm=$("#gmain"),gt=$("#gthumbs"),im=p[9]||[]; gt.textContent="";gm.textContent="";
-  let cur=0,tm=0;
+  const gm=$("#gmain"),gt=$("#gthumbs"),vs=p[11]||[],vb=$("#mvars"); let cur=0,tm=0,im=[];
   const mark=k=>{cur=k;[...gt.children].forEach((x,j)=>x.setAttribute("aria-pressed",j===k));const pg=gm.querySelector(".gpg");if(pg)pg.textContent=(k+1)+" / "+im.length};
-  if(!im.length)gm.innerHTML=svg(p[1]);
-  else{const tr=document.createElement("div");tr.className="track";
+  const build=list=>{im=list;cur=0;clearTimeout(tm);gt.textContent="";gm.textContent="";
+    if(!im.length){gm.innerHTML=svg(p[1]);return}
+    const tr=document.createElement("div");tr.className="track";
     im.forEach(u=>{const sl=document.createElement("div");sl.className="slide";const i=document.createElement("img");i.src=u;i.alt=p[0];sl.appendChild(i);tr.appendChild(sl)});gm.appendChild(tr);
     const go=k=>{k=Math.max(0,Math.min(im.length-1,k));tr.scrollTo({left:k*tr.clientWidth,behavior:"smooth"});mark(k)};
     tr.addEventListener("scroll",()=>{clearTimeout(tm);tm=setTimeout(()=>{const k=Math.round(tr.scrollLeft/(tr.clientWidth||1));if(k!==cur)mark(k)},60)});
     if(im.length>1){[["‹","gprev",-1],["›","gnext",1]].forEach(([t,c,d])=>{const b=document.createElement("button");b.type="button";b.className="garr "+c;b.textContent=t;b.setAttribute("aria-label",d<0?"Previous photo":"Next photo");b.onclick=()=>go(cur+d);gm.appendChild(b)});
       const pg=document.createElement("span");pg.className="gpg";gm.appendChild(pg)}
     im.forEach((u,k)=>{const b=document.createElement("button");b.type="button";b.setAttribute("aria-label","Photo "+(k+1));const i=document.createElement("img");i.src=u;i.alt="";b.appendChild(i);b.onclick=()=>go(k);gt.appendChild(b)});
-    mark(0)}
-  $("#mbuy").onclick=()=>{$("#modal").hidden=true;openOrder(p)};$("#mcontact").onclick=()=>openContact();
+    mark(0)};
+  const pick=k=>{const v=k>=0?vs[k]:null;curVr=v;[...vb.children].forEach((x,j)=>x.setAttribute("aria-pressed",j===k));
+    $("#mprice").textContent=v&&v.price?pt(v.price):priceTxt(p);
+    build(v&&v.images&&v.images.length?v.images:(p[9]||[]))};
+  vb.textContent="";$("#mvwrap").hidden=!vs.length;
+  vs.forEach((v,k)=>{const b=document.createElement("button");b.type="button";b.textContent=v.name;b.onclick=()=>pick(k);vb.appendChild(b)});
+  pick(vs.length?0:-1);
+  $("#mbuy").onclick=()=>{$("#modal").hidden=true;openOrder(p,curVr)};$("#mcontact").onclick=()=>openContact();
   $("#modal").hidden=false; $("#mclose").focus()}
 $("#mclose").onclick=()=>$("#modal").hidden=true;
 $("#modal").addEventListener("click",e=>{if(e.target.id==="modal")e.target.hidden=true});
@@ -371,7 +392,7 @@ $("#openContact").onclick=openContact;
 $("#cclose").onclick=()=>$("#contactModal").hidden=true;
 $("#cmailcopy").onclick=async()=>{const t=$("#cmail").textContent;try{await navigator.clipboard.writeText(t);$("#cmailcopy").textContent="Copied"}catch(e){const r=document.createRange();r.selectNodeContents($("#cmail"));const sl=getSelection();sl.removeAllRanges();sl.addRange(r);$("#cmailcopy").textContent="Selected, now copy"}setTimeout(()=>$("#cmailcopy").textContent="Copy email",1800)};
 let curP=null;
-function openOrder(p){curP=p;$("#osum").innerHTML="<b></b><span></span>";$("#osum b").textContent=p[0];$("#osum span").textContent="Code: "+p[6]+"  |  "+priceTxt(p);
+function openOrder(p,v){curP=p;curVr=v||null;$("#osum").innerHTML="<b></b><span></span>";$("#osum b").textContent=p[0]+(v?" ("+v.name+")":"");$("#osum span").textContent="Code: "+p[6]+"  |  "+(v&&v.price?pt(v.price):priceTxt(p));
   $("#oform").hidden=false;$("#odone").hidden=true;$("#oerr").hidden=true;$("#orderModal").hidden=false;$("#oname").focus()}
 $("#oclose").onclick=()=>$("#orderModal").hidden=true;
 $("#ocontact").onclick=()=>{$("#orderModal").hidden=true;openContact()};
@@ -380,7 +401,7 @@ $("#oform").addEventListener("submit",e=>{e.preventDefault();
   if(!(qn>=1))m="Enter a quantity of 1 or more.";else if(!v("oname"))m="Enter your name.";else if(!/^(\+?88)?01[3-9]\d{8}$/.test(ph))m="Enter a valid Bangladesh mobile number, like 01XXXXXXXXX.";
   else if(!v("oaddr"))m="Enter your address.";else if(!v("odist"))m="Select your district.";else if(!v("othana"))m="Enter your thana or upazila.";
   const er=$("#oerr");if(m){er.textContent=m;er.hidden=false;return}er.hidden=true;
-  const txt="New order for "+SHOP+"\n\nProduct: "+curP[0]+"\nCode: "+curP[6]+"\nQuantity: "+qn+"\n\nName: "+v("oname")+"\nPhone: "+ph+"\nAddress: "+v("oaddr")+"\nThana/Upazila: "+v("othana")+"\nDistrict: "+v("odist");
+  const txt="New order for "+SHOP+"\n\nProduct: "+curP[0]+(curVr?"\nSize/Option: "+curVr.name:"")+"\nCode: "+curP[6]+"\nQuantity: "+qn+"\n\nName: "+v("oname")+"\nPhone: "+ph+"\nAddress: "+v("oaddr")+"\nThana/Upazila: "+v("othana")+"\nDistrict: "+v("odist");
   $("#omsg").value=txt;$("#osend").href="https://wa.me/"+WA+"?text="+encodeURIComponent(txt);$("#osend").hidden=!WA;$("#oform").hidden=true;$("#odone").hidden=false});
 $("#oedit").onclick=()=>{$("#oform").hidden=false;$("#odone").hidden=true};
 $("#ocopy").onclick=async()=>{const m=$("#omsg");try{await navigator.clipboard.writeText(m.value);$("#ocopy").textContent="Copied"}catch(e){m.select();$("#ocopy").textContent="Selected, now copy"}setTimeout(()=>$("#ocopy").textContent="Copy order",1800)};
