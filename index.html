@@ -194,6 +194,12 @@ header.top{padding:10px 0 0}
 .vars{display:flex;gap:6px;flex-wrap:wrap}
 .vars button{font:600 13px var(--f-body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
 .vars button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pvbar{display:flex;align-items:center;gap:12px;margin:16px 0 0}
+.pvbar .crumb{margin:0}
+.back{width:42px;height:42px;flex:none;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
+.back:hover{border-color:var(--accent)}
+.pvbox{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:12px}
+#pview{padding-bottom:50px}
 /* category slider: boxed items + brown scrollbar */
 :root{--brown:#8B5A2B;--brown-soft:#EADDCB}
 .catnav{gap:8px;padding:10px 2px 12px;scrollbar-width:auto}
@@ -219,6 +225,7 @@ header.top{padding:10px 0 0}
 <div id="ddhost"></div>
 
 <main class="wrap">
+<div id="home">
   <section class="banner">
     <div>
       <h1 id="hl"></h1>
@@ -247,14 +254,16 @@ header.top{padding:10px 0 0}
       <div id="caddrbox"><div class="k">Address</div><div id="caddr"></div></div>
     </div>
   </section>
-</main>
-
-<div class="modal" id="modal" hidden><div class="mbox" role="dialog" aria-modal="true" aria-label="Product details">
-  <div class="mtop"><button class="btn ghost" id="mclose" type="button">Close</button></div>
-  <div class="mgrid">
+</div>
+<section id="pview" hidden>
+  <div class="pvbar"><button class="back" id="pback" type="button" aria-label="Go back">&larr;</button><div class="crumb" id="pcrumb"></div></div>
+  <div class="pvbox"><div class="mgrid">
     <div><div class="gmain" id="gmain"></div><div class="gthumbs" id="gthumbs"></div></div>
     <div class="info"><div class="cat" id="mcat"></div><h2 id="mname"></h2><div class="code" id="mcode"></div><div class="price" id="mprice"></div><div id="mvwrap" hidden><div class="k">Size / option</div><div class="vars" id="mvars"></div></div><div><span class="tag" id="mtag"></span></div><div class="mdesc" id="mdesc"></div><div class="acts"><button class="btn" id="mbuy" type="button">Buy now</button><button class="btn ghost" id="mcontact" type="button">Contact us</button></div></div>
-  </div></div></div>
+  </div></div>
+  <div id="prel"></div>
+</section>
+</main>
 
 <div class="modal" id="contactModal" hidden><div class="mbox small" role="dialog" aria-modal="true" aria-label="Contact us">
   <div class="mtop"><h2 style="margin-right:auto;font-size:20px">Contact us</h2><button class="btn ghost" id="cclose" type="button">Close</button></div>
@@ -335,7 +344,7 @@ function card(p){const d=document.createElement("article");d.className="card";
   d.querySelector(".lnk").textContent=p[0]; d.querySelector("p").textContent=p[3];
   stockTag(d.querySelector(".tag"),p[4]); d.querySelector(".price").textContent=priceTxt(p);
   th.onclick=d.querySelector(".lnk").onclick=()=>openProd(p); return d}
-function openProd(p){
+function renderProd(p){
   $("#mcat").textContent=C[p[1]][1][p[2]]; $("#mname").textContent=p[0]; $("#mcode").textContent="Product code: "+p[6]; $("#mprice").textContent=priceTxt(p);
   stockTag($("#mtag"),p[4]); $("#mdesc").textContent=p[8]||p[3];
   const gm=$("#gmain"),gt=$("#gthumbs"),vs=p[11]||[],vb=$("#mvars"); let cur=0,tm=0,im=[];
@@ -356,12 +365,10 @@ function openProd(p){
   vb.textContent="";$("#mvwrap").hidden=!vs.length;
   vs.forEach((v,k)=>{const b=document.createElement("button");b.type="button";b.textContent=v.name;b.onclick=()=>pick(k);vb.appendChild(b)});
   pick(vs.length?0:-1);
-  $("#mbuy").onclick=()=>{$("#modal").hidden=true;openOrder(p,curVr)};$("#mcontact").onclick=()=>openContact();
-  $("#modal").hidden=false; $("#mclose").focus()}
-$("#mclose").onclick=()=>$("#modal").hidden=true;
-$("#modal").addEventListener("click",e=>{if(e.target.id==="modal")e.target.hidden=true});
+  $("#mbuy").onclick=()=>{openOrder(p,curVr)};$("#mcontact").onclick=()=>openContact();
+}
 document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".modal").forEach(m=>m.hidden=true)});document.querySelectorAll(".modal").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)m.hidden=true}));
-function go(c,s){cat=c;sub=s;draw();$("#all").scrollIntoView({behavior:"smooth"})}
+function go(c,s){showHome(false);q="";$("#q").value="";cat=c;sub=s;draw();$("#all").scrollIntoView({behavior:"smooth"})}
 function drawCats(){const g=$("#cgrid");g.textContent="";
   C.forEach((c,i)=>{const d=document.createElement("button");d.type="button";d.className="ccard";
     d.innerHTML='<span class="t"><span><h3></h3><small></small></span></span>';
@@ -384,10 +391,10 @@ function draw(){
   const g=$("#grid");g.textContent="";list.forEach(p=>g.appendChild(card(p)));
   const f=$("#fgrid");f.textContent="";$("#featured").hidden=!P.some(p=>p[5]);P.filter(p=>p[5]).forEach(p=>{const c=card(p);const s=document.createElement("div");s.className="star";s.textContent="Featured";c.querySelector("h3").before(s);f.appendChild(c)});
 }
-$("#q").addEventListener("input",e=>{q=e.target.value;if(q)cat=sub=-1;draw()});
+$("#q").addEventListener("input",e=>{q=e.target.value;if(q){showHome(false);cat=sub=-1}draw()});
 $("#q").addEventListener("keydown",e=>{if(e.key==="Enter"&&sugIdx<0){$("#sug").hidden=true;$("#all").scrollIntoView({behavior:"smooth"})}});
 const WA=S.whatsapp||"",SHOP=S.name||"the shop";
-function openContact(){$("#modal").hidden=true;$("#contactModal").hidden=false}
+function openContact(){$("#contactModal").hidden=false}
 $("#openContact").onclick=openContact;
 $("#cclose").onclick=()=>$("#contactModal").hidden=true;
 $("#cmailcopy").onclick=async()=>{const t=$("#cmail").textContent;try{await navigator.clipboard.writeText(t);$("#cmailcopy").textContent="Copied"}catch(e){const r=document.createRange();r.selectNodeContents($("#cmail"));const sl=getSelection();sl.removeAllRanges();sl.addRange(r);$("#cmailcopy").textContent="Selected, now copy"}setTimeout(()=>$("#cmailcopy").textContent="Copy email",1800)};
@@ -456,6 +463,34 @@ function applySettings(){
 applySettings();
 drawMenu();
 drawCats();draw();
+
+/* ---- product page (own page, back arrow, related products) ---- */
+let homeY=0,fromSite=false;try{history.scrollRestoration="manual"}catch(e){}
+const pv=$("#pview"),home=$("#home");
+function showHome(restore){const was=!pv.hidden;pv.hidden=true;home.hidden=false;document.title=S.name||"Shop";
+  if(location.hash.indexOf("#/p/")===0)history.replaceState(null,"",location.pathname+location.search);
+  if(was&&restore!==false){window.scrollTo(0,homeY);requestAnimationFrame(()=>window.scrollTo(0,homeY))}}
+function openProd(p){if(pv.hidden)homeY=window.scrollY;fromSite=true;location.hash="#/p/"+encodeURIComponent(p[6])}
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+function drawRelated(p){
+  const cr=$("#pcrumb");cr.textContent="";
+  const b0=document.createElement("button");b0.type="button";b0.textContent="Home";b0.onclick=()=>{showHome(false);window.scrollTo(0,0)};cr.appendChild(b0);
+  const x0=p[10][0];
+  [[C[x0[0]][0],()=>go(x0[0],-1)],[C[x0[0]][1][x0[1]],()=>go(x0[0],x0[1])]].forEach(([t,f])=>{const b=document.createElement("button");b.type="button";b.textContent=t;b.onclick=f;cr.appendChild(b)});
+  const box=$("#prel");box.textContent="";
+  const subIds=new Set(p[10].map(x=>C[x[0]][3][x[1]])), seen=new Set([p[6]]);
+  const block=(title,list)=>{list=list.filter(x=>!seen.has(x[6])).slice(0,12);if(!list.length)return;list.forEach(x=>seen.add(x[6]));
+    const sec=document.createElement("section");sec.className="sec";const h=document.createElement("h2");h.textContent=title;const g=document.createElement("div");g.className="grid";
+    list.forEach(x=>g.appendChild(card(x)));sec.appendChild(h);sec.appendChild(g);box.appendChild(sec)};
+  block("Similar products",shuffle(P.filter(x=>x!==p&&x[10].some(y=>subIds.has(C[y[0]][3][y[1]])))));
+  const cats=[...new Set(p[10].map(x=>x[0]))];
+  cats.forEach(ci=>block("More from "+C[ci][0],shuffle(P.filter(x=>x!==p&&inC(x,ci)))))}
+function route(){const m=/^#\/p\/(.+)$/.exec(location.hash),p=m&&P.find(x=>x[6]===decodeURIComponent(m[1]));
+  if(!p){showHome();return}
+  home.hidden=true;pv.hidden=false;renderProd(p);drawRelated(p);document.title=p[0]+" | "+(S.name||"Shop");window.scrollTo(0,0)}
+window.addEventListener("hashchange",route);
+$("#pback").onclick=()=>{if(fromSite&&history.length>1)history.back();else location.hash=""};
+route();
 </script>
 
 </body>
