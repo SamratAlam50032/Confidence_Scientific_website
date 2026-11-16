@@ -92,6 +92,12 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
 .vcard{border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:10px;background:var(--bg)}
 .vrow{display:grid;grid-template-columns:minmax(0,1fr) 140px auto;gap:8px;align-items:center;margin-bottom:8px}
 @media(max-width:560px){.vrow{grid-template-columns:1fr 1fr}.vrow input:first-child{grid-column:1/-1}}
+.pwrap{display:flex;gap:6px;align-items:stretch;min-width:0}
+.pwrap .prow{flex:1;width:auto;margin:0;min-width:0}
+.pmv{display:flex;flex-direction:column;gap:3px;flex:none}
+.mvb{flex:1;width:32px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;cursor:pointer;font-size:14px;line-height:1;padding:0}
+.mvb:hover:not(:disabled){border-color:var(--accent)}.mvb:disabled{opacity:.3;cursor:default}
+body.editing .pmv{display:none}
 </style>
 </head>
 <body>
@@ -117,8 +123,7 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
     <div class="split" id="split">
       <div class="listpane">
         <div class="tools"><input id="ps" type="search" placeholder="Search name or code" aria-label="Search products"><select id="pf" aria-label="Filter by sub category" style="flex:1 1 140px"></select></div>
-        <button class="btn" id="pnew" type="button" style="width:100%;margin-bottom:8px">+ New product</button>
-        <button class="btn ghost" id="pimp" type="button" style="width:100%;margin-bottom:10px">Import products from file</button><input id="pimpf" type="file" accept=".json,application/json" class="hid" aria-label="Product file">
+        <div class="tools"><button class="btn" id="pnew" type="button" style="flex:1 1 auto">+ New product</button><button class="btn ghost" id="pimp" type="button" style="flex:1 1 auto">Import products from file</button><button class="btn ghost" id="pshuf" type="button" style="flex:1 1 auto">Shuffle order</button></div><input id="pimpf" type="file" accept=".json,application/json" class="hid" aria-label="Product file">
         <div id="plist"></div>
       </div>
       <div class="card" id="pedit" hidden></div>
@@ -226,16 +231,28 @@ document.querySelectorAll(".tabs button").forEach(function(b){b.onclick=function
 /* ---------- products list ---------- */
 function renderFilter(){var f=$("#pf"),cur=f.value;f.textContent="";f.append(el("option",{value:"",text:"All sub categories"}));f.append(el("option",{value:"__none",text:"No sub category yet"}));
   D.subs.forEach(function(c){f.append(el("option",{value:c.id,text:c.name}))});f.value=(cur==="__none"||subById(cur))?cur:""}
+function pwrap(btn,x,items){var k=items.indexOf(x);
+  var mb=function(t,l,f,dis){return el("button",{type:"button",class:"mvb",text:t,"aria-label":l,title:l,disabled:dis,onclick:function(e){e.stopPropagation();f()}})};
+  return el("div",{class:"pwrap"},btn,el("div",{class:"pmv"},
+    mb("⤒","Move to top",function(){moveP(x.i,0,true)},k===0),
+    mb("↑","Move up",function(){moveP(x.i,items[k-1].i)},k===0),
+    mb("↓","Move down",function(){moveP(x.i,items[k+1].i)},k===items.length-1)))}
+function moveP(i,j,top){var arr=D.products,p=arr[i];if(top){arr.splice(i,1);arr.unshift(p)}else{arr[i]=arr[j];arr[j]=p}persist();renderList()}
+var shufArmed=false;
+function shuffleP(){var b=$("#pshuf");
+  if(!shufArmed){shufArmed=true;b.textContent="Click again to shuffle all";setTimeout(function(){shufArmed=false;b.textContent="Shuffle order"},3500);return}
+  shufArmed=false;b.textContent="Shuffle order";var arr=D.products;for(var i=arr.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=arr[i];arr[i]=arr[j];arr[j]=t}
+  persist();renderList();showMsg("Product order shuffled. Press Publish to update the website.","ok")}
 function renderList(){
   var t=$("#ps").value.trim().toLowerCase(),f=$("#pf").value,box=$("#plist");box.textContent="";
   var items=D.products.map(function(p,i){return {p:p,i:i}}).filter(function(x){return (!f||(f==="__none"?!x.p.subs.length:x.p.subs.indexOf(f)>=0))&&(!t||(x.p.name+" "+x.p.code).toLowerCase().indexOf(t)>=0)});
   if(!items.length){box.append(el("div",{class:"empty",text:D.products.length?"No product matches.":"No products yet. Press + New product."}));return}
   items.forEach(function(x){var p=x.p,th=el("span",{class:"th"});if(p.images[0])th.append(el("img",{src:imgSrc(p.images[0]),alt:""}));
-    box.append(el("button",{class:"prow"+(x.i===edIdx?" on":""),type:"button",onclick:function(){openEditor(x.i)}},th,
+    box.append(pwrap(el("button",{class:"prow"+(x.i===edIdx?" on":""),type:"button",onclick:function(){openEditor(x.i)}},th,
       el("span",{class:"pi"},el("b",{text:p.name||"(no name)"}),el("small",{text:p.code+" · "+catLabel(p)})),
-      el("span",{class:"pm"},el("span",{text:p.price?"৳"+Number(p.price).toLocaleString("en-US"):"No price"}),el("span",{class:"chip "+p.stock,text:STOCK[p.stock]||""}),p.featured?el("span",{class:"chip feat",text:"Featured"}):null)))});
+      el("span",{class:"pm"},el("span",{text:p.price?"৳"+Number(p.price).toLocaleString("en-US"):"No price"}),el("span",{class:"chip "+p.stock,text:STOCK[p.stock]||""}),p.featured?el("span",{class:"chip feat",text:"Featured"}):null)),x,items))});
 }
-$("#ps").oninput=renderList;$("#pf").onchange=renderList;$("#pnew").onclick=function(){hideMsg();openEditor(-1)};
+$("#pshuf").onclick=shuffleP;$("#ps").oninput=renderList;$("#pf").onchange=renderList;$("#pnew").onclick=function(){hideMsg();openEditor(-1)};
 $("#pimp").onclick=function(){$("#pimpf").click()};
 function nk(s){return String(s||"").trim().toLowerCase().replace(/\s+/g," ")}
 function toJpeg(u){return new Promise(function(res,rej){var im=new Image();im.onload=function(){var M=1400,w=im.naturalWidth,h=im.naturalHeight,k=Math.min(1,M/Math.max(w,h));w=Math.round(w*k);h=Math.round(h*k);

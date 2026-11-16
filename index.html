@@ -194,10 +194,15 @@ header.top{padding:10px 0 0}
 .vars{display:flex;gap:6px;flex-wrap:wrap}
 .vars button{font:600 13px var(--f-body);border:1.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:6px 12px;cursor:pointer}
 .vars button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.banner .bacts{display:flex;flex-wrap:wrap;gap:8px}
+.banner .bacts .btn{display:inline-block;margin:0}
+.banner .bacts .btn.gap2{margin-left:8px}
+@media(max-width:600px){.banner .bacts .btn.gap2{margin-left:0}}
 .pvbar{display:flex;align-items:center;gap:12px;margin:16px 0 0}
 .pvbar .crumb{margin:0}
-.back{width:42px;height:42px;flex:none;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
-.back:hover{border-color:var(--accent)}
+.back{width:40px;height:40px;flex:none;border-radius:50%;border:0;background:#111;color:#fff;display:grid;place-items:center;padding:0;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .15s,background .15s}
+.back:hover{background:#333;transform:translateX(-2px)}
+.back:active{transform:scale(.94)}
 .pvbox{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:12px}
 #pview{padding-bottom:50px}
 /* category slider: boxed items + brown scrollbar */
@@ -230,7 +235,7 @@ header.top{padding:10px 0 0}
     <div>
       <h1 id="hl"></h1>
       <p id="hi"></p>
-      <a class="btn" href="#categories" style="text-decoration:none;display:inline-block">Browse categories</a><a class="btn o" href="#contact" style="text-decoration:none;display:inline-block">Contact us</a>
+      <div class="bacts"><a class="btn" href="#categories" style="text-decoration:none">Browse categories</a><a class="btn o" href="#all" id="seeall" style="text-decoration:none">See all products</a><a class="btn o gap2" href="#contact" style="text-decoration:none">Contact us</a></div>
     </div>
     <div class="rl" aria-hidden="true"></div>
   </section>
@@ -256,7 +261,7 @@ header.top{padding:10px 0 0}
   </section>
 </div>
 <section id="pview" hidden>
-  <div class="pvbar"><button class="back" id="pback" type="button" aria-label="Go back">&larr;</button><div class="crumb" id="pcrumb"></div></div>
+  <div class="pvbar"><button class="back" id="pback" type="button" aria-label="Go back"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 5l-7 7 7 7"/></svg></button><div class="crumb" id="pcrumb"></div></div>
   <div class="pvbox"><div class="mgrid">
     <div><div class="gmain" id="gmain"></div><div class="gthumbs" id="gthumbs"></div></div>
     <div class="info"><div class="cat" id="mcat"></div><h2 id="mname"></h2><div class="code" id="mcode"></div><div class="price" id="mprice"></div><div id="mvwrap" hidden><div class="k">Size / option</div><div class="vars" id="mvars"></div></div><div><span class="tag" id="mtag"></span></div><div class="mdesc" id="mdesc"></div><div class="acts"><button class="btn" id="mbuy" type="button">Buy now</button><button class="btn ghost" id="mcontact" type="button">Contact us</button></div></div>
@@ -330,6 +335,7 @@ const ICONS=[
 '<path d="M4 8h16v8H4zM8 8v3M12 8v4M16 8v3"/>',
 '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>'
 ];
+const FEAT=(()=>{const a=P.filter(p=>p[5]);for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a.slice(0,12)})();
 const $=s=>document.querySelector(s); let cat=-1,sub=-1,q="";
 const inC=(p,c)=>p[10].some(x=>x[0]===c), inS=(p,c,s)=>p[10].some(x=>x[0]===c&&x[1]===s);
 const plc=p=>{const x=cat>=0?(p[10].find(y=>y[0]===cat&&(sub<0||y[1]===sub))||p[10][0]):p[10][0];return C[x[0]][0]+" / "+C[x[0]][1][x[1]]};
@@ -389,7 +395,7 @@ function draw(){
   if(q)add("Search: "+q+"  ✕",()=>{q="";$("#q").value="";draw()});
   $("#empty").hidden=list.length>0;$("#empty").textContent=P.length?"No product matches. Try a shorter word or clear the filter.":"Products are being added. Please check back soon or contact us.";
   const g=$("#grid");g.textContent="";list.forEach(p=>g.appendChild(card(p)));
-  const f=$("#fgrid");f.textContent="";$("#featured").hidden=!P.some(p=>p[5]);P.filter(p=>p[5]).forEach(p=>{const c=card(p);const s=document.createElement("div");s.className="star";s.textContent="Featured";c.querySelector("h3").before(s);f.appendChild(c)});
+  const f=$("#fgrid");f.textContent="";$("#featured").hidden=!FEAT.length;FEAT.forEach(p=>{const c=card(p);const s=document.createElement("div");s.className="star";s.textContent="Featured";c.querySelector("h3").before(s);f.appendChild(c)});
 }
 $("#q").addEventListener("input",e=>{q=e.target.value;if(q){showHome(false);cat=sub=-1}draw()});
 $("#q").addEventListener("keydown",e=>{if(e.key==="Enter"&&sugIdx<0){$("#sug").hidden=true;$("#all").scrollIntoView({behavior:"smooth"})}});
@@ -489,6 +495,7 @@ function route(){const m=/^#\/p\/(.+)$/.exec(location.hash),p=m&&P.find(x=>x[6]=
   if(!p){showHome();return}
   home.hidden=true;pv.hidden=false;renderProd(p);drawRelated(p);document.title=p[0]+" | "+(S.name||"Shop");window.scrollTo(0,0)}
 window.addEventListener("hashchange",route);
+$("#seeall").onclick=e=>{e.preventDefault();go(-1,-1)};
 $("#pback").onclick=()=>{if(fromSite&&history.length>1)history.back();else location.hash=""};
 route();
 </script>
