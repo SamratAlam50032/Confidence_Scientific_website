@@ -2278,6 +2278,10 @@ window.SHOP={
   {
    "id": "seja7me",
    "name": "Thermometer"
+  },
+  {
+   "id": "sz7qw3t",
+   "name": "pH/Filter/Litmus paper"
   }
  ]
 };
