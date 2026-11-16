@@ -634,9 +634,9 @@ window.SHOP={
   {
    "code": "HN-032",
    "name": "Hanna Glass pH Electrode HI-1131B with BNC Connector",
-   "sub": "c1s4",
+   "sub": "c1s6",
    "subs": [
-    "c1s4"
+    "c1s6"
    ],
    "short": "Refillable glass-body pH electrode with BNC connector.",
    "long": "Refillable glass-body pH electrode with a BNC connector, suitable for general purpose laboratory pH measurement with standard benchtop pH meters. Regular cleaning, correct storage and fresh electrolyte keep the response fast and stable.\n\nSpecifications\n• Type: pH electrode, glass body, refillable\n• Connector: BNC\n• Use: general purpose laboratory pH measurement\n• Storage: in electrode storage solution, never in distilled water\n\nIn the box\n• HI1131B pH electrode\n• Protective cap\n• Instruction sheet",
@@ -678,8 +678,8 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "images": [
-    "pending:iiqunfa",
-    "pending:izvij23"
+    "images/hn-034-qunfa8qv.jpg",
+    "images/hn-034-vij23afu.jpg"
    ]
   },
   {
