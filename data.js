@@ -166,7 +166,11 @@ window.SHOP={
    "price": 8199,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-004-et7qb3y1.jpg",
+    "images/hn-004-nyk8d5cu.jpg",
+    "images/hn-004-sc41l6ri.jpg"
+   ]
   },
   {
    "code": "HN-005",
@@ -181,22 +185,30 @@ window.SHOP={
    "price": 8199,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-005-kn9ctt0v.jpg",
+    "images/hn-005-h7zam21k.jpg",
+    "images/hn-005-20yvm3q1.jpg",
+    "images/hn-005-gz4bj52n.jpg"
+   ]
   },
   {
    "code": "HN-006",
    "name": "Hanna HI2211 Benchtop pH/mV Meter with 0.01 Resolution",
-   "sub": "c2s1",
+   "sub": "c1s1",
    "subs": [
-    "c2s1",
-    "c1s1"
+    "c1s1",
+    "c2s1"
    ],
    "short": "Benchtop pH, mV and temperature meter, 0.01 pH resolution, 1 or 2 point calibration.",
-   "long": "Benchtop pH and temperature meter that also reads ORP in mV. Calibration is automatic, one or two point, guided step by step on the LCD, with five memorized buffers. It has automatic temperature compensation, a reading stability indicator and a recall function. A good everyday meter for school and college labs, water testing and quality control.\n\nSpecifications\n• pH range: -2.00 to 16.00 pH, resolution 0.01 pH, accuracy ±0.01 pH\n• Calibration: automatic, 1 or 2 points, memorized buffers pH 4.01, 6.86, 7.01, 9.18, 10.01\n• mV range: ±399.9 mV (0.1 mV) and ±2000 mV (1 mV)\n• Temperature: -9.9 to 120.0°C, resolution 0.1°C, ±0.5°C, automatic or manual compensation\n• Input impedance: 10^12 ohm\n• Power: 12 VDC adapter\n• Size and weight: 240 x 182 x 74 mm, 2.81 kg\n\nIn the box\n• HI2211 meter\n• HI1131B glass body pH electrode\n• HI7662 stainless steel temperature probe\n• HI76404N electrode holder\n• pH 4.01 and pH 7.01 buffer sachets\n• HI7082 electrolyte solution\n• Electrode cleaning solution sachet\n• 12 VDC adapter\n• Instruction manual",
-   "price": 40000,
-   "stock": "ask",
+   "long": "Benchtop pH and temperature meter that also reads ORP in mV. Calibration is automatic, one or two point, guided step by step on the LCD, with five memorized buffers. It has automatic temperature compensation, a reading stability indicator and a recall function. A good everyday meter for school and college labs, water testing and quality control.\n\nSpecifications\n• pH range: -2.00 to 16.00 pH, resolution 0.01 pH, accuracy ±0.01 pH\n• Calibration: automatic, 1 or 2 points, memorized buffers pH 4.01, 6.86, 7.01, 9.18, 10.01\n• mV range: ±399.9 mV (0.1 mV) and ±2000 mV (1 mV)\n• Temperature: -9.9 to 120.0°C, resolution 0.1°C, ±0.5°C, automatic or manual compensation\n• Input impedance: 10^12 ohm\n• Power: 12 VDC adapter\n• Size and weight: 240 x 182 x 74 mm, 2.81 kg\n\nIn the box\n• HI2211 meter\n• HI1131B glass body pH electrode\n• HI7662 stainless steel temperature probe\n• HI76404N electrode holder\n• pH 4.01 and pH 7.01 buffer sachets\n• Electrode cleaning solution sachet\n• 12 VDC adapter\n• Instruction manual",
+   "price": 38500,
+   "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-006-nmvmz6tx.jpg",
+    "images/hn-006-23r6a8ar.jpg"
+   ]
   },
   {
    "code": "HN-007",
@@ -243,6 +255,142 @@ window.SHOP={
    "long": "Handheld colorimeter dedicated to free chlorine, a more accurate alternative to colour matching test kits. It uses a fixed wavelength LED and a silicon photocell, with a built-in timer and one button operation. Designed for freshwater samples such as drinking water, pools and spas, vegetable wash water, education and environmental testing.\n\nSpecifications\n• Range: 0.00 to 2.50 ppm (mg/L) free chlorine, resolution 0.01 ppm\n• Accuracy: ±0.03 ppm ±3% of reading\n• Method: adaptation of USEPA method 330.5, DPD reagent\n• Light source: LED at 525 nm, silicon photocell detector\n• Battery: 1 x 1.5 V AAA\n• Auto shut-off: after 2 minutes of non-use\n• Environment: 0 to 50°C, up to 95% RH non-condensing\n• Size and weight: 81.5 x 61 x 37.5 mm, 64 g\n\nIn the box\n• HI701 Checker HC\n• 2 sample cuvettes with caps\n• Free chlorine reagent starter kit (6 tests)\n• Battery\n• Instructions and quick start guide",
    "price": 8199,
    "stock": "ask",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-021",
+   "name": "Ammonia Test Kit for Seawater Replacement Reagents (25 tests) - HI3826",
+   "sub": "",
+   "subs": [],
+   "short": "Replacement reagents for the Hanna HI3826 seawater ammonia test kit, about 25 tests.",
+   "long": "Refill reagent set (HI3826-025) for the Hanna HI3826 Ammonia Test Kit for Seawater. The kit measures ammonia as NH3-N in seawater with a colorimetric Nessler method, and you read the result by matching the color against the comparison cube. Reagents are pre-made, and each bottle is marked with a lot number and expiry date. Used to monitor ammonia in rivers, estuaries and bays, where ammonia can be toxic to aquatic life.\n\nSpecifications\n• Refills: HI3826 Ammonia Test Kit for Seawater\n• Range: 0.0 to 2.5 mg/L (ppm) NH3-N, resolution 0.5 mg/L\n• Method: Nessler, colorimetric\n• Number of tests: about 25\n\nIn the pack\n• Ammonia Reagent 1 for seawater, 20 mL dropper bottle\n• Nessler Reagent, 20 mL dropper bottle\n\nThis pack holds reagents only. The sample beaker and color comparison cube come with the full kit.",
+   "price": 5599,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-022",
+   "name": "Ammonia Test Kit for Fresh Water Replacement Reagents (25 tests) - HI3824",
+   "sub": "",
+   "subs": [],
+   "short": "Replacement reagents for the Hanna HI3824 fresh water ammonia test kit, about 25 tests.",
+   "long": "Refill reagent set (HI3824-025) for the Hanna HI3824 Ammonia Test Kit for Fresh Water. The kit measures ammonia as NH3-N in fresh water with an adaptation of the Nessler method, and you read the result by matching the color against the comparison cube. Reagents are pre-made, and each bottle is marked with a lot number and expiry date. Used for rivers and drinking water reservoirs, groundwater, freshwater aquariums and fish farming.\n\nSpecifications\n• Refills: HI3824 Ammonia Test Kit for Fresh Water\n• Range: 0.0 to 2.5 mg/L (ppm) NH3-N, resolution 0.5 mg/L\n• Method: adaptation of the Nessler method, colorimetric\n• Number of tests: about 25\n\nIn the pack\n• Ammonia Reagent 1 for fresh water, 20 mL dropper bottle\n• Nessler Reagent, 20 mL dropper bottle\n\nThis pack holds reagents only. The sample beaker and color comparison cube come with the full kit.",
+   "price": 5399,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-023",
+   "name": "HI-715 Ammonia Medium Range Checker for Freshwater",
+   "sub": "c1s1",
+   "subs": [
+    "c1s1"
+   ],
+   "short": "Handheld ammonia colorimeter, 0.00 to 9.99 ppm NH3-N, 0.01 ppm resolution.",
+   "long": "Hanna HI715 Ammonia Medium Range Checker HC is a pocket-size digital colorimeter for one parameter, ammonia. Add the reagents to the sample, put the cuvette in the meter and press one button to read the result, with no color chart to match by eye. Designed for freshwater samples. Used for water quality, environmental monitoring, plating and education.\n\nSpecifications\n• Range: 0.00 to 9.99 ppm NH3-N, resolution 0.01 ppm\n• Accuracy: ±0.05 ppm ±5% of reading at 25°C\n• Method: adaptation of ASTM D1426-92 (Nessler), the sample turns yellow\n• Light source: LED at 470 nm, silicon photocell detector\n• Battery: one 1.5 V AAA, auto-off after 10 minutes\n• Environment: 0 to 50°C, up to 95% RH non-condensing\n• Size and weight: 86 x 61 x 37.5 mm, 64 g\n• Extra reagents: HI715-26 reagent set (25 tests), sold separately\n\nIn the box\n• HI715 Checker HC colorimeter\n• Sample cuvettes with caps (2)\n• Ammonia medium range reagent starter kit (25 tests)\n• Battery\n• Instructions and quick start guide",
+   "price": 8199,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-024",
+   "name": "Buffer Solution pH 7.01 Hanna 1000 ml Bottle HI-707",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "Hanna pH 7.01 calibration buffer, 1 L bottle, accuracy ±0.01 pH at 25°C.",
+   "long": "Hanna pH 7.01 calibration buffer solution in a 1 liter bottle (HI7007/1L). Use it to calibrate pH meters, to check that the meter and electrode are working properly, and to extend electrode life through routine maintenance. The solution is dyed green so the pH 7 buffer is easy to spot, and the airtight bottle has a tamper-proof seal.\n\nSpecifications\n• Value: pH 7.01 at 25°C, accuracy ±0.01 pH\n• Volume: 1 L bottle\n• Traceability: traceable to NIST standard reference materials\n• Shelf life: five years from manufacture, unopened\n• Lot number and expiry date are printed on the label\n• Produced to ISO 3696 / BS 3978",
+   "price": 2799,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-025",
+   "name": "Buffer Solution pH 4.01 Hanna 1000 ml Bottle HI-704",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "Hanna pH 4.01 calibration buffer, 1 L bottle, accuracy ±0.01 pH at 25°C.",
+   "long": "Hanna pH 4.01 calibration buffer solution in a 1 liter bottle (HI7004/1L). Use it to calibrate pH meters and to check that the meter and electrode are working properly. pH 4.01 is the usual acid-side calibration point, useful for water purification and food work. The bottle is color-coded red for pH 4.01. In an emergency the buffer can also be used as an electrode storage solution.\n\nSpecifications\n• Value: pH 4.01 at 25°C, accuracy ±0.01 pH\n• Volume: 1 L bottle\n• Traceability: standardised in accordance with NIST\n• Expiry date is printed on the label\n• Store at about 25°C, away from direct sunlight",
+   "price": 2799,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-026",
+   "name": "Buffer Solution pH 10.01 Hanna 1000 ml Bottle HI-710",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "Hanna pH 10.01 calibration buffer, 1 L bottle, accuracy ±0.01 pH at 25°C.",
+   "long": "Hanna pH 10.01 calibration buffer solution in a 1 liter bottle (HI7010/1L). Use it to calibrate pH meters on the alkaline side. The solution is dyed violet so the buffer value is easy to identify. The airtight bottle has a tamper-proof seal, and each bottle carries a temperature chart showing the actual pH at different temperatures.\n\nSpecifications\n• Value: pH 10.01 at 25°C, accuracy ±0.01 pH\n• Volume: 1 L bottle\n• Shelf life: two years from manufacture, unopened\n• Lot number and expiry date are printed on the label",
+   "price": 2799,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-027",
+   "name": "Hanna HI7031L 1413 µS/cm Conductivity Standard (1413), 500mL",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "Hanna 1413 µS/cm conductivity standard, 500 mL bottle, NIST traceable.",
+   "long": "Hanna HI7031L conductivity standard, 1413 µS/cm, in a 500 mL bottle. Use it to calibrate and check conductivity (EC) meters. It is prepared against a NIST-traceable potassium chloride solution. The airtight bottle has a tamper-proof seal, and a chart of the actual µS/cm value at different temperatures is printed on each bottle.\n\nSpecifications\n• Value: 1413 µS/cm\n• Volume: 500 mL bottle\n• Traceability: prepared against NIST-traceable potassium chloride, per ISO 3696 / BS 3978\n• Shelf life: five years from manufacture, unopened\n• Lot number and expiry date are printed on the label",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-028",
+   "name": "HI7032L 1382 mg/L (ppm) TDS Calibration Solution (500mL Bottle)",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "Hanna 1382 mg/L (ppm) TDS calibration solution, 500 mL bottle, NIST traceable.",
+   "long": "Hanna HI7032L TDS calibration solution, 1382 mg/L (ppm), in a 500 mL bottle. Use it to calibrate and check TDS meters. It is prepared against a NIST-traceable potassium chloride solution. The airtight bottle has a tamper-proof seal, and a chart of the actual value at different temperatures is printed on each bottle.\n\nSpecifications\n• Value: 1382 mg/L (ppm) TDS\n• Volume: 500 mL bottle\n• Traceability: prepared against NIST-traceable potassium chloride, per ISO 3696 / BS 3978\n• Shelf life: five years from manufacture, unopened\n• Lot number and expiry date are printed on the label",
+   "price": 2399,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-029",
+   "name": "84 µS/cm Conductivity Standard (500mL Bottle)",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "Hanna 84 µS/cm conductivity standard, 500 mL bottle, NIST traceable.",
+   "long": "Hanna HI7033L conductivity standard, 84 µS/cm, in a 500 mL bottle. Use it to calibrate and check conductivity (EC) meters at the low end of the range. It is prepared against a NIST-traceable potassium chloride solution. The airtight bottle has a tamper-proof seal, and a temperature chart is printed on each bottle.\n\nSpecifications\n• Value: 84 µS/cm\n• Volume: 500 mL bottle\n• Traceability: prepared against NIST-traceable potassium chloride, per ISO 3696 / BS 3978\n• Shelf life: five years from manufacture, unopened\n• Lot number and expiry date are printed on the label",
+   "price": 2399,
+   "stock": "in",
+   "featured": 0,
+   "images": []
+  },
+  {
+   "code": "HN-030",
+   "name": "12880 µS/cm Conductivity Standard w/ COA (500mL Bottle)",
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
+   "short": "Hanna 12880 µS/cm conductivity standard with Certificate of Analysis, 500 mL.",
+   "long": "Hanna HI7030L-C conductivity standard, 12880 µS/cm, in a 500 mL bottle, supplied with a Certificate of Analysis (COA). Use it to calibrate and check conductivity (EC) meters in the high range. The COA lists the product code, lot number, mean lot value, reference materials used, manufacturing date and expiry date.\n\nSpecifications\n• Value: 12880 µS/cm\n• Volume: 500 mL bottle, airtight with tamper-proof seal\n• Traceability: prepared against NIST-traceable potassium chloride, per ISO 3696 / BS 3978, using certified balances, Class A glassware and certified thermometers\n• Shelf life: five years from manufacture, unopened\n• A temperature chart of the actual µS/cm value is printed on each bottle",
+   "price": 2399,
+   "stock": "in",
    "featured": 0,
    "images": []
   }
