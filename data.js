@@ -10,7 +10,8 @@ window.SHOP={
    "01960643299"
   ],
   "email": "confidencesci@gmail.com",
-  "address": "34,Hatkhola Road ,Tikatuli , Dhaka-1203"
+  "address": "34,Hatkhola Road ,Tikatuli , Dhaka-1203",
+  "map": ""
  },
  "categories": [
   {
@@ -99,7 +100,6 @@ window.SHOP={
   {
    "code": "HN-001",
    "name": "Hanna HI-98107 Pocket pH Meter",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -115,7 +115,28 @@ window.SHOP={
     "images/hn-001-o9ifwmi6.jpg",
     "images/hn-001-wuex7nxe.jpg",
     "images/hn-001-1esxtpey.jpg"
-   ]
+   ],
+   "variants": []
+  },
+  {
+   "code": "HN-004",
+   "name": "Hanna HI-98303 Pocket Conductivity Tester (0 to 2000 µS/cm)",
+   "sub": "c2s2",
+   "subs": [
+    "c2s2",
+    "c1s1"
+   ],
+   "short": "Waterproof pocket EC tester, 0 to 2000 µS/cm, automatic one point calibration.",
+   "long": "Low range pocket conductivity tester for drinking water, water conditioning, irrigation and environmental monitoring. A large LCD shows EC and temperature at the same time, and the exposed temperature probe gives automatic temperature compensation. The graphite electrode resists oxidation and polarization. Operation is two buttons, one for on and off and one for calibration.\n\nSpecifications\n• EC range: 0 to 2000 µS/cm, resolution 1 µS/cm, accuracy ±2% of full scale\n• Calibration: automatic, one point at 1413 µS/cm\n• Temperature compensation: automatic, 0 to 50°C\n• Temperature display: 0.0 to 50.0°C (°C or °F), ±0.5°C\n• Battery: CR2032, about 250 hours of continuous use\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 75 g\n\nIn the box\n• HI98303 DiST 3 tester\n• CR2032 battery\n• 1413 µS/cm calibration solution sachets (4)\n• Storage and protection sleeve\n• Instruction manual and quality certificate",
+   "price": 8199,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/hn-004-et7qb3y1.jpg",
+    "images/hn-004-nyk8d5cu.jpg",
+    "images/hn-004-sc41l6ri.jpg"
+   ],
+   "variants": []
   },
   {
    "code": "HN-002",
@@ -157,26 +178,6 @@ window.SHOP={
    "variants": []
   },
   {
-   "code": "HN-004",
-   "name": "Hanna HI-98303 Pocket Conductivity Tester (0 to 2000 µS/cm)",
-   "sub": "c2s2",
-   "subs": [
-    "c2s2",
-    "c1s1"
-   ],
-   "short": "Waterproof pocket EC tester, 0 to 2000 µS/cm, automatic one point calibration.",
-   "long": "Low range pocket conductivity tester for drinking water, water conditioning, irrigation and environmental monitoring. A large LCD shows EC and temperature at the same time, and the exposed temperature probe gives automatic temperature compensation. The graphite electrode resists oxidation and polarization. Operation is two buttons, one for on and off and one for calibration.\n\nSpecifications\n• EC range: 0 to 2000 µS/cm, resolution 1 µS/cm, accuracy ±2% of full scale\n• Calibration: automatic, one point at 1413 µS/cm\n• Temperature compensation: automatic, 0 to 50°C\n• Temperature display: 0.0 to 50.0°C (°C or °F), ±0.5°C\n• Battery: CR2032, about 250 hours of continuous use\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 75 g\n\nIn the box\n• HI98303 DiST 3 tester\n• CR2032 battery\n• 1413 µS/cm calibration solution sachets (4)\n• Storage and protection sleeve\n• Instruction manual and quality certificate",
-   "price": 8199,
-   "stock": "in",
-   "featured": 0,
-   "images": [
-    "images/hn-004-et7qb3y1.jpg",
-    "images/hn-004-nyk8d5cu.jpg",
-    "images/hn-004-sc41l6ri.jpg"
-   ],
-   "variants": []
-  },
-  {
    "code": "HN-005",
    "name": "Hanna HI-98304 Pocket Conductivity Tester (0 to 20.00 mS/cm)",
    "sub": "c2s2",
@@ -200,7 +201,6 @@ window.SHOP={
   {
    "code": "HN-006",
    "name": "Hanna HI2211 Benchtop pH/mV Meter with 0.01 Resolution",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1",
@@ -214,7 +214,8 @@ window.SHOP={
    "images": [
     "images/hn-006-nmvmz6tx.jpg",
     "images/hn-006-23r6a8ar.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-007",
@@ -788,7 +789,6 @@ window.SHOP={
   {
    "code": "HN-039",
    "name": "Multifibre DW SDC 10 Mtr. Roll",
-   "variants": [],
    "sub": "c2s3",
    "subs": [
     "c2s3"
@@ -801,7 +801,8 @@ window.SHOP={
    "images": [
     "images/hn-039-ktqwgeoq.jpg",
     "images/hn-039-sfsy5gfk.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-040",
@@ -895,7 +896,6 @@ window.SHOP={
   {
    "code": "HN-045",
    "name": "Universal pH Test Paper Strip (pH 0-14) pH Paper, China",
-   "variants": [],
    "sub": "c16s1",
    "subs": [
     "c16s1"
@@ -908,7 +908,8 @@ window.SHOP={
    "images": [
     "images/hn-045-s9669v04.jpg",
     "images/hn-045-2ci8rwgz.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-046",
@@ -964,7 +965,6 @@ window.SHOP={
   {
    "code": "CS-2951",
    "name": "Total Hardness Test Kit for Water. HI-3812",
-   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -974,7 +974,8 @@ window.SHOP={
    "price": 3599,
    "stock": "in",
    "featured": 1,
-   "images": []
+   "images": [],
+   "variants": []
   },
   {
    "code": "CS-6234",
@@ -1009,7 +1010,6 @@ window.SHOP={
   {
    "code": "CS-9385",
    "name": "Hanna HI-98108 pHep+ pH Meter with Auto Calibration",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -1019,12 +1019,12 @@ window.SHOP={
    "price": 8199,
    "stock": "in",
    "featured": 1,
-   "images": []
+   "images": [],
+   "variants": []
   },
   {
    "code": "CS-2681",
    "name": "Sodium Hydroxide Pellets 500g Merck India",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1034,7 +1034,8 @@ window.SHOP={
    "price": 500,
    "stock": "in",
    "featured": 1,
-   "images": []
+   "images": [],
+   "variants": []
   },
   {
    "code": "CS-4658",
@@ -1143,7 +1144,6 @@ window.SHOP={
   {
    "code": "CS-2814",
    "name": "Zeal Thermometer 110C",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1153,7 +1153,8 @@ window.SHOP={
    "price": 240,
    "stock": "in",
    "featured": 1,
-   "images": []
+   "images": [],
+   "variants": []
   },
   {
    "code": "CS-5706",
