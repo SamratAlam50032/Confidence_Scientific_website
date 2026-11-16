@@ -336,7 +336,7 @@ window.SHOP={
    ]
   },
   {
-   "code": "HN-024",
+   "code": "HN-014",
    "name": "Buffer Solution pH 7.01 Hanna 1000 ml Bottle HI-707",
    "sub": "c1s3",
    "subs": [
@@ -353,7 +353,7 @@ window.SHOP={
    ]
   },
   {
-   "code": "HN-025",
+   "code": "HN-015",
    "name": "Buffer Solution pH 4.01 Hanna 1000 ml Bottle HI-704",
    "sub": "c1s3",
    "subs": [
@@ -370,7 +370,7 @@ window.SHOP={
    ]
   },
   {
-   "code": "HN-026",
+   "code": "HN-016",
    "name": "Buffer Solution pH 10.01 Hanna 1000 ml Bottle HI-710",
    "sub": "c1s3",
    "subs": [
@@ -387,7 +387,7 @@ window.SHOP={
    ]
   },
   {
-   "code": "HN-027",
+   "code": "HN-017",
    "name": "Hanna HI7031L 1413 µS/cm Conductivity Standard (1413), 500mL",
    "sub": "c1s3",
    "subs": [
@@ -398,10 +398,12 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-017-w7nzue45.jpg"
+   ]
   },
   {
-   "code": "HN-028",
+   "code": "HN-018",
    "name": "HI7032L 1382 mg/L (ppm) TDS Calibration Solution (500mL Bottle)",
    "sub": "c1s3",
    "subs": [
@@ -412,10 +414,12 @@ window.SHOP={
    "price": 2399,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-018-rjsvwheu.jpg"
+   ]
   },
   {
-   "code": "HN-029",
+   "code": "HN-019",
    "name": "84 µS/cm Conductivity Standard (500mL Bottle)",
    "sub": "c1s3",
    "subs": [
@@ -426,10 +430,12 @@ window.SHOP={
    "price": 2399,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-019-hm5bfj39.jpg"
+   ]
   },
   {
-   "code": "HN-030",
+   "code": "HN-020",
    "name": "12880 µS/cm Conductivity Standard w/ COA (500mL Bottle)",
    "sub": "c1s3",
    "subs": [
@@ -440,7 +446,9 @@ window.SHOP={
    "price": 2399,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-020-junwofzm.jpg"
+   ]
   }
  ],
  "subs": [
