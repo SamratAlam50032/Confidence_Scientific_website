@@ -213,77 +213,112 @@ window.SHOP={
   {
    "code": "HN-007",
    "name": "Hanna Checktemp Digital Thermometer HI98501",
-   "sub": "",
-   "subs": [],
+   "sub": "c1s1",
+   "subs": [
+    "c1s1"
+   ],
    "short": "Digital probe thermometer, -50.0 to 150.0°C, IP65, CAL Check at start-up.",
    "long": "Compact digital thermometer with a stainless steel penetration probe for quick temperature checks in liquids and semi-solids. The sealed body is IP65 rated, the digital display avoids reading errors, and a CAL Check runs at every start-up. Widely used in labs, food service and HACCP temperature control.\n\nSpecifications\n• Range: -50.0 to 150.0°C (-58.0 to 302°F)\n• Resolution: 0.1°C\n• Accuracy: ±0.2°C from -30 to 120°C, ±0.3°C outside this range\n• Probe: fixed stainless steel penetration probe, 106 mm long, 3.6 mm diameter\n• Protection: IP65\n• Battery: CR2032, about 2000 hours of continuous use\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 50 x 185 x 21 mm, 50 g\n\nIn the box\n• HI98501 Checktemp thermometer with probe\n• Protective cap\n• Battery\n• Instruction manual",
    "price": 6299,
-   "stock": "ask",
+   "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-007-uh6nbrh6.jpg",
+    "images/hn-007-to0trsv4.jpg",
+    "images/hn-007-1ci8wujn.jpg"
+   ]
   },
   {
    "code": "HN-008",
    "name": "Hanna Free Chlorine Test Kit Replacement Reagents (50 tests) HI3831F",
-   "sub": "",
-   "subs": [],
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
    "short": "Replacement reagents for the HI3831F free chlorine test kit, about 50 tests.",
    "long": "Replacement reagent set for the Hanna HI3831F free chlorine test kit. Free chlorine is measured by the DPD colorimetric method and the result is read by matching the sample colour on the comparator cube. Reagents are pre-measured and each packet is marked with a lot number and expiry date.\n\nSpecifications\n• Parameter: free chlorine\n• Range: 0.0 to 2.5 mg/L (ppm)\n• Resolution: 0.5 mg/L\n• Method: DPD, colorimetric\n• Number of tests: about 50\n\nIn the box\n• Reagent 1 and Reagent 2 for about 50 tests\n• Use with the colour comparison cube from the HI3831F test kit",
    "price": 3499,
-   "stock": "ask",
+   "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-008-sz44cvv5.jpg",
+    "images/hn-008-qsoxexf9.jpg"
+   ]
   },
   {
    "code": "HN-009",
    "name": "Hanna Total Chlorine Test Kit Replacement Reagents (50 tests) HI3831T",
-   "sub": "",
-   "subs": [],
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
    "short": "Replacement reagents for the HI3831T total chlorine test kit, about 50 tests.",
    "long": "Replacement reagent set for the Hanna HI3831T total chlorine test kit. The sample is adjusted to about pH 6.3 and chlorine oxidizes the DPD reagent to form a red colour, which is matched on the comparator cube. Deeper colour means a higher chlorine level. Reagents are pre-measured and each packet is marked with a lot number and expiry date.\n\nSpecifications\n• Parameter: total chlorine\n• Range: 0.0 to 2.5 mg/L (ppm)\n• Method: DPD, colorimetric\n• Number of tests: about 50\n\nIn the box\n• Pre-measured total chlorine reagents for about 50 tests\n• Use with the colour comparison cube from the HI3831T test kit",
    "price": 3600,
-   "stock": "ask",
+   "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-009-xdtmuymu.jpg",
+    "images/hn-009-pnd9jzz8.jpg",
+    "images/hn-009-hwpro1g0.jpg"
+   ]
   },
   {
    "code": "HN-010",
    "name": "Hanna HI-701 Free Chlorine Handheld Colorimeter, Checker HC (Chlorine Meter)",
-   "sub": "",
-   "subs": [],
+   "sub": "c1s1",
+   "subs": [
+    "c1s1"
+   ],
    "short": "Handheld free chlorine colorimeter, 0.00 to 2.50 ppm, 0.01 ppm resolution.",
    "long": "Handheld colorimeter dedicated to free chlorine, a more accurate alternative to colour matching test kits. It uses a fixed wavelength LED and a silicon photocell, with a built-in timer and one button operation. Designed for freshwater samples such as drinking water, pools and spas, vegetable wash water, education and environmental testing.\n\nSpecifications\n• Range: 0.00 to 2.50 ppm (mg/L) free chlorine, resolution 0.01 ppm\n• Accuracy: ±0.03 ppm ±3% of reading\n• Method: adaptation of USEPA method 330.5, DPD reagent\n• Light source: LED at 525 nm, silicon photocell detector\n• Battery: 1 x 1.5 V AAA\n• Auto shut-off: after 2 minutes of non-use\n• Environment: 0 to 50°C, up to 95% RH non-condensing\n• Size and weight: 81.5 x 61 x 37.5 mm, 64 g\n\nIn the box\n• HI701 Checker HC\n• 2 sample cuvettes with caps\n• Free chlorine reagent starter kit (6 tests)\n• Battery\n• Instructions and quick start guide",
    "price": 8199,
-   "stock": "ask",
+   "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-010-fc49238x.jpg",
+    "images/hn-010-rrv1m4pw.jpg",
+    "images/hn-010-j2njg600.jpg",
+    "images/hn-010-3n5ux7dk.jpg"
+   ]
   },
   {
-   "code": "HN-021",
+   "code": "HN-011",
    "name": "Ammonia Test Kit for Seawater Replacement Reagents (25 tests) - HI3826",
-   "sub": "",
-   "subs": [],
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
    "short": "Replacement reagents for the Hanna HI3826 seawater ammonia test kit, about 25 tests.",
    "long": "Refill reagent set (HI3826-025) for the Hanna HI3826 Ammonia Test Kit for Seawater. The kit measures ammonia as NH3-N in seawater with a colorimetric Nessler method, and you read the result by matching the color against the comparison cube. Reagents are pre-made, and each bottle is marked with a lot number and expiry date. Used to monitor ammonia in rivers, estuaries and bays, where ammonia can be toxic to aquatic life.\n\nSpecifications\n• Refills: HI3826 Ammonia Test Kit for Seawater\n• Range: 0.0 to 2.5 mg/L (ppm) NH3-N, resolution 0.5 mg/L\n• Method: Nessler, colorimetric\n• Number of tests: about 25\n\nIn the pack\n• Ammonia Reagent 1 for seawater, 20 mL dropper bottle\n• Nessler Reagent, 20 mL dropper bottle\n\nThis pack holds reagents only. The sample beaker and color comparison cube come with the full kit.",
    "price": 5599,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-011-460qj8v7.jpg",
+    "images/hn-011-z89w9a79.jpg",
+    "images/hn-011-m6ui7bo2.jpg"
+   ]
   },
   {
-   "code": "HN-022",
+   "code": "HN-012",
    "name": "Ammonia Test Kit for Fresh Water Replacement Reagents (25 tests) - HI3824",
-   "sub": "",
-   "subs": [],
+   "sub": "c1s2",
+   "subs": [
+    "c1s2"
+   ],
    "short": "Replacement reagents for the Hanna HI3824 fresh water ammonia test kit, about 25 tests.",
    "long": "Refill reagent set (HI3824-025) for the Hanna HI3824 Ammonia Test Kit for Fresh Water. The kit measures ammonia as NH3-N in fresh water with an adaptation of the Nessler method, and you read the result by matching the color against the comparison cube. Reagents are pre-made, and each bottle is marked with a lot number and expiry date. Used for rivers and drinking water reservoirs, groundwater, freshwater aquariums and fish farming.\n\nSpecifications\n• Refills: HI3824 Ammonia Test Kit for Fresh Water\n• Range: 0.0 to 2.5 mg/L (ppm) NH3-N, resolution 0.5 mg/L\n• Method: adaptation of the Nessler method, colorimetric\n• Number of tests: about 25\n\nIn the pack\n• Ammonia Reagent 1 for fresh water, 20 mL dropper bottle\n• Nessler Reagent, 20 mL dropper bottle\n\nThis pack holds reagents only. The sample beaker and color comparison cube come with the full kit.",
    "price": 5399,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-012-cb2ofd6q.jpg",
+    "images/hn-012-ouo0deqc.jpg"
+   ]
   },
   {
-   "code": "HN-023",
+   "code": "HN-013",
    "name": "HI-715 Ammonia Medium Range Checker for Freshwater",
    "sub": "c1s1",
    "subs": [
@@ -294,7 +329,11 @@ window.SHOP={
    "price": 8199,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-013-o5gt0g9v.jpg",
+    "images/hn-013-rt6hqhz6.jpg",
+    "images/hn-013-1jnoyjdo.jpg"
+   ]
   },
   {
    "code": "HN-024",
@@ -308,7 +347,10 @@ window.SHOP={
    "price": 2799,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-024-hu0k3l26.jpg",
+    "images/hn-024-4yeolmk8.jpg"
+   ]
   },
   {
    "code": "HN-025",
@@ -322,7 +364,10 @@ window.SHOP={
    "price": 2799,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-025-e0qocnu3.jpg",
+    "images/hn-025-xzte2p8w.jpg"
+   ]
   },
   {
    "code": "HN-026",
@@ -336,7 +381,10 @@ window.SHOP={
    "price": 2799,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-026-lmf1jqhw.jpg",
+    "images/hn-026-0l93ds2x.jpg"
+   ]
   },
   {
    "code": "HN-027",
