@@ -7,9 +7,11 @@
 <title>Confidence Scientific Admin</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
 <style>
-:root{--bg:#F8F3EC;--surface:#FFFDF9;--ink:#3A2416;--muted:#7C6757;--line:#E6D9C9;--accent:#5A3A22;--accent-ink:#FFFFFF;--tint:#F0E5D6;
- --warn:#7A4A00;--warnbg:#F8E7C6;--okc:#2E6A3E;--okbg:#E2EEDC;--bad:#9C2B22;--badbg:#F6DDD7;--infoc:#5A3A22;--infobg:#F0E5D6;
+:root{--bg:#F4F7F9;--surface:#FFFFFF;--ink:#0C2231;--muted:#53697A;--line:#D5DFE6;--accent:#0B7A85;--accent-ink:#FFFFFF;--tint:#E3F1F3;
+ --warn:#7A4A00;--warnbg:#FFEFCF;--okc:#17673D;--okbg:#DDF2E6;--bad:#A3241C;--badbg:#FBE3E0;--infoc:#0B5A63;--infobg:#DCEFF1;
  --f-head:"Space Grotesk",system-ui,sans-serif;--f-body:Inter,system-ui,sans-serif;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#0A1720;--surface:#112431;--ink:#E7EFF4;--muted:#93A9B8;--line:#244052;--accent:#3FC1CD;--accent-ink:#06222A;--tint:#143743;
+ --warn:#F5C675;--warnbg:#3A2B0E;--okc:#7FDDA9;--okbg:#10331F;--bad:#FF9C94;--badbg:#3F1714;--infoc:#8FDCE5;--infobg:#0F3640;color-scheme:dark}}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body)}
@@ -32,9 +34,17 @@ header.top{background:var(--surface);border-bottom:1px solid var(--line);positio
 #msg{margin:14px 0 0;padding:10px 14px;border-radius:8px;font-size:14px}
 #msg.ok{background:var(--okbg);color:var(--okc)}#msg.bad{background:var(--badbg);color:var(--bad)}#msg.info{background:var(--infobg);color:var(--infoc)}
 main{padding:18px 0 60px}
-.split{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:18px;align-items:start}
+.split{display:block}
+#plist{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+#plist .prow{margin:0;min-width:0}
+#plist .empty{grid-column:1/-1}
+body.editing .split{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:18px;align-items:start}
+body.editing .split>*{min-width:0}
+body.editing #plist{grid-template-columns:minmax(0,1fr)}
+#pedit{max-width:880px}
 .tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
 .tools input{flex:1 1 140px;min-width:0}
+.tools .btn{flex:none}
 input[type=text],input[type=search],input[type=number],input[type=password],select,textarea{width:100%;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:14px var(--f-body);padding:9px 10px}
 textarea{resize:vertical}
 #pedit{scroll-margin-top:140px}
@@ -58,7 +68,6 @@ textarea{resize:vertical}
 .tile{border:1px solid var(--line);border-radius:8px;padding:6px;background:var(--surface);display:flex;flex-direction:column;gap:6px}
 .tile .pic{aspect-ratio:1/1;background:#fff;border-radius:6px;display:grid;place-items:center;overflow:hidden;position:relative}
 .tile img{width:100%;height:100%;object-fit:contain}
-.tile .newb{position:absolute;left:4px;bottom:4px;background:var(--warnbg);color:var(--warn);font-size:10px;font-weight:600;padding:1px 6px;border-radius:99px}
 .tile .main{position:absolute;left:4px;top:4px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:600;padding:1px 6px;border-radius:99px}
 .tile .tb{display:flex;gap:4px;justify-content:space-between}
 .tile .tb button{flex:1;padding:4px 0;font-size:13px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;cursor:pointer}
@@ -67,27 +76,21 @@ textarea{resize:vertical}
 .drop input{display:none}
 .bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}
 .cat{margin-bottom:12px}
-.plrow{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;margin-bottom:8px;align-items:center}.plrow select{min-width:0;width:100%}@media(max-width:560px){.plrow{grid-template-columns:1fr auto}.plrow select:nth-child(2){grid-column:1}}
-.cpicbox{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.cpic{width:56px;height:56px;border:1px solid var(--line);border-radius:8px;background:#fff;display:grid;place-items:center;overflow:hidden;color:#6A6C70;font-size:11px}
-.cpic img{width:100%;height:100%;object-fit:cover}
-.hid{display:none}
 .chead{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end}
 .chead>input{flex:1 1 200px;font-weight:600}
 .pfl{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:2px}.pfl input{width:90px}
 .subrow{display:flex;gap:6px;margin-top:8px;align-items:center}.subrow input{flex:1;min-width:0}
 .subs{margin:10px 0 0 14px;padding-left:12px;border-left:2px solid var(--line)}
 .hint{color:var(--muted);font-size:13.5px}
-.tgs{display:flex;flex-wrap:wrap;gap:6px}.tg{font:13px var(--f-body);border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;padding:5px 12px;cursor:pointer}.tg.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}ol.steps li{margin-bottom:4px}
-@media(max-width:900px){.split{grid-template-columns:1fr}.editing .listpane{display:none}}
+@media(max-width:900px){body.editing .split{display:block}body.editing .listpane{display:none}}
 @media(max-width:560px){.g2,.g3{grid-template-columns:1fr}.hbar .btn{flex:1 1 auto}}
 </style>
 </head>
 <body>
 <header class="top"><div class="wrap">
   <div class="hbar">
-    <h1>Shop admin <span style="font:500 11px var(--f-body);color:var(--muted)">v7</span><small id="shopname">Confidence Scientific</small></h1>
+    <h1>Shop admin<small id="shopname">Confidence Scientific</small></h1>
     <span class="pill ok" id="status" role="status">Loading</span>
     <button class="btn ghost" id="dlBtn" type="button">Download data.js</button>
     <button class="btn" id="pubBtn" type="button">Publish to website</button>
@@ -106,9 +109,8 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
   <section id="p-products" style="margin-top:16px">
     <div class="split" id="split">
       <div class="listpane">
-        <div class="tools"><input id="ps" type="search" placeholder="Search name or code" aria-label="Search products"><select id="pf" aria-label="Filter by sub category" style="flex:1 1 140px"></select></div>
-        <button class="btn" id="pnew" type="button" style="width:100%;margin-bottom:8px">+ New product</button>
-        <button class="btn ghost" id="pimp" type="button" style="width:100%;margin-bottom:10px">Import products from file</button><input id="pimpf" type="file" accept=".json,application/json" class="hid" aria-label="Product file">
+        <div class="tools"><input id="ps" type="search" placeholder="Search name or code" aria-label="Search products"><select id="pf" aria-label="Filter by category" style="flex:1 1 140px"></select><button class="btn ghost" id="pimp" type="button">Import products</button><button class="btn" id="pnew" type="button">+ New product</button></div>
+        <input id="pimpfile" type="file" accept=".json,application/json" hidden>
         <div id="plist"></div>
       </div>
       <div class="card" id="pedit" hidden></div>
@@ -116,8 +118,7 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
   </section>
 
   <section id="p-categories" hidden style="margin-top:16px">
-    <p class="hint">Categories are your customer groups. Sub categories are product types. One sub category can be inside many categories. Order here is the order on the website.</p>
-    <div id="slist"></div>
+    <p class="hint">Categories and sub categories appear in the website menu in this order. The code prefix is used to make product codes, like HN-001.</p>
     <div id="clist"></div>
     <div class="card"><div class="subrow" style="margin-top:0"><input id="newcat" type="text" placeholder="New category name" aria-label="New category name"><button class="btn" id="addcat" type="button">Add category</button></div></div>
   </section>
@@ -144,9 +145,9 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
         <li>Permissions, Repository permissions, Contents: Read and write.</li>
         <li>Generate the token, copy it and paste it below.</li>
       </ol>
-      <form id="gform" autocomplete="on"><div class="g3"><div class="f"><label for="gowner">GitHub username</label><input id="gowner" name="username" type="text" autocomplete="username"></div><div class="f"><label for="grepo">Repository name</label><input id="grepo" type="text" autocomplete="off"></div><div class="f"><label for="gbranch">Branch</label><input id="gbranch" type="text" value="main" autocomplete="off"></div></div>
-      <div class="f"><label for="gtoken">Access token</label><input id="gtoken" name="password" type="password" autocomplete="current-password"><small>Paste it once. If your browser asks to save the password, press Save so it fills in next time. Do not use this on a shared computer.</small></div>
-      <div class="bar"><button class="btn" id="gsave" type="submit">Save</button><button class="btn ghost" id="gtest" type="button">Test connection</button></div></form>
+      <div class="g3"><div class="f"><label for="gowner">GitHub username</label><input id="gowner" type="text" autocomplete="off"></div><div class="f"><label for="grepo">Repository name</label><input id="grepo" type="text" autocomplete="off"></div><div class="f"><label for="gbranch">Branch</label><input id="gbranch" type="text" value="main" autocomplete="off"></div></div>
+      <div class="f"><label for="gtoken">Access token</label><input id="gtoken" type="password" autocomplete="off"><small>The token is stored only in this browser. Do not use this on a shared computer.</small></div>
+      <div class="bar"><button class="btn" id="gsave" type="button">Save</button><button class="btn ghost" id="gtest" type="button">Test connection</button></div>
       <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
       <p class="hint" style="margin:0 0 8px">Your edits are kept as a draft in this browser until you publish. If you changed the data from another computer, reload the published data and drop this draft.</p>
       <button class="btn danger sm" id="reset" type="button">Discard draft and reload published data</button>
@@ -154,7 +155,7 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
   </section>
 </main>
 
-<script src="data.js"></script>
+<script>document.write('<script src="data.js?v='+Date.now()+'"><\/script>')</script>
 <script>
 (function(){
 "use strict";
@@ -176,32 +177,18 @@ function saveNow(){return kvSet("draft",{D:D,pend:pend,base:base}).catch(functio
 var st;function persist(){clearTimeout(st);st=setTimeout(saveNow,50);renderStatus()}
 
 /* ---------- data helpers ---------- */
-function migrate(d){
-  if(!d||d.subs)return d;
-  var subs=[],byName={},map={};
-  (d.categories||[]).forEach(function(c){(c.subs||[]).forEach(function(s){var k=String(s.name||"").trim().toLowerCase();
-    if(!byName[k]){byName[k]=s.id;subs.push({id:s.id,name:s.name})}map[s.id]=byName[k]})});
-  d.categories=(d.categories||[]).map(function(c){var seen={},ids=[];(c.subs||[]).forEach(function(s){var g=map[s.id];if(!seen[g]){seen[g]=1;ids.push(g)}});
-    var o={};for(var k in c)o[k]=c[k];o.subs=ids;return o});
-  d.products=(d.products||[]).map(function(p){var o={};for(var k in p)o[k]=p[k];var sl=[];(p.places||[]).forEach(function(x){var g=map[x.sub];if(g&&sl.indexOf(g)<0)sl.push(g)});var m0=map[p.sub]||p.sub;if(m0&&sl.indexOf(m0)<0)sl.unshift(m0);
-    o.sub=sl[0]||"";o.subs=sl;delete o.cat;delete o.places;return o});
-  d.subs=subs;return d}
 function normalise(d){
-  d=migrate(d)||{};
   d.settings=Object.assign({name:"",tagline:"",headline:"",intro:"",whatsapp:"",phones:[],email:"",address:""},d.settings||{});
-  d.subs=(d.subs||[]).map(function(x){return {id:x.id||uid("s"),name:x.name||""}});
-  d.categories=(d.categories||[]).map(function(c){var seen={};return {id:c.id||uid("c"),name:c.name||"",prefix:c.prefix||"CS",image:c.image||"",subs:(c.subs||[]).filter(function(x){if(seen[x])return false;seen[x]=1;return true})}});
-  d.products=(d.products||[]).map(function(p){var sl=(p.subs&&p.subs.length?p.subs:(p.sub?[p.sub]:[])).filter(function(x,i,a){return a.indexOf(x)===i});return {code:p.code||"",name:p.name||"",sub:sl[0]||"",subs:sl,short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"ask",featured:p.featured?1:0,images:p.images||[]}});
+  d.categories=(d.categories||[]).map(function(c){return {id:c.id||uid("c"),name:c.name||"",prefix:c.prefix||"CS",subs:(c.subs||[]).map(function(s){return {id:s.id||uid("s"),name:s.name||""}})}});
+  d.products=(d.products||[]).map(function(p){return {code:p.code||"",name:p.name||"",cat:p.cat||"",sub:p.sub||"",short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"in",featured:p.featured?1:0,images:p.images||[]}});
   return d}
 function catById(id){return D.categories.find(function(c){return c.id===id})}
-function subById(id){return D.subs.find(function(x){return x.id===id})}
-function catsOf(sid){return D.categories.filter(function(c){return c.subs.indexOf(sid)>=0})}
-function catsOfP(subs){return D.categories.filter(function(c){return subs.some(function(x){return c.subs.indexOf(x)>=0})})}
-function catLabel(p){var n=(p.subs||[]).map(function(i){var x=subById(i);return x?x.name:""}).filter(Boolean),cs=catsOfP(p.subs||[]);return (n.join(", ")||"No sub category")+" · "+(cs.length?"in "+cs.map(function(c){return c.name}).join(", "):"not in any category (hidden)")}
+function subOf(cid,sid){var c=catById(cid);return c&&c.subs.find(function(s){return s.id===sid})}
+function catLabel(p){var c=catById(p.cat),s=subOf(p.cat,p.sub);return (c?c.name:"No category")+(s?" / "+s.name:"")}
 function imgSrc(x){return x.indexOf("pending:")===0?(pend[x.slice(8)]||""):x}
 function dirty(){return JSON.stringify(D)!==base}
-function nextCode(){var pre="CS",last=D.products[D.products.length-1],lm=last&&/^([A-Z]+)-\d+$/.exec(last.code);if(lm)pre=lm[1];var mx=0,re=new RegExp("^"+pre+"-(\\d+)$");D.products.forEach(function(p){var m=re.exec(p.code);if(m)mx=Math.max(mx,parseInt(m[1],10))});return pre+"-"+String(mx+1).padStart(3,"0")}
-function prunePend(){var used={};D.categories.forEach(function(c){if(c.image&&c.image.indexOf("pending:")===0)used[c.image.slice(8)]=1});D.products.forEach(function(p){p.images.forEach(function(x){if(x.indexOf("pending:")===0)used[x.slice(8)]=1})});Object.keys(pend).forEach(function(k){if(!used[k])delete pend[k]})}
+function nextCode(cid){var c=catById(cid),pre=c?c.prefix:"CS",mx=0,re=new RegExp("^"+pre.replace(/[^A-Z0-9]/g,"")+"-(\\d+)$");D.products.forEach(function(p){var m=re.exec(p.code);if(m)mx=Math.max(mx,parseInt(m[1],10))});return pre+"-"+String(mx+1).padStart(3,"0")}
+function prunePend(){var used={};D.products.forEach(function(p){p.images.forEach(function(x){if(x.indexOf("pending:")===0)used[x.slice(8)]=1})});Object.keys(pend).forEach(function(k){if(!used[k])delete pend[k]})}
 function showMsg(t,kind){var m=$("#msg");m.textContent=t;m.className=kind||"info";m.hidden=false;if(kind==="ok")setTimeout(function(){if(m.textContent===t)m.hidden=true},9000)}
 function hideMsg(){$("#msg").hidden=true}
 
@@ -214,11 +201,11 @@ function setTab(t){tab=t;document.querySelectorAll(".tabs button").forEach(funct
 document.querySelectorAll(".tabs button").forEach(function(b){b.onclick=function(){hideMsg();setTab(b.dataset.tab)}});
 
 /* ---------- products list ---------- */
-function renderFilter(){var f=$("#pf"),cur=f.value;f.textContent="";f.append(el("option",{value:"",text:"All sub categories"}));f.append(el("option",{value:"__none",text:"No sub category yet"}));
-  D.subs.forEach(function(c){f.append(el("option",{value:c.id,text:c.name}))});f.value=(cur==="__none"||subById(cur))?cur:""}
+function renderFilter(){var f=$("#pf"),cur=f.value;f.textContent="";f.append(el("option",{value:"",text:"All categories"}));
+  D.categories.forEach(function(c){f.append(el("option",{value:c.id,text:c.name}))});f.value=catById(cur)?cur:""}
 function renderList(){
   var t=$("#ps").value.trim().toLowerCase(),f=$("#pf").value,box=$("#plist");box.textContent="";
-  var items=D.products.map(function(p,i){return {p:p,i:i}}).filter(function(x){return (!f||(f==="__none"?!x.p.subs.length:x.p.subs.indexOf(f)>=0))&&(!t||(x.p.name+" "+x.p.code).toLowerCase().indexOf(t)>=0)});
+  var items=D.products.map(function(p,i){return {p:p,i:i}}).filter(function(x){return (!f||x.p.cat===f)&&(!t||(x.p.name+" "+x.p.code).toLowerCase().indexOf(t)>=0)});
   if(!items.length){box.append(el("div",{class:"empty",text:D.products.length?"No product matches.":"No products yet. Press + New product."}));return}
   items.forEach(function(x){var p=x.p,th=el("span",{class:"th"});if(p.images[0])th.append(el("img",{src:imgSrc(p.images[0]),alt:""}));
     box.append(el("button",{class:"prow"+(x.i===edIdx?" on":""),type:"button",onclick:function(){openEditor(x.i)}},th,
@@ -226,40 +213,31 @@ function renderList(){
       el("span",{class:"pm"},el("span",{text:p.price?"৳"+Number(p.price).toLocaleString("en-US"):"No price"}),el("span",{class:"chip "+p.stock,text:STOCK[p.stock]||""}),p.featured?el("span",{class:"chip feat",text:"Featured"}):null)))});
 }
 $("#ps").oninput=renderList;$("#pf").onchange=renderList;$("#pnew").onclick=function(){hideMsg();openEditor(-1)};
-$("#pimp").onclick=function(){$("#pimpf").click()};
-$("#pimpf").onchange=async function(){var f=this.files[0];this.value="";if(!f)return;
-  try{var j=JSON.parse(await f.text()),list=Array.isArray(j)?j:j.products;if(!Array.isArray(list))throw 0;
-    var have={};D.products.forEach(function(p){have[p.code]=1});var add=0,skip=[];
-    list.forEach(function(p){var c=String(p.code||"").trim().toUpperCase();if(!c||!p.name)return;if(have[c]){skip.push(c);return}
-      var sl=(p.subs||[]).filter(function(x){return !!subById(x)});
-      D.products.push({code:c,name:String(p.name),sub:sl[0]||"",subs:sl,short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"ask",featured:p.featured?1:0,images:[]});have[c]=1;add++});
-    if(ed)closeEditor();persist();renderStatus();renderFilter();renderList();
-    showMsg(add+" product(s) added."+(skip.length?" Skipped (code already exists): "+skip.join(", ")+".":"")+" Now open each one and choose its sub categories, then press Publish. Use the filter No sub category yet to find them.","ok")}
-  catch(e){showMsg("This file could not be read. Use the new-products file I sent.","bad")}};
 
 /* ---------- product editor ---------- */
 function fld(id,label,ctrl,hint){return el("div",{class:"f"},el("label",{"for":id,text:label}),ctrl,hint?el("small",{text:hint}):null)}
 function openEditor(idx){
-  if(!D.subs.length){setTab("categories");showMsg("Add a sub category first (product types like Meters).","bad");return}
+  if(!D.categories.length){setTab("categories");showMsg("Add a category and a sub category first.","bad");return}
   edIdx=idx;codeTouched=false;
   if(idx>=0)ed=JSON.parse(JSON.stringify(D.products[idx]));
-  else{ed={code:"",name:"",sub:D.subs[0].id,subs:[D.subs[0].id],short:"",long:"",price:null,stock:"in",featured:0,images:[]};ed.code=nextCode()}
+  else{var c=D.categories[0];ed={code:"",name:"",cat:c.id,sub:c.subs[0]?c.subs[0].id:"",short:"",long:"",price:null,stock:"in",featured:0,images:[]};ed.code=nextCode(ed.cat)}
   document.body.classList.add("editing");renderEditor();renderList();
   $("#pedit").scrollIntoView({block:"start"});
 }
 function closeEditor(){ed=null;edIdx=-1;$("#pedit").hidden=true;document.body.classList.remove("editing");renderList()}
+function fillSubs(){var s=$("#esub");s.textContent="";var c=catById(ed.cat);
+  if(!c||!c.subs.length){s.append(el("option",{value:"",text:"No sub category. Add one in Categories."}));ed.sub="";return}
+  c.subs.forEach(function(x){s.append(el("option",{value:x.id,text:x.name}))});
+  if(!subOf(ed.cat,ed.sub))ed.sub=c.subs[0].id;s.value=ed.sub}
 function renderEditor(){
   var box=$("#pedit");box.textContent="";box.hidden=false;
   var top=el("div",{class:"bar",style:"margin:0 0 12px;justify-content:space-between"},el("h2",{style:"font-size:18px",text:edIdx>=0?"Edit product":"New product"}),el("button",{class:"btn ghost sm",type:"button",text:"Back to list",onclick:closeEditor}));
   var name=el("input",{id:"ename",type:"text",maxlength:"160"});name.value=ed.name;
   var code=el("input",{id:"ecode",type:"text",maxlength:"30"});code.value=ed.code;code.oninput=function(){codeTouched=true};
-  var sub=el("div",{class:"tgs",id:"esub"});
-  var where=el("small",{id:"ewhere"});
-  var upd=function(){var cs=catsOfP(ed.subs);where.textContent=!ed.subs.length?"Choose at least one sub category.":cs.length?"Shows in: "+cs.map(function(c){return c.name}).join(", "):"Not in any category yet. Add it to a category in the Categories tab, or customers will not see it."};
-  var drawSubs=function(){sub.textContent="";D.subs.forEach(function(x){var on=ed.subs.indexOf(x.id)>=0;
-    sub.append(el("button",{type:"button",class:"tg"+(on?" on":""),"aria-pressed":on,text:(on?"✓ ":"+ ")+x.name,onclick:function(){
-      if(on)ed.subs=ed.subs.filter(function(y){return y!==x.id});else ed.subs.push(x.id);ed.sub=ed.subs[0]||"";drawSubs();upd()}}))});};
-  drawSubs();upd();
+  var cat=el("select",{id:"ecat"});D.categories.forEach(function(c){cat.append(el("option",{value:c.id,text:c.name}))});cat.value=ed.cat;
+  var sub=el("select",{id:"esub"});
+  cat.onchange=function(){ed.cat=cat.value;fillSubs();if(edIdx<0&&!codeTouched)code.value=nextCode(ed.cat)};
+  sub.onchange=function(){ed.sub=sub.value};
   var sh=el("input",{id:"eshort",type:"text",maxlength:"200"});sh.value=ed.short;
   var lg=el("textarea",{id:"elong",rows:"12"});lg.value=ed.long;
   var pr=el("input",{id:"eprice",type:"text",inputmode:"decimal",placeholder:"Leave empty for Price on request"});pr.value=ed.price==null?"":String(ed.price);
@@ -278,43 +256,33 @@ function renderEditor(){
       D.products.splice(edIdx,1);prunePend();persist();closeEditor();showMsg("Product deleted. Press Publish to remove it from the website.","ok")}}
   box.append(top,fld("ename","Product name",name),
     el("div",{class:"g2"},fld("ecode","Product code",code,"Your internal code. Search finds it."),fld("estock","Stock",sk)),
-    el("div",{class:"f"},el("label",{text:"Sub categories (tap one or more)"}),sub,where),
+    el("div",{class:"g2"},fld("ecat","Category",cat),fld("esub","Sub category",sub)),
     fld("eshort","Short description",sh,"One line shown on the product card."),
     fld("elong","Full description",lg,"Shown on the product page. Leave a blank line between parts. Start lines with • for bullet points."),
     el("div",{class:"g2"},fld("eprice","Price (BDT)",pr),el("div",{class:"f"},el("label",{text:"Show on homepage"}),el("label",{class:"chk",style:"margin-top:8px"},ft,"Featured product"))),
-    el("div",{class:"f"},el("label",{text:"Photos"}),imgs,drop,el("small",{text:"Photos stay in this browser as a draft. When you press Publish they are uploaded to the images folder of your GitHub site. Photos marked Not published are not on the website yet. Resized to 1400 px, high quality JPEG, up to 8 photos."})),
+    el("div",{class:"f"},el("label",{text:"Photos"}),imgs,drop,el("small",{text:"Photos are resized to 1400 px and saved as high quality JPEG. Up to 8 photos."})),
     el("div",{class:"bar"},save,el("button",{class:"btn ghost",type:"button",text:"Cancel",onclick:closeEditor}),del));
-  renderImgs();
+  fillSubs();renderImgs();
 }
-function syncImgs(){if(ed&&edIdx>=0&&D.products[edIdx])D.products[edIdx].images=ed.images.slice();persist()}
 function renderImgs(){var box=$("#eimgs");if(!box)return;box.textContent="";
   ed.images.forEach(function(x,i){
-    var pic=el("div",{class:"pic"},el("img",{src:imgSrc(x),alt:"Photo "+(i+1)}),i===0?el("span",{class:"main",text:"Main"}):null,x.indexOf("pending:")===0?el("span",{class:"newb",text:"Not published"}):null);
+    var pic=el("div",{class:"pic"},el("img",{src:imgSrc(x),alt:"Photo "+(i+1)}),i===0?el("span",{class:"main",text:"Main"}):null);
     var b=function(t,l,f,dis){return el("button",{type:"button",text:t,"aria-label":l,disabled:dis,onclick:f})};
     box.append(el("div",{class:"tile"},pic,el("div",{class:"tb"},
-      b("◀","Move earlier",function(){mvImg(i,-1)},i===0),b("▶","Move later",function(){mvImg(i,1)},i===ed.images.length-1),b("✕","Remove photo",function(){ed.images.splice(i,1);renderImgs();syncImgs()}))))})}
-function mvImg(i,d){var j=i+d;if(j<0||j>=ed.images.length)return;var t=ed.images[i];ed.images[i]=ed.images[j];ed.images[j]=t;renderImgs();syncImgs()}
-function fileToSquare(file,S){
-  return new Promise(function(res,rej){var url=URL.createObjectURL(file),im=new Image();
-    im.onload=function(){try{var k=Math.min(1,S/im.naturalWidth,S/im.naturalHeight),w=Math.round(im.naturalWidth*k),h=Math.round(im.naturalHeight*k);
-      var c=document.createElement("canvas");c.width=S;c.height=S;var x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,S,S);x.imageSmoothingQuality="high";x.drawImage(im,Math.round((S-w)/2),Math.round((S-h)/2),w,h);
-      URL.revokeObjectURL(url);res(c.toDataURL("image/jpeg",0.9))}catch(e){rej(e)}};
-    im.onerror=function(){URL.revokeObjectURL(url);rej(new Error("Could not read "+file.name+". Use a JPG or PNG photo."))};im.src=url})}
+      b("◀","Move earlier",function(){mvImg(i,-1)},i===0),b("▶","Move later",function(){mvImg(i,1)},i===ed.images.length-1),b("✕","Remove photo",function(){ed.images.splice(i,1);renderImgs()}))))})}
+function mvImg(i,d){var j=i+d;if(j<0||j>=ed.images.length)return;var t=ed.images[i];ed.images[i]=ed.images[j];ed.images[j]=t;renderImgs()}
 function fileToJpeg(file){
   return new Promise(function(res,rej){var url=URL.createObjectURL(file),im=new Image();
     im.onload=function(){try{var MAX=1400,w=im.naturalWidth,h=im.naturalHeight,k=Math.min(1,MAX/Math.max(w,h));w=Math.round(w*k);h=Math.round(h*k);
       var c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,w,h);x.imageSmoothingQuality="high";x.drawImage(im,0,0,w,h);
       URL.revokeObjectURL(url);res(c.toDataURL("image/jpeg",0.88))}catch(e){rej(e)}};
     im.onerror=function(){URL.revokeObjectURL(url);rej(new Error("Could not read "+file.name+". Use a JPG or PNG photo."))};im.src=url})}
-async function addFiles(list){var skipped=0;
+async function addFiles(list){
   var files=Array.prototype.slice.call(list||[]).filter(function(f){return /^image\//.test(f.type)});
   if(!files.length){showMsg("Choose image files (JPG or PNG).","bad");return}
   for(var i=0;i<files.length;i++){
     if(ed.images.length>=8){showMsg("A product can have up to 8 photos.","bad");break}
-    try{var data=await fileToJpeg(files[i]),dup=ed.images.some(function(x){return x.indexOf("pending:")===0&&pend[x.slice(8)]===data});
-      if(dup){skipped++;continue}
-      var id=uid("i");pend[id]=data;ed.images.push("pending:"+id);renderImgs();syncImgs()}catch(e){showMsg(e.message,"bad")}}
-  if(skipped)showMsg(skipped+" photo(s) skipped because the same photo is already added.","info");
+    try{var data=await fileToJpeg(files[i]),id=uid("i");pend[id]=data;ed.images.push("pending:"+id);renderImgs()}catch(e){showMsg(e.message,"bad")}}
   persist()}
 function saveProduct(){
   var g=function(id){return $("#"+id)},err=function(m){showMsg(m,"bad");return false};
@@ -322,10 +290,10 @@ function saveProduct(){
   if(!name)return err("Enter the product name.");
   if(!code)return err("Enter a product code.");
   if(D.products.some(function(p,i){return p.code===code&&i!==edIdx}))return err("The code "+code+" is already used by another product.");
-  ed.subs=ed.subs.filter(function(x){return !!subById(x)});ed.sub=ed.subs[0]||"";
-  if(!ed.subs.length)return err("Choose at least one sub category. Add one in the Categories tab if there is none.");
+  if(!catById(ed.cat))return err("Choose a category.");
+  if(!subOf(ed.cat,ed.sub))return err("Choose a sub category. Add one in the Categories tab if there is none.");
   if(pr!==""){price=Number(pr);if(!isFinite(price)||price<0)return err("Price must be a number, like 6799.")}
-  var prod={code:code,name:name,sub:ed.sub,subs:ed.subs.slice(),short:g("eshort").value.trim(),long:g("elong").value.trim(),price:price||null,stock:g("estock").value,featured:g("efeat").checked?1:0,images:ed.images.slice()};
+  var prod={code:code,name:name,cat:ed.cat,sub:ed.sub,short:g("eshort").value.trim(),long:g("elong").value.trim(),price:price||null,stock:g("estock").value,featured:g("efeat").checked?1:0,images:ed.images.slice()};
   if(edIdx>=0)D.products[edIdx]=prod;else D.products.push(prod);
   prunePend();persist();closeEditor();showMsg("Saved "+code+". Press Publish to put it on the website.","ok")}
 
@@ -336,40 +304,27 @@ function mv(arr,i,after){var u=el("button",{class:"btn ghost sm",type:"button",t
   var d=el("button",{class:"btn ghost sm",type:"button",text:"↓","aria-label":"Move down",disabled:i===arr.length-1,onclick:function(){var t=arr[i];arr[i]=arr[i+1];arr[i+1]=t;after()}});return [u,d]}
 function catsChanged(){persist();renderCats();renderFilter();renderList()}
 function renderCats(){
-  var sb=$("#slist");sb.textContent="";
-  var sc=el("div",{class:"card cat"},el("h2",{style:"font-size:17px",text:"Sub categories (product types)"}),el("div",{class:"hint",text:"Add your products here first, for example Meters, Test kits, Reagents. Then choose which categories show each one."}));
-  D.subs.forEach(function(x,si){var used=D.products.filter(function(p){return p.subs.indexOf(x.id)>=0}).length;
-    var nm=el("input",{type:"text","aria-label":"Sub category name"});nm.value=x.name;
-    nm.onchange=function(){var v=nm.value.trim();if(!v){nm.value=x.name;return}x.name=v;catsChanged()};
-    sc.append(el("div",{class:"subrow"},nm,el("span",{class:"hint",text:used+" product(s)"}),mv(D.subs,si,catsChanged),
-      delBtn("✕",function(){if(used){showMsg("\""+x.name+"\" still has "+used+" product(s). Move or delete them first.","bad");return}
-        D.categories.forEach(function(c){c.subs=c.subs.filter(function(y){return y!==x.id})});D.subs.splice(si,1);catsChanged()})))});
-  var ns=el("input",{type:"text",placeholder:"New sub category","aria-label":"New sub category name"});
-  var addS=function(){var v=ns.value.trim();if(!v)return;if(D.subs.some(function(x){return x.name.trim().toLowerCase()===v.toLowerCase()})){showMsg("\""+v+"\" already exists as a sub category.","bad");return}D.subs.push({id:uid("s"),name:v});catsChanged()};
-  ns.onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();addS()}};
-  sc.append(el("div",{class:"subrow"},ns,el("button",{class:"btn ghost sm",type:"button",text:"Add sub category",onclick:addS})));
-  sb.append(sc,el("h2",{style:"font-size:17px;margin:18px 0 8px",text:"Categories (customer groups)"}));
   var box=$("#clist");box.textContent="";
   D.categories.forEach(function(c,ci){
-    var used=D.products.filter(function(p){return p.subs.some(function(y){return c.subs.indexOf(y)>=0})}).length;
+    var used=D.products.filter(function(p){return p.cat===c.id}).length;
     var nm=el("input",{type:"text","aria-label":"Category name"});nm.value=c.name;
     nm.onchange=function(){var v=nm.value.trim();if(!v){nm.value=c.name;return}c.name=v;catsChanged()};
-    var pic=el("span",{class:"cpic",text:c.image?"":"No pic"});if(c.image)pic.append(el("img",{src:imgSrc(c.image),alt:""}));
-    var cf=el("input",{type:"file",accept:"image/*",class:"hid","aria-label":"Category picture for "+c.name});
-    cf.onchange=async function(){var f=cf.files[0];cf.value="";if(!f)return;if(!/^image\//.test(f.type)){showMsg("Choose an image file (JPG or PNG).","bad");return}
-      try{var d=await fileToSquare(f,400),id=uid("i");pend[id]=d;c.image="pending:"+id;prunePend();catsChanged()}catch(e){showMsg(e.message,"bad")}};
-    var cbox=el("div",{class:"cpicbox"},pic,el("button",{class:"btn ghost sm",type:"button",text:c.image?"Change picture":"Add picture",onclick:function(){cf.click()}}),
-      c.image?el("button",{class:"btn ghost sm",type:"button",text:"Remove",onclick:function(){c.image="";prunePend();catsChanged()}}):null,cf);
-    var head=el("div",{class:"chead"},cbox,nm,mv(D.categories,ci,catsChanged),
-      delBtn("Delete",function(){D.categories.splice(ci,1);catsChanged()}));
-    var tg=el("div",{class:"tgs"});
-    if(!D.subs.length)tg.append(el("span",{class:"hint",text:"Add sub categories above first."}));
-    D.subs.forEach(function(x){var on=c.subs.indexOf(x.id)>=0;
-      tg.append(el("button",{type:"button",class:"tg"+(on?" on":""),"aria-pressed":on,text:(on?"✓ ":"+ ")+x.name,onclick:function(){
-        if(on)c.subs=c.subs.filter(function(y){return y!==x.id});else c.subs.push(x.id);catsChanged()}}))});
-    box.append(el("div",{class:"card cat"},head,el("div",{class:"hint",style:"margin:8px 0 6px",text:"Tap to choose which sub categories show inside this category. "+used+" product(s) visible."}),tg))})}
+    var pf=el("input",{type:"text","aria-label":"Code prefix",maxlength:"6"});pf.value=c.prefix;
+    pf.onchange=function(){c.prefix=pf.value.trim().toUpperCase().replace(/[^A-Z0-9]/g,"")||"CS";pf.value=c.prefix;persist()};
+    var head=el("div",{class:"chead"},nm,el("label",{class:"pfl"},"Code prefix",pf),mv(D.categories,ci,catsChanged),
+      delBtn("Delete",function(){if(used){showMsg("\""+c.name+"\" still has "+used+" product(s). Move or delete them first.","bad");return}D.categories.splice(ci,1);catsChanged()}));
+    var subs=el("div",{class:"subs"});
+    c.subs.forEach(function(s,si){var sn=el("input",{type:"text","aria-label":"Sub category name"});sn.value=s.name;
+      sn.onchange=function(){var v=sn.value.trim();if(!v){sn.value=s.name;return}s.name=v;catsChanged()};
+      var sused=D.products.filter(function(p){return p.sub===s.id}).length;
+      subs.append(el("div",{class:"subrow"},sn,mv(c.subs,si,catsChanged),delBtn("✕",function(){if(sused){showMsg("\""+s.name+"\" still has "+sused+" product(s). Move or delete them first.","bad");return}c.subs.splice(si,1);catsChanged()})))});
+    var ns=el("input",{type:"text",placeholder:"New sub category","aria-label":"New sub category name"});
+    var add=function(){var v=ns.value.trim();if(!v)return;c.subs.push({id:uid("s"),name:v});catsChanged()};
+    ns.onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();add()}};
+    subs.append(el("div",{class:"subrow"},ns,el("button",{class:"btn ghost sm",type:"button",text:"Add sub category",onclick:add})));
+    box.append(el("div",{class:"card cat"},head,el("div",{class:"hint",style:"margin-top:6px",text:used+" product(s)"}),subs))})}
 $("#addcat").onclick=function(){var v=$("#newcat").value.trim();if(!v)return;
-D.categories.push({id:uid("c"),name:v,prefix:"CS",image:"",subs:[]});$("#newcat").value="";catsChanged()};
+  var pre=v.replace(/[^A-Za-z]/g,"").slice(0,2).toUpperCase()||"CS";D.categories.push({id:uid("c"),name:v,prefix:pre,subs:[]});$("#newcat").value="";catsChanged()};
 $("#newcat").onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();$("#addcat").click()}};
 
 /* ---------- shop info ---------- */
@@ -382,11 +337,10 @@ $("#saveshop").onclick=function(){var g=function(id){return $("#"+id).value.trim
   persist();showMsg("Shop info saved. Press Publish to update the website.","ok")};
 
 /* ---------- GitHub ---------- */
-function guessRepo(){var m=/^([^.]+)\.github\.io$/.exec(location.hostname);if(!m)return;if(!cfg.owner)cfg.owner=m[1];var seg=location.pathname.split("/")[1];if(!cfg.repo&&seg&&!/\.html?$/.test(seg))cfg.repo=decodeURIComponent(seg)}
-function fillGh(){guessRepo();$("#gowner").value=cfg.owner||"";$("#grepo").value=cfg.repo||"";$("#gbranch").value=cfg.branch||"main";$("#gtoken").value=cfg.token||""}
+function fillGh(){$("#gowner").value=cfg.owner||"";$("#grepo").value=cfg.repo||"";$("#gbranch").value=cfg.branch||"main";$("#gtoken").value=cfg.token||""}
 function readGh(){cfg={owner:$("#gowner").value.trim(),repo:$("#grepo").value.trim().replace(/\.git$/,""),branch:$("#gbranch").value.trim()||"main",token:$("#gtoken").value.trim()};
   try{localStorage.setItem("cs-gh",JSON.stringify(cfg))}catch(e){}}
-$("#gform").onsubmit=function(e){e.preventDefault();readGh();showMsg("GitHub details saved in this browser.","ok")};
+$("#gsave").onclick=function(){readGh();showMsg("GitHub details saved in this browser.","ok")};
 function ghH(){return {Authorization:"Bearer "+cfg.token,Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"}}
 function api(p){return "https://api.github.com/repos/"+encodeURIComponent(cfg.owner)+"/"+encodeURIComponent(cfg.repo)+(p?"/"+p:"")}
 async function ghErr(r){var m="";try{m=(await r.json()).message}catch(e){}
@@ -407,19 +361,16 @@ async function putData(text){for(var a=0;a<2;a++){var sha=await ghGetSha("data.j
   try{await ghPut("data.js",b64(text),"Update products",sha);return}catch(e){if(a===0&&/error (409|422)/.test(e.message))continue;throw e}}}
 async function publish(){
   if(busy)return;readGh();
-  if(!cfg.owner||!cfg.repo||!cfg.token){setTab("github");fillGh();showMsg(cfg.token?"Fill in the GitHub tab first, then press Publish again.":"Paste your GitHub token once in the GitHub tab, press Save, then press Publish again.","bad");if(!cfg.token)$("#gtoken").focus();return}
+  if(!cfg.owner||!cfg.repo||!cfg.token){setTab("github");showMsg("Fill in the GitHub tab first, then press Publish again.","bad");return}
   if(ed)closeEditor();
   busy=true;renderStatus();
   try{
     prunePend();var ids=Object.keys(pend),n=0;
     for(var k=0;k<ids.length;k++){var id=ids[k];n++;showMsg("Uploading photo "+n+" of "+ids.length+"...","info");
-      var ref="pending:"+id,owner=D.products.find(function(p){return p.images.indexOf(ref)>=0}),cown=D.categories.find(function(c){return c.image===ref});
-      if(!owner&&!cown){delete pend[id];continue}
-      var slug=owner?(owner.code||"item"):"cat-"+(cown.name||"x");
-      var path="images/"+slug.toLowerCase().replace(/[^a-z0-9-]/g,"")+"-"+id.slice(-5)+Date.now().toString(36).slice(-3)+".jpg";
-      await ghPut(path,pend[id].split(",")[1],"Add photo for "+(owner?owner.code:cown.name));
-      D.products.forEach(function(p){p.images=p.images.map(function(x){return x===ref?path:x})});
-      D.categories.forEach(function(c){if(c.image===ref)c.image=path});
+      var owner=D.products.find(function(p){return p.images.indexOf("pending:"+id)>=0});if(!owner){delete pend[id];continue}
+      var path="images/"+(owner.code||"item").toLowerCase().replace(/[^a-z0-9-]/g,"")+"-"+id.slice(-5)+Date.now().toString(36).slice(-3)+".jpg";
+      await ghPut(path,pend[id].split(",")[1],"Add photo for "+owner.code);
+      D.products.forEach(function(p){p.images=p.images.map(function(x){return x==="pending:"+id?path:x})});
       delete pend[id];await saveNow()}
     showMsg("Saving product data...","info");
     await putData("window.SHOP="+JSON.stringify(D,null,1)+";\n");
@@ -435,15 +386,69 @@ var resetArmed=false;
 $("#reset").onclick=async function(){var b=$("#reset");if(!resetArmed){resetArmed=true;b.textContent="Click again to discard the draft";setTimeout(function(){resetArmed=false;b.textContent="Discard draft and reload published data"},4000);return}
   try{await kvSet("draft",null)}catch(e){}location.reload()};
 
+
+/* ---------- import products from a file ---------- */
+function normKey(s){return String(s||"").trim().toLowerCase().replace(/\s+/g," ")}
+function dataUrlToJpeg(u){return new Promise(function(res,rej){var im=new Image();
+  im.onload=function(){var MAX=1400,w=im.naturalWidth,h=im.naturalHeight,k=Math.min(1,MAX/Math.max(w,h));w=Math.round(w*k);h=Math.round(h*k);
+    var c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,w,h);x.drawImage(im,0,0,w,h);res(c.toDataURL("image/jpeg",0.9))};
+  im.onerror=function(){rej(new Error("bad image"))};im.src=u})}
+async function importFile(file){
+  var txt,data;
+  try{txt=await file.text()}catch(e){showMsg("Could not read the file.","bad");return}
+  try{data=JSON.parse(txt)}catch(e){showMsg("This is not a valid import file.","bad");return}
+  var list=Array.isArray(data)?data:(data&&data.products);
+  if(!Array.isArray(list)||!list.length){showMsg("No products found in this file.","bad");return}
+  showMsg("Importing "+list.length+" products...","info");
+  var added=0,skipped=[],photos=0,byName={};
+  D.products.forEach(function(p){byName[normKey(p.name)]=p});
+  for(var i=0;i<list.length;i++){
+    var it=list[i]||{},name=String(it.name||"").trim();if(!name)continue;
+    var imgs=[],src=Array.isArray(it.images)?it.images:[];
+    for(var k=0;k<src.length&&imgs.length<8;k++){var u=src[k];if(typeof u!=="string")continue;
+      if(/^data:image\/jpeg;base64,/.test(u)){var id=uid("i");pend[id]=u;imgs.push("pending:"+id)}
+      else if(/^data:image\//.test(u)){try{var j=await dataUrlToJpeg(u),id2=uid("i");pend[id2]=j;imgs.push("pending:"+id2)}catch(e){}}
+      else if(/^images\/[\w.\-]+$/.test(u))imgs.push(u)}
+    var ex=byName[normKey(name)];
+    if(ex){if(!ex.images.length&&imgs.length){ex.images=imgs;photos++}skipped.push(name);continue}
+    var cname=String(it.category||"General").trim()||"General",ck=normKey(cname);
+    var cat=D.categories.find(function(c){return normKey(c.name)===ck});
+    if(!cat){cat={id:uid("c"),name:cname,prefix:cname.replace(/[^A-Za-z]/g,"").slice(0,2).toUpperCase()||"CS",subs:[]};D.categories.push(cat)}
+    var sname=String(it.sub||"General").trim()||"General",sk=normKey(sname);
+    var sub=cat.subs.find(function(s){return normKey(s.name)===sk});
+    if(!sub){sub={id:uid("s"),name:sname};cat.subs.push(sub)}
+    var code=String(it.code||"").trim().toUpperCase().replace(/\s+/g,"-");
+    if(!code||D.products.some(function(p){return p.code===code}))code=nextCode(cat.id);
+    var pr=(it.price==null||it.price==="")?null:Number(String(it.price).replace(/,/g,""));if(!isFinite(pr)||pr<=0)pr=null;
+    var prod={code:code,name:name,cat:cat.id,sub:sub.id,short:String(it.short||"").trim(),long:String(it.long||"").trim(),price:pr,stock:STOCK[it.stock]?it.stock:"in",featured:it.featured?1:0,images:imgs};
+    D.products.push(prod);byName[normKey(name)]=prod;added++}
+  prunePend();persist();renderAll();
+  var t="Imported "+added+" new product"+(added===1?"":"s")+".";
+  if(photos)t+=" Added photos to "+photos+" existing product"+(photos===1?"":"s")+".";
+  if(skipped.length)t+=" Skipped "+skipped.length+" that already exist: "+skipped.slice(0,4).join(", ")+(skipped.length>4?" and more":"")+".";
+  showMsg(t+" Press Publish to put them on the website.",added||photos?"ok":"info")}
+$("#pimp").onclick=function(){$("#pimpfile").click()};
+$("#pimpfile").onchange=function(){var f=this.files&&this.files[0];this.value="";if(f)importFile(f)};
+
 /* ---------- start ---------- */
+async function fetchRemote(){
+  if(!cfg.owner||!cfg.repo||!cfg.token)return null;
+  try{var r=await fetch(api("contents/data.js")+"?ref="+encodeURIComponent(cfg.branch),{headers:Object.assign({},ghH(),{Accept:"application/vnd.github.raw+json"}),cache:"no-store"});
+    if(!r.ok)return null;var t=await r.text(),m=/^\s*window\.SHOP\s*=\s*([\s\S]*?);\s*$/.exec(t);if(!m)return null;
+    return normalise(JSON.parse(m[1]))}catch(e){return null}}
 function renderAll(){renderStatus();renderFilter();renderList();renderCats()}
 async function init(){
   var orig=normalise(JSON.parse(JSON.stringify(window.SHOP||{})));
+  var remote=await fetchRemote(),pub=remote||orig;
   var saved=null;try{saved=await kvGet("draft")}catch(e){idbOk=false}
-  if(saved&&saved.D&&!(JSON.stringify(saved.D)===saved.base&&!Object.keys(saved.pend||{}).length)){D=normalise(saved.D);pend=saved.pend||{};base=saved.base||JSON.stringify(orig)}
-  else{D=orig;base=JSON.stringify(orig)}
+  var hasDraft=saved&&saved.D&&(JSON.stringify(saved.D)!==saved.base||Object.keys(saved.pend||{}).length>0);
+  var warn="";
+  if(hasDraft){D=normalise(saved.D);pend=saved.pend||{};base=saved.base||JSON.stringify(pub);
+    if(remote&&JSON.stringify(remote)!==base)warn="The website data was changed after you started this draft. Publishing now will overwrite those changes. To start again from the published version, use Discard draft in the GitHub tab."}
+  else{D=JSON.parse(JSON.stringify(pub));base=JSON.stringify(pub)}
   fillShop();fillGh();renderAll();
   if(!idbOk)showMsg("This browser blocks saving drafts. Keep this page open until you press Publish.","bad");
+  else if(warn)showMsg(warn,"bad");
   else if(dirty())showMsg("Your unpublished draft was restored.","info")}
 init();
 })();
