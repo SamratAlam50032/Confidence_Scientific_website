@@ -198,9 +198,13 @@ header.top{padding:10px 0 0}
 .banner .bacts .btn{display:inline-block;margin:0}
 .banner .bacts .btn.gap2{margin-left:8px}
 @media(max-width:600px){.banner .bacts .btn.gap2{margin-left:0}}
-.cband{position:relative;margin-top:10px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:6px 8px 0}
+.cband{position:relative;margin-top:10px;background:var(--brown);border:0;border-radius:14px;padding:8px 8px 4px}
+.cband .catnav::-webkit-scrollbar-track{background:rgba(0,0,0,.28)}
+.cband .catnav::-webkit-scrollbar-thumb{background:#EADDCB;border:2px solid transparent;background-clip:padding-box}
+@supports not selector(::-webkit-scrollbar){.cband .catnav{scrollbar-color:#EADDCB rgba(0,0,0,.28)}}
+.cband .mi>button{border-color:transparent}
 .cband .catnav{margin-top:0;border-top:0;padding:4px 2px 10px}
-.carr{position:absolute;top:calc(50% - 6px);transform:translateY(-50%);z-index:2;width:30px;height:30px;border-radius:50%;border:0;background:var(--brown);color:#fff;font-size:22px;line-height:1;padding:0 0 3px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.carr{position:absolute;top:calc(50% - 6px);transform:translateY(-50%);z-index:2;width:30px;height:30px;border-radius:50%;border:0;background:#fff;color:var(--brown);font-size:22px;line-height:1;padding:0 0 3px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25)}
 .carr.l{left:6px}.carr.r{right:6px}
 .carr:hover{filter:brightness(1.15)}
 /* price above stock tag on cards */
