@@ -694,167 +694,224 @@ window.SHOP={
    "price": 2999,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-035-gdeov5zn.jpg"
+   ]
   },
   {
    "code": "HN-036",
    "name": "James Heal ECE Phosphate Reference Detergent (B) 2kg Tub",
-   "sub": "c1s3",
+   "sub": "c2s3",
    "subs": [
-    "c1s3"
+    "c2s3"
    ],
    "short": "James Heal ECE phosphate reference detergent (B), 2 kg tub.",
    "long": "Phosphate-containing ECE reference detergent (B) from James Heal for standard textile laboratory washing. It is used in colour fastness to washing and domestic laundering shrinkage tests, so that results are comparable between laboratories.\n\nSpecifications\n• Type: ECE reference detergent with phosphate (B)\n• Pack size: 2 kg tub\n• Use: colour fastness to washing and dimensional change tests\n• Brand: James Heal\n\nIn the box\n• ECE phosphate reference detergent (B), 2 kg tub",
    "price": 2399,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-036-5m1oz7u5.jpg"
+   ]
   },
   {
    "code": "HN-037",
    "name": "James Heal ECE (A) Non-Phosphate Detergent 2kg Tub",
-   "sub": "c1s3",
+   "sub": "c2s3",
    "subs": [
-    "c1s3"
+    "c2s3"
    ],
    "short": "James Heal ECE (A) non-phosphate reference detergent, 2 kg tub.",
    "long": "Non-phosphate ECE reference detergent (A) from James Heal for standard textile laboratory washing. Used in colour fastness to washing and domestic laundering shrinkage tests where a standard reference detergent is required.\n\nSpecifications\n• Type: ECE reference detergent, non-phosphate (A)\n• Pack size: 2 kg tub\n• Use: colour fastness to washing and dimensional change tests\n• Brand: James Heal\n\nIn the box\n• ECE non-phosphate reference detergent (A), 2 kg tub",
    "price": 2799,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-037-d12aqafb.jpg"
+   ]
   },
   {
    "code": "HN-038",
    "name": "ISO Crocking Cloth James Heal (5x5cm)",
-   "sub": "",
-   "subs": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "James Heal ISO crocking cloth, 5 x 5 cm squares.",
    "long": "Standard white cotton rubbing cloth cut in 5 x 5 cm squares for colour fastness to rubbing (crocking) tests. Used with a crockmeter to assess colour transfer from a fabric surface under dry and wet conditions.\n\nSpecifications\n• Type: ISO crocking (rubbing) cloth\n• Size: 5 x 5 cm\n• Use: colour fastness to rubbing with a crockmeter\n• Brand: James Heal\n\nIn the box\n• ISO crocking cloth squares, 5 x 5 cm",
    "price": 1799,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-038-hrpa7bxo.jpg",
+    "images/hn-038-mhhgndd4.jpg"
+   ]
   },
   {
    "code": "HN-039",
    "name": "Multifibre DW SDC 10 Mtr. Roll",
-   "sub": "",
-   "subs": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "SDC multifibre DW adjacent fabric, 10 metre roll.",
    "long": "Multifibre adjacent fabric woven with strips of different fibres, used in colour fastness tests to show which fibre types a dye stains. Supplied as a 10 metre roll that can be cut to the size needed for each test.\n\nSpecifications\n• Type: multifibre adjacent fabric (DW)\n• Length: 10 metre roll\n• Use: colour fastness to washing, perspiration and other staining tests\n• Brand: SDC\n\nIn the box\n• Multifibre DW fabric, 10 metre roll",
    "price": 3199,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-039-ktqwgeoq.jpg",
+    "images/hn-039-sfsy5gfk.jpg"
+   ]
   },
   {
    "code": "HN-040",
    "name": "Multifibre James Heal DW 10 Meter. Roll",
-   "sub": "",
-   "subs": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "James Heal multifibre DW adjacent fabric, 10 metre roll.",
    "long": "Multifibre adjacent fabric from James Heal woven with strips of different fibres. In colour fastness testing it shows how much a dye stains each fibre type. Supplied as a 10 metre roll that can be cut to size.\n\nSpecifications\n• Type: multifibre adjacent fabric (DW)\n• Length: 10 metre roll\n• Use: colour fastness to washing, perspiration and other staining tests\n• Brand: James Heal\n\nIn the box\n• Multifibre DW fabric, 10 metre roll",
    "price": 3599,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-040-8pngjhrj.jpg",
+    "images/hn-040-5ukjnj66.jpg"
+   ]
   },
   {
    "code": "HN-041",
    "name": "SDC ISO Crocking Cloth Rubbing Fabric 5 x 5cm",
-   "sub": "",
-   "subs": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "SDC ISO crocking cloth, 5 x 5 cm rubbing fabric.",
    "long": "Standard rubbing fabric cut in 5 x 5 cm squares for colour fastness to rubbing (crocking) tests with a crockmeter. Used to assess how much colour transfers from a dyed or printed fabric under dry and wet rubbing.\n\nSpecifications\n• Type: ISO crocking (rubbing) cloth\n• Size: 5 x 5 cm\n• Use: colour fastness to rubbing with a crockmeter\n• Brand: SDC\n\nIn the box\n• ISO crocking cloth squares, 5 x 5 cm",
    "price": 1199,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-041-zq0nul3t.jpg",
+    "images/hn-041-6vgnoml6.jpg"
+   ]
   },
   {
    "code": "HN-042",
    "name": "Testfabrics AATCC Crocking Cloth 1000ps box",
-   "sub": "",
-   "subs": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "Testfabrics AATCC crocking cloth, box of 1000 pieces.",
    "long": "AATCC crocking cloth from Testfabrics for colour fastness to crocking tests, supplied as a box of 1000 pre-cut pieces. Suitable for dry and wet crocking tests with a crockmeter following AATCC methods.\n\nSpecifications\n• Type: AATCC crocking cloth\n• Pack size: box of 1000 pieces\n• Use: colour fastness to crocking with a crockmeter\n• Brand: Testfabrics\n\nIn the box\n• AATCC crocking cloth, 1000 pieces",
    "price": 1190,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-042-zufjbnxn.jpg",
+    "images/hn-042-ltq06pjy.jpg"
+   ]
   },
   {
    "code": "HN-043",
    "name": "Thermo Paper Strip or Temperature Strips",
-   "sub": "",
-   "subs": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "Thermo paper temperature indicator strips.",
    "long": "Thermo paper strips that change colour at set temperatures, giving a simple record that a surface or process has reached a particular temperature. Handy for checking temperatures in dyeing, heat setting, autoclaves, ovens and other process steps.\n\nSpecifications\n• Type: thermo (temperature indicator) paper strip\n• Use: quick visual indication of temperature reached\n• Read the result against the colour or marking on the strip\n\nIn the box\n• Temperature indicator strips",
    "price": 2050,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-043-0451xqye.jpg"
+   ]
   },
   {
    "code": "HN-044",
    "name": "pH Paper Strips for PH Measuring Merck, Germany",
-   "sub": "",
-   "subs": [],
+   "sub": "c16s2",
+   "subs": [
+    "c16s2"
+   ],
    "short": "Merck pH indicator paper strips for quick pH measurement.",
    "long": "pH indicator paper strips from Merck, Germany, for quick colour-based pH measurement of liquids. Dip the strip in the sample, wait for the colour to develop and compare it to the colour scale on the pack.\n\nSpecifications\n• Type: pH indicator strips\n• Make: Merck, Germany\n• Use: quick pH measurement of aqueous samples\n• Read the result against the colour scale on the pack\n\nIn the box\n• pH indicator strips with colour scale",
    "price": 920,
    "stock": "in",
-   "featured": 0,
-   "images": []
+   "featured": 1,
+   "images": [
+    "images/hn-044-tgwcesb9.jpg",
+    "images/hn-044-p71jltjw.jpg"
+   ]
   },
   {
    "code": "HN-045",
    "name": "Universal pH Test Paper Strip (pH 0-14) pH Paper, China",
-   "sub": "",
-   "subs": [],
+   "sub": "c16s1",
+   "subs": [
+    "c16s1"
+   ],
    "short": "Universal pH test paper strips, pH 0 to 14.",
    "long": "Universal pH test paper that covers the full pH 0–14 range. A low-cost way to get a quick idea of whether a liquid is acidic, neutral or alkaline using the colour chart supplied.\n\nSpecifications\n• Type: universal pH test paper\n• Range: pH 0 to 14\n• Use: quick pH check of liquid samples\n• Read the result against the colour chart\n\nIn the box\n• pH test paper with colour chart",
    "price": 300,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-045-s9669v04.jpg",
+    "images/hn-045-2ci8rwgz.jpg"
+   ]
   },
   {
    "code": "HN-046",
    "name": "Hydraulic GSM Cutter with Round Blade Knife",
-   "sub": "",
-   "subs": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "Hydraulic GSM cutter with round blade knife for fabric sampling.",
    "long": "Hydraulic GSM cutter that cuts a fabric specimen of exact area with a round blade, so that fabric weight in grams per square metre (GSM) can be calculated quickly after weighing. Used in textile laboratories and garment factories for fabric quality control.\n\nSpecifications\n• Type: hydraulic GSM cutter\n• Cutting tool: round blade knife\n• Use: cutting fabric specimens of fixed area for GSM calculation\n• Suitable for woven and knitted fabrics\n\nIn the box\n• Hydraulic GSM cutter with round blade knife",
    "price": 21000,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-046-wuycdxuc.jpg"
+   ]
   },
   {
    "code": "HN-047",
    "name": "GSM Cutter Machine",
-   "sub": "",
-   "subs": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "GSM cutter for cutting fabric samples of fixed area.",
    "long": "GSM cutter used to cut a fabric sample of fixed area so its weight per square metre (GSM) can be worked out after weighing the specimen. A routine tool in textile quality control.\n\nSpecifications\n• Type: GSM cutter\n• Use: cutting fabric specimens of fixed area for GSM calculation\n• Suitable for woven and knitted fabrics\n\nIn the box\n• GSM cutter machine",
    "price": 2600,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-047-harajzj3.jpg"
+   ]
   },
   {
    "code": "HN-048",
    "name": "GSM Cutter Blade",
-   "sub": "",
-   "subs": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "Replacement blade for GSM cutter.",
    "long": "Replacement round cutting blade for GSM cutters. A sharp blade gives a clean cut and an accurate sample area, which keeps GSM results reliable.\n\nSpecifications\n• Type: GSM cutter replacement blade\n• Use: replacing a worn or damaged blade on a GSM cutter\n• Handle carefully – the blade is sharp\n\nIn the box\n• GSM cutter blade",
    "price": 22,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/hn-048-be0tr136.jpg"
+   ]
   }
  ],
  "subs": [
