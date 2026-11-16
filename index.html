@@ -198,6 +198,14 @@ header.top{padding:10px 0 0}
 .banner .bacts .btn{display:inline-block;margin:0}
 .banner .bacts .btn.gap2{margin-left:8px}
 @media(max-width:600px){.banner .bacts .btn.gap2{margin-left:0}}
+.cband{position:relative;margin-top:10px;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:6px 8px 0}
+.cband .catnav{margin-top:0;border-top:0;padding:4px 2px 10px}
+.carr{position:absolute;top:calc(50% - 6px);transform:translateY(-50%);z-index:2;width:30px;height:30px;border-radius:50%;border:0;background:var(--brown);color:#fff;font-size:22px;line-height:1;padding:0 0 3px;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.carr.l{left:6px}.carr.r{right:6px}
+.carr:hover{filter:brightness(1.15)}
+/* price above stock tag on cards */
+.card .row{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:5px}
+.card .row .tag{align-self:flex-start}
 .pvbar{display:flex;align-items:center;gap:12px;margin:16px 0 0}
 .pvbar .crumb{margin:0}
 .back{width:40px;height:40px;flex:none;border-radius:50%;border:0;background:#111;color:#fff;display:grid;place-items:center;padding:0;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .15s,background .15s}
@@ -225,7 +233,7 @@ header.top{padding:10px 0 0}
     <div class="search"><input id="q" type="search" placeholder="Search products, e.g. pH meter, caliper" aria-label="Search products" autocomplete="off"><div class="sug" id="sug" hidden></div></div>
     <button class="btn" id="openContact" type="button">Contact us</button>
   </div>
-  <nav class="catnav" id="catnav" aria-label="Categories"></nav>
+  <div class="cband"><button class="carr l" id="cprev" type="button" aria-label="Scroll categories left" hidden>&lsaquo;</button><nav class="catnav" id="catnav" aria-label="Categories"></nav><button class="carr r" id="cnext" type="button" aria-label="Scroll categories right" hidden>&rsaquo;</button></div>
 </div></header>
 <div id="ddhost"></div>
 
@@ -256,7 +264,7 @@ header.top{padding:10px 0 0}
     <div class="cols">
       <div><div class="k">Phone / WhatsApp</div><div class="sel" id="cphones"></div></div>
       <div id="cemailbox"><div class="k">Email</div><div class="sel" id="cemail"></div></div>
-      <div id="caddrbox"><div class="k">Address</div><div id="caddr"></div></div>
+      <div id="caddrbox"><div class="k">Address</div><div id="caddr"></div><a class="btn ghost" id="cmapA" href="#" target="_blank" rel="noopener" hidden style="display:inline-block;margin-top:8px;text-decoration:none">View on map</a></div>
     </div>
   </section>
 </div>
@@ -275,6 +283,7 @@ header.top{padding:10px 0 0}
   <div class="cl">
     <div id="cwabox"><div class="k">WhatsApp</div><div class="sel" id="cwa"></div><a class="btn" id="cwalink" href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;text-decoration:none">Open WhatsApp</a></div>
     <div><div class="k">Phone</div><div class="sel" id="cphone2"></div></div>
+    <div id="cmapbox" hidden><div class="k">Location</div><div id="cmapaddr"></div><a class="btn" id="cmapB" href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;text-decoration:none">Open map</a></div>
     <div id="cmailbox"><div class="k">Email</div><div class="sel" id="cmail"></div><button class="btn ghost" id="cmailcopy" type="button" style="margin-top:6px">Copy email</button></div>
   </div></div></div>
 
@@ -345,7 +354,7 @@ const priceTxt=p=>{if(p[7])return pt(p[7]);const vp=(p[11]||[]).map(v=>v.price).
 let curVr=null;
 function stockTag(t,v){t.textContent=v==="in"?"In stock":v==="order"?"On order":"Ask availability";t.className="tag "+(v==="in"?"in":"order")}
 function card(p){const d=document.createElement("article");d.className="card";
-  d.innerHTML='<div class="thumb"></div><div class="body"><h3><button class="lnk" type="button"></button></h3><p></p><div class="row"><span class="tag"></span><span class="price"></span></div></div>';
+  d.innerHTML='<div class="thumb"></div><div class="body"><h3><button class="lnk" type="button"></button></h3><p></p><div class="row"><span class="price"></span><span class="tag"></span></div></div>';
   const th=d.querySelector(".thumb"); if(p[9]&&p[9][0]){th.classList.add("has");const i=document.createElement("img");i.src=p[9][0];i.alt=p[0];i.loading="lazy";th.appendChild(i)}else th.innerHTML=svg(p[1]);
   d.querySelector(".lnk").textContent=p[0]; d.querySelector("p").textContent=p[3];
   stockTag(d.querySelector(".tag"),p[4]); d.querySelector(".price").textContent=priceTxt(p);
@@ -464,10 +473,16 @@ function applySettings(){
   set("tbL",ph[0]?"Call or WhatsApp: "+ph[0]:"");set("tbR",S.address||S.tagline||"");
   set("hl",S.headline||"");set("hi",S.intro||"");
   set("cphones",pt);set("cphone2",pt);set("cemail",S.email||"");set("cmail",S.email||"");set("caddr",S.address||"");
-  $("#cemailbox").hidden=!S.email;$("#cmailbox").hidden=!S.email;$("#caddrbox").hidden=!S.address;
+  $("#cemailbox").hidden=!S.email;$("#cmailbox").hidden=!S.email;$("#caddrbox").hidden=!S.address&&!S.map;
+  const mp=/^https?:\/\//i.test(S.map||"")?S.map:"";$("#cmapA").hidden=!mp;if(mp)$("#cmapA").href=mp;
+  $("#cmapbox").hidden=!S.address&&!mp;set("cmapaddr",S.address||"");$("#cmapB").hidden=!mp;if(mp)$("#cmapB").href=mp;
   $("#cwabox").hidden=!WA;if(WA){$("#cwa").textContent="+"+WA;$("#cwalink").href="https://wa.me/"+WA}}
 applySettings();
 drawMenu();
+(function(){const n=$("#catnav"),pr=$("#cprev"),nx=$("#cnext");
+  const upd=()=>{pr.hidden=n.scrollLeft<=2;nx.hidden=n.scrollLeft+n.clientWidth>=n.scrollWidth-2};
+  const by=d=>n.scrollBy({left:d*Math.max(200,n.clientWidth*0.6),behavior:"smooth"});
+  pr.onclick=()=>by(-1);nx.onclick=()=>by(1);n.addEventListener("scroll",upd,{passive:true});window.addEventListener("resize",upd);upd();setTimeout(upd,300);window.addEventListener("load",upd)})();
 drawCats();draw();
 
 /* ---- product page (own page, back arrow, related products) ---- */

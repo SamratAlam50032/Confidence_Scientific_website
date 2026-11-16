@@ -145,6 +145,7 @@ body.editing .pmv{display:none}
       <div class="f"><label for="swa">WhatsApp number</label><input id="swa" type="text" placeholder="01XXXXXXXXX"><small id="swahint">Orders from Buy now are sent to this number.</small></div>
       <div class="f"><label for="sphones">Phone numbers</label><input id="sphones" type="text" placeholder="01XXXXXXXXX, 01XXXXXXXXX"><small>Separate with commas.</small></div>
       <div class="g2"><div class="f"><label for="semail">Email</label><input id="semail" type="text" placeholder="name@example.com"></div><div class="f"><label for="saddr">Address</label><input id="saddr" type="text"></div></div>
+      <div class="f"><label for="smap">Map link (optional)</label><input id="smap" type="text" placeholder="https://maps.app.goo.gl/..." inputmode="url"><small>Open Google Maps, search your shop, press Share, Copy link, then paste it here. The website will show a View on map button.</small></div>
       <button class="btn" id="saveshop" type="button">Save shop info</button>
     </div>
   </section>
@@ -203,7 +204,7 @@ function migrate(d){
   d.subs=subs;return d}
 function normalise(d){
   d=migrate(d)||{};
-  d.settings=Object.assign({name:"",tagline:"",headline:"",intro:"",whatsapp:"",phones:[],email:"",address:""},d.settings||{});
+  d.settings=Object.assign({name:"",tagline:"",headline:"",intro:"",whatsapp:"",phones:[],email:"",address:"",map:""},d.settings||{});
   d.subs=(d.subs||[]).map(function(x){return {id:x.id||uid("s"),name:x.name||""}});
   d.categories=(d.categories||[]).map(function(c){var seen={};return {id:c.id||uid("c"),name:c.name||"",prefix:c.prefix||"CS",image:c.image||"",subs:(c.subs||[]).filter(function(x){if(seen[x])return false;seen[x]=1;return true})}});
   d.products=(d.products||[]).map(function(p){var sl=(p.subs&&p.subs.length?p.subs:(p.sub?[p.sub]:[])).filter(function(x,i,a){return a.indexOf(x)===i});return {code:p.code||"",name:p.name||"",sub:sl[0]||"",subs:sl,short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"in",featured:p.featured?1:0,images:p.images||[],variants:(p.variants||[]).map(function(v){return {name:v.name||"",price:(v.price==null||v.price==="")?null:v.price,images:v.images||[]}})}});
@@ -466,10 +467,11 @@ $("#newcat").onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();$("#ad
 /* ---------- shop info ---------- */
 function normWA(v){var d=String(v).replace(/\D/g,"");if(/^01\d{9}$/.test(d))d="88"+d;return d}
 function fillShop(){var s=D.settings,v=function(id,x){$("#"+id).value=x||""};
-  v("sname",s.name);v("stag",s.tagline);v("shead",s.headline);v("sintro",s.intro);v("swa",s.whatsapp?(s.whatsapp.indexOf("880")===0?"0"+s.whatsapp.slice(3):s.whatsapp):"");v("sphones",(s.phones||[]).join(", "));v("semail",s.email);v("saddr",s.address)}
+  v("sname",s.name);v("stag",s.tagline);v("shead",s.headline);v("sintro",s.intro);v("swa",s.whatsapp?(s.whatsapp.indexOf("880")===0?"0"+s.whatsapp.slice(3):s.whatsapp):"");v("sphones",(s.phones||[]).join(", "));v("semail",s.email);v("saddr",s.address);v("smap",s.map)}
 $("#saveshop").onclick=function(){var g=function(id){return $("#"+id).value.trim()},s=D.settings;
+  if(g("smap")&&!/^https?:\/\//i.test(g("smap"))){showMsg("The map link must start with https://","bad");return}
   s.name=g("sname");s.tagline=g("stag");s.headline=g("shead");s.intro=g("sintro");s.whatsapp=normWA(g("swa"));
-  s.phones=g("sphones").split(/[,\n]/).map(function(x){return x.trim()}).filter(Boolean);s.email=g("semail");s.address=g("saddr");
+  s.phones=g("sphones").split(/[,\n]/).map(function(x){return x.trim()}).filter(Boolean);s.email=g("semail");s.address=g("saddr");s.map=g("smap");
   persist();showMsg("Shop info saved. Press Publish to update the website.","ok")};
 
 /* ---------- GitHub ---------- */
