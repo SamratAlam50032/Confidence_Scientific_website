@@ -21,7 +21,7 @@ window.SHOP={
    "id": "c1",
    "name": "Hanna Instruments",
    "prefix": "HN",
-   "image": "images/cat-hannainstruments-lw5q5zlo.jpg",
+   "image": "",
    "subs": [
     "c1s1",
     "c1s2",
