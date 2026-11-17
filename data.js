@@ -26,7 +26,13 @@ window.SHOP={
     "c1s1",
     "c1s2",
     "c1s3",
-    "c1s6"
+    "c1s6",
+    "sp7hn9z",
+    "sbaxipc",
+    "s916j9x",
+    "s700fib",
+    "sqe8bzx",
+    "swurakr"
    ]
   },
   {
@@ -2255,15 +2261,20 @@ window.SHOP={
   {
    "code": "CS-53106",
    "name": "Digital Vernier Caliper 150 mm Plastic Slide Caliper 6 Inch",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "swurakr",
+   "subs": [
+    "swurakr"
+   ],
    "short": "Digital vernier caliper, 150 mm (6 inch).",
    "long": "Plastic-body digital caliper for measuring outside and inside dimensions and depth with a clear digital readout.\n\nSpecifications\n• Range: 0 to 150 mm (6 inch)\n• Type: digital vernier caliper, plastic body\n• Display: digital LCD\n\nIn the box\n• Digital caliper\n• Battery",
    "price": 750,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-53106-c450wz5k.jpg",
+    "images/cs-53106-hd17e0v3.jpg"
+   ]
   },
   {
    "code": "CS-21503",
@@ -2387,236 +2398,302 @@ window.SHOP={
   {
    "code": "CS-68295",
    "name": "Magnifying Glass 90 mm",
-   "sub": "",
-   "subs": [],
+   "variants": [
+    {
+     "name": "75mm",
+     "price": 160,
+     "images": []
+    }
+   ],
+   "sub": "c3s1",
+   "subs": [
+    "c3s1"
+   ],
    "short": "Magnifying glass, 90 mm lens.",
    "long": "Hand magnifying glass with a 90 mm lens for reading, inspecting specimens and general observation.\n\nSpecifications\n• Lens diameter: 90 mm\n• Type: hand magnifier\n\nIn the box\n• Magnifying glass",
    "price": 220,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
-  },
-  {
-   "code": "CS-92191",
-   "name": "Magnifying Glass 75 mm",
-   "sub": "",
-   "subs": [],
-   "short": "Magnifying glass, 75 mm lens.",
-   "long": "Hand magnifying glass with a 75 mm lens for reading, inspecting specimens and general observation.\n\nSpecifications\n• Lens diameter: 75 mm\n• Type: hand magnifier\n\nIn the box\n• Magnifying glass",
-   "price": 160,
-   "stock": "in",
-   "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-68295-uj0fwl7j.jpg",
+    "images/cs-68295-y3dqamxg.jpg"
+   ]
   },
   {
    "code": "CS-82358",
    "name": "Dissection Box / Biology Box for Laboratory (Pakistan)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s700fib",
+   "subs": [
+    "s700fib"
+   ],
    "short": "Biology dissection box (Pakistan).",
    "long": "Dissection kit with the basic instruments for school and college biology practicals, in a carrying case.\n\nSpecifications\n• Type: dissection box\n• Use: biology practicals\n• Origin: Pakistan\n\nIn the box\n• Dissection instruments\n• Carrying case",
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-82358-tq9mrpmf.jpg"
+   ]
   },
   {
    "code": "CS-25922",
    "name": "Dissection Box / Biology Box for Laboratory",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s700fib",
+   "subs": [
+    "s700fib"
+   ],
    "short": "Biology dissection box.",
    "long": "Dissection kit with the basic instruments for school and college biology practicals, in a carrying case.\n\nSpecifications\n• Type: dissection box\n• Use: biology practicals\n\nIn the box\n• Dissection instruments\n• Carrying case",
    "price": 500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-25922-hcaifn5l.jpg"
+   ]
   },
   {
    "code": "CS-56060",
    "name": "Glass Slide Plain 76 mm 72 Pcs box",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c3s1",
+   "subs": [
+    "c3s1"
+   ],
    "short": "Plain glass microscope slides, box of 72.",
    "long": "Plain glass slides for preparing specimens for microscope viewing.\n\nSpecifications\n• Type: plain glass microscope slides\n• Length: 76 mm\n• Pack size: 72 pieces\n\nIn the box\n• Glass slides, 72 pieces",
    "price": 120,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-56060-fu2dlptm.jpg",
+    "images/cs-56060-e5q0zrey.jpg"
+   ]
   },
   {
    "code": "CS-79431",
    "name": "Vernier Slide Caliper 150mm China",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "swurakr",
+   "subs": [
+    "swurakr"
+   ],
    "short": "Vernier slide caliper, 150 mm.",
    "long": "Vernier caliper for measuring outside, inside and depth dimensions to a fine scale. Used in physics laboratories and workshops.\n\nSpecifications\n• Range: 0 to 150 mm\n• Type: vernier slide caliper\n• Origin: China\n\nIn the box\n• Vernier caliper",
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-79431-f1pus2gx.jpg",
+    "images/cs-79431-axkip3on.jpg"
+   ]
   },
   {
    "code": "CS-17391",
    "name": "Burette Stand or Retort Stand with Support Clamp",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sp7hn9z",
+   "subs": [
+    "sp7hn9z"
+   ],
    "short": "Burette (retort) stand with support clamp.",
    "long": "Laboratory stand with a clamp to hold burettes, flasks and other apparatus during titrations and experiments.\n\nSpecifications\n• Type: burette / retort stand\n• Includes support clamp\n\nIn the box\n• Stand with base and rod\n• Support clamp",
    "price": 650,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-17391-gluqoocl.jpg"
+   ]
   },
   {
    "code": "CS-62962",
    "name": "Tripod Stand for Bunsen Burner",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s916j9x",
+   "subs": [
+    "s916j9x"
+   ],
    "short": "Tripod stand for Bunsen burner.",
    "long": "Metal tripod stand for holding beakers and flasks above a Bunsen burner. Use with a wire gauze.\n\nSpecifications\n• Type: tripod stand\n• Use: supporting glassware over a burner\n\nIn the box\n• Tripod stand",
    "price": 100,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-62962-odw9u58w.jpg"
+   ]
   },
   {
    "code": "CS-86351",
    "name": "Wire Net with Asbestos for Laboratory Use",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s916j9x",
+   "subs": [
+    "s916j9x"
+   ],
    "short": "Wire gauze with asbestos centre.",
    "long": "Wire gauze that spreads heat evenly under flasks and beakers during heating.\n\nSpecifications\n• Type: wire gauze with centre\n• Use: even heating of glassware\n\nIn the box\n• Wire gauze",
    "price": 60,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-86351-1stoy6wu.jpg"
+   ]
   },
   {
    "code": "CS-89376",
    "name": "Simple Pendulum for Physics Laboratory",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sbaxipc",
+   "subs": [
+    "sbaxipc"
+   ],
    "short": "Simple pendulum set for physics experiments.",
    "long": "Simple pendulum apparatus for physics practicals such as finding the time period and the acceleration due to gravity.\n\nSpecifications\n• Type: simple pendulum\n• Use: physics laboratory experiments\n\nIn the box\n• Pendulum apparatus",
    "price": 400,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-89376-bbzil8hw.jpg"
+   ]
   },
   {
    "code": "CS-79595",
    "name": "Meter Scale",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sbaxipc",
+   "subs": [
+    "sbaxipc"
+   ],
    "short": "Meter scale.",
    "long": "One-metre scale for measuring length in physics practicals and general use.\n\nSpecifications\n• Length: 1 metre\n• Type: meter scale\n\nIn the box\n• Meter scale",
    "price": 80,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-79595-3rwfbr8u.jpg"
+   ]
   },
   {
    "code": "CS-42480",
    "name": "Wooden Geometry Box-White board geometry box-",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sqe8bzx",
+   "subs": [
+    "sqe8bzx"
+   ],
    "short": "Wooden geometry box for the white board.",
    "long": "Wooden geometry box with drawing tools for teaching geometry on a board in school.\n\nSpecifications\n• Type: geometry box, wooden\n• Use: classroom board geometry\n\nIn the box\n• Geometry box with tools",
    "price": 700,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-42480-4a591srj.jpg",
+    "images/cs-42480-j87crx30.jpg"
+   ]
   },
   {
    "code": "CS-38725",
    "name": "Test Tube Rack Steel 12 Hole",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "suxv0es",
+   "subs": [
+    "suxv0es"
+   ],
    "short": "Steel test tube rack, 12 holes.",
    "long": "Steel rack for holding 12 test tubes upright during experiments and storage.\n\nSpecifications\n• Material: steel\n• Capacity: 12 holes\n\nIn the box\n• Test tube rack",
    "price": 140,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-38725-x1r1y5gx.jpg"
+   ]
   },
   {
    "code": "CS-85060",
    "name": "Test Tube Rack (Plastic) 6 Hole",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "suxv0es",
+   "subs": [
+    "suxv0es"
+   ],
    "short": "Plastic test tube rack, 6 holes.",
    "long": "Light plastic rack for holding 6 test tubes upright.\n\nSpecifications\n• Material: plastic\n• Capacity: 6 holes\n\nIn the box\n• Test tube rack",
    "price": 80,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-85060-p1oqu7sk.jpg"
+   ]
   },
   {
    "code": "CS-71903",
    "name": "Glass Prism 50 x 50 mm Indian",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c3s1",
+   "subs": [
+    "c3s1"
+   ],
    "short": "Glass prism, 50 x 50 mm, Indian.",
    "long": "Glass prism for optics experiments in school and college, such as dispersion of light and refraction.\n\nSpecifications\n• Type: glass prism\n• Size: 50 x 50 mm\n• Origin: India\n\nIn the box\n• Glass prism",
    "price": 180,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-71903-pr9dzi95.jpg",
+    "images/cs-71903-pa2i2jrd.jpg"
+   ]
   },
   {
    "code": "CS-62775",
    "name": "DC Analog Ammeter",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sbaxipc",
+   "subs": [
+    "sbaxipc"
+   ],
    "short": "DC analog ammeter.",
    "long": "Analog moving-coil ammeter for measuring direct current in physics and electrical practicals.\n\nSpecifications\n• Type: analog DC ammeter\n• Use: measuring direct current\n\nIn the box\n• Ammeter",
    "price": 480,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-62775-ewol99hb.jpg"
+   ]
   },
   {
    "code": "CS-28132",
    "name": "Analog DC Voltmeter",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sbaxipc",
+   "subs": [
+    "sbaxipc"
+   ],
    "short": "Analog DC voltmeter.",
    "long": "Analog moving-coil voltmeter for measuring direct voltage in physics and electrical practicals.\n\nSpecifications\n• Type: analog DC voltmeter\n• Use: measuring direct voltage\n\nIn the box\n• Voltmeter",
    "price": 480,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-28132-yrbgmbmi.jpg"
+   ]
   },
   {
    "code": "CS-60374",
    "name": "Glass Rod",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s916j9x",
+   "subs": [
+    "s916j9x"
+   ],
    "short": "Laboratory glass rod.",
    "long": "Glass stirring rod for mixing and for pouring liquids in the laboratory.\n\nSpecifications\n• Material: glass\n• Use: stirring and pouring\n\nIn the box\n• Glass rod",
    "price": 60,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-60374-gr9fyd55.jpg"
+   ]
   },
   {
    "code": "CS-11676",
@@ -2638,54 +2715,73 @@ window.SHOP={
   {
    "code": "CS-14600",
    "name": "Digital Precission Balance SF-400D Lab Scale 0.01g to 600g",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "susfg99",
+   "subs": [
+    "susfg99"
+   ],
    "short": "SF-400D digital precision balance, 0.01 g to 600 g.",
    "long": "Compact digital precision balance with 0.01 g readability for weighing small samples in the laboratory, workshop and shop.\n\nSpecifications\n• Type: digital precision balance\n• Capacity: 600 g\n• Readability: 0.01 g\n• Model: SF-400D\n\nIn the box\n• Balance\n• Power adapter or battery\n• Instruction manual",
    "price": 2500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-14600-pz39rszv.jpg",
+    "images/cs-14600-d0ku8ulb.jpg"
+   ]
   },
   {
    "code": "CS-16846",
    "name": "AND-GULF HL-600 Digital Balance",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "susfg99",
+   "subs": [
+    "susfg99"
+   ],
    "short": "AND-GULF HL-600 digital balance.",
    "long": "Digital balance for weighing samples in the laboratory and in routine work.\n\nSpecifications\n• Type: digital balance\n• Model: HL-600\n• Brand: AND-GULF\n\nIn the box\n• Balance\n• Power adapter or battery\n• Instruction manual",
    "price": 1800,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-16846-i7rv7xte.jpg"
+   ]
   },
   {
    "code": "CS-74987",
    "name": "Digital Weighing Scale 6000gm (0.1gm) DIGI Germany – High Precision Electronic Balance",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s8fyg6m",
+   "subs": [
+    "s8fyg6m"
+   ],
    "short": "Digital scale, 6000 g with 0.1 g readability, DIGI.",
    "long": "High precision electronic balance for weighing and counting in the laboratory, packing and production.\n\nSpecifications\n• Type: digital electronic balance\n• Capacity: 6000 g\n• Readability: 0.1 g\n• Brand: DIGI\n\nIn the box\n• Balance\n• Power adapter or battery\n• Instruction manual",
    "price": 6000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-74987-dgb3sj7p.jpg",
+    "images/cs-74987-awfxvkvu.jpg"
+   ]
   },
   {
    "code": "CS-92899",
    "name": "Precision Weight Balance 600 gm AND FGH Series (2 Digit)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "susfg99",
+   "subs": [
+    "susfg99"
+   ],
    "short": "AND FGH series precision balance, 600 g, 2 digit.",
    "long": "Precision balance for laboratory weighing with 2-decimal (0.01 g) readability.\n\nSpecifications\n• Type: precision balance\n• Capacity: 600 g\n• Readability: 0.01 g (2 digit)\n• Series: AND FGH\n\nIn the box\n• Balance\n• Power adapter or battery\n• Instruction manual",
    "price": 7500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-92899-tjn3ieu6.jpg",
+    "images/cs-92899-y7f1sgg5.jpg"
+   ]
   }
  ],
  "subs": [
@@ -2844,6 +2940,30 @@ window.SHOP={
   {
    "id": "ss4u9za",
    "name": "Soil Test products"
+  },
+  {
+   "id": "sp7hn9z",
+   "name": "Burette"
+  },
+  {
+   "id": "sbaxipc",
+   "name": "Physics Lab"
+  },
+  {
+   "id": "s916j9x",
+   "name": "Chemistry Lab"
+  },
+  {
+   "id": "s700fib",
+   "name": "Biology Lab"
+  },
+  {
+   "id": "sqe8bzx",
+   "name": "Mathematics"
+  },
+  {
+   "id": "swurakr",
+   "name": "Vernier/Slide Caliper"
   }
  ]
 };
