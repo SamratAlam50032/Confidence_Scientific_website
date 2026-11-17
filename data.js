@@ -32,7 +32,10 @@ window.SHOP={
     "s916j9x",
     "s700fib",
     "sqe8bzx",
-    "swurakr"
+    "swurakr",
+    "sek48tp",
+    "sjad3r2",
+    "s7cmald"
    ]
   },
   {
@@ -43,7 +46,8 @@ window.SHOP={
    "subs": [
     "c2s1",
     "c2s2",
-    "sycngbl"
+    "sycngbl",
+    "swxfygo"
    ]
   },
   {
@@ -54,7 +58,8 @@ window.SHOP={
    "subs": [
     "c3s1",
     "suxv0es",
-    "c3s2"
+    "c3s2",
+    "sarg0tn"
    ]
   },
   {
@@ -129,15 +134,24 @@ window.SHOP={
     "s8fyg6m",
     "sxnmns4"
    ]
+  },
+  {
+   "id": "c8eplkt",
+   "name": "Research Lab",
+   "prefix": "CS",
+   "image": "",
+   "subs": []
   }
  ],
  "products": [
   {
    "code": "CS-62775",
    "name": "DC Analog Ammeter",
+   "variants": [],
    "sub": "sbaxipc",
    "subs": [
-    "sbaxipc"
+    "sbaxipc",
+    "sek48tp"
    ],
    "short": "DC analog ammeter.",
    "long": "Analog moving-coil ammeter for measuring direct current in physics and electrical practicals.\n\nSpecifications\n• Type: analog DC ammeter\n• Use: measuring direct current\n\nIn the box\n• Ammeter",
@@ -146,15 +160,15 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-62775-ewol99hb.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-041",
    "name": "SDC ISO Crocking Cloth Rubbing Fabric 5 x 5cm",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "s2n9u18",
    "subs": [
-    "c2s3"
+    "s2n9u18"
    ],
    "short": "SDC ISO crocking cloth, 5 x 5 cm rubbing fabric.",
    "long": "Standard rubbing fabric cut in 5 x 5 cm squares for colour fastness to rubbing (crocking) tests with a crockmeter. Used to assess how much colour transfers from a dyed or printed fabric under dry and wet rubbing.\n\nSpecifications\n• Type: ISO crocking (rubbing) cloth\n• Size: 5 x 5 cm\n• Use: colour fastness to rubbing with a crockmeter\n• Brand: SDC\n\nIn the box\n• ISO crocking cloth squares, 5 x 5 cm",
@@ -164,15 +178,16 @@ window.SHOP={
    "images": [
     "images/hn-041-zq0nul3t.jpg",
     "images/hn-041-6vgnoml6.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-001",
    "name": "Hanna HI-98107 Pocket pH Meter",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
-    "c1s1"
+    "c1s1",
+    "c2s1"
    ],
    "short": "Pocket pH tester, 0.0 to 14.0 pH, 0.1 resolution, automatic temperature compensation.",
    "long": "Slim pocket pH tester from the Hanna pHep series. A large LCD shows pH and temperature together, and two-button operation with automatic 1 or 2 point calibration keeps setup quick. The cloth junction electrode has a larger surface area than a standard ceramic junction and can be taken out for cleaning. Used for drinking water, aquariums, pools and ponds.\n\nSpecifications\n• pH range: 0.0 to 14.0, resolution 0.1 pH, accuracy ±0.2 pH at 25°C\n• Calibration: automatic, 1 or 2 points (pH 4.01, 7.01, 10.01)\n• Temperature: 0.0 to 50.0°C, ±0.5°C, automatic compensation, °C or °F display\n• Battery: CR2032, about 1000 hours of continuous use\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 75 g\n\nIn the box\n• pHep pH tester\n• CR2032 battery\n• pH 4.01 buffer sachet (1)\n• pH 7.01 buffer sachets (2)\n• Electrode cleaning solution sachet\n• Protective sleeve\n• Instruction manual and quality certificate",
@@ -185,12 +200,12 @@ window.SHOP={
     "images/hn-001-o9ifwmi6.jpg",
     "images/hn-001-wuex7nxe.jpg",
     "images/hn-001-1esxtpey.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-46692",
    "name": "Lutron DO Meter PDO-519 Dissolved Oxygen Meter",
+   "variants": [],
    "sub": "sycngbl",
    "subs": [
     "sycngbl"
@@ -203,32 +218,33 @@ window.SHOP={
    "images": [
     "images/cs-46692-43aaetdj.jpg",
     "images/cs-46692-2nopvv52.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-8226",
    "name": "Monocular Biological Compound Microscope L101",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "s700fib",
    "subs": [
-    "c2s3"
+    "s700fib"
    ],
    "short": "Monocular biological compound microscope, model L101.",
    "long": "Monocular compound microscope for biology classes, school and college laboratories and basic specimen viewing. A simple, easy-to-use design for slide observation.\n\nSpecifications\n• Type: monocular biological compound microscope\n• Model: L101\n• Use: viewing prepared slides and thin specimens\n\nIn the box\n• L101 microscope\n• Dust cover\n• Instruction sheet",
    "price": 4600,
    "stock": "in",
-   "featured": 0,
+   "featured": 1,
    "images": [
     "images/cs-8226-65nxhp9e.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-60374",
    "name": "Glass Rod",
+   "variants": [],
    "sub": "s916j9x",
    "subs": [
-    "s916j9x"
+    "s916j9x",
+    "c3s1"
    ],
    "short": "Laboratory glass rod.",
    "long": "Glass stirring rod for mixing and for pouring liquids in the laboratory.\n\nSpecifications\n• Material: glass\n• Use: stirring and pouring\n\nIn the box\n• Glass rod",
@@ -237,15 +253,16 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-60374-gr9fyd55.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-17391",
    "name": "Burette Stand or Retort Stand with Support Clamp",
+   "variants": [],
    "sub": "sp7hn9z",
    "subs": [
-    "sp7hn9z"
+    "sp7hn9z",
+    "s916j9x"
    ],
    "short": "Burette (retort) stand with support clamp.",
    "long": "Laboratory stand with a clamp to hold burettes, flasks and other apparatus during titrations and experiments.\n\nSpecifications\n• Type: burette / retort stand\n• Includes support clamp\n\nIn the box\n• Stand with base and rod\n• Support clamp",
@@ -254,8 +271,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-17391-gluqoocl.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-6696",
@@ -278,9 +294,12 @@ window.SHOP={
   {
    "code": "HN-044",
    "name": "pH Paper Strips for PH Measuring Merck, Germany",
-   "sub": "c16s2",
+   "variants": [],
+   "sub": "sz7qw3t",
    "subs": [
-    "c16s2"
+    "sz7qw3t",
+    "s916j9x",
+    "sarg0tn"
    ],
    "short": "Merck pH indicator paper strips for quick pH measurement.",
    "long": "pH indicator paper strips from Merck, Germany, for quick colour-based pH measurement of liquids. Dip the strip in the sample, wait for the colour to develop and compare it to the colour scale on the pack.\n\nSpecifications\n• Type: pH indicator strips\n• Make: Merck, Germany\n• Use: quick pH measurement of aqueous samples\n• Read the result against the colour scale on the pack\n\nIn the box\n• pH indicator strips with colour scale",
@@ -290,12 +309,12 @@ window.SHOP={
    "images": [
     "images/hn-044-tgwcesb9.jpg",
     "images/hn-044-p71jltjw.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-033",
    "name": "Hanna PEI Body pH Electrode-HI1230B with BNC Connector",
+   "variants": [],
    "sub": "c1s6",
    "subs": [
     "c1s6"
@@ -308,12 +327,12 @@ window.SHOP={
    "images": [
     "images/hn-033-zvwhqm8n.jpg",
     "images/hn-033-wcnafnzj.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-74987",
    "name": "Digital Weighing Scale 6000gm (0.1gm) DIGI Germany – High Precision Electronic Balance",
+   "variants": [],
    "sub": "s8fyg6m",
    "subs": [
     "s8fyg6m"
@@ -326,15 +345,15 @@ window.SHOP={
    "images": [
     "images/cs-74987-dgb3sj7p.jpg",
     "images/cs-74987-awfxvkvu.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-037",
    "name": "James Heal ECE (A) Non-Phosphate Detergent 2kg Tub",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "sllqrmv",
    "subs": [
-    "c2s3"
+    "sllqrmv"
    ],
    "short": "James Heal ECE (A) non-phosphate reference detergent, 2 kg tub.",
    "long": "Non-phosphate ECE reference detergent (A) from James Heal for standard textile laboratory washing. Used in colour fastness to washing and domestic laundering shrinkage tests where a standard reference detergent is required.\n\nSpecifications\n• Type: ECE reference detergent, non-phosphate (A)\n• Pack size: 2 kg tub\n• Use: colour fastness to washing and dimensional change tests\n• Brand: James Heal\n\nIn the box\n• ECE non-phosphate reference detergent (A), 2 kg tub",
@@ -343,15 +362,17 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/hn-037-d12aqafb.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-56060",
    "name": "Glass Slide Plain 76 mm 72 Pcs box",
+   "variants": [],
    "sub": "c3s1",
    "subs": [
-    "c3s1"
+    "c3s1",
+    "s700fib",
+    "sarg0tn"
    ],
    "short": "Plain glass microscope slides, box of 72.",
    "long": "Plain glass slides for preparing specimens for microscope viewing.\n\nSpecifications\n• Type: plain glass microscope slides\n• Length: 76 mm\n• Pack size: 72 pieces\n\nIn the box\n• Glass slides, 72 pieces",
@@ -361,15 +382,17 @@ window.SHOP={
    "images": [
     "images/cs-56060-fu2dlptm.jpg",
     "images/cs-56060-e5q0zrey.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-53106",
    "name": "Digital Vernier Caliper 150 mm Plastic Slide Caliper 6 Inch",
+   "variants": [],
    "sub": "swurakr",
    "subs": [
-    "swurakr"
+    "swurakr",
+    "sbaxipc",
+    "sarg0tn"
    ],
    "short": "Digital vernier caliper, 150 mm (6 inch).",
    "long": "Plastic-body digital caliper for measuring outside and inside dimensions and depth with a clear digital readout.\n\nSpecifications\n• Range: 0 to 150 mm (6 inch)\n• Type: digital vernier caliper, plastic body\n• Display: digital LCD\n\nIn the box\n• Digital caliper\n• Battery",
@@ -379,12 +402,12 @@ window.SHOP={
    "images": [
     "images/cs-53106-c450wz5k.jpg",
     "images/cs-53106-hd17e0v3.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-2606",
    "name": "SMART SENSOR PH828+ Digital pH Meter Waterproof",
+   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1"
@@ -398,25 +421,27 @@ window.SHOP={
     "images/cs-2606-45fkn0dm.jpg",
     "images/cs-2606-nmzk226b.jpg",
     "images/cs-2606-dk8qw3ty.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-60928",
    "name": "Sartorius Filter Paper 0.45 um 47 mm Vacuum Membrane Filter",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sz7qw3t",
+   "subs": [
+    "sz7qw3t"
+   ],
    "short": "Sartorius 0.45 µm, 47 mm membrane filter.",
    "long": "Membrane filter for vacuum filtration in water analysis and microbiology, where a 0.45 µm pore size is needed to remove fine particles.\n\nSpecifications\n• Pore size: 0.45 µm\n• Diameter: 47 mm\n• Type: vacuum membrane filter\n• Brand: Sartorius\n\nIn the box\n• Membrane filters",
    "price": 3200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "HN-029",
    "name": "Nitrite Test kit Hanna-HI3873 (100 tests)",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -429,25 +454,27 @@ window.SHOP={
    "images": [
     "images/hn-029-rrw47a0d.jpg",
     "images/hn-029-qciw4blo.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-44125",
    "name": "Citric Acid 500 gm, Merck Germany",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s1",
+   "subs": [
+    "c4s1"
+   ],
    "short": "Citric acid, 500 g pack.",
    "long": "Citric acid for laboratory use in buffer preparation, titrations and general analysis. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Citric acid\n• Pack size: 500 g\n• Brand: Merck\n• Origin: Germany\n\nIn the box\n• Citric acid, 500 g bottle",
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "HN-031",
    "name": "Sulfite Chemical Test Kit Hanna–HI3822 (110 Tests)",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -460,21 +487,22 @@ window.SHOP={
    "images": [
     "images/hn-031-8zj1qg15.jpg",
     "images/hn-031-d9zw3hn5.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-70455",
    "name": "Whatman Filter Papers 125 mm Grade-1 (Copy)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sz7qw3t",
+   "subs": [
+    "sz7qw3t"
+   ],
    "short": "Grade 1 filter paper, 125 mm, economy pack.",
    "long": "General purpose qualitative filter paper for routine filtration in laboratories.\n\nSpecifications\n• Grade: 1\n• Diameter: 125 mm\n• Type: qualitative filter paper\n\nIn the box\n• Filter papers, 125 mm",
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-43125",
@@ -600,6 +628,7 @@ window.SHOP={
   {
    "code": "HN-024",
    "name": "Hanna Iron Test Kit HI-3834 Romania",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -609,15 +638,16 @@ window.SHOP={
    "price": 3499,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-71903",
    "name": "Glass Prism 50 x 50 mm Indian",
+   "variants": [],
    "sub": "c3s1",
    "subs": [
-    "c3s1"
+    "c3s1",
+    "sbaxipc"
    ],
    "short": "Glass prism, 50 x 50 mm, Indian.",
    "long": "Glass prism for optics experiments in school and college, such as dispersion of light and refraction.\n\nSpecifications\n• Type: glass prism\n• Size: 50 x 50 mm\n• Origin: India\n\nIn the box\n• Glass prism",
@@ -627,8 +657,7 @@ window.SHOP={
    "images": [
     "images/cs-71903-pr9dzi95.jpg",
     "images/cs-71903-pa2i2jrd.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-41521",
@@ -669,10 +698,12 @@ window.SHOP={
   {
    "code": "CS-96654",
    "name": "5 in 1 Water Quality Tester for TDS, EC, pH, Salinity, Temp.",
+   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1",
-    "c2s2"
+    "c2s2",
+    "swxfygo"
    ],
    "short": "5-in-1 water tester: TDS, EC, pH, salinity, temperature.",
    "long": "One pen-type tester that measures five water quality parameters. Good for drinking water, aquariums, pools and hydroponics.\n\nSpecifications\n• Parameters: TDS, EC, pH, salinity and temperature\n• Type: pen-type digital tester\n\nIn the box\n• 5-in-1 water quality tester\n• Battery\n• Instruction manual",
@@ -682,8 +713,7 @@ window.SHOP={
    "images": [
     "images/cs-96654-1pxpu5ut.jpg",
     "images/cs-96654-8elbp7ra.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-9385",
@@ -708,6 +738,7 @@ window.SHOP={
   {
    "code": "CS-7891",
    "name": "Sodium Chloride 500gm (Merck Germany)",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -716,18 +747,20 @@ window.SHOP={
    "long": "Sodium chloride for laboratory use in solution preparation, titrations and general analysis. Store in a tightly closed container and use suitable protective equipment.\n\nSpecifications\n• Brand: Merck\n• Pack size: 500 g\n• Chemical: Sodium chloride (NaCl)\n• Origin: Germany\n\nIn the box\n• Sodium chloride (NaCl), 500 g bottle",
    "price": 550,
    "stock": "in",
-   "featured": 0,
+   "featured": 1,
    "images": [
     "images/cs-7891-um47kkv1.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-45641",
    "name": "Digital Micrometer 0-25mm With Large Display",
+   "variants": [],
    "sub": "sqnvh0o",
    "subs": [
-    "sqnvh0o"
+    "sqnvh0o",
+    "sbaxipc",
+    "sarg0tn"
    ],
    "short": "Digital micrometer, 0-25 mm, large display.",
    "long": "Digital micrometer with a large display for easy reading of thickness and diameter measurements.\n\nSpecifications\n• Range: 0 to 25 mm\n• Type: digital micrometer\n• Display: large digital LCD\n\nIn the box\n• Digital micrometer\n• Battery",
@@ -737,15 +770,15 @@ window.SHOP={
    "images": [
     "images/cs-45641-jepkisxk.jpg",
     "images/cs-45641-1abm6uif.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-1188",
    "name": "Smart Sensor Digital Lux Meter AS813",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "s2psu6a",
    "subs": [
-    "c2s3"
+    "s2psu6a"
    ],
    "short": "Smart Sensor AS813 digital lux meter for light measurement.",
    "long": "Handheld digital lux meter for measuring light intensity. Used to check lighting levels in offices, classrooms, laboratories, factories and greenhouses.\n\nSpecifications\n• Parameter: Illuminance (lux)\n• Model: AS813\n• Type: handheld digital meter\n• Brand: Smart Sensor\n\nIn the box\n• AS813 lux meter\n• Battery\n• Instruction manual",
@@ -756,8 +789,7 @@ window.SHOP={
     "images/cs-1188-mz82aai5.jpg",
     "images/cs-1188-9ddfkbzw.jpg",
     "images/cs-1188-1ut0vdhx.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-004",
@@ -782,9 +814,11 @@ window.SHOP={
   {
    "code": "CS-7166",
    "name": "Smart Sensor Infrared Thermometer AR320",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
-    "seja7me"
+    "seja7me",
+    "sarg0tn"
    ],
    "short": "Smart Sensor AR320 non-contact infrared thermometer.",
    "long": "Handheld infrared thermometer for quick, non-contact surface temperature checks of machinery, food and electrical equipment.\n\nSpecifications\n• Type: non-contact infrared thermometer\n• Model: AR320\n• Brand: Smart Sensor\n\nIn the box\n• AR320 infrared thermometer\n• Battery\n• Instruction manual",
@@ -794,8 +828,7 @@ window.SHOP={
    "images": [
     "images/cs-7166-kjta7hse.jpg",
     "images/cs-7166-gghukg2e.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-23086",
@@ -851,6 +884,7 @@ window.SHOP={
   {
    "code": "CS-41170",
    "name": "Family PH Meter Hanna (Copy)",
+   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1"
@@ -863,8 +897,7 @@ window.SHOP={
    "images": [
     "images/cs-41170-46r8pv4a.jpg",
     "images/cs-41170-fajiawoy.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-009",
@@ -939,9 +972,10 @@ window.SHOP={
   {
    "code": "CS-7508",
    "name": "Lutron Dissolved Oxygen Meter DO-5509 Taiwan",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "sycngbl",
    "subs": [
-    "c2s3"
+    "sycngbl"
    ],
    "short": "Lutron DO-5509 dissolved oxygen meter, made in Taiwan.",
    "long": "Portable dissolved oxygen meter from Lutron for measuring DO in water. Commonly used in aquaculture, wastewater and environmental checks.\n\nSpecifications\n• Parameter: Dissolved oxygen\n• Model: DO-5509\n• Brand: Lutron\n• Origin: Taiwan\n\nIn the box\n• DO-5509 meter\n• DO probe\n• Battery\n• Instruction manual",
@@ -951,15 +985,16 @@ window.SHOP={
    "images": [
     "images/cs-7508-t5jdv68d.jpg",
     "images/cs-7508-2knrl7tl.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-043",
    "name": "Thermo Paper Strip or Temperature Strips",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "sz7qw3t",
    "subs": [
-    "c2s3"
+    "sz7qw3t",
+    "s2n9u18"
    ],
    "short": "Thermo paper temperature indicator strips.",
    "long": "Thermo paper strips that change colour at set temperatures, giving a simple record that a surface or process has reached a particular temperature. Handy for checking temperatures in dyeing, heat setting, autoclaves, ovens and other process steps.\n\nSpecifications\n• Type: thermo (temperature indicator) paper strip\n• Use: quick visual indication of temperature reached\n• Read the result against the colour or marking on the strip\n\nIn the box\n• Temperature indicator strips",
@@ -968,15 +1003,15 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/hn-043-0451xqye.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-040",
    "name": "Multifibre James Heal DW 10 Meter. Roll",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "s2n9u18",
    "subs": [
-    "c2s3"
+    "s2n9u18"
    ],
    "short": "James Heal multifibre DW adjacent fabric, 10 metre roll.",
    "long": "Multifibre adjacent fabric from James Heal woven with strips of different fibres. In colour fastness testing it shows how much a dye stains each fibre type. Supplied as a 10 metre roll that can be cut to size.\n\nSpecifications\n• Type: multifibre adjacent fabric (DW)\n• Length: 10 metre roll\n• Use: colour fastness to washing, perspiration and other staining tests\n• Brand: James Heal\n\nIn the box\n• Multifibre DW fabric, 10 metre roll",
@@ -986,12 +1021,12 @@ window.SHOP={
    "images": [
     "images/hn-040-8pngjhrj.jpg",
     "images/hn-040-5ukjnj66.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-32633",
    "name": "Portable Honey Refractometer Brix 58-90% ATC",
+   "variants": [],
    "sub": "siwv6py",
    "subs": [
     "siwv6py"
@@ -1004,8 +1039,7 @@ window.SHOP={
    "images": [
     "images/cs-32633-53gwm1qw.jpg",
     "images/cs-32633-fwr4pcwj.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-015",
@@ -1028,9 +1062,10 @@ window.SHOP={
   {
    "code": "HN-046",
    "name": "Hydraulic GSM Cutter with Round Blade Knife",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "sz7qw3t",
    "subs": [
-    "c2s3"
+    "sz7qw3t"
    ],
    "short": "Hydraulic GSM cutter with round blade knife for fabric sampling.",
    "long": "Hydraulic GSM cutter that cuts a fabric specimen of exact area with a round blade, so that fabric weight in grams per square metre (GSM) can be calculated quickly after weighing. Used in textile laboratories and garment factories for fabric quality control.\n\nSpecifications\n• Type: hydraulic GSM cutter\n• Cutting tool: round blade knife\n• Use: cutting fabric specimens of fixed area for GSM calculation\n• Suitable for woven and knitted fabrics\n\nIn the box\n• Hydraulic GSM cutter with round blade knife",
@@ -1039,8 +1074,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/hn-046-wuycdxuc.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-14600",
@@ -1063,9 +1097,10 @@ window.SHOP={
   {
    "code": "HN-047",
    "name": "GSM Cutter Machine",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "szxirb6",
    "subs": [
-    "c2s3"
+    "szxirb6"
    ],
    "short": "GSM cutter for cutting fabric samples of fixed area.",
    "long": "GSM cutter used to cut a fabric sample of fixed area so its weight per square metre (GSM) can be worked out after weighing the specimen. A routine tool in textile quality control.\n\nSpecifications\n• Type: GSM cutter\n• Use: cutting fabric specimens of fixed area for GSM calculation\n• Suitable for woven and knitted fabrics\n\nIn the box\n• GSM cutter machine",
@@ -1074,12 +1109,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/hn-047-harajzj3.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-002",
    "name": "Hanna HI98301 DiST-1 TDS Meter (0-2000 ppm) with Auto Cal.",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2",
@@ -1095,15 +1130,18 @@ window.SHOP={
     "images/hn-002-whnvjzl2.jpg",
     "images/hn-002-rk8fs2zm.jpg",
     "images/hn-002-1ofs5uyx.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-85060",
    "name": "Test Tube Rack (Plastic) 6 Hole",
+   "variants": [],
    "sub": "suxv0es",
    "subs": [
-    "suxv0es"
+    "suxv0es",
+    "s916j9x",
+    "sarg0tn",
+    "c3s1"
    ],
    "short": "Plastic test tube rack, 6 holes.",
    "long": "Light plastic rack for holding 6 test tubes upright.\n\nSpecifications\n• Material: plastic\n• Capacity: 6 holes\n\nIn the box\n• Test tube rack",
@@ -1112,8 +1150,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-85060-p1oqu7sk.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-021",
@@ -1135,9 +1172,10 @@ window.SHOP={
   {
    "code": "HN-036",
    "name": "James Heal ECE Phosphate Reference Detergent (B) 2kg Tub",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "sllqrmv",
    "subs": [
-    "c2s3"
+    "sllqrmv"
    ],
    "short": "James Heal ECE phosphate reference detergent (B), 2 kg tub.",
    "long": "Phosphate-containing ECE reference detergent (B) from James Heal for standard textile laboratory washing. It is used in colour fastness to washing and domestic laundering shrinkage tests, so that results are comparable between laboratories.\n\nSpecifications\n• Type: ECE reference detergent with phosphate (B)\n• Pack size: 2 kg tub\n• Use: colour fastness to washing and dimensional change tests\n• Brand: James Heal\n\nIn the box\n• ECE phosphate reference detergent (B), 2 kg tub",
@@ -1146,15 +1184,16 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/hn-036-5m1oz7u5.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-2814",
    "name": "Zeal Thermometer 110C",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
-    "seja7me"
+    "seja7me",
+    "sarg0tn"
    ],
    "short": "Zeal laboratory glass thermometer, up to 110 °C.",
    "long": "Zeal laboratory glass thermometer for general temperature measurement up to 110 °C. A dependable, low-cost choice for classrooms and laboratories.\n\nSpecifications\n• Type: laboratory glass thermometer\n• Maximum range: 110 °C\n• Brand: Zeal\n\nIn the box\n• Zeal thermometer, 110 °C",
@@ -1163,8 +1202,7 @@ window.SHOP={
    "featured": 1,
    "images": [
     "images/cs-2814-dkn6wxp7.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-016",
@@ -1222,9 +1260,11 @@ window.SHOP={
   {
    "code": "CS-9233",
    "name": "Hanna Hi-98319 Salinity Meter",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
-    "c1s1"
+    "c1s1",
+    "swxfygo"
    ],
    "short": "Hanna HI98319 pocket salinity tester.",
    "long": "Waterproof pocket salinity tester for checking the salinity of seawater and brackish water. It gives a direct reading on a large LCD, which makes it handy for aquaculture, marine aquariums and field sampling.\n\nSpecifications\n• Parameter: Salinity\n• Display: LCD with salinity and temperature\n• Model: HI98319\n• Handheld pocket tester with protective cap\n\nIn the box\n• HI98319 salinity tester\n• Protective cap\n• Battery\n• Instruction manual",
@@ -1234,12 +1274,12 @@ window.SHOP={
    "images": [
     "images/cs-9233-gic0oeas.jpg",
     "images/cs-9233-oadvafkt.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-5120",
    "name": "K-Type Digital Thermometer TES-1310 with Thermocouple",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1252,12 +1292,12 @@ window.SHOP={
    "images": [
     "images/cs-5120-n19969mx.jpg",
     "images/cs-5120-p6jf8b68.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-37792",
    "name": "Hanna pH Electrode HI1333B for Benchtop pH Meter",
+   "variants": [],
    "sub": "c1s6",
    "subs": [
     "c1s6"
@@ -1270,15 +1310,16 @@ window.SHOP={
    "images": [
     "images/cs-37792-7msybusz.jpg",
     "images/cs-37792-qwchyw7i.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-9414",
    "name": "Digital Kitchen Scale 10Kg SF-400 China",
+   "variants": [],
    "sub": "c2s3",
    "subs": [
-    "c2s3"
+    "c2s3",
+    "sxnmns4"
    ],
    "short": "SF-400 digital kitchen scale, 10 kg capacity.",
    "long": "Compact digital scale for the kitchen and for simple weighing jobs in shops and small laboratories.\n\nSpecifications\n• Capacity: 10 kg\n• Model: SF-400\n• Type: digital kitchen scale\n• Origin: China\n\nIn the box\n• SF-400 scale\n• Battery",
@@ -1287,8 +1328,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-9414-mb39sjcd.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-35124",
@@ -1310,15 +1350,17 @@ window.SHOP={
   {
    "code": "CS-21427",
    "name": "Digital Magnetic stirrer with hotplate 85-2",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sf4zcsj",
+   "subs": [
+    "sf4zcsj"
+   ],
    "short": "Digital magnetic stirrer with hotplate, model 85-2.",
    "long": "Magnetic stirrer with a heating plate for stirring and heating solutions at the same time. Widely used in chemistry and microbiology laboratories.\n\nSpecifications\n• Type: magnetic stirrer with hotplate\n• Model: 85-2\n• Display: digital\n\nIn the box\n• Stirrer with hotplate\n• Stir bar\n• Power cord\n• Instruction manual",
    "price": 10500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-83413",
@@ -1340,6 +1382,7 @@ window.SHOP={
   {
    "code": "HN-005",
    "name": "Hanna HI-98304 Pocket Conductivity Tester (0 to 20.00 mS/cm)",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2",
@@ -1355,8 +1398,7 @@ window.SHOP={
     "images/hn-005-h7zam21k.jpg",
     "images/hn-005-20yvm3q1.jpg",
     "images/hn-005-gz4bj52n.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-2681",
@@ -1378,10 +1420,12 @@ window.SHOP={
   {
    "code": "CS-25081",
    "name": "Digital Temperature and Humidity Meter HTC-1",
+   "variants": [],
    "sub": "shsdp0x",
    "subs": [
     "shsdp0x",
-    "seja7me"
+    "seja7me",
+    "sarg0tn"
    ],
    "short": "HTC-1 digital temperature and humidity meter.",
    "long": "Compact digital meter showing room temperature and humidity on one display. Handy for laboratories, storerooms, offices and home use.\n\nSpecifications\n• Parameters: Temperature and humidity\n• Model: HTC-1\n• Display: digital LCD\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
@@ -1391,15 +1435,16 @@ window.SHOP={
    "images": [
     "images/cs-25081-oja78ex6.jpg",
     "images/cs-25081-jtxk6gsr.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-6148",
    "name": "Zeal Wet and Dry Hygrometer Alcohol Base",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
-    "seja7me"
+    "seja7me",
+    "shsdp0x"
    ],
    "short": "Zeal wet and dry bulb hygrometer, alcohol type.",
    "long": "Wet and dry bulb hygrometer with alcohol-filled thermometers. The temperature difference between the wet and dry bulbs is used with the chart to find relative humidity, a classic method for laboratories, textile units and stores.\n\nSpecifications\n• Type: wet and dry bulb hygrometer\n• Liquid: alcohol based\n• Brand: Zeal\n\nIn the box\n• Zeal wet and dry hygrometer",
@@ -1408,8 +1453,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-6148-vogvcof6.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-035",
@@ -1431,9 +1475,10 @@ window.SHOP={
   {
    "code": "HN-039",
    "name": "Multifibre DW SDC 10 Mtr. Roll",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "s2n9u18",
    "subs": [
-    "c2s3"
+    "s2n9u18"
    ],
    "short": "SDC multifibre DW adjacent fabric, 10 metre roll.",
    "long": "Multifibre adjacent fabric woven with strips of different fibres, used in colour fastness tests to show which fibre types a dye stains. Supplied as a 10 metre roll that can be cut to the size needed for each test.\n\nSpecifications\n• Type: multifibre adjacent fabric (DW)\n• Length: 10 metre roll\n• Use: colour fastness to washing, perspiration and other staining tests\n• Brand: SDC\n\nIn the box\n• Multifibre DW fabric, 10 metre roll",
@@ -1443,12 +1488,12 @@ window.SHOP={
    "images": [
     "images/hn-039-ktqwgeoq.jpg",
     "images/hn-039-sfsy5gfk.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-13716",
    "name": "Turbidity Meter-Lutron TU-2016 Made in Taiwan",
+   "variants": [],
    "sub": "c2s3",
    "subs": [
     "c2s3"
@@ -1461,15 +1506,16 @@ window.SHOP={
    "images": [
     "images/cs-13716-96yi5y90.jpg",
     "images/cs-13716-flclzwmh.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-83124",
    "name": "Wood Thermometer for Room",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
-    "seja7me"
+    "seja7me",
+    "sarg0tn"
    ],
    "short": "Wooden-frame room thermometer.",
    "long": "Classic wooden-frame thermometer for reading room temperature. Simple, no battery needed.\n\nSpecifications\n• Type: room thermometer, wooden frame\n• Use: indoor temperature reading\n\nIn the box\n• Wood thermometer",
@@ -1479,8 +1525,7 @@ window.SHOP={
    "images": [
     "images/cs-83124-dckn9mhh.jpg",
     "images/cs-83124-59e4boju.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-011",
@@ -1504,22 +1549,26 @@ window.SHOP={
   {
    "code": "CS-36866",
    "name": "Sodium Fluoride 500g Merck India",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "se65abx",
+   "subs": [
+    "se65abx"
+   ],
    "short": "Sodium fluoride, 500 g pack.",
    "long": "Sodium fluoride for laboratory use, for example in preparing fluoride standards. Toxic – handle with great care. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Sodium fluoride\n• Pack size: 500 g\n• Brand: Merck\n• Origin: India\n\nIn the box\n• Sodium fluoride, 500 g bottle",
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-2322",
    "name": "Thermometer 360 Degree Celsius (China)",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
-    "seja7me"
+    "seja7me",
+    "sarg0tn"
    ],
    "short": "Laboratory glass thermometer, up to 360 °C.",
    "long": "Laboratory liquid-in-glass thermometer for high-temperature work with a measuring range up to 360 °C. Suitable for ovens, oil baths and other high-temperature checks.\n\nSpecifications\n• Type: laboratory glass thermometer\n• Maximum range: 360 °C\n• Origin: China\n\nIn the box\n• Thermometer, 360 °C",
@@ -1528,8 +1577,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-2322-zjqdmw7s.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-35862",
@@ -1552,9 +1600,12 @@ window.SHOP={
   {
    "code": "CS-23956",
    "name": "Screw Gauge or Micrometer 25 mm China",
+   "variants": [],
    "sub": "sqnvh0o",
    "subs": [
-    "sqnvh0o"
+    "sqnvh0o",
+    "sbaxipc",
+    "sarg0tn"
    ],
    "short": "Screw gauge (micrometer), 25 mm.",
    "long": "Screw gauge for precise measurement of the thickness of wires, sheets and small objects. Commonly used in physics laboratories.\n\nSpecifications\n• Range: 0 to 25 mm\n• Type: mechanical micrometer screw gauge\n• Origin: China\n\nIn the box\n• Screw gauge",
@@ -1564,12 +1615,12 @@ window.SHOP={
    "images": [
     "images/cs-23956-pm0l9lbq.jpg",
     "images/cs-23956-dhkw6n7a.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-75162",
    "name": "Grain Moisture Meter GMK-303RS, Korea for Accurate Moisture Measurement",
+   "variants": [],
    "sub": "sypo0sw",
    "subs": [
     "sypo0sw"
@@ -1581,15 +1632,17 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-75162-af42e06z.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-82861",
    "name": "PH Meter (China)",
+   "variants": [],
    "sub": "c2s1",
    "subs": [
-    "c2s1"
+    "c2s1",
+    "s916j9x",
+    "sjad3r2"
    ],
    "short": "Pen-type digital pH meter.",
    "long": "Low-cost pen-type digital pH meter for quick pH checks of water and simple solutions.\n\nSpecifications\n• Parameter: pH\n• Type: pen-type digital pH meter\n• Origin: China\n\nIn the box\n• pH meter\n• Battery",
@@ -1598,12 +1651,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-82861-o5omv226.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-52137",
    "name": "Mini Magnetic Stirrer C1 Adjustable Stirrer 3L",
+   "variants": [],
    "sub": "sf4zcsj",
    "subs": [
     "sf4zcsj"
@@ -1616,12 +1669,12 @@ window.SHOP={
    "images": [
     "images/cs-52137-ieb2hgtq.jpg",
     "images/cs-52137-j73vpiku.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-4658",
    "name": "Calcium chloride 500gm merck germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1633,8 +1686,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-4658-sdsotiz6.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-90128",
@@ -1658,22 +1710,32 @@ window.SHOP={
   {
    "code": "CS-53448",
    "name": "Cowbell Lactometer for Milk Purity Test",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s7cmald",
+   "subs": [
+    "s7cmald"
+   ],
    "short": "Lactometer for checking milk purity.",
    "long": "Lactometer that measures the density of milk, helping to spot adulteration such as added water. Float it in a milk sample and read the scale.\n\nSpecifications\n• Type: milk lactometer\n• Use: milk purity test\n\nIn the box\n• Lactometer",
    "price": 120,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-68295",
    "name": "Magnifying Glass 90 mm",
+   "variants": [
+    {
+     "name": "75mm",
+     "price": 160,
+     "images": []
+    }
+   ],
    "sub": "c3s1",
    "subs": [
-    "c3s1"
+    "c3s1",
+    "sarg0tn"
    ],
    "short": "Magnifying glass, 90 mm lens.",
    "long": "Hand magnifying glass with a 90 mm lens for reading, inspecting specimens and general observation.\n\nSpecifications\n• Lens diameter: 90 mm\n• Type: hand magnifier\n\nIn the box\n• Magnifying glass",
@@ -1683,21 +1745,15 @@ window.SHOP={
    "images": [
     "images/cs-68295-uj0fwl7j.jpg",
     "images/cs-68295-y3dqamxg.jpg"
-   ],
-   "variants": [
-    {
-     "name": "75mm",
-     "price": 160,
-     "images": []
-    }
    ]
   },
   {
    "code": "HN-042",
    "name": "Testfabrics AATCC Crocking Cloth 1000ps box",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "s2n9u18",
    "subs": [
-    "c2s3"
+    "s2n9u18"
    ],
    "short": "Testfabrics AATCC crocking cloth, box of 1000 pieces.",
    "long": "AATCC crocking cloth from Testfabrics for colour fastness to crocking tests, supplied as a box of 1000 pre-cut pieces. Suitable for dry and wet crocking tests with a crockmeter following AATCC methods.\n\nSpecifications\n• Type: AATCC crocking cloth\n• Pack size: box of 1000 pieces\n• Use: colour fastness to crocking with a crockmeter\n• Brand: Testfabrics\n\nIn the box\n• AATCC crocking cloth, 1000 pieces",
@@ -1707,8 +1763,7 @@ window.SHOP={
    "images": [
     "images/hn-042-zufjbnxn.jpg",
     "images/hn-042-ltq06pjy.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-92899",
@@ -1731,6 +1786,7 @@ window.SHOP={
   {
    "code": "CS-6234",
    "name": "HI-98302 Pocket TDS Tester DiST-2 (0.00 to 10.00ppt)",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1",
@@ -1744,12 +1800,12 @@ window.SHOP={
    "images": [
     "images/cs-6234-z7j8cacj.jpg",
     "images/cs-6234-w6i7fbp2.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-82358",
    "name": "Dissection Box / Biology Box for Laboratory (Pakistan)",
+   "variants": [],
    "sub": "s700fib",
    "subs": [
     "s700fib"
@@ -1761,12 +1817,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-82358-tq9mrpmf.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-76494",
    "name": "ATC Portable Salinity Refractometer 0-100 ppt (0-100%)",
+   "variants": [],
    "sub": "siwv6py",
    "subs": [
     "siwv6py"
@@ -1779,15 +1835,17 @@ window.SHOP={
    "images": [
     "images/cs-76494-eoxsk70f.jpg",
     "images/cs-76494-unscs8t2.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-38725",
    "name": "Test Tube Rack Steel 12 Hole",
+   "variants": [],
    "sub": "suxv0es",
    "subs": [
-    "suxv0es"
+    "suxv0es",
+    "c3s1",
+    "s916j9x"
    ],
    "short": "Steel test tube rack, 12 holes.",
    "long": "Steel rack for holding 12 test tubes upright during experiments and storage.\n\nSpecifications\n• Material: steel\n• Capacity: 12 holes\n\nIn the box\n• Test tube rack",
@@ -1796,15 +1854,17 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-38725-x1r1y5gx.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-045",
    "name": "Universal pH Test Paper Strip (pH 0-14) pH Paper, China",
-   "sub": "c16s1",
+   "variants": [],
+   "sub": "sz7qw3t",
    "subs": [
-    "c16s1"
+    "sz7qw3t",
+    "sarg0tn",
+    "sjad3r2"
    ],
    "short": "Universal pH test paper strips, pH 0 to 14.",
    "long": "Universal pH test paper that covers the full pH 0–14 range. A low-cost way to get a quick idea of whether a liquid is acidic, neutral or alkaline using the colour chart supplied.\n\nSpecifications\n• Type: universal pH test paper\n• Range: pH 0 to 14\n• Use: quick pH check of liquid samples\n• Read the result against the colour chart\n\nIn the box\n• pH test paper with colour chart",
@@ -1814,8 +1874,7 @@ window.SHOP={
    "images": [
     "images/hn-045-s9669v04.jpg",
     "images/hn-045-2ci8rwgz.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-012",
@@ -1891,9 +1950,12 @@ window.SHOP={
   {
    "code": "CS-79431",
    "name": "Vernier Slide Caliper 150mm China",
+   "variants": [],
    "sub": "swurakr",
    "subs": [
-    "swurakr"
+    "swurakr",
+    "sbaxipc",
+    "sarg0tn"
    ],
    "short": "Vernier slide caliper, 150 mm.",
    "long": "Vernier caliper for measuring outside, inside and depth dimensions to a fine scale. Used in physics laboratories and workshops.\n\nSpecifications\n• Range: 0 to 150 mm\n• Type: vernier slide caliper\n• Origin: China\n\nIn the box\n• Vernier caliper",
@@ -1903,8 +1965,7 @@ window.SHOP={
    "images": [
     "images/cs-79431-f1pus2gx.jpg",
     "images/cs-79431-axkip3on.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-014",
@@ -1927,6 +1988,7 @@ window.SHOP={
   {
    "code": "CS-35313",
    "name": "Potassium Chloride 500 gm Merck, Germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1938,25 +2000,11 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-35313-dc8r0d8k.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-25375",
    "name": "Vinyl Hand Gloves 100 Piece 1 Box",
-   "sub": "sx0h7dd",
-   "subs": [
-    "sx0h7dd"
-   ],
-   "short": "Vinyl disposable gloves, box of 100.",
-   "long": "Disposable vinyl gloves for laboratory, food handling, cleaning and general protection.\n\nSpecifications\n• Material: vinyl\n• Pack size: 100 pieces per box\n\nIn the box\n• Vinyl gloves, 100 pieces",
-   "price": 500,
-   "stock": "in",
-   "featured": 0,
-   "images": [
-    "images/cs-25375-1u57eo46.jpg",
-    "images/cs-25375-h2fb5pw9.jpg"
-   ],
    "variants": [
     {
      "name": "S",
@@ -1978,28 +2026,45 @@ window.SHOP={
      "price": null,
      "images": []
     }
+   ],
+   "sub": "sx0h7dd",
+   "subs": [
+    "sx0h7dd"
+   ],
+   "short": "Vinyl disposable gloves, box of 100.",
+   "long": "Disposable vinyl gloves for laboratory, food handling, cleaning and general protection.\n\nSpecifications\n• Material: vinyl\n• Pack size: 100 pieces per box\n\nIn the box\n• Vinyl gloves, 100 pieces",
+   "price": 500,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-25375-1u57eo46.jpg",
+    "images/cs-25375-h2fb5pw9.jpg"
    ]
   },
   {
    "code": "CS-85614",
    "name": "Whatman Filter Papers 125 mm Grade-1",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sz7qw3t",
+   "subs": [
+    "sz7qw3t"
+   ],
    "short": "Whatman Grade 1 filter paper, 125 mm.",
    "long": "General purpose qualitative filter paper for routine filtration in laboratories.\n\nSpecifications\n• Brand: Whatman\n• Grade: 1\n• Diameter: 125 mm\n• Type: qualitative filter paper\n\nIn the box\n• Filter papers, 125 mm",
    "price": 1400,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-4444",
    "name": "Zeal PH1000 Digital Thermometer Hygrometer Min / Max Ideal for Greenhouse",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me",
-    "shsdp0x"
+    "shsdp0x",
+    "sarg0tn"
    ],
    "short": "Zeal PH1000 digital thermo-hygrometer with min/max memory.",
    "long": "Digital thermometer and hygrometer with min/max memory and an external probe, well suited to greenhouses, storerooms and rooms where temperature and humidity must be watched.\n\nSpecifications\n• Parameters: Temperature and humidity\n• Function: min / max memory\n• Model: PH1000\n• Brand: Zeal\n\nIn the box\n• PH1000 thermo-hygrometer\n• Probe\n• Battery",
@@ -2009,8 +2074,7 @@ window.SHOP={
    "images": [
     "images/cs-4444-7pdpn2s8.jpg",
     "images/cs-4444-ltpr04l2.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-89376",
@@ -2100,9 +2164,11 @@ window.SHOP={
   {
    "code": "CS-25922",
    "name": "Dissection Box / Biology Box for Laboratory",
+   "variants": [],
    "sub": "s700fib",
    "subs": [
-    "s700fib"
+    "s700fib",
+    "sarg0tn"
    ],
    "short": "Biology dissection box.",
    "long": "Dissection kit with the basic instruments for school and college biology practicals, in a carrying case.\n\nSpecifications\n• Type: dissection box\n• Use: biology practicals\n\nIn the box\n• Dissection instruments\n• Carrying case",
@@ -2111,8 +2177,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-25922-hcaifn5l.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-007",
@@ -2136,9 +2201,11 @@ window.SHOP={
   {
    "code": "CS-92660",
    "name": "TDS Meter (China)",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
-    "c2s2"
+    "c2s2",
+    "sjad3r2"
    ],
    "short": "Pen-type digital TDS meter.",
    "long": "Pen-type digital TDS meter for checking total dissolved solids in drinking water and general water quality.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Type: pen-type digital TDS meter\n• Origin: China\n\nIn the box\n• TDS meter\n• Battery",
@@ -2147,8 +2214,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-92660-d3nnh41a.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-9042",
@@ -2206,9 +2272,12 @@ window.SHOP={
   {
    "code": "CS-33969",
    "name": "Digital Stick Thermometer",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
-    "seja7me"
+    "seja7me",
+    "sarg0tn",
+    "sjad3r2"
    ],
    "short": "Digital stick (probe) thermometer.",
    "long": "Digital probe thermometer for quickly checking the temperature of food, liquids and samples.\n\nSpecifications\n• Type: digital stick thermometer\n• Display: digital LCD\n\nIn the box\n• Stick thermometer\n• Battery",
@@ -2218,8 +2287,7 @@ window.SHOP={
    "images": [
     "images/cs-33969-p3cliatx.jpg",
     "images/cs-33969-hiztkd7b.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-67362",
@@ -2241,23 +2309,27 @@ window.SHOP={
   {
    "code": "CS-21503",
    "name": "Filter Papers Grade-42 Whatman 12.5 cm",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sz7qw3t",
+   "subs": [
+    "sz7qw3t"
+   ],
    "short": "Whatman Grade 42 filter paper, 12.5 cm.",
    "long": "Ashless quantitative filter paper for fine precipitates. Grade 42 is used for gravimetric analysis where a clear filtrate is needed.\n\nSpecifications\n• Brand: Whatman\n• Grade: 42\n• Diameter: 12.5 cm\n• Type: ashless quantitative filter paper\n\nIn the box\n• Filter papers, 12.5 cm",
    "price": 1400,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-48315",
    "name": "HTC-2 Temperature Humidity Digital Hygrometer with Clock",
+   "variants": [],
    "sub": "shsdp0x",
    "subs": [
     "shsdp0x",
-    "seja7me"
+    "seja7me",
+    "sarg0tn"
    ],
    "short": "HTC-2 digital thermo-hygrometer with clock.",
    "long": "Digital hygrometer that shows temperature and humidity along with a clock. It can be placed on a table or hung on a wall.\n\nSpecifications\n• Parameters: Temperature, humidity and time\n• Model: HTC-2\n• Display: digital LCD with clock\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
@@ -2267,28 +2339,30 @@ window.SHOP={
    "images": [
     "images/cs-48315-1bk18j12.jpg",
     "images/cs-48315-vy0afkx6.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-20398",
    "name": "Labratory handheld digital multi thermometer model:-P3050",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "Handheld digital multi thermometer, model P3050.",
    "long": "Handheld digital thermometer for laboratory temperature measurement with a probe.\n\nSpecifications\n• Type: handheld digital thermometer\n• Model: P3050\n\nIn the box\n• P3050 thermometer\n• Probe\n• Battery",
    "price": 1000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "HN-048",
    "name": "GSM Cutter Blade",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "szxirb6",
    "subs": [
-    "c2s3"
+    "szxirb6"
    ],
    "short": "Replacement blade for GSM cutter.",
    "long": "Replacement round cutting blade for GSM cutters. A sharp blade gives a clean cut and an accurate sample area, which keeps GSM results reliable.\n\nSpecifications\n• Type: GSM cutter replacement blade\n• Use: replacing a worn or damaged blade on a GSM cutter\n• Handle carefully – the blade is sharp\n\nIn the box\n• GSM cutter blade",
@@ -2297,8 +2371,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/hn-048-be0tr136.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-010",
@@ -2323,6 +2396,7 @@ window.SHOP={
   {
    "code": "CS-52717",
    "name": "pH Test Kit Hi-38058 - Range 4.0 - 10.0 pH",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -2335,25 +2409,29 @@ window.SHOP={
    "images": [
     "images/cs-52717-j0emn4rh.jpg",
     "images/cs-52717-c6pfd6hw.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-72421",
    "name": "Smart Sensor Temperature Humidity Clock SM807",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "shsdp0x",
+   "subs": [
+    "shsdp0x",
+    "seja7me",
+    "sarg0tn"
+   ],
    "short": "Smart Sensor SM807 temperature, humidity and clock meter.",
    "long": "Digital meter from Smart Sensor that shows temperature, humidity and time in one unit, for rooms, storerooms and laboratories.\n\nSpecifications\n• Parameters: Temperature, humidity and time\n• Model: SM807\n• Brand: Smart Sensor\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
    "price": 500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "HN-034",
    "name": "Hanna pH Electrode HI11310 for edge pH Meter",
+   "variants": [],
    "sub": "c1s6",
    "subs": [
     "c1s6"
@@ -2366,8 +2444,7 @@ window.SHOP={
    "images": [
     "images/hn-034-qunfa8qv.jpg",
     "images/hn-034-vij23afu.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-10318",
@@ -2390,9 +2467,10 @@ window.SHOP={
   {
    "code": "HN-030",
    "name": "Sulphate Test kit Hanna-HI38000(100 tests)",
-   "sub": "c1s2",
+   "variants": [],
+   "sub": "s2n9u18",
    "subs": [
-    "c1s2"
+    "s2n9u18"
    ],
    "short": "Hanna HI38000 sulphate test kit, 100 tests.",
    "long": "Chemical test kit for determining sulphate in water samples. Used for water treatment, boiler and cooling water, irrigation water and general laboratory screening where a quick field result is needed.\n\nSpecifications\n• Parameter: Sulphate\n• Number of tests: 100\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI38000\n\nIn the box\n• Sulphate reagents for 100 tests\n• Sample vials and accessories\n• Instruction sheet",
@@ -2402,8 +2480,7 @@ window.SHOP={
    "images": [
     "images/hn-030-pbceydaa.jpg",
     "images/hn-030-qtladen0.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-20000",
@@ -2425,19 +2502,22 @@ window.SHOP={
   {
    "code": "CS-19421",
    "name": "Phenol Red Indicator 25g Research Lab",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Phenol red indicator, 25 g pack.",
    "long": "Phenol red indicator for pH indication and laboratory solution preparation. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Phenol red indicator\n• Pack size: 25 g\n• Brand: Research Lab\n\nIn the box\n• Phenol red indicator, 25 g bottle",
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "HN-006",
    "name": "Hanna HI2211 Benchtop pH/mV Meter with 0.01 Resolution",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1",
@@ -2451,8 +2531,7 @@ window.SHOP={
    "images": [
     "images/hn-006-nmvmz6tx.jpg",
     "images/hn-006-23r6a8ar.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-42480",
@@ -2475,9 +2554,11 @@ window.SHOP={
   {
    "code": "CS-8367",
    "name": "Smart Sensor AR8211+ Digital TDS Meter",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
-    "c2s2"
+    "c2s2",
+    "sjad3r2"
    ],
    "short": "Smart Sensor AR8211+ digital TDS meter.",
    "long": "Pen-type digital TDS meter from Smart Sensor for checking total dissolved solids in drinking water, aquariums, hydroponics and general water quality.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Model: AR8211+\n• Type: pen-type digital meter\n• Brand: Smart Sensor\n\nIn the box\n• AR8211+ TDS meter\n• Battery\n• Instruction manual",
@@ -2488,8 +2569,7 @@ window.SHOP={
     "images/cs-8367-7dw9458v.jpg",
     "images/cs-8367-1kjkj73s.jpg",
     "images/cs-8367-5d5nq8ue.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-35064",
@@ -2512,9 +2592,11 @@ window.SHOP={
   {
    "code": "CS-75617",
    "name": "TDS Meter",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
-    "c2s2"
+    "c2s2",
+    "sjad3r2"
    ],
    "short": "Digital TDS meter.",
    "long": "Digital TDS meter for checking total dissolved solids in water.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Type: digital TDS meter\n\nIn the box\n• TDS meter\n• Battery",
@@ -2523,12 +2605,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-75617-gqeee9c5.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-2250",
    "name": "SF 400C Electronic Compact Scale",
+   "variants": [],
    "sub": "susfg99",
    "subs": [
     "susfg99"
@@ -2540,8 +2622,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-2250-1m36nwq5.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-82219",
@@ -2563,6 +2644,7 @@ window.SHOP={
   {
    "code": "CS-28132",
    "name": "Analog DC Voltmeter",
+   "variants": [],
    "sub": "sbaxipc",
    "subs": [
     "sbaxipc"
@@ -2574,25 +2656,27 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-28132-yrbgmbmi.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-22441",
    "name": "Filter Papers Grade-42 Whatman 12.5 cm (Copy)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sz7qw3t",
+   "subs": [
+    "sz7qw3t"
+   ],
    "short": "Grade 42 filter paper, 12.5 cm, economy pack.",
    "long": "Ashless quantitative filter paper for fine precipitates, used for gravimetric analysis.\n\nSpecifications\n• Grade: 42\n• Diameter: 12.5 cm\n• Type: ashless quantitative filter paper\n\nIn the box\n• Filter papers, 12.5 cm",
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-16846",
    "name": "AND-GULF HL-600 Digital Balance",
+   "variants": [],
    "sub": "susfg99",
    "subs": [
     "susfg99"
@@ -2604,12 +2688,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-16846-i7rv7xte.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-80513",
    "name": "Stop Watch Digital",
+   "variants": [],
    "sub": "s1nowxi",
    "subs": [
     "s1nowxi"
@@ -2622,8 +2706,7 @@ window.SHOP={
    "images": [
     "images/cs-80513-sjdrcphm.jpg",
     "images/cs-80513-ws3f5r1u.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-025",
@@ -2646,6 +2729,7 @@ window.SHOP={
   {
    "code": "CS-62962",
    "name": "Tripod Stand for Bunsen Burner",
+   "variants": [],
    "sub": "s916j9x",
    "subs": [
     "s916j9x"
@@ -2657,8 +2741,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-62962-odw9u58w.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-71559",
@@ -2680,6 +2763,7 @@ window.SHOP={
   {
    "code": "CS-86351",
    "name": "Wire Net with Asbestos for Laboratory Use",
+   "variants": [],
    "sub": "s916j9x",
    "subs": [
     "s916j9x"
@@ -2691,12 +2775,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-86351-1stoy6wu.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-4931",
    "name": "Economical Electric Binocular Microscope XSZ-107BN",
+   "variants": [],
    "sub": "sa3zbrq",
    "subs": [
     "sa3zbrq"
@@ -2708,8 +2792,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-4931-s4kfwf0z.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-027",
@@ -2732,9 +2815,10 @@ window.SHOP={
   {
    "code": "CS-9032",
    "name": "Smart Sensor Humidity and Temperature Meter AS847 Probe Type",
-   "sub": "sn9636n",
+   "variants": [],
+   "sub": "shsdp0x",
    "subs": [
-    "sn9636n"
+    "shsdp0x"
    ],
    "short": "Smart Sensor AS847 humidity and temperature meter with probe.",
    "long": "Handheld digital meter that measures relative humidity and temperature with a probe, for checking the environment in storerooms, laboratories, textile and production areas.\n\nSpecifications\n• Parameters: Humidity and temperature\n• Model: AS847\n• Type: handheld meter with probe\n• Brand: Smart Sensor\n\nIn the box\n• AS847 meter with probe\n• Battery\n• Instruction manual",
@@ -2743,15 +2827,15 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-9032-dv5bnmnl.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-038",
    "name": "ISO Crocking Cloth James Heal (5x5cm)",
-   "sub": "c2s3",
+   "variants": [],
+   "sub": "s2n9u18",
    "subs": [
-    "c2s3"
+    "s2n9u18"
    ],
    "short": "James Heal ISO crocking cloth, 5 x 5 cm squares.",
    "long": "Standard white cotton rubbing cloth cut in 5 x 5 cm squares for colour fastness to rubbing (crocking) tests. Used with a crockmeter to assess colour transfer from a fabric surface under dry and wet conditions.\n\nSpecifications\n• Type: ISO crocking (rubbing) cloth\n• Size: 5 x 5 cm\n• Use: colour fastness to rubbing with a crockmeter\n• Brand: James Heal\n\nIn the box\n• ISO crocking cloth squares, 5 x 5 cm",
@@ -2761,8 +2845,7 @@ window.SHOP={
    "images": [
     "images/hn-038-hrpa7bxo.jpg",
     "images/hn-038-mhhgndd4.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-20610",
@@ -2979,6 +3062,26 @@ window.SHOP={
   {
    "id": "swurakr",
    "name": "Vernier/Slide Caliper"
+  },
+  {
+   "id": "sek48tp",
+   "name": "Electric lab"
+  },
+  {
+   "id": "sarg0tn",
+   "name": "Accessories"
+  },
+  {
+   "id": "sjad3r2",
+   "name": "Water Testing Item"
+  },
+  {
+   "id": "swxfygo",
+   "name": "Salinity Meter"
+  },
+  {
+   "id": "s7cmald",
+   "name": "Lactometer"
   }
  ]
 };
