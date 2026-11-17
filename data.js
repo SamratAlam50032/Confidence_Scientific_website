@@ -92,7 +92,9 @@ window.SHOP={
    "name": "Other Meters & Accessories",
    "prefix": "CS",
    "image": "",
-   "subs": []
+   "subs": [
+    "sx0h7dd"
+   ]
   },
   {
    "id": "ciniu03",
@@ -1881,15 +1883,41 @@ window.SHOP={
   {
    "code": "CS-25375",
    "name": "Vinyl Hand Gloves 100 Piece 1 Box",
-   "sub": "",
-   "subs": [],
+   "variants": [
+    {
+     "name": "S",
+     "price": null,
+     "images": []
+    },
+    {
+     "name": "M",
+     "price": null,
+     "images": []
+    },
+    {
+     "name": "L",
+     "price": null,
+     "images": []
+    },
+    {
+     "name": "XL",
+     "price": null,
+     "images": []
+    }
+   ],
+   "sub": "sx0h7dd",
+   "subs": [
+    "sx0h7dd"
+   ],
    "short": "Vinyl disposable gloves, box of 100.",
    "long": "Disposable vinyl gloves for laboratory, food handling, cleaning and general protection.\n\nSpecifications\n• Material: vinyl\n• Pack size: 100 pieces per box\n\nIn the box\n• Vinyl gloves, 100 pieces",
    "price": 500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-25375-1u57eo46.jpg",
+    "images/cs-25375-h2fb5pw9.jpg"
+   ]
   },
   {
    "code": "CS-21427",
@@ -1907,15 +1935,19 @@ window.SHOP={
   {
    "code": "CS-82219",
    "name": "Citric Acid 500gm, Merck Germany",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s1",
+   "subs": [
+    "c4s1"
+   ],
    "short": "Citric acid, 500 g pack.",
    "long": "Citric acid for laboratory use in buffer preparation, titrations and general analysis. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Citric acid\n• Pack size: 500 g\n• Brand: Merck\n• Origin: Germany\n\nIn the box\n• Citric acid, 500 g bottle",
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-82219-lbks0rf4.jpg"
+   ]
   },
   {
    "code": "CS-44125",
@@ -1933,15 +1965,19 @@ window.SHOP={
   {
    "code": "CS-79988",
    "name": "EDTA Disodium Salt 99% AR 500g (Ethylenediamine Tetra acetic Acid) RL",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "EDTA disodium salt, 500 g pack.",
    "long": "EDTA disodium salt, AR grade, for complexometric titrations such as water hardness and metal analysis. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: EDTA disodium salt\n• Pack size: 500 g\n• Brand: Research Lab\n• Purity: 99%\n• Grade: AR\n\nIn the box\n• EDTA disodium salt, 500 g bottle",
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-79988-1f864t7k.jpg"
+   ]
   },
   {
    "code": "CS-71559",
@@ -2668,6 +2704,10 @@ window.SHOP={
   {
    "id": "sxnmns4",
    "name": "Pocket Scale"
+  },
+  {
+   "id": "sx0h7dd",
+   "name": "Hand Gloves"
   }
  ]
 };
