@@ -53,8 +53,8 @@ window.SHOP={
    "image": "",
    "subs": [
     "c3s1",
-    "c3s2",
-    "suxv0es"
+    "suxv0es",
+    "c3s2"
    ]
   },
   {
@@ -78,7 +78,10 @@ window.SHOP={
    "subs": [
     "c16s2",
     "seja7me",
-    "sx0h7dd"
+    "sx0h7dd",
+    "sqe8bzx",
+    "s916j9x",
+    "s700fib"
    ]
   },
   {
@@ -88,7 +91,8 @@ window.SHOP={
    "image": "",
    "subs": [
     "c2s1",
-    "svh8s6i"
+    "svh8s6i",
+    "c1s4"
    ]
   },
   {
@@ -96,7 +100,15 @@ window.SHOP={
    "name": "Textile Items",
    "prefix": "CS",
    "image": "",
-   "subs": []
+   "subs": [
+    "s2n9u18",
+    "c16s2",
+    "c16s1",
+    "sllqrmv",
+    "szxirb6",
+    "seja7me",
+    "sz7qw3t"
+   ]
   },
   {
    "id": "c16",
@@ -123,7 +135,6 @@ window.SHOP={
   {
    "code": "CS-62775",
    "name": "DC Analog Ammeter",
-   "variants": [],
    "sub": "sbaxipc",
    "subs": [
     "sbaxipc"
@@ -135,7 +146,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-62775-ewol99hb.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-041",
@@ -179,7 +191,6 @@ window.SHOP={
   {
    "code": "CS-46692",
    "name": "Lutron DO Meter PDO-519 Dissolved Oxygen Meter",
-   "variants": [],
    "sub": "sycngbl",
    "subs": [
     "sycngbl"
@@ -192,7 +203,8 @@ window.SHOP={
    "images": [
     "images/cs-46692-43aaetdj.jpg",
     "images/cs-46692-2nopvv52.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-8226",
@@ -214,7 +226,6 @@ window.SHOP={
   {
    "code": "CS-60374",
    "name": "Glass Rod",
-   "variants": [],
    "sub": "s916j9x",
    "subs": [
     "s916j9x"
@@ -226,12 +237,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-60374-gr9fyd55.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-17391",
    "name": "Burette Stand or Retort Stand with Support Clamp",
-   "variants": [],
    "sub": "sp7hn9z",
    "subs": [
     "sp7hn9z"
@@ -243,7 +254,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-17391-gluqoocl.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-6696",
@@ -302,7 +314,6 @@ window.SHOP={
   {
    "code": "CS-74987",
    "name": "Digital Weighing Scale 6000gm (0.1gm) DIGI Germany – High Precision Electronic Balance",
-   "variants": [],
    "sub": "s8fyg6m",
    "subs": [
     "s8fyg6m"
@@ -315,7 +326,8 @@ window.SHOP={
    "images": [
     "images/cs-74987-dgb3sj7p.jpg",
     "images/cs-74987-awfxvkvu.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-037",
@@ -337,7 +349,6 @@ window.SHOP={
   {
    "code": "CS-56060",
    "name": "Glass Slide Plain 76 mm 72 Pcs box",
-   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1"
@@ -350,12 +361,12 @@ window.SHOP={
    "images": [
     "images/cs-56060-fu2dlptm.jpg",
     "images/cs-56060-e5q0zrey.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-53106",
    "name": "Digital Vernier Caliper 150 mm Plastic Slide Caliper 6 Inch",
-   "variants": [],
    "sub": "swurakr",
    "subs": [
     "swurakr"
@@ -368,7 +379,8 @@ window.SHOP={
    "images": [
     "images/cs-53106-c450wz5k.jpg",
     "images/cs-53106-hd17e0v3.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-2606",
@@ -467,7 +479,6 @@ window.SHOP={
   {
    "code": "CS-43125",
    "name": "Digital Counting Weight Scale M-ACS Series 0.1g to 6Kg",
-   "variants": [],
    "sub": "s8fyg6m",
    "subs": [
     "s8fyg6m"
@@ -480,7 +491,8 @@ window.SHOP={
    "images": [
     "images/cs-43125-hhzkcz8p.jpg",
     "images/cs-43125-694ex128.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-023",
@@ -520,7 +532,6 @@ window.SHOP={
   {
    "code": "CS-11676",
    "name": "Glass Test Tube for Laboratory Use (6 Inch x 25mm) Hard Glass",
-   "variants": [],
    "sub": "suxv0es",
    "subs": [
     "suxv0es"
@@ -532,7 +543,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-11676-1hn5i30f.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-022",
@@ -554,7 +566,6 @@ window.SHOP={
   {
    "code": "CS-80614",
    "name": "L-Histidine Monohydrochloride 25g RL",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -566,12 +577,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-80614-cd8jzkpq.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-36231",
    "name": "Sodium Phosphate Dibasic Anhydrous 500g Research Lab",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -583,7 +594,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-36231-tq535dj8.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-024",
@@ -603,7 +615,6 @@ window.SHOP={
   {
    "code": "CS-71903",
    "name": "Glass Prism 50 x 50 mm Indian",
-   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1"
@@ -616,12 +627,12 @@ window.SHOP={
    "images": [
     "images/cs-71903-pr9dzi95.jpg",
     "images/cs-71903-pa2i2jrd.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-41521",
    "name": "Free Chlorine Checker Reagents (25 Tests)",
-   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
@@ -633,7 +644,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-41521-fzyryblk.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-013",
@@ -657,7 +669,6 @@ window.SHOP={
   {
    "code": "CS-96654",
    "name": "5 in 1 Water Quality Tester for TDS, EC, pH, Salinity, Temp.",
-   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1",
@@ -671,7 +682,8 @@ window.SHOP={
    "images": [
     "images/cs-96654-1pxpu5ut.jpg",
     "images/cs-96654-8elbp7ra.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9385",
@@ -713,7 +725,6 @@ window.SHOP={
   {
    "code": "CS-45641",
    "name": "Digital Micrometer 0-25mm With Large Display",
-   "variants": [],
    "sub": "sqnvh0o",
    "subs": [
     "sqnvh0o"
@@ -726,7 +737,8 @@ window.SHOP={
    "images": [
     "images/cs-45641-jepkisxk.jpg",
     "images/cs-45641-1abm6uif.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-1188",
@@ -788,7 +800,6 @@ window.SHOP={
   {
    "code": "CS-23086",
    "name": "Potassium Chromate 500g 99.5% AR Research Lab",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -800,7 +811,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-23086-x3a8so0s.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-018",
@@ -822,7 +834,6 @@ window.SHOP={
   {
    "code": "CS-79595",
    "name": "Meter Scale",
-   "variants": [],
    "sub": "sbaxipc",
    "subs": [
     "sbaxipc"
@@ -834,12 +845,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-79595-3rwfbr8u.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-41170",
    "name": "Family PH Meter Hanna (Copy)",
-   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1"
@@ -852,7 +863,8 @@ window.SHOP={
    "images": [
     "images/cs-41170-46r8pv4a.jpg",
     "images/cs-41170-fajiawoy.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-009",
@@ -876,7 +888,6 @@ window.SHOP={
   {
    "code": "CS-88029",
    "name": "Phenolphthalein Indicator 25g Powder RL",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -888,7 +899,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-88029-uvqe0ixt.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-019",
@@ -980,7 +992,6 @@ window.SHOP={
   {
    "code": "CS-32633",
    "name": "Portable Honey Refractometer Brix 58-90% ATC",
-   "variants": [],
    "sub": "siwv6py",
    "subs": [
     "siwv6py"
@@ -993,7 +1004,8 @@ window.SHOP={
    "images": [
     "images/cs-32633-53gwm1qw.jpg",
     "images/cs-32633-fwr4pcwj.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-015",
@@ -1033,7 +1045,6 @@ window.SHOP={
   {
    "code": "CS-14600",
    "name": "Digital Precission Balance SF-400D Lab Scale 0.01g to 600g",
-   "variants": [],
    "sub": "susfg99",
    "subs": [
     "susfg99"
@@ -1046,7 +1057,8 @@ window.SHOP={
    "images": [
     "images/cs-14600-pz39rszv.jpg",
     "images/cs-14600-d0ku8ulb.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-047",
@@ -1089,7 +1101,6 @@ window.SHOP={
   {
    "code": "CS-85060",
    "name": "Test Tube Rack (Plastic) 6 Hole",
-   "variants": [],
    "sub": "suxv0es",
    "subs": [
     "suxv0es"
@@ -1101,7 +1112,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-85060-p1oqu7sk.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-021",
@@ -1192,7 +1204,6 @@ window.SHOP={
   {
    "code": "CS-29067",
    "name": "Family TDS Meter Hanna (Copy)",
-   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2"
@@ -1205,7 +1216,8 @@ window.SHOP={
    "images": [
     "images/cs-29067-zoy9fy9p.jpg",
     "images/cs-29067-rq2ve05x.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9233",
@@ -1246,7 +1258,6 @@ window.SHOP={
   {
    "code": "CS-37792",
    "name": "Hanna pH Electrode HI1333B for Benchtop pH Meter",
-   "variants": [],
    "sub": "c1s6",
    "subs": [
     "c1s6"
@@ -1259,7 +1270,8 @@ window.SHOP={
    "images": [
     "images/cs-37792-7msybusz.jpg",
     "images/cs-37792-qwchyw7i.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9414",
@@ -1281,7 +1293,6 @@ window.SHOP={
   {
    "code": "CS-35124",
    "name": "Ferric Chloride Anhydrous 500g Research Lab",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -1293,7 +1304,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-35124-jb43ea0x.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-21427",
@@ -1311,7 +1323,6 @@ window.SHOP={
   {
    "code": "CS-83413",
    "name": "Eriochrome Black-T AR 25g Research Lab",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -1323,7 +1334,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-83413-sw6p6fdm.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-005",
@@ -1366,7 +1378,6 @@ window.SHOP={
   {
    "code": "CS-25081",
    "name": "Digital Temperature and Humidity Meter HTC-1",
-   "variants": [],
    "sub": "shsdp0x",
    "subs": [
     "shsdp0x",
@@ -1380,7 +1391,8 @@ window.SHOP={
    "images": [
     "images/cs-25081-oja78ex6.jpg",
     "images/cs-25081-jtxk6gsr.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-6148",
@@ -1437,7 +1449,6 @@ window.SHOP={
   {
    "code": "CS-13716",
    "name": "Turbidity Meter-Lutron TU-2016 Made in Taiwan",
-   "variants": [],
    "sub": "c2s3",
    "subs": [
     "c2s3"
@@ -1450,12 +1461,12 @@ window.SHOP={
    "images": [
     "images/cs-13716-96yi5y90.jpg",
     "images/cs-13716-flclzwmh.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-83124",
    "name": "Wood Thermometer for Room",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1468,7 +1479,8 @@ window.SHOP={
    "images": [
     "images/cs-83124-dckn9mhh.jpg",
     "images/cs-83124-59e4boju.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-011",
@@ -1522,7 +1534,6 @@ window.SHOP={
   {
    "code": "CS-35862",
    "name": "Iron Checker Reagent HI721-25 Hanna",
-   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
@@ -1535,12 +1546,12 @@ window.SHOP={
    "images": [
     "images/cs-35862-6tb0y8d7.jpg",
     "images/cs-35862-uvrlh9vr.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-23956",
    "name": "Screw Gauge or Micrometer 25 mm China",
-   "variants": [],
    "sub": "sqnvh0o",
    "subs": [
     "sqnvh0o"
@@ -1553,12 +1564,12 @@ window.SHOP={
    "images": [
     "images/cs-23956-pm0l9lbq.jpg",
     "images/cs-23956-dhkw6n7a.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-75162",
    "name": "Grain Moisture Meter GMK-303RS, Korea for Accurate Moisture Measurement",
-   "variants": [],
    "sub": "sypo0sw",
    "subs": [
     "sypo0sw"
@@ -1570,12 +1581,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-75162-af42e06z.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-82861",
    "name": "PH Meter (China)",
-   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1"
@@ -1587,12 +1598,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-82861-o5omv226.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-52137",
    "name": "Mini Magnetic Stirrer C1 Adjustable Stirrer 3L",
-   "variants": [],
    "sub": "sf4zcsj",
    "subs": [
     "sf4zcsj"
@@ -1605,7 +1616,8 @@ window.SHOP={
    "images": [
     "images/cs-52137-ieb2hgtq.jpg",
     "images/cs-52137-j73vpiku.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-4658",
@@ -1627,7 +1639,6 @@ window.SHOP={
   {
    "code": "CS-90128",
    "name": "Digital Pocket Scale MH-200 (0.01g–200g) Precision Balance",
-   "variants": [],
    "sub": "sxnmns4",
    "subs": [
     "sxnmns4"
@@ -1641,7 +1652,8 @@ window.SHOP={
     "images/cs-90128-ohwkmq55.jpg",
     "images/cs-90128-uvslyrk5.jpg",
     "images/cs-90128-5ywnote5.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-53448",
@@ -1659,13 +1671,6 @@ window.SHOP={
   {
    "code": "CS-68295",
    "name": "Magnifying Glass 90 mm",
-   "variants": [
-    {
-     "name": "75mm",
-     "price": 160,
-     "images": []
-    }
-   ],
    "sub": "c3s1",
    "subs": [
     "c3s1"
@@ -1678,6 +1683,13 @@ window.SHOP={
    "images": [
     "images/cs-68295-uj0fwl7j.jpg",
     "images/cs-68295-y3dqamxg.jpg"
+   ],
+   "variants": [
+    {
+     "name": "75mm",
+     "price": 160,
+     "images": []
+    }
    ]
   },
   {
@@ -1701,7 +1713,6 @@ window.SHOP={
   {
    "code": "CS-92899",
    "name": "Precision Weight Balance 600 gm AND FGH Series (2 Digit)",
-   "variants": [],
    "sub": "susfg99",
    "subs": [
     "susfg99"
@@ -1714,7 +1725,8 @@ window.SHOP={
    "images": [
     "images/cs-92899-tjn3ieu6.jpg",
     "images/cs-92899-y7f1sgg5.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-6234",
@@ -1738,7 +1750,6 @@ window.SHOP={
   {
    "code": "CS-82358",
    "name": "Dissection Box / Biology Box for Laboratory (Pakistan)",
-   "variants": [],
    "sub": "s700fib",
    "subs": [
     "s700fib"
@@ -1750,12 +1761,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-82358-tq9mrpmf.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-76494",
    "name": "ATC Portable Salinity Refractometer 0-100 ppt (0-100%)",
-   "variants": [],
    "sub": "siwv6py",
    "subs": [
     "siwv6py"
@@ -1768,12 +1779,12 @@ window.SHOP={
    "images": [
     "images/cs-76494-eoxsk70f.jpg",
     "images/cs-76494-unscs8t2.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-38725",
    "name": "Test Tube Rack Steel 12 Hole",
-   "variants": [],
    "sub": "suxv0es",
    "subs": [
     "suxv0es"
@@ -1785,7 +1796,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-38725-x1r1y5gx.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-045",
@@ -1862,7 +1874,6 @@ window.SHOP={
   {
    "code": "CS-79988",
    "name": "EDTA Disodium Salt 99% AR 500g (Ethylenediamine Tetra acetic Acid) RL",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -1874,12 +1885,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-79988-1f864t7k.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-79431",
    "name": "Vernier Slide Caliper 150mm China",
-   "variants": [],
    "sub": "swurakr",
    "subs": [
     "swurakr"
@@ -1892,7 +1903,8 @@ window.SHOP={
    "images": [
     "images/cs-79431-f1pus2gx.jpg",
     "images/cs-79431-axkip3on.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-014",
@@ -1915,7 +1927,6 @@ window.SHOP={
   {
    "code": "CS-35313",
    "name": "Potassium Chloride 500 gm Merck, Germany",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1927,11 +1938,25 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-35313-dc8r0d8k.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-25375",
    "name": "Vinyl Hand Gloves 100 Piece 1 Box",
+   "sub": "sx0h7dd",
+   "subs": [
+    "sx0h7dd"
+   ],
+   "short": "Vinyl disposable gloves, box of 100.",
+   "long": "Disposable vinyl gloves for laboratory, food handling, cleaning and general protection.\n\nSpecifications\n• Material: vinyl\n• Pack size: 100 pieces per box\n\nIn the box\n• Vinyl gloves, 100 pieces",
+   "price": 500,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-25375-1u57eo46.jpg",
+    "images/cs-25375-h2fb5pw9.jpg"
+   ],
    "variants": [
     {
      "name": "S",
@@ -1953,19 +1978,6 @@ window.SHOP={
      "price": null,
      "images": []
     }
-   ],
-   "sub": "sx0h7dd",
-   "subs": [
-    "sx0h7dd"
-   ],
-   "short": "Vinyl disposable gloves, box of 100.",
-   "long": "Disposable vinyl gloves for laboratory, food handling, cleaning and general protection.\n\nSpecifications\n• Material: vinyl\n• Pack size: 100 pieces per box\n\nIn the box\n• Vinyl gloves, 100 pieces",
-   "price": 500,
-   "stock": "in",
-   "featured": 0,
-   "images": [
-    "images/cs-25375-1u57eo46.jpg",
-    "images/cs-25375-h2fb5pw9.jpg"
    ]
   },
   {
@@ -2003,7 +2015,6 @@ window.SHOP={
   {
    "code": "CS-89376",
    "name": "Simple Pendulum for Physics Laboratory",
-   "variants": [],
    "sub": "sbaxipc",
    "subs": [
     "sbaxipc"
@@ -2015,12 +2026,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-89376-bbzil8hw.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-39569",
    "name": "Sodium Thiosulfate Extra Pure 500gm Research Lab",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -2032,7 +2043,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-39569-unzql8iv.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-017",
@@ -2088,7 +2100,6 @@ window.SHOP={
   {
    "code": "CS-25922",
    "name": "Dissection Box / Biology Box for Laboratory",
-   "variants": [],
    "sub": "s700fib",
    "subs": [
     "s700fib"
@@ -2100,7 +2111,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-25922-hcaifn5l.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-007",
@@ -2124,7 +2136,6 @@ window.SHOP={
   {
    "code": "CS-92660",
    "name": "TDS Meter (China)",
-   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2"
@@ -2136,7 +2147,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-92660-d3nnh41a.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9042",
@@ -2194,7 +2206,6 @@ window.SHOP={
   {
    "code": "CS-33969",
    "name": "Digital Stick Thermometer",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -2207,12 +2218,12 @@ window.SHOP={
    "images": [
     "images/cs-33969-p3cliatx.jpg",
     "images/cs-33969-hiztkd7b.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-67362",
    "name": "Ammonia Buffer Solution 500mL Research Lab",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -2224,7 +2235,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-67362-a09t9hec.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-21503",
@@ -2242,7 +2254,6 @@ window.SHOP={
   {
    "code": "CS-48315",
    "name": "HTC-2 Temperature Humidity Digital Hygrometer with Clock",
-   "variants": [],
    "sub": "shsdp0x",
    "subs": [
     "shsdp0x",
@@ -2256,7 +2267,8 @@ window.SHOP={
    "images": [
     "images/cs-48315-1bk18j12.jpg",
     "images/cs-48315-vy0afkx6.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-20398",
@@ -2311,7 +2323,6 @@ window.SHOP={
   {
    "code": "CS-52717",
    "name": "pH Test Kit Hi-38058 - Range 4.0 - 10.0 pH",
-   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -2324,7 +2335,8 @@ window.SHOP={
    "images": [
     "images/cs-52717-j0emn4rh.jpg",
     "images/cs-52717-c6pfd6hw.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-72421",
@@ -2360,7 +2372,6 @@ window.SHOP={
   {
    "code": "CS-10318",
    "name": "Parafilm PM 996 Multipurpose Laboratory Film",
-   "variants": [],
    "sub": "s2n9u18",
    "subs": [
     "s2n9u18"
@@ -2373,7 +2384,8 @@ window.SHOP={
    "images": [
     "images/cs-10318-fs7mkpnz.jpg",
     "images/cs-10318-5qvuprmi.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-030",
@@ -2396,7 +2408,6 @@ window.SHOP={
   {
    "code": "CS-20000",
    "name": "Potassium Hydroxide Pellets 500g ResearchLab India",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -2408,7 +2419,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-20000-la8s7mdq.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-19421",
@@ -2445,7 +2457,6 @@ window.SHOP={
   {
    "code": "CS-42480",
    "name": "Wooden Geometry Box-White board geometry box-",
-   "variants": [],
    "sub": "sqe8bzx",
    "subs": [
     "sqe8bzx"
@@ -2458,7 +2469,8 @@ window.SHOP={
    "images": [
     "images/cs-42480-4a591srj.jpg",
     "images/cs-42480-j87crx30.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-8367",
@@ -2482,7 +2494,6 @@ window.SHOP={
   {
    "code": "CS-35064",
    "name": "Portable Refractometer for Juice, Chemicals 0-90% Brix",
-   "variants": [],
    "sub": "siwv6py",
    "subs": [
     "siwv6py"
@@ -2495,12 +2506,12 @@ window.SHOP={
    "images": [
     "images/cs-35064-4cwfn3c8.jpg",
     "images/cs-35064-ymrzs5bl.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-75617",
    "name": "TDS Meter",
-   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2"
@@ -2512,12 +2523,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-75617-gqeee9c5.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-2250",
    "name": "SF 400C Electronic Compact Scale",
-   "variants": [],
    "sub": "susfg99",
    "subs": [
     "susfg99"
@@ -2529,12 +2540,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-2250-1m36nwq5.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-82219",
    "name": "Citric Acid 500gm, Merck Germany",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -2546,12 +2557,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-82219-lbks0rf4.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-28132",
    "name": "Analog DC Voltmeter",
-   "variants": [],
    "sub": "sbaxipc",
    "subs": [
     "sbaxipc"
@@ -2563,7 +2574,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-28132-yrbgmbmi.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-22441",
@@ -2581,7 +2593,6 @@ window.SHOP={
   {
    "code": "CS-16846",
    "name": "AND-GULF HL-600 Digital Balance",
-   "variants": [],
    "sub": "susfg99",
    "subs": [
     "susfg99"
@@ -2593,12 +2604,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-16846-i7rv7xte.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-80513",
    "name": "Stop Watch Digital",
-   "variants": [],
    "sub": "s1nowxi",
    "subs": [
     "s1nowxi"
@@ -2611,7 +2622,8 @@ window.SHOP={
    "images": [
     "images/cs-80513-sjdrcphm.jpg",
     "images/cs-80513-ws3f5r1u.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-025",
@@ -2634,7 +2646,6 @@ window.SHOP={
   {
    "code": "CS-62962",
    "name": "Tripod Stand for Bunsen Burner",
-   "variants": [],
    "sub": "s916j9x",
    "subs": [
     "s916j9x"
@@ -2646,12 +2657,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-62962-odw9u58w.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-71559",
    "name": "Copper Sulfate Pentahydrate, 500gm Merck, India",
-   "variants": [],
    "sub": "se65abx",
    "subs": [
     "se65abx"
@@ -2663,12 +2674,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-71559-de3op6of.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-86351",
    "name": "Wire Net with Asbestos for Laboratory Use",
-   "variants": [],
    "sub": "s916j9x",
    "subs": [
     "s916j9x"
@@ -2680,7 +2691,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-86351-1stoy6wu.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-4931",
@@ -2755,7 +2767,6 @@ window.SHOP={
   {
    "code": "CS-20610",
    "name": "Titanium Dioxide AR 500g Research Lab",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -2767,7 +2778,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-20610-78j72buo.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-1041",
