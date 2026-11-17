@@ -525,6 +525,7 @@ window.SHOP={
   {
    "code": "HN-024",
    "name": "Hanna Iron Test Kit HI-3834 Romania",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -534,8 +535,7 @@ window.SHOP={
    "price": 3499,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "HN-025",
@@ -965,6 +965,7 @@ window.SHOP={
   {
    "code": "CS-2951",
    "name": "Total Hardness Test Kit for Water. HI-3812",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -974,27 +975,33 @@ window.SHOP={
    "price": 3599,
    "stock": "in",
    "featured": 1,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-2951-6vmgucvf.jpg"
+   ]
   },
   {
    "code": "CS-6234",
    "name": "HI-98302 Pocket TDS Tester DiST-2 (0.00 to 10.00ppt)",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
-    "c1s1"
+    "c1s1",
+    "c2s2"
    ],
    "short": "Hanna DiST 2 pocket TDS tester, 0.00 to 10.00 ppt.",
    "long": "Pocket-size TDS tester from the Hanna DiST range. It measures total dissolved solids in water and shows the reading together with the sample temperature on a clear LCD. Light, easy to carry and quick to use for water quality checks in the lab and in the field.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Range: 0.00 to 10.00 ppt\n• Display: LCD with TDS and temperature\n• Automatic temperature compensation\n• Model: HI98302 (DiST 2)\n\nIn the box\n• HI98302 DiST 2 tester\n• Battery\n• Instruction manual",
    "price": 8199,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-6234-z7j8cacj.jpg",
+    "images/cs-6234-w6i7fbp2.jpg"
+   ]
   },
   {
    "code": "CS-9233",
    "name": "Hanna Hi-98319 Salinity Meter",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -1004,12 +1011,15 @@ window.SHOP={
    "price": 12499,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-9233-gic0oeas.jpg",
+    "images/cs-9233-oadvafkt.jpg"
+   ]
   },
   {
    "code": "CS-9385",
    "name": "Hanna HI-98108 pHep+ pH Meter with Auto Calibration",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -1019,8 +1029,12 @@ window.SHOP={
    "price": 8199,
    "stock": "in",
    "featured": 1,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-9385-4ren8haj.jpg",
+    "images/cs-9385-6jtoqinn.jpg",
+    "images/cs-9385-atlq7k1z.jpg",
+    "images/cs-9385-v7ej1lil.jpg"
+   ]
   },
   {
    "code": "CS-2681",
