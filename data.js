@@ -1043,6 +1043,7 @@ window.SHOP={
   {
    "code": "CS-2681",
    "name": "Sodium Hydroxide Pellets 500g Merck India",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1052,73 +1053,94 @@ window.SHOP={
    "price": 500,
    "stock": "in",
    "featured": 1,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-2681-1gscbh9q.jpg"
+   ]
   },
   {
    "code": "CS-4658",
    "name": "Calcium chloride 500gm merck germany",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s1",
+   "subs": [
+    "c4s1"
+   ],
    "short": "Calcium chloride, 500 g pack.",
    "long": "Calcium chloride for laboratory use as a reagent and drying agent. Store in a tightly closed container and use suitable protective equipment.\n\nSpecifications\n• Brand: Merck\n• Pack size: 500 g\n• Chemical: Calcium chloride\n• Origin: Germany\n\nIn the box\n• Calcium chloride, 500 g bottle",
    "price": 650,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-4658-sdsotiz6.jpg"
+   ]
   },
   {
    "code": "CS-7891",
    "name": "Sodium Chloride 500gm (Merck Germany)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s1",
+   "subs": [
+    "c4s1"
+   ],
    "short": "Sodium chloride (NaCl), 500 g pack.",
    "long": "Sodium chloride for laboratory use in solution preparation, titrations and general analysis. Store in a tightly closed container and use suitable protective equipment.\n\nSpecifications\n• Brand: Merck\n• Pack size: 500 g\n• Chemical: Sodium chloride (NaCl)\n• Origin: Germany\n\nIn the box\n• Sodium chloride (NaCl), 500 g bottle",
    "price": 550,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-7891-um47kkv1.jpg"
+   ]
   },
   {
    "code": "CS-9975",
    "name": "Calcium carbonate 500gm Merck Germany",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s1",
+   "subs": [
+    "c4s1"
+   ],
    "short": "Calcium carbonate (CaCO3), 500 g pack.",
    "long": "Calcium carbonate for laboratory use, including hardness and alkalinity standards and general analysis. Store in a tightly closed container and use suitable protective equipment.\n\nSpecifications\n• Brand: Merck\n• Pack size: 500 g\n• Chemical: Calcium carbonate (CaCO3)\n• Origin: Germany\n\nIn the box\n• Calcium carbonate (CaCO3), 500 g bottle",
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-9975-bljfbmdj.jpg"
+   ]
   },
   {
    "code": "CS-9042",
    "name": "Potassium Dichromate 500gm Merck Germany",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s1",
+   "subs": [
+    "c4s1"
+   ],
    "short": "Potassium dichromate (K2Cr2O7), 500 g pack.",
    "long": "Potassium dichromate for laboratory use, such as COD analysis and redox titrations. A strong oxidiser and toxic – handle with care. Store in a tightly closed container and use suitable protective equipment.\n\nSpecifications\n• Brand: Merck\n• Pack size: 500 g\n• Chemical: Potassium dichromate (K2Cr2O7)\n• Origin: Germany\n\nIn the box\n• Potassium dichromate (K2Cr2O7), 500 g bottle",
    "price": 1500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-9042-fbz55nt1.jpg"
+   ]
   },
   {
    "code": "CS-8226",
    "name": "Monocular Biological Compound Microscope L101",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "Monocular biological compound microscope, model L101.",
    "long": "Monocular compound microscope for biology classes, school and college laboratories and basic specimen viewing. A simple, easy-to-use design for slide observation.\n\nSpecifications\n• Type: monocular biological compound microscope\n• Model: L101\n• Use: viewing prepared slides and thin specimens\n\nIn the box\n• L101 microscope\n• Dust cover\n• Instruction sheet",
    "price": 4600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-8226-65nxhp9e.jpg"
+   ]
   },
   {
    "code": "CS-4931",
@@ -2463,6 +2485,10 @@ window.SHOP={
   {
    "id": "se65abx",
    "name": "MERCK India"
+  },
+  {
+   "id": "sa3zbrq",
+   "name": "Microscope & Telescope"
   }
  ]
 };
