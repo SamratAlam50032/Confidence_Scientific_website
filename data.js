@@ -60,7 +60,8 @@ window.SHOP={
     "c4s1",
     "c4s2",
     "s0amlle",
-    "sf8t0p4"
+    "sf8t0p4",
+    "se65abx"
    ]
   },
   {
@@ -2458,6 +2459,10 @@ window.SHOP={
   {
    "id": "sz7qw3t",
    "name": "pH/Filter/Litmus paper"
+  },
+  {
+   "id": "se65abx",
+   "name": "MERCK India"
   }
  ]
 };
