@@ -1321,93 +1321,110 @@ window.SHOP={
   {
    "code": "CS-4444",
    "name": "Zeal PH1000 Digital Thermometer Hygrometer Min / Max Ideal for Greenhouse",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me",
+    "shsdp0x"
+   ],
    "short": "Zeal PH1000 digital thermo-hygrometer with min/max memory.",
    "long": "Digital thermometer and hygrometer with min/max memory and an external probe, well suited to greenhouses, storerooms and rooms where temperature and humidity must be watched.\n\nSpecifications\n• Parameters: Temperature and humidity\n• Function: min / max memory\n• Model: PH1000\n• Brand: Zeal\n\nIn the box\n• PH1000 thermo-hygrometer\n• Probe\n• Battery",
    "price": 850,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-4444-7pdpn2s8.jpg",
+    "images/cs-4444-ltpr04l2.jpg"
+   ]
   },
   {
    "code": "CS-7508",
    "name": "Lutron Dissolved Oxygen Meter DO-5509 Taiwan",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "Lutron DO-5509 dissolved oxygen meter, made in Taiwan.",
    "long": "Portable dissolved oxygen meter from Lutron for measuring DO in water. Commonly used in aquaculture, wastewater and environmental checks.\n\nSpecifications\n• Parameter: Dissolved oxygen\n• Model: DO-5509\n• Brand: Lutron\n• Origin: Taiwan\n\nIn the box\n• DO-5509 meter\n• DO probe\n• Battery\n• Instruction manual",
    "price": 15500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-7508-t5jdv68d.jpg",
+    "images/cs-7508-2knrl7tl.jpg"
+   ]
   },
   {
    "code": "CS-5120",
    "name": "K-Type Digital Thermometer TES-1310 with Thermocouple",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "TES-1310 digital thermometer with K-type thermocouple.",
    "long": "Handheld digital thermometer that works with K-type thermocouples. The thermocouple probe lets you measure temperature in liquids, ovens and machinery.\n\nSpecifications\n• Sensor type: K-type thermocouple\n• Model: TES-1310\n• Type: handheld digital thermometer\n\nIn the box\n• TES-1310 thermometer\n• K-type thermocouple\n• Battery",
    "price": 2850,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-5120-n19969mx.jpg",
+    "images/cs-5120-p6jf8b68.jpg"
+   ]
   },
   {
    "code": "CS-6696",
    "name": "UNI-T UT306s Infrared Thermometer(-50~500°C) (-58~932°F)",
-   "sub": "",
-   "subs": [],
-   "short": "UNI-T UT306s non-contact infrared thermometer, -50 to 500 °C.",
-   "long": "Non-contact infrared thermometer for quick surface temperature readings of machinery, motors, ovens, food and electrical panels, without touching the object.\n\nSpecifications\n• Range: -50 to 500 °C (-58 to 932 °F)\n• Type: non-contact infrared thermometer\n• Model: UT306s\n• Brand: UNI-T\n\nIn the box\n• UT306s infrared thermometer\n• Battery\n• Instruction manual",
-   "price": 2000,
-   "stock": "in",
-   "featured": 0,
-   "images": [],
-   "variants": []
-  },
-  {
-   "code": "CS-6843",
-   "name": "UNI-T UT306s Infrared Thermometer(-50~500°C) (-58~932°F)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "UNI-T UT306s non-contact infrared thermometer, -50 to 500 °C.",
    "long": "Non-contact infrared thermometer for quick surface temperature readings of machinery, motors, ovens, food and electrical panels, without touching the object.\n\nSpecifications\n• Range: -50 to 500 °C (-58 to 932 °F)\n• Type: non-contact infrared thermometer\n• Model: UT306s\n• Brand: UNI-T\n\nIn the box\n• UT306s infrared thermometer\n• Battery\n• Instruction manual",
    "price": 2500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-6696-aqjpjcq9.jpg",
+    "images/cs-6696-3whbce5q.jpg"
+   ]
   },
   {
    "code": "CS-7166",
    "name": "Smart Sensor Infrared Thermometer AR320",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "Smart Sensor AR320 non-contact infrared thermometer.",
    "long": "Handheld infrared thermometer for quick, non-contact surface temperature checks of machinery, food and electrical equipment.\n\nSpecifications\n• Type: non-contact infrared thermometer\n• Model: AR320\n• Brand: Smart Sensor\n\nIn the box\n• AR320 infrared thermometer\n• Battery\n• Instruction manual",
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-7166-kjta7hse.jpg",
+    "images/cs-7166-gghukg2e.jpg"
+   ]
   },
   {
    "code": "CS-9414",
    "name": "Digital Kitchen Scale 10Kg SF-400 China",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "SF-400 digital kitchen scale, 10 kg capacity.",
    "long": "Compact digital scale for the kitchen and for simple weighing jobs in shops and small laboratories.\n\nSpecifications\n• Capacity: 10 kg\n• Model: SF-400\n• Type: digital kitchen scale\n• Origin: China\n\nIn the box\n• SF-400 scale\n• Battery",
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-9414-mb39sjcd.jpg"
+   ]
   },
   {
    "code": "CS-2250",
