@@ -39,6 +39,7 @@ main{padding:18px 0 60px}
 body.editing .split{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:18px;align-items:start}
 body.editing .split>*{min-width:0}
 body.editing #plist{grid-template-columns:minmax(0,1fr)}
+body.editing #pedit{position:sticky;top:132px;max-height:calc(100vh - 150px);overflow:auto}
 #pedit{max-width:880px}
 .tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
 .tools input{flex:1 1 140px;min-width:0}
@@ -87,7 +88,7 @@ textarea{resize:vertical}
 .hint{color:var(--muted);font-size:13.5px}
 .tgs{display:flex;flex-wrap:wrap;gap:6px}.tg{font:13px var(--f-body);border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;padding:5px 12px;cursor:pointer}.tg.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}ol.steps li{margin-bottom:4px}
-@media(max-width:900px){body.editing .split{display:block}body.editing .listpane{display:none}}
+@media(max-width:900px){body.editing #pedit{position:static;max-height:none;overflow:visible}body.editing .split{display:block}body.editing .listpane{display:none}}
 @media(max-width:560px){.g2,.g3{grid-template-columns:1fr}.hbar .btn{flex:1 1 auto}}
 .vcard{border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:10px;background:var(--bg)}
 .vrow{display:grid;grid-template-columns:minmax(0,1fr) 140px auto;gap:8px;align-items:center;margin-bottom:8px}
@@ -98,6 +99,8 @@ ol.steps{margin:6px 0 14px;padding-left:20px;color:var(--muted);font-size:14px}o
 .mvb{flex:1;width:32px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;cursor:pointer;font-size:14px;line-height:1;padding:0}
 .mvb:hover:not(:disabled){border-color:var(--accent)}.mvb:disabled{opacity:.3;cursor:default}
 body.editing .pmv{display:none}
+.nsrow{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:8px;margin-top:8px;align-items:center}
+@media(max-width:560px){.nsrow{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -243,7 +246,7 @@ function renderFilter(){var f=$("#pf"),cur=f.value;f.textContent="";f.append(el(
   D.subs.forEach(function(c){f.append(el("option",{value:c.id,text:c.name}))});f.value=(cur==="__none"||subById(cur))?cur:""}
 function pwrap(btn,x,items){var k=items.indexOf(x);
   var mb=function(t,l,f,dis){return el("button",{type:"button",class:"mvb",text:t,"aria-label":l,title:l,disabled:dis,onclick:function(e){e.stopPropagation();f()}})};
-  return el("div",{class:"pwrap"},btn,el("div",{class:"pmv"},
+  return el("div",{class:"pwrap","data-i":x.i},btn,el("div",{class:"pmv"},
     mb("⤒","Move to top",function(){moveP(x.i,0,true)},k===0),
     mb("↑","Move up",function(){moveP(x.i,items[k-1].i)},k===0),
     mb("↓","Move down",function(){moveP(x.i,items[k+1].i)},k===items.length-1)))}
@@ -310,15 +313,21 @@ $("#pimpf").onchange=async function(){var f=this.files[0];this.value="";if(!f)re
 
 /* ---------- product editor ---------- */
 function fld(id,label,ctrl,hint){return el("div",{class:"f"},el("label",{"for":id,text:label}),ctrl,hint?el("small",{text:hint}):null)}
+var listY=0,rowOff=null,restoreIdx=-1;
+function restoreList(){var y=listY;
+  if(restoreIdx>=0&&rowOff!=null){var r=document.querySelector('#plist .pwrap[data-i="'+restoreIdx+'"]');if(r)y=r.getBoundingClientRect().top+window.scrollY-rowOff}
+  y=Math.max(0,y);window.scrollTo(0,y);requestAnimationFrame(function(){window.scrollTo(0,y)})}
 function openEditor(idx){
   if(!D.subs.length){setTab("categories");showMsg("Add a sub category first (product types like Meters).","bad");return}
   edIdx=idx;codeTouched=false;
   if(idx>=0)ed=JSON.parse(JSON.stringify(D.products[idx]));
   else{ed={code:"",name:"",sub:D.subs[0].id,subs:[D.subs[0].id],short:"",long:"",price:null,stock:"in",featured:0,images:[],variants:[]};ed.code=nextCode()}
+  var rr=idx>=0?document.querySelector('#plist .pwrap[data-i="'+idx+'"]'):null;
+  if(!document.body.classList.contains("editing")||rr){listY=window.scrollY;rowOff=rr?rr.getBoundingClientRect().top:null;restoreIdx=idx}
   document.body.classList.add("editing");renderEditor();renderList();
-  $("#pedit").scrollIntoView({block:"start"});
+  if(window.matchMedia("(max-width:900px)").matches)$("#pedit").scrollIntoView({block:"start"});
 }
-function closeEditor(){ed=null;edIdx=-1;$("#pedit").hidden=true;document.body.classList.remove("editing");renderList()}
+function closeEditor(){var was=!!ed;ed=null;edIdx=-1;$("#pedit").hidden=true;document.body.classList.remove("editing");renderList();if(was)restoreList()}
 function renderEditor(){
   var box=$("#pedit");box.textContent="";box.hidden=false;
   var top=el("div",{class:"bar",style:"margin:0 0 12px;justify-content:space-between"},el("h2",{style:"font-size:18px",text:edIdx>=0?"Edit product":"New product"}),el("button",{class:"btn ghost sm",type:"button",text:"Back to list",onclick:closeEditor}));
@@ -331,6 +340,21 @@ function renderEditor(){
     sub.append(el("button",{type:"button",class:"tg"+(on?" on":""),"aria-pressed":on,text:(on?"✓ ":"+ ")+x.name,onclick:function(){
       if(on)ed.subs=ed.subs.filter(function(y){return y!==x.id});else ed.subs.push(x.id);ed.sub=ed.subs[0]||"";drawSubs();upd()}}))});};
   drawSubs();upd();
+  var nsIn=el("input",{type:"text",placeholder:"New sub category name",maxlength:"60","aria-label":"New sub category name"});
+  var nsCat=el("select",{"aria-label":"Show the new sub category in"});
+  var fillCatSel=function(){nsCat.textContent="";nsCat.append(el("option",{value:"",text:"Not in a category yet"}));
+    D.categories.forEach(function(c){nsCat.append(el("option",{value:c.id,text:"Show in: "+c.name}))});
+    var cs=catsOfP(ed.subs);nsCat.value=cs.length?cs[0].id:(D.categories[0]?D.categories[0].id:"")};
+  fillCatSel();
+  var addNewSub=function(){var v=nsIn.value.trim();if(!v)return;
+    var x=D.subs.find(function(y){return y.name.trim().toLowerCase()===v.toLowerCase()});
+    var isNew=!x;if(isNew){x={id:uid("s"),name:v};D.subs.push(x)}
+    var cid=nsCat.value;if(cid){var c=catById(cid);if(c&&c.subs.indexOf(x.id)<0)c.subs.push(x.id)}
+    if(ed.subs.indexOf(x.id)<0){ed.subs.push(x.id);ed.sub=ed.subs[0]}
+    nsIn.value="";drawSubs();upd();fillCatSel();persist();renderFilter();renderCats();
+    showMsg((isNew?"Added sub category "+x.name+" to the Categories tab and selected it for this product.":x.name+" already exists. Selected it for this product.")+" Press Save product.","ok")};
+  nsIn.onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();addNewSub()}};
+  var nsRow=el("div",{class:"nsrow"},nsIn,nsCat,el("button",{class:"btn ghost sm",type:"button",text:"+ Add sub category",onclick:addNewSub}));
   var sh=el("input",{id:"eshort",type:"text",maxlength:"200"});sh.value=ed.short;
   var lg=el("textarea",{id:"elong",rows:"12"});lg.value=ed.long;
   var pr=el("input",{id:"eprice",type:"text",inputmode:"decimal",placeholder:"Leave empty for Price on request"});pr.value=ed.price==null?"":String(ed.price);
@@ -352,7 +376,7 @@ function renderEditor(){
       D.products.splice(edIdx,1);prunePend();persist();closeEditor();showMsg("Product deleted. Press Publish to remove it from the website.","ok")}}
   box.append(top,fld("ename","Product name",name),
     el("div",{class:"g2"},fld("ecode","Product code",code,"Your internal code. Search finds it."),fld("estock","Stock",sk)),
-    el("div",{class:"f"},el("label",{text:"Sub categories (tap one or more)"}),sub,where),
+    el("div",{class:"f"},el("label",{text:"Sub categories (tap one or more)"}),sub,where,nsRow),
     fld("eshort","Short description",sh,"One line shown on the product card."),
     fld("elong","Full description",lg,"Shown on the product page. Leave a blank line between parts. Start lines with • for bullet points."),
     el("div",{class:"g2"},fld("eprice","Price (BDT)",pr),el("div",{class:"f"},el("label",{text:"Show on homepage"}),el("label",{class:"chk",style:"margin-top:8px"},ft,"Featured product"))),
