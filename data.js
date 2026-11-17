@@ -27,7 +27,8 @@ window.SHOP={
     "c1s2",
     "c1s3",
     "c1s4",
-    "c1s6"
+    "c1s6",
+    "sxnmns4"
    ]
   },
   {
@@ -48,7 +49,8 @@ window.SHOP={
    "image": "",
    "subs": [
     "c3s1",
-    "c3s2"
+    "c3s2",
+    "suxv0es"
    ]
   },
   {
@@ -97,7 +99,10 @@ window.SHOP={
    "name": "Weight scale/Digital Balance",
    "prefix": "BL",
    "image": "",
-   "subs": []
+   "subs": [
+    "susfg99",
+    "s8fyg6m"
+   ]
   }
  ],
  "products": [
@@ -1043,7 +1048,6 @@ window.SHOP={
   {
    "code": "CS-2681",
    "name": "Sodium Hydroxide Pellets 500g Merck India",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1055,12 +1059,12 @@ window.SHOP={
    "featured": 1,
    "images": [
     "images/cs-2681-1gscbh9q.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-4658",
    "name": "Calcium chloride 500gm merck germany",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1072,12 +1076,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-4658-sdsotiz6.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-7891",
    "name": "Sodium Chloride 500gm (Merck Germany)",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1089,12 +1093,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-7891-um47kkv1.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9975",
    "name": "Calcium carbonate 500gm Merck Germany",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1106,12 +1110,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-9975-bljfbmdj.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9042",
    "name": "Potassium Dichromate 500gm Merck Germany",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1123,12 +1127,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-9042-fbz55nt1.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-8226",
    "name": "Monocular Biological Compound Microscope L101",
-   "variants": [],
    "sub": "c2s3",
    "subs": [
     "c2s3"
@@ -1140,12 +1144,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-8226-65nxhp9e.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-4931",
    "name": "Economical Electric Binocular Microscope XSZ-107BN",
-   "variants": [],
    "sub": "sa3zbrq",
    "subs": [
     "sa3zbrq"
@@ -1157,12 +1161,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-4931-s4kfwf0z.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-1041",
    "name": "Thermometer 110 Degree Celsius (China)",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1174,12 +1178,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-1041-trc0juhp.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-2322",
    "name": "Thermometer 360 Degree Celsius (China)",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1191,12 +1195,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-2322-zjqdmw7s.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-2814",
    "name": "Zeal Thermometer 110C",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1208,12 +1212,12 @@ window.SHOP={
    "featured": 1,
    "images": [
     "images/cs-2814-dkn6wxp7.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-5706",
    "name": "Zeal Thermometer 360C",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1225,12 +1229,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-5706-f9yzxz5d.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-2606",
    "name": "SMART SENSOR PH828+ Digital pH Meter Waterproof",
-   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1"
@@ -1244,12 +1248,12 @@ window.SHOP={
     "images/cs-2606-45fkn0dm.jpg",
     "images/cs-2606-nmzk226b.jpg",
     "images/cs-2606-dk8qw3ty.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-8367",
    "name": "Smart Sensor AR8211+ Digital TDS Meter",
-   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2"
@@ -1263,12 +1267,12 @@ window.SHOP={
     "images/cs-8367-7dw9458v.jpg",
     "images/cs-8367-1kjkj73s.jpg",
     "images/cs-8367-5d5nq8ue.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-1188",
    "name": "Smart Sensor Digital Lux Meter AS813",
-   "variants": [],
    "sub": "c2s3",
    "subs": [
     "c2s3"
@@ -1282,12 +1286,12 @@ window.SHOP={
     "images/cs-1188-mz82aai5.jpg",
     "images/cs-1188-9ddfkbzw.jpg",
     "images/cs-1188-1ut0vdhx.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9032",
    "name": "Smart Sensor Humidity and Temperature Meter AS847 Probe Type",
-   "variants": [],
    "sub": "sn9636n",
    "subs": [
     "sn9636n"
@@ -1299,12 +1303,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-9032-dv5bnmnl.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-6148",
    "name": "Zeal Wet and Dry Hygrometer Alcohol Base",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1316,12 +1320,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-6148-vogvcof6.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-4444",
    "name": "Zeal PH1000 Digital Thermometer Hygrometer Min / Max Ideal for Greenhouse",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me",
@@ -1335,12 +1339,12 @@ window.SHOP={
    "images": [
     "images/cs-4444-7pdpn2s8.jpg",
     "images/cs-4444-ltpr04l2.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-7508",
    "name": "Lutron Dissolved Oxygen Meter DO-5509 Taiwan",
-   "variants": [],
    "sub": "c2s3",
    "subs": [
     "c2s3"
@@ -1353,12 +1357,12 @@ window.SHOP={
    "images": [
     "images/cs-7508-t5jdv68d.jpg",
     "images/cs-7508-2knrl7tl.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-5120",
    "name": "K-Type Digital Thermometer TES-1310 with Thermocouple",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1371,12 +1375,12 @@ window.SHOP={
    "images": [
     "images/cs-5120-n19969mx.jpg",
     "images/cs-5120-p6jf8b68.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-6696",
    "name": "UNI-T UT306s Infrared Thermometer(-50~500°C) (-58~932°F)",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1389,12 +1393,12 @@ window.SHOP={
    "images": [
     "images/cs-6696-aqjpjcq9.jpg",
     "images/cs-6696-3whbce5q.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-7166",
    "name": "Smart Sensor Infrared Thermometer AR320",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1407,12 +1411,12 @@ window.SHOP={
    "images": [
     "images/cs-7166-kjta7hse.jpg",
     "images/cs-7166-gghukg2e.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9414",
    "name": "Digital Kitchen Scale 10Kg SF-400 China",
-   "variants": [],
    "sub": "c2s3",
    "subs": [
     "c2s3"
@@ -1424,37 +1428,48 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-9414-mb39sjcd.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-2250",
    "name": "SF 400C Electronic Compact Scale",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "susfg99",
+   "subs": [
+    "susfg99"
+   ],
    "short": "SF-400C electronic compact scale.",
    "long": "Electronic compact scale for everyday weighing in the lab, workshop, kitchen or shop.\n\nSpecifications\n• Model: SF-400C\n• Type: electronic compact scale\n\nIn the box\n• SF-400C scale\n• Battery",
    "price": 1500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-2250-1m36nwq5.jpg"
+   ]
   },
   {
    "code": "CS-43125",
    "name": "Digital Counting Weight Scale M-ACS Series 0.1g to 6Kg",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s8fyg6m",
+   "subs": [
+    "s8fyg6m"
+   ],
    "short": "Digital counting scale, 0.1 g to 6 kg.",
    "long": "Digital counting scale that weighs and also counts identical small parts by weight. Useful for stores, packing and production counting.\n\nSpecifications\n• Type: digital counting scale\n• Capacity: up to 6 kg\n• Readability: 0.1 g\n• Series: M-ACS\n\nIn the box\n• Balance\n• Power adapter or battery\n• Instruction manual",
    "price": 6000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-43125-hhzkcz8p.jpg",
+    "images/cs-43125-694ex128.jpg"
+   ]
   },
   {
    "code": "CS-52717",
    "name": "pH Test Kit Hi-38058 - Range 4.0 - 10.0 pH",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -1464,73 +1479,100 @@ window.SHOP={
    "price": 9500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-52717-j0emn4rh.jpg",
+    "images/cs-52717-c6pfd6hw.jpg"
+   ]
   },
   {
    "code": "CS-35862",
    "name": "Iron Checker Reagent HI721-25 Hanna",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
    "short": "Hanna HI721-25 reagent set for the HI721 iron checker.",
    "long": "Replacement reagent set for the Hanna HI721 iron Checker HC. Used with the checker to measure iron in water samples.\n\nSpecifications\n• Type: reagent set for HI721 iron checker\n• Model: HI721-25\n• Number of tests: 25\n• Manufacturer: Hanna Instruments\n\nIn the box\n• Reagents for 25 iron tests",
    "price": 1500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-35862-6tb0y8d7.jpg",
+    "images/cs-35862-uvrlh9vr.jpg"
+   ]
   },
   {
    "code": "CS-41521",
    "name": "Free Chlorine Checker Reagents (25 Tests)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c1s3",
+   "subs": [
+    "c1s3"
+   ],
    "short": "Hanna reagents for free chlorine Checker HC, 25 tests.",
    "long": "Replacement reagent set for Hanna free chlorine Checker HC colorimeters. Each pack contains reagents for 25 tests.\n\nSpecifications\n• Type: reagent set for free chlorine checker\n• Number of tests: 25\n• Manufacturer: Hanna Instruments\n\nIn the box\n• Reagents for 25 free chlorine tests",
    "price": 1500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-41521-fzyryblk.jpg"
+   ]
   },
   {
    "code": "CS-35313",
    "name": "Potassium Chloride 500 gm Merck, Germany",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s1",
+   "subs": [
+    "c4s1"
+   ],
    "short": "Potassium chloride (KCl), 500 g pack.",
    "long": "Potassium chloride for laboratory use, including electrolyte and buffer preparation and general analysis. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Potassium chloride (KCl)\n• Pack size: 500 g\n• Brand: Merck\n• Origin: Germany\n\nIn the box\n• Potassium chloride (KCl), 500 g bottle",
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-35313-dc8r0d8k.jpg"
+   ]
   },
   {
    "code": "CS-25081",
    "name": "Digital Temperature and Humidity Meter HTC-1",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "shsdp0x",
+   "subs": [
+    "shsdp0x",
+    "seja7me"
+   ],
    "short": "HTC-1 digital temperature and humidity meter.",
    "long": "Compact digital meter showing room temperature and humidity on one display. Handy for laboratories, storerooms, offices and home use.\n\nSpecifications\n• Parameters: Temperature and humidity\n• Model: HTC-1\n• Display: digital LCD\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
    "price": 270,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-25081-oja78ex6.jpg",
+    "images/cs-25081-jtxk6gsr.jpg"
+   ]
   },
   {
    "code": "CS-48315",
    "name": "HTC-2 Temperature Humidity Digital Hygrometer with Clock",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "shsdp0x",
+   "subs": [
+    "shsdp0x",
+    "seja7me"
+   ],
    "short": "HTC-2 digital thermo-hygrometer with clock.",
    "long": "Digital hygrometer that shows temperature and humidity along with a clock. It can be placed on a table or hung on a wall.\n\nSpecifications\n• Parameters: Temperature, humidity and time\n• Model: HTC-2\n• Display: digital LCD with clock\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-48315-1bk18j12.jpg",
+    "images/cs-48315-vy0afkx6.jpg"
+   ]
   },
   {
    "code": "CS-72421",
@@ -1548,106 +1590,145 @@ window.SHOP={
   {
    "code": "CS-83124",
    "name": "Wood Thermometer for Room",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "Wooden-frame room thermometer.",
    "long": "Classic wooden-frame thermometer for reading room temperature. Simple, no battery needed.\n\nSpecifications\n• Type: room thermometer, wooden frame\n• Use: indoor temperature reading\n\nIn the box\n• Wood thermometer",
    "price": 120,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-83124-dckn9mhh.jpg",
+    "images/cs-83124-59e4boju.jpg"
+   ]
   },
   {
    "code": "CS-90128",
    "name": "Digital Pocket Scale MH-200 (0.01g–200g) Precision Balance",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sxnmns4",
+   "subs": [
+    "sxnmns4"
+   ],
    "short": "Pocket precision scale, 0.01 g to 200 g.",
-   "long": "Small pocket scale with 0.01 g readability for weighing small quantities such as chemicals, jewellery and herbs.\n\nSpecifications\n• Type: digital pocket scale\n• Capacity: 200 g\n• Readability: 0.01 g\n• Model: MH-200\n\nIn the box\n• Pocket scale\n• Battery\n• Instruction sheet",
+   "long": "Small pocket scale with 0.01 g readability for weighing small quantities such as chemicals, jewellery and herbs.\n\nSpecifications\n• Type: digital pocket scale\n• Capacity: 500 g\n• Readability: 0.01 g\n• Model: MH-500\n\nIn the box\n• Pocket scale\n• Battery\n• Instruction sheet",
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-90128-ohwkmq55.jpg",
+    "images/cs-90128-uvslyrk5.jpg",
+    "images/cs-90128-5ywnote5.jpg"
+   ]
   },
   {
    "code": "CS-41170",
    "name": "Family PH Meter Hanna (Copy)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s1",
+   "subs": [
+    "c2s1"
+   ],
    "short": "Pocket-size family pH meter.",
    "long": "Pocket pH meter for quick pH checks of water, aquariums and household samples. Easy to carry and simple to use.\n\nSpecifications\n• Parameter: pH\n• Type: pocket pH meter\n• Display: digital LCD\n\nIn the box\n• pH meter\n• Protective cap\n• Battery",
    "price": 1600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-41170-46r8pv4a.jpg",
+    "images/cs-41170-fajiawoy.jpg"
+   ]
   },
   {
    "code": "CS-29067",
    "name": "Family TDS Meter Hanna (Copy)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s2",
+   "subs": [
+    "c2s2"
+   ],
    "short": "Pocket-size family TDS meter.",
    "long": "Pocket TDS meter for quickly checking total dissolved solids in drinking water, aquariums and hydroponics.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Type: pocket TDS meter\n• Display: digital LCD\n\nIn the box\n• TDS meter\n• Protective cap\n• Battery",
    "price": 1800,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-29067-zoy9fy9p.jpg",
+    "images/cs-29067-rq2ve05x.jpg"
+   ]
   },
   {
    "code": "CS-82861",
    "name": "PH Meter (China)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s1",
+   "subs": [
+    "c2s1"
+   ],
    "short": "Pen-type digital pH meter.",
    "long": "Low-cost pen-type digital pH meter for quick pH checks of water and simple solutions.\n\nSpecifications\n• Parameter: pH\n• Type: pen-type digital pH meter\n• Origin: China\n\nIn the box\n• pH meter\n• Battery",
    "price": 650,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-82861-o5omv226.jpg"
+   ]
   },
   {
    "code": "CS-92660",
    "name": "TDS Meter (China)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s2",
+   "subs": [
+    "c2s2"
+   ],
    "short": "Pen-type digital TDS meter.",
    "long": "Pen-type digital TDS meter for checking total dissolved solids in drinking water and general water quality.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Type: pen-type digital TDS meter\n• Origin: China\n\nIn the box\n• TDS meter\n• Battery",
    "price": 700,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-92660-d3nnh41a.jpg"
+   ]
   },
   {
    "code": "CS-96654",
    "name": "5 in 1 Water Quality Tester for TDS, EC, pH, Salinity, Temp.",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s1",
+   "subs": [
+    "c2s1",
+    "c2s2"
+   ],
    "short": "5-in-1 water tester: TDS, EC, pH, salinity, temperature.",
    "long": "One pen-type tester that measures five water quality parameters. Good for drinking water, aquariums, pools and hydroponics.\n\nSpecifications\n• Parameters: TDS, EC, pH, salinity and temperature\n• Type: pen-type digital tester\n\nIn the box\n• 5-in-1 water quality tester\n• Battery\n• Instruction manual",
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-96654-1pxpu5ut.jpg",
+    "images/cs-96654-8elbp7ra.jpg"
+   ]
   },
   {
    "code": "CS-75617",
    "name": "TDS Meter",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s2",
+   "subs": [
+    "c2s2"
+   ],
    "short": "Digital TDS meter.",
    "long": "Digital TDS meter for checking total dissolved solids in water.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Type: digital TDS meter\n\nIn the box\n• TDS meter\n• Battery",
    "price": 400,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-75617-gqeee9c5.jpg"
+   ]
   },
   {
    "code": "CS-10318",
@@ -1756,15 +1837,20 @@ window.SHOP={
   {
    "code": "CS-33969",
    "name": "Digital Stick Thermometer",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "Digital stick (probe) thermometer.",
    "long": "Digital probe thermometer for quickly checking the temperature of food, liquids and samples.\n\nSpecifications\n• Type: digital stick thermometer\n• Display: digital LCD\n\nIn the box\n• Stick thermometer\n• Battery",
    "price": 300,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-33969-p3cliatx.jpg",
+    "images/cs-33969-hiztkd7b.jpg"
+   ]
   },
   {
    "code": "CS-53448",
@@ -2395,15 +2481,19 @@ window.SHOP={
   {
    "code": "CS-11676",
    "name": "Glass Test Tube for Laboratory Use (6 Inch x 25mm) Hard Glass",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "suxv0es",
+   "subs": [
+    "suxv0es"
+   ],
    "short": "Hard glass test tube, 6 inch x 25 mm.",
    "long": "Hard glass test tube for heating, reactions and general laboratory use.\n\nSpecifications\n• Size: 6 inch x 25 mm\n• Material: hard glass\n\nIn the box\n• Test tube",
    "price": 45,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-11676-1hn5i30f.jpg"
+   ]
   },
   {
    "code": "CS-14600",
@@ -2562,6 +2652,22 @@ window.SHOP={
   {
    "id": "shsdp0x",
    "name": "Temp&Humidity(Hygrometer)"
+  },
+  {
+   "id": "susfg99",
+   "name": "0.01gm-600gm"
+  },
+  {
+   "id": "s8fyg6m",
+   "name": "0.1gm-6kg(counting)"
+  },
+  {
+   "id": "suxv0es",
+   "name": "Test Tube"
+  },
+  {
+   "id": "sxnmns4",
+   "name": "Pocket Scale"
   }
  ]
 };
