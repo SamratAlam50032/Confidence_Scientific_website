@@ -1145,45 +1145,58 @@ window.SHOP={
   {
    "code": "CS-4931",
    "name": "Economical Electric Binocular Microscope XSZ-107BN",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sa3zbrq",
+   "subs": [
+    "sa3zbrq"
+   ],
    "short": "Binocular compound microscope with electric illumination, XSZ-107BN.",
    "long": "Economical binocular compound microscope with built-in electric illumination. Two eyepieces give comfortable viewing for longer sessions, which suits teaching, clinical and general laboratory use.\n\nSpecifications\n• Type: binocular compound microscope\n• Illumination: electric (built-in)\n• Model: XSZ-107BN\n• Use: laboratory, teaching and general slide observation\n\nIn the box\n• XSZ-107BN microscope\n• Dust cover\n• Power cord\n• Instruction sheet",
    "price": 20500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-4931-s4kfwf0z.jpg"
+   ]
   },
   {
    "code": "CS-1041",
    "name": "Thermometer 110 Degree Celsius (China)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "Laboratory glass thermometer, up to 110 °C.",
    "long": "Standard laboratory liquid-in-glass thermometer with a measuring range up to 110 °C. Used for general temperature checks in laboratories, classrooms and simple process work.\n\nSpecifications\n• Type: laboratory glass thermometer\n• Maximum range: 110 °C\n• Origin: China\n\nIn the box\n• Thermometer, 110 °C",
    "price": 110,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-1041-trc0juhp.jpg"
+   ]
   },
   {
    "code": "CS-2322",
    "name": "Thermometer 360 Degree Celsius (China)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "Laboratory glass thermometer, up to 360 °C.",
    "long": "Laboratory liquid-in-glass thermometer for high-temperature work with a measuring range up to 360 °C. Suitable for ovens, oil baths and other high-temperature checks.\n\nSpecifications\n• Type: laboratory glass thermometer\n• Maximum range: 360 °C\n• Origin: China\n\nIn the box\n• Thermometer, 360 °C",
    "price": 160,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-2322-zjqdmw7s.jpg"
+   ]
   },
   {
    "code": "CS-2814",
    "name": "Zeal Thermometer 110C",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1193,60 +1206,83 @@ window.SHOP={
    "price": 240,
    "stock": "in",
    "featured": 1,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-2814-dkn6wxp7.jpg"
+   ]
   },
   {
    "code": "CS-5706",
    "name": "Zeal Thermometer 360C",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "Zeal laboratory glass thermometer, up to 360 °C.",
    "long": "Zeal laboratory glass thermometer for high-temperature measurement up to 360 °C, suited to ovens, oil baths and other high-heat work.\n\nSpecifications\n• Type: laboratory glass thermometer\n• Maximum range: 360 °C\n• Brand: Zeal\n\nIn the box\n• Zeal thermometer, 360 °C",
    "price": 320,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-5706-f9yzxz5d.jpg"
+   ]
   },
   {
    "code": "CS-2606",
    "name": "SMART SENSOR PH828+ Digital pH Meter Waterproof",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s1",
+   "subs": [
+    "c2s1"
+   ],
    "short": "Smart Sensor PH828+ waterproof digital pH meter.",
    "long": "Handheld waterproof digital pH meter from Smart Sensor for quick pH checks of water, aquariums, food, soil solutions and laboratory samples.\n\nSpecifications\n• Parameter: pH\n• Model: PH828+\n• Waterproof body with digital display\n• Brand: Smart Sensor\n\nIn the box\n• PH828+ pH meter\n• Battery\n• Instruction manual",
    "price": 3500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-2606-45fkn0dm.jpg",
+    "images/cs-2606-nmzk226b.jpg",
+    "images/cs-2606-dk8qw3ty.jpg"
+   ]
   },
   {
    "code": "CS-8367",
    "name": "Smart Sensor AR8211+ Digital TDS Meter",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s2",
+   "subs": [
+    "c2s2"
+   ],
    "short": "Smart Sensor AR8211+ digital TDS meter.",
    "long": "Pen-type digital TDS meter from Smart Sensor for checking total dissolved solids in drinking water, aquariums, hydroponics and general water quality.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Model: AR8211+\n• Type: pen-type digital meter\n• Brand: Smart Sensor\n\nIn the box\n• AR8211+ TDS meter\n• Battery\n• Instruction manual",
    "price": 3500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-8367-7dw9458v.jpg",
+    "images/cs-8367-1kjkj73s.jpg",
+    "images/cs-8367-5d5nq8ue.jpg"
+   ]
   },
   {
    "code": "CS-1188",
    "name": "Smart Sensor Digital Lux Meter AS813",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "Smart Sensor AS813 digital lux meter for light measurement.",
    "long": "Handheld digital lux meter for measuring light intensity. Used to check lighting levels in offices, classrooms, laboratories, factories and greenhouses.\n\nSpecifications\n• Parameter: Illuminance (lux)\n• Model: AS813\n• Type: handheld digital meter\n• Brand: Smart Sensor\n\nIn the box\n• AS813 lux meter\n• Battery\n• Instruction manual",
    "price": 3000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-1188-mz82aai5.jpg",
+    "images/cs-1188-9ddfkbzw.jpg",
+    "images/cs-1188-1ut0vdhx.jpg"
+   ]
   },
   {
    "code": "CS-9032",
@@ -2489,6 +2525,14 @@ window.SHOP={
   {
    "id": "sa3zbrq",
    "name": "Microscope & Telescope"
+  },
+  {
+   "id": "s2psu6a",
+   "name": "Lux/Light meters"
+  },
+  {
+   "id": "sn9636n",
+   "name": "Smart Sensor"
   }
  ]
 };
