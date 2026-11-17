@@ -11,7 +11,10 @@ window.SHOP={
   ],
   "email": "confidencesci@gmail.com",
   "address": "34,Hatkhola Road ,Tikatuli , Dhaka-1203",
-  "map": ""
+  "map": "",
+  "tgToken": "",
+  "tgChat": "",
+  "w3Key": "38e17721-56e7-48a0-8f47-ac4b2fef87d4"
  },
  "categories": [
   {
@@ -525,7 +528,6 @@ window.SHOP={
   {
    "code": "HN-024",
    "name": "Hanna Iron Test Kit HI-3834 Romania",
-   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -535,7 +537,8 @@ window.SHOP={
    "price": 3499,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [],
+   "variants": []
   },
   {
    "code": "HN-025",
@@ -965,7 +968,6 @@ window.SHOP={
   {
    "code": "CS-2951",
    "name": "Total Hardness Test Kit for Water. HI-3812",
-   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -977,12 +979,12 @@ window.SHOP={
    "featured": 1,
    "images": [
     "images/cs-2951-6vmgucvf.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-6234",
    "name": "HI-98302 Pocket TDS Tester DiST-2 (0.00 to 10.00ppt)",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1",
@@ -996,12 +998,12 @@ window.SHOP={
    "images": [
     "images/cs-6234-z7j8cacj.jpg",
     "images/cs-6234-w6i7fbp2.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9233",
    "name": "Hanna Hi-98319 Salinity Meter",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -1014,12 +1016,12 @@ window.SHOP={
    "images": [
     "images/cs-9233-gic0oeas.jpg",
     "images/cs-9233-oadvafkt.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-9385",
    "name": "Hanna HI-98108 pHep+ pH Meter with Auto Calibration",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -1034,7 +1036,8 @@ window.SHOP={
     "images/cs-9385-6jtoqinn.jpg",
     "images/cs-9385-atlq7k1z.jpg",
     "images/cs-9385-v7ej1lil.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-2681",
