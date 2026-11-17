@@ -26,16 +26,7 @@ window.SHOP={
     "c1s1",
     "c1s2",
     "c1s3",
-    "c1s6",
-    "sp7hn9z",
-    "sbaxipc",
-    "s916j9x",
-    "s700fib",
-    "sqe8bzx",
-    "swurakr",
-    "sek48tp",
-    "sjad3r2",
-    "s7cmald"
+    "c1s6"
    ]
   },
   {
@@ -47,7 +38,10 @@ window.SHOP={
     "c2s1",
     "c2s2",
     "sycngbl",
-    "swxfygo"
+    "swxfygo",
+    "seja7me",
+    "sjad3r2",
+    "sx0h7dd"
    ]
   },
   {
@@ -58,8 +52,9 @@ window.SHOP={
    "subs": [
     "c3s1",
     "suxv0es",
-    "c3s2",
-    "sarg0tn"
+    "c16s2",
+    "sp7hn9z",
+    "sf4zcsj"
    ]
   },
   {
@@ -86,7 +81,23 @@ window.SHOP={
     "sx0h7dd",
     "sqe8bzx",
     "s916j9x",
-    "s700fib"
+    "s700fib",
+    "c2s1",
+    "c2s2",
+    "c3s1",
+    "sz7qw3t",
+    "sa3zbrq",
+    "shsdp0x",
+    "susfg99",
+    "suxv0es",
+    "sf4zcsj",
+    "sbaxipc",
+    "swurakr",
+    "sek48tp",
+    "sarg0tn",
+    "sp7hn9z",
+    "sqnvh0o",
+    "s1nowxi"
    ]
   },
   {
@@ -96,8 +107,11 @@ window.SHOP={
    "image": "",
    "subs": [
     "c2s1",
-    "svh8s6i",
-    "c1s4"
+    "c1s4",
+    "seja7me",
+    "sjad3r2",
+    "swxfygo",
+    "sx0h7dd"
    ]
   },
   {
@@ -108,20 +122,68 @@ window.SHOP={
    "subs": [
     "s2n9u18",
     "c16s2",
-    "c16s1",
     "sllqrmv",
     "szxirb6",
     "seja7me",
-    "sz7qw3t"
+    "sz7qw3t",
+    "sarg0tn",
+    "sp7hn9z",
+    "sf4zcsj"
    ]
   },
   {
    "id": "c16",
-   "name": "Other Meters & Accessories",
+   "name": "Research Lab Item",
    "prefix": "CS",
    "image": "",
    "subs": [
-    "sx0h7dd"
+    "sx0h7dd",
+    "sarg0tn",
+    "s7cmald",
+    "swurakr",
+    "sp7hn9z",
+    "sqnvh0o",
+    "s1nowxi",
+    "shsdp0x",
+    "s2psu6a",
+    "sa3zbrq",
+    "sz7qw3t",
+    "seja7me",
+    "c16s2",
+    "c3s1",
+    "c2s2",
+    "c2s1",
+    "c1s4",
+    "c2s3",
+    "sxnmns4",
+    "sycngbl",
+    "siwv6py",
+    "sf4zcsj",
+    "sypo0sw",
+    "ss4u9za"
+   ]
+  },
+  {
+   "id": "c8eplkt",
+   "name": "Industrial Lab Item",
+   "prefix": "CS",
+   "image": "",
+   "subs": [
+    "sarg0tn",
+    "swurakr",
+    "sp7hn9z",
+    "sqnvh0o",
+    "siwv6py",
+    "sf4zcsj",
+    "s1nowxi",
+    "sx0h7dd",
+    "susfg99",
+    "seja7me",
+    "sz7qw3t",
+    "c3s1",
+    "c2s1",
+    "c2s2",
+    "c16s2"
    ]
   },
   {
@@ -132,15 +194,9 @@ window.SHOP={
    "subs": [
     "susfg99",
     "s8fyg6m",
-    "sxnmns4"
+    "sxnmns4",
+    "shsdp0x"
    ]
-  },
-  {
-   "id": "c8eplkt",
-   "name": "Research Lab",
-   "prefix": "CS",
-   "image": "",
-   "subs": []
   }
  ],
  "products": [
@@ -2920,10 +2976,6 @@ window.SHOP={
    "name": "Glass items"
   },
   {
-   "id": "c3s2",
-   "name": "Measuring Wheels"
-  },
-  {
    "id": "c4s1",
    "name": "MERCK(Germany)"
   },
@@ -2938,10 +2990,6 @@ window.SHOP={
   {
    "id": "sf8t0p4",
    "name": "HIMEDIA(India)"
-  },
-  {
-   "id": "c16s1",
-   "name": "Stirrers"
   },
   {
    "id": "c16s2",
@@ -2978,10 +3026,6 @@ window.SHOP={
   {
    "id": "s2psu6a",
    "name": "Lux/Light meters"
-  },
-  {
-   "id": "sn9636n",
-   "name": "Smart Sensor"
   },
   {
    "id": "shsdp0x",
@@ -3030,10 +3074,6 @@ window.SHOP={
   {
    "id": "s1nowxi",
    "name": "Stop \\Watch"
-  },
-  {
-   "id": "svh8s6i",
-   "name": "Water Testing Products"
   },
   {
    "id": "ss4u9za",
