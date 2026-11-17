@@ -26,9 +26,7 @@ window.SHOP={
     "c1s1",
     "c1s2",
     "c1s3",
-    "c1s4",
-    "c1s6",
-    "sxnmns4"
+    "c1s6"
    ]
   },
   {
@@ -103,7 +101,8 @@ window.SHOP={
    "image": "",
    "subs": [
     "susfg99",
-    "s8fyg6m"
+    "s8fyg6m",
+    "sxnmns4"
    ]
   }
  ],
