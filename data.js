@@ -1287,28 +1287,36 @@ window.SHOP={
   {
    "code": "CS-9032",
    "name": "Smart Sensor Humidity and Temperature Meter AS847 Probe Type",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sn9636n",
+   "subs": [
+    "sn9636n"
+   ],
    "short": "Smart Sensor AS847 humidity and temperature meter with probe.",
    "long": "Handheld digital meter that measures relative humidity and temperature with a probe, for checking the environment in storerooms, laboratories, textile and production areas.\n\nSpecifications\n• Parameters: Humidity and temperature\n• Model: AS847\n• Type: handheld meter with probe\n• Brand: Smart Sensor\n\nIn the box\n• AS847 meter with probe\n• Battery\n• Instruction manual",
    "price": 4000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-9032-dv5bnmnl.jpg"
+   ]
   },
   {
    "code": "CS-6148",
    "name": "Zeal Wet and Dry Hygrometer Alcohol Base",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "seja7me",
+   "subs": [
+    "seja7me"
+   ],
    "short": "Zeal wet and dry bulb hygrometer, alcohol type.",
    "long": "Wet and dry bulb hygrometer with alcohol-filled thermometers. The temperature difference between the wet and dry bulbs is used with the chart to find relative humidity, a classic method for laboratories, textile units and stores.\n\nSpecifications\n• Type: wet and dry bulb hygrometer\n• Liquid: alcohol based\n• Brand: Zeal\n\nIn the box\n• Zeal wet and dry hygrometer",
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-6148-vogvcof6.jpg"
+   ]
   },
   {
    "code": "CS-4444",
@@ -2533,6 +2541,10 @@ window.SHOP={
   {
    "id": "sn9636n",
    "name": "Smart Sensor"
+  },
+  {
+   "id": "shsdp0x",
+   "name": "Temp&Humidity(Hygrometer)"
   }
  ]
 };
