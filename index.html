@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Confidence Scientific</title>
-<script>try{history.scrollRestoration="manual"}catch(e){}</script>
+<script>try{history.scrollRestoration="manual"}catch(e){}
+try{if(location.hash&&!/^#\/p\//.test(location.hash))history.replaceState(null,"",location.pathname+location.search)}catch(e){}</script>
 <style>:root{color-scheme:light}[hidden]{display:none!important}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}</style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap">
@@ -560,12 +561,16 @@ function route(){const m=/^#\/p\/(.+)$/.exec(location.hash),p=m&&P.find(x=>x[6]=
   home.hidden=true;pv.hidden=false;renderProd(p);drawRelated(p);document.title=p[0]+" | "+(S.name||"Shop");window.scrollTo(0,0)}
 window.addEventListener("hashchange",route);
 $("#seeall").onclick=e=>{e.preventDefault();go(-1,-1)};
+document.querySelectorAll('a[href="#categories"],a[href="#contact"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();showHome(false);const t=document.getElementById(a.getAttribute("href").slice(1));if(t)t.scrollIntoView({behavior:"smooth"})}));
 $("#pback").onclick=()=>{if(fromSite&&history.length>1)history.back();else location.hash=""};
 route();
-if(!location.hash){let moved=false;["touchstart","wheel","keydown","mousedown"].forEach(ev=>window.addEventListener(ev,()=>{moved=true},{once:true,passive:true}));
-  const top=()=>{if(!moved&&pv.hidden&&!location.hash)window.scrollTo(0,0)};
-  top();requestAnimationFrame(top);[50,200,500,1000,2000].forEach(t=>setTimeout(top,t));
-  window.addEventListener("load",top,{once:true});window.addEventListener("pageshow",e=>{if(!e.persisted)top()})}
+if(!location.hash){let moved=false;const stop=()=>{moved=true};
+  ["touchstart","pointerdown","wheel","keydown","mousedown"].forEach(ev=>window.addEventListener(ev,stop,{once:true,passive:true}));
+  const top=()=>{if(!moved&&pv.hidden&&!location.hash&&window.scrollY>0)window.scrollTo(0,0)};
+  const guard=ms=>{window.addEventListener("scroll",top,{passive:true});setTimeout(()=>window.removeEventListener("scroll",top),ms)};
+  top();requestAnimationFrame(top);guard(4000);[50,200,500,1000,2000].forEach(t=>setTimeout(top,t));
+  window.addEventListener("load",top,{once:true});
+  window.addEventListener("pageshow",e=>{if(e.persisted){moved=false;guard(3000)}top()})}
 </script>
 
 </body>
