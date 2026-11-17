@@ -26,7 +26,13 @@ window.SHOP={
     "c1s1",
     "c1s2",
     "c1s3",
-    "c1s6"
+    "c1s6",
+    "sycngbl",
+    "sypo0sw",
+    "siwv6py",
+    "sf4zcsj",
+    "sqnvh0o",
+    "s1nowxi"
    ]
   },
   {
@@ -1734,93 +1740,127 @@ window.SHOP={
   {
    "code": "CS-10318",
    "name": "Parafilm PM 996 Multipurpose Laboratory Film",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s2n9u18",
+   "subs": [
+    "s2n9u18"
+   ],
    "short": "Parafilm M laboratory sealing film, PM-996.",
    "long": "Flexible, self-sealing, moisture-resistant laboratory film for sealing flasks, beakers, tubes and plates, and for protecting samples from contamination and evaporation.\n\nSpecifications\n• Type: laboratory sealing film (Parafilm M)\n• Model: PM-996\n• Use: sealing and protecting laboratory containers\n\nIn the box\n• Parafilm roll with dispenser box",
    "price": 3200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-10318-fs7mkpnz.jpg",
+    "images/cs-10318-5qvuprmi.jpg"
+   ]
   },
   {
    "code": "CS-46692",
    "name": "Lutron DO Meter PDO-519 Dissolved Oxygen Meter",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sycngbl",
+   "subs": [
+    "sycngbl"
+   ],
    "short": "Lutron PDO-519 pen-type dissolved oxygen meter.",
    "long": "Pen-type dissolved oxygen meter from Lutron for checking DO in water. Handy for aquaculture, wastewater and environmental work.\n\nSpecifications\n• Parameter: Dissolved oxygen\n• Model: PDO-519\n• Brand: Lutron\n• Type: pen-type meter\n\nIn the box\n• PDO-519 meter\n• Battery\n• Instruction manual",
    "price": 18500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-46692-43aaetdj.jpg",
+    "images/cs-46692-2nopvv52.jpg"
+   ]
   },
   {
    "code": "CS-13716",
    "name": "Turbidity Meter-Lutron TU-2016 Made in Taiwan",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c2s3",
+   "subs": [
+    "c2s3"
+   ],
    "short": "Lutron TU-2016 portable turbidity meter, made in Taiwan.",
    "long": "Portable turbidity meter from Lutron for measuring the cloudiness of water. Used in drinking water, wastewater, industry and environmental checks.\n\nSpecifications\n• Parameter: Turbidity\n• Model: TU-2016\n• Brand: Lutron\n• Origin: Taiwan\n\nIn the box\n• TU-2016 turbidity meter\n• Sample cuvettes\n• Carrying case\n• Instruction manual",
    "price": 48000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-13716-96yi5y90.jpg",
+    "images/cs-13716-flclzwmh.jpg"
+   ]
   },
   {
    "code": "CS-75162",
    "name": "Grain Moisture Meter GMK-303RS, Korea for Accurate Moisture Measurement",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sypo0sw",
+   "subs": [
+    "sypo0sw"
+   ],
    "short": "GMK-303RS grain moisture meter, Korea.",
    "long": "Portable moisture meter for grains such as rice, wheat and maize. A quick check of moisture content helps with harvesting, drying, storage and trading.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: GMK-303RS\n• Origin: Korea\n• Type: portable moisture meter\n\nIn the box\n• GMK-303RS moisture meter\n• Battery\n• Instruction manual",
    "price": 31000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-75162-af42e06z.jpg"
+   ]
   },
   {
    "code": "CS-32633",
    "name": "Portable Honey Refractometer Brix 58-90% ATC",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "siwv6py",
+   "subs": [
+    "siwv6py"
+   ],
    "short": "Handheld honey refractometer, 58-90% Brix, ATC.",
    "long": "Handheld refractometer for measuring the sugar level (Brix) of honey. Automatic temperature compensation (ATC) keeps the readings reliable.\n\nSpecifications\n• Parameter: Brix of honey\n• Range: 58 to 90% Brix\n• Automatic temperature compensation (ATC)\n\nIn the box\n• Refractometer\n• Pipette\n• Screwdriver\n• Carrying case",
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-32633-53gwm1qw.jpg",
+    "images/cs-32633-fwr4pcwj.jpg"
+   ]
   },
   {
    "code": "CS-35064",
    "name": "Portable Refractometer for Juice, Chemicals 0-90% Brix",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "siwv6py",
+   "subs": [
+    "siwv6py"
+   ],
    "short": "Handheld Brix refractometer, 0-90% Brix.",
    "long": "Handheld refractometer for measuring Brix in juice, syrup and other liquids such as chemical solutions.\n\nSpecifications\n• Parameter: Brix\n• Range: 0 to 90% Brix\n• Type: handheld optical refractometer\n\nIn the box\n• Refractometer\n• Pipette\n• Screwdriver\n• Carrying case",
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-35064-4cwfn3c8.jpg",
+    "images/cs-35064-ymrzs5bl.jpg"
+   ]
   },
   {
    "code": "CS-76494",
    "name": "ATC Portable Salinity Refractometer 0-100 ppt (0-100%)",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "siwv6py",
+   "subs": [
+    "siwv6py"
+   ],
    "short": "Handheld salinity refractometer, 0-100 ppt, ATC.",
    "long": "Handheld refractometer for checking salinity of seawater, brine and aquaculture water. Automatic temperature compensation (ATC) keeps the readings reliable.\n\nSpecifications\n• Parameter: Salinity\n• Range: 0 to 100 ppt (0 to 100%)\n• Automatic temperature compensation (ATC)\n\nIn the box\n• Refractometer\n• Pipette\n• Screwdriver\n• Carrying case",
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-76494-eoxsk70f.jpg",
+    "images/cs-76494-unscs8t2.jpg"
+   ]
   },
   {
    "code": "CS-60928",
@@ -1869,15 +1909,20 @@ window.SHOP={
   {
    "code": "CS-52137",
    "name": "Mini Magnetic Stirrer C1 Adjustable Stirrer 3L",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sf4zcsj",
+   "subs": [
+    "sf4zcsj"
+   ],
    "short": "Mini magnetic stirrer C1 with adjustable speed, 3 L.",
    "long": "Compact magnetic stirrer with adjustable speed for mixing solutions in the laboratory. Suitable for small to medium beakers.\n\nSpecifications\n• Type: mini magnetic stirrer\n• Model: C1\n• Capacity: up to 3 L\n• Speed: adjustable\n\nIn the box\n• Mini magnetic stirrer\n• Stir bar\n• Power adapter",
    "price": 2500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-52137-ieb2hgtq.jpg",
+    "images/cs-52137-j73vpiku.jpg"
+   ]
   },
   {
    "code": "CS-25375",
@@ -1981,15 +2026,19 @@ window.SHOP={
   {
    "code": "CS-71559",
    "name": "Copper Sulfate Pentahydrate, 500gm Merck, India",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "se65abx",
+   "subs": [
+    "se65abx"
+   ],
    "short": "Copper sulfate pentahydrate, 500 g pack.",
    "long": "Copper sulfate pentahydrate for laboratory use, including reagent preparation and school and college experiments. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Copper sulfate pentahydrate\n• Pack size: 500 g\n• Brand: Merck\n• Origin: India\n\nIn the box\n• Copper sulfate pentahydrate, 500 g bottle",
    "price": 650,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-71559-de3op6of.jpg"
+   ]
   },
   {
    "code": "CS-36866",
@@ -2007,28 +2056,36 @@ window.SHOP={
   {
    "code": "CS-39569",
    "name": "Sodium Thiosulfate Extra Pure 500gm Research Lab",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Sodium thiosulfate, 500 g pack.",
    "long": "Sodium thiosulfate, extra pure, used in iodometric titrations and for dechlorination in the laboratory. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Sodium thiosulfate\n• Pack size: 500 g\n• Brand: Research Lab\n• Grade: extra pure\n\nIn the box\n• Sodium thiosulfate, 500 g bottle",
    "price": 800,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-39569-unzql8iv.jpg"
+   ]
   },
   {
    "code": "CS-35124",
    "name": "Ferric Chloride Anhydrous 500g Research Lab",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Ferric chloride, anhydrous, 500 g pack.",
    "long": "Anhydrous ferric chloride for laboratory use as a reagent and coagulant in experiments. Corrosive and moisture-sensitive. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Ferric chloride, anhydrous\n• Pack size: 500 g\n• Brand: Research Lab\n\nIn the box\n• Ferric chloride, anhydrous, 500 g bottle",
    "price": 1400,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-35124-jb43ea0x.jpg"
+   ]
   },
   {
    "code": "CS-19421",
@@ -2046,106 +2103,138 @@ window.SHOP={
   {
    "code": "CS-20610",
    "name": "Titanium Dioxide AR 500g Research Lab",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Titanium dioxide (TiO2), 500 g pack.",
    "long": "Titanium dioxide, AR grade, for laboratory use in research, catalysis and general analysis. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Titanium dioxide (TiO2)\n• Pack size: 500 g\n• Brand: Research Lab\n• Grade: AR\n\nIn the box\n• Titanium dioxide (TiO2), 500 g bottle",
    "price": 1400,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-20610-78j72buo.jpg"
+   ]
   },
   {
    "code": "CS-36231",
    "name": "Sodium Phosphate Dibasic Anhydrous 500g Research Lab",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Sodium phosphate dibasic, anhydrous, 500 g pack.",
    "long": "Anhydrous disodium hydrogen phosphate for buffer preparation and general laboratory use. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Sodium phosphate dibasic, anhydrous\n• Pack size: 500 g\n• Brand: Research Lab\n\nIn the box\n• Sodium phosphate dibasic, anhydrous, 500 g bottle",
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-36231-tq535dj8.jpg"
+   ]
   },
   {
    "code": "CS-83413",
    "name": "Eriochrome Black-T AR 25g Research Lab",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Eriochrome Black-T, 25 g pack.",
    "long": "Eriochrome Black-T, AR grade, the metal indicator used in EDTA titrations for water hardness. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Eriochrome Black-T\n• Pack size: 25 g\n• Brand: Research Lab\n• Grade: AR\n\nIn the box\n• Eriochrome Black-T, 25 g bottle",
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-83413-sw6p6fdm.jpg"
+   ]
   },
   {
    "code": "CS-67362",
    "name": "Ammonia Buffer Solution 500mL Research Lab",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Ammonia buffer solution, 500 mL pack.",
    "long": "Ammonia buffer solution for use in complexometric (EDTA) titrations such as water hardness. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Ammonia buffer solution\n• Pack size: 500 mL\n• Brand: Research Lab\n\nIn the box\n• Ammonia buffer solution, 500 mL bottle",
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-67362-a09t9hec.jpg"
+   ]
   },
   {
    "code": "CS-88029",
    "name": "Phenolphthalein Indicator 25g Powder RL",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Phenolphthalein indicator powder, 25 g pack.",
    "long": "Phenolphthalein indicator powder for acid-base titrations. Dissolve in the solvent required for your method. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Phenolphthalein indicator powder\n• Pack size: 25 g\n• Brand: Research Lab\n\nIn the box\n• Phenolphthalein indicator powder, 25 g bottle",
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-88029-uvqe0ixt.jpg"
+   ]
   },
   {
    "code": "CS-80614",
    "name": "L-Histidine Monohydrochloride 25g RL",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "L-Histidine monohydrochloride, 25 g pack.",
    "long": "L-Histidine monohydrochloride for laboratory and research use, including biochemical and buffer work. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: L-Histidine monohydrochloride\n• Pack size: 25 g\n• Brand: Research Lab\n\nIn the box\n• L-Histidine monohydrochloride, 25 g bottle",
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-80614-cd8jzkpq.jpg"
+   ]
   },
   {
    "code": "CS-20000",
    "name": "Potassium Hydroxide Pellets 500g ResearchLab India",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Potassium hydroxide (KOH) pellets, 500 g pack.",
    "long": "Potassium hydroxide pellets for laboratory use in titrations and solution preparation. A strong corrosive base. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Potassium hydroxide (KOH) pellets\n• Pack size: 500 g\n• Brand: Research Lab\n• Origin: India\n\nIn the box\n• Potassium hydroxide (KOH) pellets, 500 g bottle",
    "price": 1000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-20000-la8s7mdq.jpg"
+   ]
   },
   {
    "code": "CS-23086",
    "name": "Potassium Chromate 500g 99.5% AR Research Lab",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "c4s2",
+   "subs": [
+    "c4s2"
+   ],
    "short": "Potassium chromate (K2CrO4), 500 g pack.",
    "long": "Potassium chromate, AR grade, used as an indicator in chloride titrations. Toxic – handle with care. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Potassium chromate (K2CrO4)\n• Pack size: 500 g\n• Brand: Research Lab\n• Purity: 99.5%\n• Grade: AR\n\nIn the box\n• Potassium chromate (K2CrO4), 500 g bottle",
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-23086-x3a8so0s.jpg"
+   ]
   },
   {
    "code": "CS-37792",
@@ -2243,41 +2332,56 @@ window.SHOP={
   {
    "code": "CS-80513",
    "name": "Stop Watch Digital",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "s1nowxi",
+   "subs": [
+    "s1nowxi"
+   ],
    "short": "Digital stopwatch.",
    "long": "Digital stopwatch for timing experiments, sports and daily use.\n\nSpecifications\n• Type: digital stopwatch\n• Display: digital LCD\n\nIn the box\n• Stopwatch\n• Battery",
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-80513-sjdrcphm.jpg",
+    "images/cs-80513-ws3f5r1u.jpg"
+   ]
   },
   {
    "code": "CS-23956",
    "name": "Screw Gauge or Micrometer 25 mm China",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sqnvh0o",
+   "subs": [
+    "sqnvh0o"
+   ],
    "short": "Screw gauge (micrometer), 25 mm.",
    "long": "Screw gauge for precise measurement of the thickness of wires, sheets and small objects. Commonly used in physics laboratories.\n\nSpecifications\n• Range: 0 to 25 mm\n• Type: mechanical micrometer screw gauge\n• Origin: China\n\nIn the box\n• Screw gauge",
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-23956-pm0l9lbq.jpg",
+    "images/cs-23956-dhkw6n7a.jpg"
+   ]
   },
   {
    "code": "CS-45641",
    "name": "Digital Micrometer 0-25mm With Large Display",
-   "sub": "",
-   "subs": [],
+   "variants": [],
+   "sub": "sqnvh0o",
+   "subs": [
+    "sqnvh0o"
+   ],
    "short": "Digital micrometer, 0-25 mm, large display.",
    "long": "Digital micrometer with a large display for easy reading of thickness and diameter measurements.\n\nSpecifications\n• Range: 0 to 25 mm\n• Type: digital micrometer\n• Display: large digital LCD\n\nIn the box\n• Digital micrometer\n• Battery",
    "price": 4000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-45641-jepkisxk.jpg",
+    "images/cs-45641-1abm6uif.jpg"
+   ]
   },
   {
    "code": "CS-68295",
@@ -2707,6 +2811,30 @@ window.SHOP={
   {
    "id": "sx0h7dd",
    "name": "Hand Gloves"
+  },
+  {
+   "id": "sycngbl",
+   "name": "Dissolved Oxygen Meter"
+  },
+  {
+   "id": "sypo0sw",
+   "name": "Grain Moisture Meter"
+  },
+  {
+   "id": "siwv6py",
+   "name": "Refractometer"
+  },
+  {
+   "id": "sf4zcsj",
+   "name": "Magnetic Stirrer"
+  },
+  {
+   "id": "sqnvh0o",
+   "name": "Thickness & Screw Gauge"
+  },
+  {
+   "id": "s1nowxi",
+   "name": "Stop \\Watch"
   }
  ]
 };
