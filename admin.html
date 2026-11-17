@@ -145,7 +145,15 @@ body.editing .pmv{display:none}
       <div class="f"><label for="swa">WhatsApp number</label><input id="swa" type="text" placeholder="01XXXXXXXXX"><small id="swahint">Orders from Buy now are sent to this number.</small></div>
       <div class="f"><label for="sphones">Phone numbers</label><input id="sphones" type="text" placeholder="01XXXXXXXXX, 01XXXXXXXXX"><small>Separate with commas.</small></div>
       <div class="g2"><div class="f"><label for="semail">Email</label><input id="semail" type="text" placeholder="name@example.com"></div><div class="f"><label for="saddr">Address</label><input id="saddr" type="text"></div></div>
-      <div class="f"><label for="scb">WhatsApp order alert key (optional)</label><input id="scb" type="text" placeholder="e.g. 1234567" autocomplete="off"><small>If you add the key, a customer's order goes to your WhatsApp automatically and the customer sees "Your order has been placed". Without it, the customer must tap Send on WhatsApp. How to get the key: save +34 644 44 21 48 in your phone as CallMeBot, send it this WhatsApp message from your shop number: I allow callmebot to send me messages. It replies with your key. Check the number on callmebot.com first, it can change.</small></div>
+      <div class="card" style="background:var(--bg);margin:6px 0 14px">
+        <h3 style="font-size:16px;margin-bottom:6px">Order alerts (optional)</h3>
+        <p class="hint" style="margin:0 0 10px">When a customer presses Place order, the order is sent to you automatically and the customer sees "Your order has been placed". Fill Telegram, Email, or both. If you leave both empty, the customer must tap Send on WhatsApp.</p>
+        <div class="f"><label for="stgt">Telegram bot token</label><input id="stgt" type="text" placeholder="123456789:AAH..." autocomplete="off"><small>In Telegram open @BotFather, send /newbot, choose a name, then copy the token it gives you.</small></div>
+        <div class="f"><label for="stgc">Telegram chat ID</label><input id="stgc" type="text" placeholder="Press Find my chat ID" autocomplete="off"><small>Open your new bot in Telegram, press Start and send "hi". Then press the button.</small></div>
+        <div class="bar" style="margin:0 0 12px"><button class="btn ghost sm" id="stgfind" type="button">Find my chat ID</button></div>
+        <div class="f"><label for="sw3">Email alert key (Web3Forms)</label><input id="sw3" type="text" placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" autocomplete="off"><small>Go to web3forms.com, enter your Gmail address, and they email you an Access Key. Paste it here. Orders then arrive in that Gmail.</small></div>
+        <div class="bar" style="margin:0"><button class="btn ghost sm" id="salert" type="button">Send a test alert</button></div>
+      </div>
       <div class="f"><label for="smap">Map link (optional)</label><input id="smap" type="text" placeholder="https://maps.app.goo.gl/..." inputmode="url"><small>Open Google Maps, search your shop, press Share, Copy link, then paste it here. The website will show a View on map button.</small></div>
       <button class="btn" id="saveshop" type="button">Save shop info</button>
     </div>
@@ -205,7 +213,7 @@ function migrate(d){
   d.subs=subs;return d}
 function normalise(d){
   d=migrate(d)||{};
-  d.settings=Object.assign({name:"",tagline:"",headline:"",intro:"",whatsapp:"",phones:[],email:"",address:"",map:"",cbKey:""},d.settings||{});
+  d.settings=Object.assign({name:"",tagline:"",headline:"",intro:"",whatsapp:"",phones:[],email:"",address:"",map:"",tgToken:"",tgChat:"",w3Key:""},d.settings||{});
   d.subs=(d.subs||[]).map(function(x){return {id:x.id||uid("s"),name:x.name||""}});
   d.categories=(d.categories||[]).map(function(c){var seen={};return {id:c.id||uid("c"),name:c.name||"",prefix:c.prefix||"CS",image:c.image||"",subs:(c.subs||[]).filter(function(x){if(seen[x])return false;seen[x]=1;return true})}});
   d.products=(d.products||[]).map(function(p){var sl=(p.subs&&p.subs.length?p.subs:(p.sub?[p.sub]:[])).filter(function(x,i,a){return a.indexOf(x)===i});return {code:p.code||"",name:p.name||"",sub:sl[0]||"",subs:sl,short:p.short||"",long:p.long||"",price:p.price==null?null:p.price,stock:p.stock||"in",featured:p.featured?1:0,images:p.images||[],variants:(p.variants||[]).map(function(v){return {name:v.name||"",price:(v.price==null||v.price==="")?null:v.price,images:v.images||[]}})}});
@@ -468,11 +476,26 @@ $("#newcat").onkeydown=function(e){if(e.key==="Enter"){e.preventDefault();$("#ad
 /* ---------- shop info ---------- */
 function normWA(v){var d=String(v).replace(/\D/g,"");if(/^01\d{9}$/.test(d))d="88"+d;return d}
 function fillShop(){var s=D.settings,v=function(id,x){$("#"+id).value=x||""};
-  v("sname",s.name);v("stag",s.tagline);v("shead",s.headline);v("sintro",s.intro);v("swa",s.whatsapp?(s.whatsapp.indexOf("880")===0?"0"+s.whatsapp.slice(3):s.whatsapp):"");v("sphones",(s.phones||[]).join(", "));v("semail",s.email);v("saddr",s.address);v("smap",s.map);v("scb",s.cbKey)}
+  v("sname",s.name);v("stag",s.tagline);v("shead",s.headline);v("sintro",s.intro);v("swa",s.whatsapp?(s.whatsapp.indexOf("880")===0?"0"+s.whatsapp.slice(3):s.whatsapp):"");v("sphones",(s.phones||[]).join(", "));v("semail",s.email);v("saddr",s.address);v("smap",s.map);v("stgt",s.tgToken);v("stgc",s.tgChat);v("sw3",s.w3Key)}
+$("#stgfind").onclick=async function(){var t=$("#stgt").value.trim();
+  if(!/^\d+:[\w-]+$/.test(t)){showMsg("Paste the Telegram bot token first.","bad");return}
+  showMsg("Looking for your chat...","info");
+  try{var r=await fetch("https://api.telegram.org/bot"+t+"/getUpdates"),j=await r.json();
+    if(!j.ok)throw 0;var id=null;(j.result||[]).forEach(function(u){var m=u.message||u.edited_message||u.channel_post;if(m&&m.chat)id=m.chat.id});
+    if(id==null){showMsg("No message found. Open your bot in Telegram, press Start, send hi, then press this button again.","bad");return}
+    $("#stgc").value=String(id);showMsg("Found your chat ID. Press Save shop info.","ok")}
+  catch(e){showMsg("Telegram did not accept this token. Copy it again from BotFather.","bad")}};
+$("#salert").onclick=async function(){var t=$("#stgt").value.trim(),c=$("#stgc").value.trim(),k=$("#sw3").value.trim(),out=[];
+  if(!(t&&c)&&!k){showMsg("Fill Telegram or the email key first.","bad");return}
+  showMsg("Sending test...","info");
+  if(t&&c){try{var r=await fetch("https://api.telegram.org/bot"+t+"/sendMessage",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:c,text:"Test alert from your shop admin. Telegram works."})}),j=await r.json();out.push(j.ok?"Telegram: sent":"Telegram: failed")}catch(e){out.push("Telegram: failed")}}
+  if(k){try{var r2=await fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({access_key:k,subject:"Test alert from your shop admin",from_name:"Shop admin",message:"Test alert. Email works."})}),j2=await r2.json();out.push(j2.success?"Email: sent":"Email: failed ("+(j2.message||"check the key")+")")}catch(e){out.push("Email: failed")}}
+  showMsg(out.join(". ")+". Check your Telegram and Gmail.",out.every(function(x){return /sent$/.test(x)})?"ok":"bad")};
 $("#saveshop").onclick=function(){var g=function(id){return $("#"+id).value.trim()},s=D.settings;
+  if(g("stgt")&&!/^\d+:[\w-]+$/.test(g("stgt"))){showMsg("The Telegram bot token looks wrong. Copy it again from BotFather.","bad");return}
   if(g("smap")&&!/^https?:\/\//i.test(g("smap"))){showMsg("The map link must start with https://","bad");return}
   s.name=g("sname");s.tagline=g("stag");s.headline=g("shead");s.intro=g("sintro");s.whatsapp=normWA(g("swa"));
-  s.phones=g("sphones").split(/[,\n]/).map(function(x){return x.trim()}).filter(Boolean);s.email=g("semail");s.address=g("saddr");s.map=g("smap");s.cbKey=g("scb").replace(/[^A-Za-z0-9]/g,"");
+  s.phones=g("sphones").split(/[,\n]/).map(function(x){return x.trim()}).filter(Boolean);s.email=g("semail");s.address=g("saddr");s.map=g("smap");s.tgToken=g("stgt");s.tgChat=g("stgc");s.w3Key=g("sw3");
   persist();showMsg("Shop info saved. Press Publish to update the website.","ok")};
 
 /* ---------- GitHub ---------- */

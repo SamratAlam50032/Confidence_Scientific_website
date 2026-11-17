@@ -450,7 +450,7 @@ $("#cclose").onclick=()=>$("#contactModal").hidden=true;
 $("#cmailcopy").onclick=async()=>{const t=$("#cmail").textContent;try{await navigator.clipboard.writeText(t);$("#cmailcopy").textContent="Copied"}catch(e){const r=document.createRange();r.selectNodeContents($("#cmail"));const sl=getSelection();sl.removeAllRanges();sl.addRange(r);$("#cmailcopy").textContent="Selected, now copy"}setTimeout(()=>$("#cmailcopy").textContent="Copy email",1800)};
 let curP=null;
 function openOrder(p,v){curP=p;curVr=v||null;$("#osum").innerHTML="<b></b><span></span>";$("#osum b").textContent=p[0]+(v?" ("+v.name+")":"");$("#osum span").textContent="Code: "+p[6]+"  |  "+(v&&v.price?pt(v.price):priceTxt(p));
-  $("#oform").hidden=false;$("#odone").hidden=true;$("#oplaced").hidden=true;$("#ofail").hidden=true;$("#oerr").hidden=true;const sb=$("#oform button[type=submit]");sb.disabled=false;sb.textContent=S.cbKey?"Place order":"Review order";$("#orderModal").hidden=false;$("#oname").focus()}
+  $("#oform").hidden=false;$("#odone").hidden=true;$("#oplaced").hidden=true;$("#ofail").hidden=true;$("#oerr").hidden=true;const sb=$("#oform button[type=submit]");sb.disabled=false;sb.textContent=hasAuto()?"Place order":"Review order";$("#orderModal").hidden=false;$("#oname").focus()}
 $("#oclose").onclick=()=>$("#orderModal").hidden=true;
 $("#ocontact").onclick=()=>{$("#orderModal").hidden=true;openContact()};
 $("#oform").addEventListener("submit",e=>{e.preventDefault();
@@ -459,12 +459,16 @@ $("#oform").addEventListener("submit",e=>{e.preventDefault();
   else if(!v("oaddr"))m="Enter your address.";else if(!v("odist"))m="Select your district.";else if(!v("othana"))m="Enter your thana or upazila.";
   const er=$("#oerr");if(m){er.textContent=m;er.hidden=false;return}er.hidden=true;
   const txt="New order for "+SHOP+"\n\nProduct: "+curP[0]+(curVr?"\nSize/Option: "+curVr.name:"")+"\nCode: "+curP[6]+"\nQuantity: "+qn+"\n\nName: "+v("oname")+"\nPhone: "+ph+"\nAddress: "+v("oaddr")+"\nThana/Upazila: "+v("othana")+"\nDistrict: "+v("odist");
-  $("#omsg").value=txt;$("#osend").href="https://wa.me/"+WA+"?text="+encodeURIComponent(txt);$("#osend").hidden=!WA;if(S.cbKey){placeAuto(txt,qn);return}$("#oform").hidden=true;$("#odone").hidden=false});
+  $("#omsg").value=txt;$("#osend").href="https://wa.me/"+WA+"?text="+encodeURIComponent(txt);$("#osend").hidden=!WA;if(hasAuto()){placeAuto(txt,qn);return}$("#oform").hidden=true;$("#odone").hidden=false});
+const hasAuto=()=>!!((S.tgToken&&S.tgChat)||S.w3Key);
+async function notifyOrder(txt,subj,nm){const jobs=[];
+  if(S.tgToken&&S.tgChat)jobs.push(fetch("https://api.telegram.org/bot"+S.tgToken+"/sendMessage",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:S.tgChat,text:txt})}).then(r=>r.json()).then(j=>!!j.ok));
+  if(S.w3Key)jobs.push(fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({access_key:S.w3Key,subject:subj,from_name:nm||"Website order",message:txt})}).then(r=>r.json()).then(j=>!!j.success));
+  const res=await Promise.all(jobs.map(p=>Promise.race([p,new Promise(r=>setTimeout(()=>r(false),20000))]).catch(()=>false)));
+  return res.some(Boolean)}
 async function placeAuto(txt,qn){
   const btn=$("#oform button[type=submit]");btn.disabled=true;btn.textContent="Placing order...";
-  const url="https://api.callmebot.com/whatsapp.php?phone="+encodeURIComponent(WA)+"&text="+encodeURIComponent(txt)+"&apikey="+encodeURIComponent(S.cbKey);
-  let ok=true;
-  try{const c=new AbortController(),t=setTimeout(()=>c.abort(),20000);await fetch(url,{mode:"no-cors",signal:c.signal});clearTimeout(t)}catch(e){ok=false}
+  const ok=await notifyOrder(txt,"New order: "+curP[0],$("#oname").value.trim());
   btn.disabled=false;btn.textContent="Place order";
   $("#oform").hidden=true;
   if(ok){$("#oph").textContent=$("#ophone").value.trim();$("#osum2").textContent=curP[0]+(curVr?" ("+curVr.name+")":"")+"  x "+qn;$("#oplaced").hidden=false}
