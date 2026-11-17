@@ -13,7 +13,7 @@ window.SHOP={
   "address": "34,Hatkhola Road ,Tikatuli , Dhaka-1203",
   "map": "",
   "tgToken": "9011989068:AAEd-ys1FZrOp2Ke-qpxCg_zApVbCjPcJhY",
-  "tgChat": "",
+  "tgChat": "1865768401",
   "w3Key": "38e17721-56e7-48a0-8f47-ac4b2fef87d4"
  },
  "categories": [
