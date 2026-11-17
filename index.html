@@ -228,6 +228,11 @@ header.top{padding:10px 0 0}
   .grid{gap:10px;padding-bottom:28px}
   .grid>.card:nth-child(even){margin-top:28px;margin-bottom:-28px}
 }
+.placed{text-align:center;padding:8px 0 4px}
+.placed h3{font-size:21px;margin:10px 0 6px}
+.placed p{margin:0 0 10px;color:var(--muted)}
+.placed .osum{text-align:left}
+.pok{width:60px;height:60px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;margin:6px auto 0}
 .pvbar{display:flex;align-items:center;gap:12px;margin:16px 0 0}
 .pvbar .crumb{margin:0}
 .back{width:40px;height:40px;flex:none;border-radius:50%;border:0;background:#111;color:#fff;display:grid;place-items:center;padding:0;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .15s,background .15s}
@@ -322,7 +327,15 @@ header.top{padding:10px 0 0}
     <div class="err" id="oerr" role="alert" hidden></div>
     <button class="btn" type="submit" style="width:100%">Review order</button>
   </form>
+  <div id="oplaced" hidden class="placed">
+    <div class="pok" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+    <h3>Your order has been placed</h3>
+    <p>Thank you! We have received your order and will call you soon on <b id="oph"></b>.</p>
+    <div class="osum" id="osum2"></div>
+    <button class="btn" id="ohome" type="button" style="width:100%">Back to home page</button>
+  </div>
   <div id="odone" hidden>
+    <p class="err" id="ofail" hidden>We could not send your order automatically. Please tap Send on WhatsApp to place it.</p>
     <p style="margin:0 0 8px">Your order details are ready. Nothing is placed yet. Tap Send on WhatsApp to send this order to us.</p>
     <textarea id="omsg" rows="9" readonly aria-label="Order message"></textarea>
     <div class="acts" style="margin-top:8px"><a class="btn" id="osend" href="#" target="_blank" rel="noopener" style="text-decoration:none;text-align:center">Send on WhatsApp</a><button class="btn ghost" id="ocopy" type="button">Copy order</button><button class="btn ghost" id="oedit" type="button">Edit</button></div>
@@ -437,7 +450,7 @@ $("#cclose").onclick=()=>$("#contactModal").hidden=true;
 $("#cmailcopy").onclick=async()=>{const t=$("#cmail").textContent;try{await navigator.clipboard.writeText(t);$("#cmailcopy").textContent="Copied"}catch(e){const r=document.createRange();r.selectNodeContents($("#cmail"));const sl=getSelection();sl.removeAllRanges();sl.addRange(r);$("#cmailcopy").textContent="Selected, now copy"}setTimeout(()=>$("#cmailcopy").textContent="Copy email",1800)};
 let curP=null;
 function openOrder(p,v){curP=p;curVr=v||null;$("#osum").innerHTML="<b></b><span></span>";$("#osum b").textContent=p[0]+(v?" ("+v.name+")":"");$("#osum span").textContent="Code: "+p[6]+"  |  "+(v&&v.price?pt(v.price):priceTxt(p));
-  $("#oform").hidden=false;$("#odone").hidden=true;$("#oerr").hidden=true;$("#orderModal").hidden=false;$("#oname").focus()}
+  $("#oform").hidden=false;$("#odone").hidden=true;$("#oplaced").hidden=true;$("#ofail").hidden=true;$("#oerr").hidden=true;const sb=$("#oform button[type=submit]");sb.disabled=false;sb.textContent=S.cbKey?"Place order":"Review order";$("#orderModal").hidden=false;$("#oname").focus()}
 $("#oclose").onclick=()=>$("#orderModal").hidden=true;
 $("#ocontact").onclick=()=>{$("#orderModal").hidden=true;openContact()};
 $("#oform").addEventListener("submit",e=>{e.preventDefault();
@@ -446,7 +459,17 @@ $("#oform").addEventListener("submit",e=>{e.preventDefault();
   else if(!v("oaddr"))m="Enter your address.";else if(!v("odist"))m="Select your district.";else if(!v("othana"))m="Enter your thana or upazila.";
   const er=$("#oerr");if(m){er.textContent=m;er.hidden=false;return}er.hidden=true;
   const txt="New order for "+SHOP+"\n\nProduct: "+curP[0]+(curVr?"\nSize/Option: "+curVr.name:"")+"\nCode: "+curP[6]+"\nQuantity: "+qn+"\n\nName: "+v("oname")+"\nPhone: "+ph+"\nAddress: "+v("oaddr")+"\nThana/Upazila: "+v("othana")+"\nDistrict: "+v("odist");
-  $("#omsg").value=txt;$("#osend").href="https://wa.me/"+WA+"?text="+encodeURIComponent(txt);$("#osend").hidden=!WA;$("#oform").hidden=true;$("#odone").hidden=false});
+  $("#omsg").value=txt;$("#osend").href="https://wa.me/"+WA+"?text="+encodeURIComponent(txt);$("#osend").hidden=!WA;if(S.cbKey){placeAuto(txt,qn);return}$("#oform").hidden=true;$("#odone").hidden=false});
+async function placeAuto(txt,qn){
+  const btn=$("#oform button[type=submit]");btn.disabled=true;btn.textContent="Placing order...";
+  const url="https://api.callmebot.com/whatsapp.php?phone="+encodeURIComponent(WA)+"&text="+encodeURIComponent(txt)+"&apikey="+encodeURIComponent(S.cbKey);
+  let ok=true;
+  try{const c=new AbortController(),t=setTimeout(()=>c.abort(),20000);await fetch(url,{mode:"no-cors",signal:c.signal});clearTimeout(t)}catch(e){ok=false}
+  btn.disabled=false;btn.textContent="Place order";
+  $("#oform").hidden=true;
+  if(ok){$("#oph").textContent=$("#ophone").value.trim();$("#osum2").textContent=curP[0]+(curVr?" ("+curVr.name+")":"")+"  x "+qn;$("#oplaced").hidden=false}
+  else{$("#ofail").hidden=false;$("#odone").hidden=false}}
+$("#ohome").onclick=()=>{$("#orderModal").hidden=true;$("#oform").reset();showHome(false);window.scrollTo(0,0)};
 $("#oedit").onclick=()=>{$("#oform").hidden=false;$("#odone").hidden=true};
 $("#ocopy").onclick=async()=>{const m=$("#omsg");try{await navigator.clipboard.writeText(m.value);$("#ocopy").textContent="Copied"}catch(e){m.select();$("#ocopy").textContent="Selected, now copy"}setTimeout(()=>$("#ocopy").textContent="Copy order",1800)};
 
