@@ -81,7 +81,8 @@ window.SHOP={
    "prefix": "CS",
    "image": "",
    "subs": [
-    "c2s1"
+    "c2s1",
+    "svh8s6i"
    ]
   },
   {
@@ -2839,6 +2840,10 @@ window.SHOP={
   {
    "id": "svh8s6i",
    "name": "Water Testing Products"
+  },
+  {
+   "id": "ss4u9za",
+   "name": "Soil Test products"
   }
  ]
 };
