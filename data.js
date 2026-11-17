@@ -26,24 +26,18 @@ window.SHOP={
     "c1s1",
     "c1s2",
     "c1s3",
-    "c1s6",
-    "sycngbl",
-    "sypo0sw",
-    "siwv6py",
-    "sf4zcsj",
-    "sqnvh0o",
-    "s1nowxi"
+    "c1s6"
    ]
   },
   {
    "id": "c2",
-   "name": "Water Testing Meters",
+   "name": "Water Testing Products",
    "prefix": "WT",
    "image": "",
    "subs": [
     "c2s1",
     "c2s2",
-    "c2s3"
+    "sycngbl"
    ]
   },
   {
@@ -75,14 +69,20 @@ window.SHOP={
    "name": "School /College Lab Items",
    "prefix": "CS",
    "image": "",
-   "subs": []
+   "subs": [
+    "c16s2",
+    "seja7me",
+    "sx0h7dd"
+   ]
   },
   {
    "id": "c6",
    "name": "Hatchery item",
    "prefix": "CS",
    "image": "",
-   "subs": []
+   "subs": [
+    "c2s1"
+   ]
   },
   {
    "id": "c7",
@@ -2835,6 +2835,10 @@ window.SHOP={
   {
    "id": "s1nowxi",
    "name": "Stop \\Watch"
+  },
+  {
+   "id": "svh8s6i",
+   "name": "Water Testing Products"
   }
  ]
 };
