@@ -535,7 +535,10 @@ window.addEventListener("hashchange",route);
 $("#seeall").onclick=e=>{e.preventDefault();go(-1,-1)};
 $("#pback").onclick=()=>{if(fromSite&&history.length>1)history.back();else location.hash=""};
 route();
-if(!location.hash){const top=()=>{if(pv.hidden)window.scrollTo(0,0)};top();requestAnimationFrame(top);window.addEventListener("load",()=>{if(!location.hash&&window.scrollY<400)top()},{once:true})}
+if(!location.hash){let moved=false;["touchstart","wheel","keydown","mousedown"].forEach(ev=>window.addEventListener(ev,()=>{moved=true},{once:true,passive:true}));
+  const top=()=>{if(!moved&&pv.hidden&&!location.hash)window.scrollTo(0,0)};
+  top();requestAnimationFrame(top);[50,200,500,1000,2000].forEach(t=>setTimeout(top,t));
+  window.addEventListener("load",top,{once:true});window.addEventListener("pageshow",e=>{if(!e.persisted)top()})}
 </script>
 
 </body>
