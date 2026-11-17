@@ -2246,17 +2246,20 @@ window.SHOP={
   {
    "code": "CS-37792",
    "name": "Hanna pH Electrode HI1333B for Benchtop pH Meter",
-   "sub": "c1s4",
+   "variants": [],
+   "sub": "c1s6",
    "subs": [
-    "c1s4"
+    "c1s6"
    ],
    "short": "Hanna HI1333B pH electrode for benchtop pH meters.",
    "long": "pH electrode with a BNC connector for use with benchtop pH meters. Keep it in storage solution between measurements for a fast, stable response.\n\nSpecifications\n• Type: pH electrode\n• Model: HI1333B\n• Connector: BNC\n• Use: benchtop pH meters\n• Storage: in electrode storage solution, never in distilled water\n\nIn the box\n• HI1333B pH electrode\n• Protective cap\n• Instruction sheet",
    "price": 10000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-37792-7msybusz.jpg",
+    "images/cs-37792-qwchyw7i.jpg"
+   ]
   },
   {
    "code": "CS-53106",
