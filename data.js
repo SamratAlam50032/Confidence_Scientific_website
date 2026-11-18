@@ -3430,17 +3430,53 @@ window.SHOP={
   {
    "code": "CS-91727",
    "name": "Glass Pipette Pyrex (1ml/2ml/5ml/10ml/20ml/25ml/50ml)",
-   "sub": "sbtuofc",
+   "variants": [
+    {
+     "name": "1ml",
+     "price": 100,
+     "images": []
+    },
+    {
+     "name": "2ml",
+     "price": 100,
+     "images": []
+    },
+    {
+     "name": "5ml",
+     "price": 100,
+     "images": []
+    },
+    {
+     "name": "10ml",
+     "price": 120,
+     "images": []
+    },
+    {
+     "name": "20ml",
+     "price": 160,
+     "images": []
+    },
+    {
+     "name": "25ml",
+     "price": 180,
+     "images": []
+    },
+    {
+     "name": "50ml",
+     "price": 250,
+     "images": []
+    }
+   ],
+   "sub": "c16s2",
    "subs": [
-    "sbtuofc"
+    "c16s2"
    ],
    "short": "Pyrex glass pipette, 1 ml to 50 ml.",
    "long": "Glass pipette for measuring and transferring liquid volumes accurately in the laboratory. Available in sizes from 1 ml to 50 ml.\n\nSpecifications\n• Type: glass pipette\n• Brand: Pyrex\n• Sizes: 1 ml, 2 ml, 5 ml, 10 ml, 20 ml, 25 ml, 50 ml\n\nIn the box\n• Pipette, in the size you order",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-43519",
