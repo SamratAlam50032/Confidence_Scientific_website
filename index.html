@@ -184,6 +184,7 @@ header.top{padding:10px 0 0}
 .sug span{min-width:0}.sug b{display:block;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sug small{color:var(--muted)}
 .sug .none{padding:10px;color:var(--muted);font-size:13px}
 
+.origin{display:flex;gap:8px;align-items:center;margin:2px 0 10px;font-size:14px}.origin span{color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-size:11px;font-weight:600}.origin b{background:var(--tint);border:1px solid var(--line);border-radius:99px;padding:3px 11px}
 .acts{display:flex;gap:8px;flex-wrap:wrap}.acts .btn{flex:1 1 130px}
 .mbox.small{max-width:460px}
 .cl{display:flex;flex-direction:column;gap:16px;margin-top:10px}
@@ -317,7 +318,7 @@ header.top{padding:8px 0 0!important}.bar{gap:10px!important}.cband{margin-top:6
   <div class="pvbar"><button class="back" id="pback" type="button" aria-label="Go back"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 5l-7 7 7 7"/></svg></button><div class="crumb" id="pcrumb"></div></div>
   <div class="pvbox"><div class="mgrid">
     <div><div class="gmain" id="gmain"></div><div class="gthumbs" id="gthumbs"></div></div>
-    <div class="info"><div class="cat" id="mcat"></div><h2 id="mname"></h2><div class="code" id="mcode"></div><div class="price" id="mprice"></div><div id="mvwrap" hidden><div class="k">Size / option</div><div class="vars" id="mvars"></div></div><div><span class="tag" id="mtag"></span></div><div class="mdesc" id="mdesc"></div><div class="acts"><button class="btn" id="mbuy" type="button">Buy now</button><button class="btn o" id="madd" type="button">Add to cart</button><button class="btn ghost" id="mcontact" type="button">Contact us</button></div></div>
+    <div class="info"><div class="cat" id="mcat"></div><h2 id="mname"></h2><div class="code" id="mcode"></div><div class="price" id="mprice"></div><div id="mvwrap" hidden><div class="k">Size / option</div><div class="vars" id="mvars"></div></div><div><span class="tag" id="mtag"></span></div><div class="mdesc" id="mdesc"></div><div class="origin" id="morigin" hidden></div><div class="acts"><button class="btn" id="mbuy" type="button">Buy now</button><button class="btn o" id="madd" type="button">Add to cart</button><button class="btn ghost" id="mcontact" type="button">Contact us</button></div></div>
   </div></div>
   <div id="prel"></div>
 </section>
@@ -385,7 +386,7 @@ const S=SH.settings||{};
 const sIdx=id=>SH.subs.findIndex(x=>x.id===id);
 const C=SH.categories.map(c=>{const ids=SH.subs.map(x=>x.id).filter(id=>(c.subs||[]).indexOf(id)>=0);return [c.name,ids.map(id=>SH.subs[sIdx(id)].name),c.image||"",ids]});
 const P=SH.products.map(p=>{const pl=[];C.forEach((c,ci)=>{(p.subs&&p.subs.length?p.subs:[p.sub]).forEach(sb=>{const j=c[3].indexOf(sb);if(j>=0)pl.push([ci,j])})});
-  return [p.name,pl.length?pl[0][0]:-1,pl.length?pl[0][1]:-1,p.short||"",p.stock||"ask",p.featured?1:0,p.code,p.price||null,p.long||"",p.images||[],pl,(p.variants||[]).filter(v=>v&&v.name)]}).filter(p=>p[10].length);
+  return [p.name,pl.length?pl[0][0]:-1,pl.length?pl[0][1]:-1,p.short||"",p.stock||"ask",p.featured?1:0,p.code,p.price||null,p.long||"",p.images||[],pl,(p.variants||[]).filter(v=>v&&v.name),p.origin||""]}).filter(p=>p[10].length);
 const ICONS=[
 '<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/>',
 '<path d="M12 3c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10z"/>',
@@ -421,7 +422,7 @@ function card(p){const d=document.createElement("article");d.className="card";
   th.onclick=d.querySelector(".lnk").onclick=()=>openProd(p); return d}
 function renderProd(p){
   $("#mcat").textContent=C[p[1]][1][p[2]]; $("#mname").textContent=p[0]; $("#mcode").textContent="Product code: "+p[6]; $("#mprice").textContent=priceTxt(p);
-  stockTag($("#mtag"),p[4]); $("#mdesc").textContent=p[8]||p[3];
+  stockTag($("#mtag"),p[4]); $("#mdesc").textContent=p[8]||p[3];{const mo=$("#morigin");mo.hidden=!p[12];mo.textContent="";if(p[12]){const k=document.createElement("span");k.textContent="Origin";const b=document.createElement("b");b.textContent=p[12];mo.append(k,b)}}
   const gm=$("#gmain"),gt=$("#gthumbs"),vs=p[11]||[],vb=$("#mvars"); let cur=0,tm=0,im=[];
   const mark=k=>{cur=k;[...gt.children].forEach((x,j)=>x.setAttribute("aria-pressed",j===k));const pg=gm.querySelector(".gpg");if(pg)pg.textContent=(k+1)+" / "+im.length};
   const build=list=>{im=list;cur=0;clearTimeout(tm);gt.textContent="";gm.textContent="";
