@@ -349,6 +349,7 @@ window.SHOP={
   {
    "code": "CS-20610",
    "name": "Titanium Dioxide AR 500g Research Lab",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -358,11 +359,10 @@ window.SHOP={
    "price": 1400,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-20610-78j72buo.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-6696",
@@ -404,6 +404,7 @@ window.SHOP={
   {
    "code": "CS-2250",
    "name": "SF 400C Electronic Compact Scale",
+   "variants": [],
    "sub": "susfg99",
    "subs": [
     "susfg99"
@@ -413,11 +414,10 @@ window.SHOP={
    "price": 1500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-2250-1m36nwq5.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-6234",
@@ -497,6 +497,7 @@ window.SHOP={
   {
    "code": "CS-38725",
    "name": "Test Tube Rack Steel 12 Hole",
+   "variants": [],
    "sub": "suxv0es",
    "subs": [
     "suxv0es",
@@ -508,11 +509,10 @@ window.SHOP={
    "price": 140,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Bangladesh",
    "images": [
     "images/cs-38725-x1r1y5gx.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-60928",
@@ -554,6 +554,7 @@ window.SHOP={
   {
    "code": "CS-90128",
    "name": "Digital Pocket Scale MH-200 (0.01g–200g) Precision Balance",
+   "variants": [],
    "sub": "sxnmns4",
    "subs": [
     "sxnmns4"
@@ -563,17 +564,17 @@ window.SHOP={
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-90128-ohwkmq55.jpg",
     "images/cs-90128-uvslyrk5.jpg",
     "images/cs-90128-5ywnote5.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-96654",
    "name": "5 in 1 Water Quality Tester for TDS, EC, pH, Salinity, Temp.",
+   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1",
@@ -585,12 +586,11 @@ window.SHOP={
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-96654-1pxpu5ut.jpg",
     "images/cs-96654-8elbp7ra.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-53106",
@@ -636,6 +636,7 @@ window.SHOP={
   {
    "code": "CS-35124",
    "name": "Ferric Chloride Anhydrous 500g Research Lab",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -645,15 +646,15 @@ window.SHOP={
    "price": 1400,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-35124-jb43ea0x.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-4931",
    "name": "Economical Electric Binocular Microscope XSZ-107BN",
+   "variants": [],
    "sub": "sa3zbrq",
    "subs": [
     "sa3zbrq"
@@ -663,15 +664,15 @@ window.SHOP={
    "price": 20500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-4931-s4kfwf0z.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-80614",
    "name": "L-Histidine Monohydrochloride 25g RL",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -681,11 +682,10 @@ window.SHOP={
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-80614-cd8jzkpq.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-70455",
@@ -747,20 +747,20 @@ window.SHOP={
   {
    "code": "HN-035",
    "name": "Hanna DO(Dissolved Oxygen/Zero Oxygen solution-HI7040L",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Zero oxygen solution for dissolved oxygen probe calibration.",
    "long": "Zero oxygen solution used to calibrate the zero point of dissolved oxygen probes and meters. Used together with an air-saturated calibration point for accurate dissolved oxygen readings.\n\nSpecifications\n• Type: dissolved oxygen zero solution\n• Model: HI7040L\n• Use: zero point calibration of DO probes\n• Keep the bottle tightly closed after use\n\nIn the box\n• HI7040L zero oxygen solution bottle",
-   "price": 2999,
+   "price": 3500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-035-gdeov5zn.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-019",
@@ -934,21 +934,21 @@ window.SHOP={
   {
    "code": "CS-37792",
    "name": "Hanna pH Electrode HI1333B for Benchtop pH Meter",
+   "variants": [],
    "sub": "c1s6",
    "subs": [
     "c1s6"
    ],
    "short": "Hanna HI1333B pH electrode for benchtop pH meters.",
    "long": "pH electrode with a BNC connector for use with benchtop pH meters. Keep it in storage solution between measurements for a fast, stable response.\n\nSpecifications\n• Type: pH electrode\n• Model: HI1333B\n• Connector: BNC\n• Use: benchtop pH meters\n• Storage: in electrode storage solution, never in distilled water\n\nIn the box\n• HI1333B pH electrode\n• Protective cap\n• Instruction sheet",
-   "price": 10000,
+   "price": 9500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/cs-37792-7msybusz.jpg",
     "images/cs-37792-qwchyw7i.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-11676",
@@ -1028,21 +1028,21 @@ window.SHOP={
   {
    "code": "CS-41170",
    "name": "Family PH Meter Hanna (Copy)",
+   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1"
    ],
    "short": "Pocket-size family pH meter.",
    "long": "Pocket pH meter for quick pH checks of water, aquariums and household samples. Easy to carry and simple to use.\n\nSpecifications\n• Parameter: pH\n• Type: pocket pH meter\n• Display: digital LCD\n\nIn the box\n• pH meter\n• Protective cap\n• Battery",
-   "price": 1600,
+   "price": 1800,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-41170-46r8pv4a.jpg",
     "images/cs-41170-fajiawoy.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-76494",
@@ -2238,6 +2238,7 @@ window.SHOP={
   {
    "code": "CS-5120",
    "name": "K-Type Digital Thermometer TES-1310 with Thermocouple",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -2247,12 +2248,11 @@ window.SHOP={
    "price": 2850,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-5120-n19969mx.jpg",
     "images/cs-5120-p6jf8b68.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-006",
@@ -2511,6 +2511,13 @@ window.SHOP={
   {
    "code": "CS-68295",
    "name": "Magnifying Glass 90 mm",
+   "variants": [
+    {
+     "name": "75mm",
+     "price": 160,
+     "images": []
+    }
+   ],
    "sub": "c3s1",
    "subs": [
     "c3s1",
@@ -2522,17 +2529,10 @@ window.SHOP={
    "price": 220,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-68295-uj0fwl7j.jpg",
     "images/cs-68295-y3dqamxg.jpg"
-   ],
-   "variants": [
-    {
-     "name": "75mm",
-     "price": 160,
-     "images": []
-    }
    ]
   },
   {
