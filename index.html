@@ -234,6 +234,9 @@ header.top{padding:10px 0 0}
 .placed p{margin:0 0 10px;color:var(--muted)}
 .placed .osum{text-align:left}
 .pok{width:60px;height:60px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;margin:6px auto 0}
+.dd{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;max-width:calc(100vw - 16px)}
+.dd::-webkit-scrollbar{width:8px}.dd::-webkit-scrollbar-thumb{background:var(--brown);border-radius:99px}.dd::-webkit-scrollbar-track{background:rgba(139,90,43,.15);border-radius:99px}
+.brand{cursor:pointer;-webkit-tap-highlight-color:transparent}
 .pvbar{display:flex;align-items:center;gap:12px;margin:16px 0 0}
 .pvbar .crumb{margin:0}
 .back{width:40px;height:40px;flex:none;border-radius:50%;border:0;background:#111;color:#fff;display:grid;place-items:center;padding:0;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .15s,background .15s}
@@ -257,7 +260,7 @@ header.top{padding:10px 0 0}
 <div class="topbar"><div class="wrap"><span id="tbL"></span><span id="tbR"></span></div></div>
 <header class="top"><div class="wrap">
   <div class="bar">
-    <div class="brand"><span id="bn"></span><small id="bt"></small></div>
+    <div class="brand" id="brand" role="link" tabindex="0" title="Home"><span id="bn"></span><small id="bt"></small></div>
     <div class="search"><input id="q" type="search" placeholder="Search products, e.g. pH meter, caliper" aria-label="Search products" autocomplete="off"><div class="sug" id="sug" hidden></div></div>
     <button class="btn" id="openContact" type="button">Contact us</button>
   </div>
@@ -271,7 +274,7 @@ header.top{padding:10px 0 0}
     <div>
       <h1 id="hl"></h1>
       <p id="hi"></p>
-      <div class="bacts"><a class="btn" href="#categories" style="text-decoration:none">Browse categories</a><a class="btn o" href="#all" id="seeall" style="text-decoration:none">See all products</a><a class="btn o gap2" href="#contact" style="text-decoration:none">Contact us</a></div>
+      <div class="bacts"><a class="btn" href="#categories" style="text-decoration:none">Browse categories</a><a class="btn" href="#all" id="seeall" style="text-decoration:none">See all products</a><a class="btn o gap2" href="#contact" style="text-decoration:none">Contact us</a></div>
     </div>
     <div class="rl" aria-hidden="true"></div>
   </section>
@@ -483,7 +486,7 @@ function drawMenu(){const nav=$("#catnav"),host=$("#ddhost");nav.textContent="";
     const dd=document.createElement("div");dd.className="dd";
     const all=document.createElement("button");all.type="button";all.textContent="All "+c[0];all.onclick=()=>{hide();go(i,-1)};dd.appendChild(all);
     c[1].forEach((x,j)=>{const e=document.createElement("button");e.type="button";e.textContent=x;e.onclick=()=>{hide();go(i,j)};dd.appendChild(e)});
-    const show=()=>{hide();const r=b.getBoundingClientRect();dd.style.top=r.bottom+"px";dd.style.left=Math.min(r.left,innerWidth-230)+"px";dd.classList.add("show")};
+    const show=()=>{hide();const r=b.getBoundingClientRect();dd.style.top=r.bottom+"px";dd.style.left=Math.max(8,Math.min(r.left,innerWidth-230))+"px";dd.style.maxHeight=Math.max(180,innerHeight-r.bottom-24)+"px";dd.classList.add("show")};
     b.onclick=show;b.onmouseenter=()=>{if(matchMedia("(hover:hover)").matches)show()};
     m.appendChild(b);nav.appendChild(m);host.appendChild(dd)})}
 function hide(){document.querySelectorAll(".dd.show").forEach(d=>d.classList.remove("show"))}
@@ -561,6 +564,8 @@ function route(){const m=/^#\/p\/(.+)$/.exec(location.hash),p=m&&P.find(x=>x[6]=
   home.hidden=true;pv.hidden=false;renderProd(p);drawRelated(p);document.title=p[0]+" | "+(S.name||"Shop");window.scrollTo(0,0)}
 window.addEventListener("hashchange",route);
 $("#seeall").onclick=e=>{e.preventDefault();go(-1,-1)};
+const goHome=()=>{cat=sub=-1;q="";$("#q").value="";$("#sug").hidden=true;draw();hide();showHome(false);window.scrollTo({top:0,behavior:"smooth"})};
+$("#brand").onclick=goHome;$("#brand").addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();goHome()}});
 document.querySelectorAll('a[href="#categories"],a[href="#contact"]').forEach(a=>a.addEventListener("click",e=>{e.preventDefault();showHome(false);const t=document.getElementById(a.getAttribute("href").slice(1));if(t)t.scrollIntoView({behavior:"smooth"})}));
 $("#pback").onclick=()=>{if(fromSite&&history.length>1)history.back();else location.hash=""};
 route();
