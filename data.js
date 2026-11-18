@@ -3811,6 +3811,7 @@ window.SHOP={
   {
    "code": "CS-71088",
    "name": "Heating Mantle 250ml",
+   "variants": [],
    "sub": "sryqr8c",
    "subs": [
     "sryqr8c"
@@ -3820,11 +3821,10 @@ window.SHOP={
    "price": 5500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-71088-oyuyux8i.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-42680",
