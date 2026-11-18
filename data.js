@@ -212,6 +212,7 @@ window.SHOP={
   {
    "code": "CS-25081",
    "name": "Digital Temperature and Humidity Meter HTC-1",
+   "variants": [],
    "sub": "shsdp0x",
    "subs": [
     "shsdp0x",
@@ -220,19 +221,19 @@ window.SHOP={
    ],
    "short": "HTC-1 digital temperature and humidity meter.",
    "long": "Compact digital meter showing room temperature and humidity on one display. Handy for laboratories, storerooms, offices and home use.\n\nSpecifications\n• Parameters: Temperature and humidity\n• Model: HTC-1\n• Display: digital LCD\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": 270,
+   "price": 350,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-25081-oja78ex6.jpg",
     "images/cs-25081-jtxk6gsr.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-20000",
    "name": "Potassium Hydroxide Pellets 500g ResearchLab India",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -242,11 +243,10 @@ window.SHOP={
    "price": 1000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-20000-la8s7mdq.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-008",
@@ -258,7 +258,7 @@ window.SHOP={
    ],
    "short": "Replacement reagents for the HI3831F free chlorine test kit, about 50 tests.",
    "long": "Replacement reagent set for the Hanna HI3831F free chlorine test kit. Free chlorine is measured by the DPD colorimetric method and the result is read by matching the sample colour on the comparator cube. Reagents are pre-measured and each packet is marked with a lot number and expiry date.\n\nSpecifications\n• Parameter: free chlorine\n• Range: 0.0 to 2.5 mg/L (ppm)\n• Resolution: 0.5 mg/L\n• Method: DPD, colorimetric\n• Number of tests: about 50\n\nIn the box\n• Reagent 1 and Reagent 2 for about 50 tests\n• Use with the colour comparison cube from the HI3831F test kit",
-   "price": 3499,
+   "price": 3700,
    "stock": "in",
    "featured": 0,
    "origin": "Romania",
@@ -270,6 +270,7 @@ window.SHOP={
   {
    "code": "CS-71903",
    "name": "Glass Prism 50 x 50 mm Indian",
+   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1",
@@ -280,16 +281,16 @@ window.SHOP={
    "price": 180,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-71903-pr9dzi95.jpg",
     "images/cs-71903-pa2i2jrd.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-35064",
    "name": "Portable Refractometer for Juice, Chemicals 0-90% Brix",
+   "variants": [],
    "sub": "siwv6py",
    "subs": [
     "siwv6py"
@@ -299,16 +300,16 @@ window.SHOP={
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-35064-4cwfn3c8.jpg",
     "images/cs-35064-ymrzs5bl.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-002",
    "name": "Hanna HI98301 DiST-1 TDS Meter (0-2000 ppm) with Auto Cal.",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2",
@@ -316,21 +317,21 @@ window.SHOP={
    ],
    "short": "Waterproof pocket TDS tester, 0 to 2000 ppm, 1 ppm resolution, one-touch auto calibration.",
    "long": "Pocket-size, rugged TDS tester for lab and field use. A large two-level LCD shows TDS and temperature together, and the exposed temperature sensor gives fast automatic temperature compensation. The graphite electrode resists oxidation and polarization better than stainless steel pins. Calibration is automatic at 1382 ppm with a single button press, and a stability tag disappears when the reading has settled. Used for drinking water, hydroponics, aquariums, water treatment and general water checks.\n\nSpecifications\n• TDS range: 0 to 2000 ppm (mg/L), resolution 1 ppm, accuracy ±2% of full scale\n• Calibration: automatic, one point at 1382 ppm\n• Temperature compensation: automatic, 0 to 50°C, EC to TDS factor 0.5\n• Temperature display: 0.0 to 50.0°C (°C or °F), ±0.5°C\n• Battery: CR2032, about 250 hours of continuous use, low battery indicator\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 68 g (without battery)\n\nIn the box\n• HI98301 DiST 1 tester\n• CR2032 battery\n• 1382 ppm calibration solution sachets (4)\n• Protective cap\n• Instruction manual and quality certificate",
-   "price": 8199,
+   "price": 8500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-002-pjqkbq9g.jpg",
     "images/hn-002-whnvjzl2.jpg",
     "images/hn-002-rk8fs2zm.jpg",
     "images/hn-002-1ofs5uyx.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-1041",
    "name": "Thermometer 110 Degree Celsius (China)",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -340,11 +341,10 @@ window.SHOP={
    "price": 110,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-1041-trc0juhp.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-20610",
@@ -367,6 +367,7 @@ window.SHOP={
   {
    "code": "CS-6696",
    "name": "UNI-T UT306s Infrared Thermometer(-50~500°C) (-58~932°F)",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -376,16 +377,16 @@ window.SHOP={
    "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-6696-aqjpjcq9.jpg",
     "images/cs-6696-3whbce5q.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-86351",
    "name": "Wire Net with Asbestos for Laboratory Use",
+   "variants": [],
    "sub": "s916j9x",
    "subs": [
     "s916j9x"
@@ -395,11 +396,10 @@ window.SHOP={
    "price": 60,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Bangladesh",
    "images": [
     "images/cs-86351-1stoy6wu.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-2250",
@@ -422,6 +422,7 @@ window.SHOP={
   {
    "code": "CS-6234",
    "name": "HI-98302 Pocket TDS Tester DiST-2 (0.00 to 10.00ppt)",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1",
@@ -429,19 +430,19 @@ window.SHOP={
    ],
    "short": "Hanna DiST 2 pocket TDS tester, 0.00 to 10.00 ppt.",
    "long": "Pocket-size TDS tester from the Hanna DiST range. It measures total dissolved solids in water and shows the reading together with the sample temperature on a clear LCD. Light, easy to carry and quick to use for water quality checks in the lab and in the field.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Range: 0.00 to 10.00 ppt\n• Display: LCD with TDS and temperature\n• Automatic temperature compensation\n• Model: HI98302 (DiST 2)\n\nIn the box\n• HI98302 DiST 2 tester\n• Battery\n• Instruction manual",
-   "price": 8199,
+   "price": 8500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/cs-6234-z7j8cacj.jpg",
     "images/cs-6234-w6i7fbp2.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-62962",
    "name": "Tripod Stand for Bunsen Burner",
+   "variants": [],
    "sub": "s916j9x",
    "subs": [
     "s916j9x"
@@ -451,48 +452,47 @@ window.SHOP={
    "price": 100,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Bangladesh",
    "images": [
     "images/cs-62962-odw9u58w.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-016",
    "name": "Buffer Solution pH 10.01 Hanna 1000 ml Bottle HI-710",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Hanna pH 10.01 calibration buffer, 1 L bottle, accuracy ±0.01 pH at 25°C.",
    "long": "Hanna pH 10.01 calibration buffer solution in a 1 liter bottle (HI7010/1L). Use it to calibrate pH meters on the alkaline side. The solution is dyed violet so the buffer value is easy to identify. The airtight bottle has a tamper-proof seal, and each bottle carries a temperature chart showing the actual pH at different temperatures.\n\nSpecifications\n• Value: pH 10.01 at 25°C, accuracy ±0.01 pH\n• Volume: 1 L bottle\n• Shelf life: two years from manufacture, unopened\n• Lot number and expiry date are printed on the label",
-   "price": 2799,
+   "price": 3000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-026-lmf1jqhw.jpg",
     "images/hn-026-0l93ds2x.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-018",
    "name": "HI7032L 1382 mg/L (ppm) TDS Calibration Solution (500mL Bottle)",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Hanna 1382 mg/L (ppm) TDS calibration solution, 500 mL bottle, NIST traceable.",
    "long": "Hanna HI7032L TDS calibration solution, 1382 mg/L (ppm), in a 500 mL bottle. Use it to calibrate and check TDS meters. It is prepared against a NIST-traceable potassium chloride solution. The airtight bottle has a tamper-proof seal, and a chart of the actual value at different temperatures is printed on each bottle.\n\nSpecifications\n• Value: 1382 mg/L (ppm) TDS\n• Volume: 500 mL bottle\n• Traceability: prepared against NIST-traceable potassium chloride, per ISO 3696 / BS 3978\n• Shelf life: five years from manufacture, unopened\n• Lot number and expiry date are printed on the label",
-   "price": 2399,
+   "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-018-rjsvwheu.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-38725",
@@ -517,6 +517,7 @@ window.SHOP={
   {
    "code": "CS-60928",
    "name": "Sartorius Filter Paper 0.45 um 47 mm Vacuum Membrane Filter",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -526,15 +527,15 @@ window.SHOP={
    "price": 3200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Germany",
    "images": [
     "images/cs-60928-vr5mmiz7.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-034",
    "name": "Hanna pH Electrode HI11310 for edge pH Meter",
+   "variants": [],
    "sub": "c1s6",
    "subs": [
     "c1s6"
@@ -544,12 +545,11 @@ window.SHOP={
    "price": 23999,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-034-qunfa8qv.jpg",
     "images/hn-034-vij23afu.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-90128",
@@ -616,22 +616,22 @@ window.SHOP={
   {
    "code": "CS-1188",
    "name": "Smart Sensor Digital Lux Meter AS813",
+   "variants": [],
    "sub": "s2psu6a",
    "subs": [
     "s2psu6a"
    ],
    "short": "Smart Sensor AS813 digital lux meter for light measurement.",
    "long": "Handheld digital lux meter for measuring light intensity. Used to check lighting levels in offices, classrooms, laboratories, factories and greenhouses.\n\nSpecifications\n• Parameter: Illuminance (lux)\n• Model: AS813\n• Type: handheld digital meter\n• Brand: Smart Sensor\n\nIn the box\n• AS813 lux meter\n• Battery\n• Instruction manual",
-   "price": 3000,
+   "price": 3200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Taiwan",
    "images": [
     "images/cs-1188-mz82aai5.jpg",
     "images/cs-1188-9ddfkbzw.jpg",
     "images/cs-1188-1ut0vdhx.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-35124",
@@ -728,21 +728,21 @@ window.SHOP={
   {
    "code": "HN-012",
    "name": "Ammonia Test Kit for Fresh Water Replacement Reagents (25 tests) - HI3824",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
    ],
    "short": "Replacement reagents for the Hanna HI3824 fresh water ammonia test kit, about 25 tests.",
    "long": "Refill reagent set (HI3824-025) for the Hanna HI3824 Ammonia Test Kit for Fresh Water. The kit measures ammonia as NH3-N in fresh water with an adaptation of the Nessler method, and you read the result by matching the color against the comparison cube. Reagents are pre-made, and each bottle is marked with a lot number and expiry date. Used for rivers and drinking water reservoirs, groundwater, freshwater aquariums and fish farming.\n\nSpecifications\n• Refills: HI3824 Ammonia Test Kit for Fresh Water\n• Range: 0.0 to 2.5 mg/L (ppm) NH3-N, resolution 0.5 mg/L\n• Method: adaptation of the Nessler method, colorimetric\n• Number of tests: about 25\n\nIn the pack\n• Ammonia Reagent 1 for fresh water, 20 mL dropper bottle\n• Nessler Reagent, 20 mL dropper bottle\n\nThis pack holds reagents only. The sample beaker and color comparison cube come with the full kit.",
-   "price": 5399,
+   "price": 5600,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-012-cb2ofd6q.jpg",
     "images/hn-012-ouo0deqc.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-035",
@@ -765,20 +765,20 @@ window.SHOP={
   {
    "code": "HN-019",
    "name": "84 µS/cm Conductivity Standard (500mL Bottle)",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Hanna 84 µS/cm conductivity standard, 500 mL bottle, NIST traceable.",
    "long": "Hanna HI7033L conductivity standard, 84 µS/cm, in a 500 mL bottle. Use it to calibrate and check conductivity (EC) meters at the low end of the range. It is prepared against a NIST-traceable potassium chloride solution. The airtight bottle has a tamper-proof seal, and a temperature chart is printed on each bottle.\n\nSpecifications\n• Value: 84 µS/cm\n• Volume: 500 mL bottle\n• Traceability: prepared against NIST-traceable potassium chloride, per ISO 3696 / BS 3978\n• Shelf life: five years from manufacture, unopened\n• Lot number and expiry date are printed on the label",
-   "price": 2399,
+   "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-019-hm5bfj39.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-047",
@@ -801,6 +801,7 @@ window.SHOP={
   {
    "code": "CS-17391",
    "name": "Burette Stand or Retort Stand with Support Clamp",
+   "variants": [],
    "sub": "sp7hn9z",
    "subs": [
     "sp7hn9z",
@@ -811,11 +812,10 @@ window.SHOP={
    "price": 650,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-17391-gluqoocl.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-19421",
@@ -838,6 +838,7 @@ window.SHOP={
   {
    "code": "CS-79595",
    "name": "Meter Scale",
+   "variants": [],
    "sub": "sbaxipc",
    "subs": [
     "sbaxipc"
@@ -847,11 +848,10 @@ window.SHOP={
    "price": 80,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Bangladesh",
    "images": [
     "images/cs-79595-3rwfbr8u.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-10318",
@@ -915,21 +915,21 @@ window.SHOP={
   {
    "code": "HN-003",
    "name": "Hanna Dissolved Oxygen Test Kit (DO Test Kit) HI-3810",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
    ],
    "short": "Dissolved oxygen chemical test kit, 0.0 to 10.0 mg/L, about 110 tests.",
    "long": "Titration based chemical test kit for dissolved oxygen in water, using the modified Winkler method with a starch indicator. A water sample is fixed with reagents, then titrated until the colour changes, and the dissolved oxygen is read directly from the syringe. Useful for aquaculture and fish ponds, boiler and process water, environmental monitoring and education. The kit includes all reagents and equipment for about 110 tests.\n\nSpecifications\n• Range: 0.0 to 10.0 mg/L (ppm)\n• Smallest increment: 0.1 mg/L (ppm)\n• Method: modified Winkler titration\n• Number of tests: about 110\n• Replacement reagents: HI3810-100\n\nIn the box\n• Manganous sulfate solution, 30 mL\n• Alkali-azide reagent, 30 mL\n• Sulfuric acid solution, 2 x 30 mL\n• Starch indicator, 10 mL\n• Titrant solution, 120 mL\n• Glass bottle with stopper\n• 10 mL calibrated vessel\n• Calibrated syringe with tip",
-   "price": 11499,
+   "price": 11500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-003-ngdwcupt.jpg",
     "images/hn-003-p5505wo4.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-37792",
@@ -953,6 +953,7 @@ window.SHOP={
   {
    "code": "CS-11676",
    "name": "Glass Test Tube for Laboratory Use (6 Inch x 25mm) Hard Glass",
+   "variants": [],
    "sub": "suxv0es",
    "subs": [
     "suxv0es"
@@ -962,11 +963,10 @@ window.SHOP={
    "price": 45,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-11676-1hn5i30f.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-74987",
@@ -1256,6 +1256,7 @@ window.SHOP={
   {
    "code": "CS-9975",
    "name": "Calcium carbonate 500gm Merck Germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1265,11 +1266,10 @@ window.SHOP={
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Germany",
    "images": [
     "images/cs-9975-bljfbmdj.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-89376",
@@ -1313,6 +1313,7 @@ window.SHOP={
   {
    "code": "HN-045",
    "name": "Universal pH Test Paper Strip (pH 0-14) pH Paper, China",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t",
@@ -1321,15 +1322,14 @@ window.SHOP={
    ],
    "short": "Universal pH test paper strips, pH 0 to 14.",
    "long": "Universal pH test paper that covers the full pH 0–14 range. A low-cost way to get a quick idea of whether a liquid is acidic, neutral or alkaline using the colour chart supplied.\n\nSpecifications\n• Type: universal pH test paper\n• Range: pH 0 to 14\n• Use: quick pH check of liquid samples\n• Read the result against the colour chart\n\nIn the box\n• pH test paper with colour chart",
-   "price": 300,
+   "price": 350,
    "stock": "in",
    "featured": 1,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/hn-045-s9669v04.jpg",
     "images/hn-045-2ci8rwgz.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-44125",
@@ -1410,6 +1410,7 @@ window.SHOP={
   {
    "code": "CS-21427",
    "name": "Digital Magnetic stirrer with hotplate 85-2",
+   "variants": [],
    "sub": "sf4zcsj",
    "subs": [
     "sf4zcsj"
@@ -1419,15 +1420,15 @@ window.SHOP={
    "price": 10500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-21427-7ighluwn.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-32633",
    "name": "Portable Honey Refractometer Brix 58-90% ATC",
+   "variants": [],
    "sub": "siwv6py",
    "subs": [
     "siwv6py"
@@ -1437,12 +1438,11 @@ window.SHOP={
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-32633-53gwm1qw.jpg",
     "images/cs-32633-fwr4pcwj.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-56060",
@@ -1505,6 +1505,7 @@ window.SHOP={
   {
    "code": "CS-23956",
    "name": "Screw Gauge or Micrometer 25 mm China",
+   "variants": [],
    "sub": "sqnvh0o",
    "subs": [
     "sqnvh0o",
@@ -1516,12 +1517,11 @@ window.SHOP={
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-23956-pm0l9lbq.jpg",
     "images/cs-23956-dhkw6n7a.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-041",
@@ -1564,6 +1564,7 @@ window.SHOP={
   {
    "code": "CS-8226",
    "name": "Monocular Biological Compound Microscope L101",
+   "variants": [],
    "sub": "s700fib",
    "subs": [
     "s700fib"
@@ -1573,11 +1574,10 @@ window.SHOP={
    "price": 4600,
    "stock": "in",
    "featured": 1,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-8226-65nxhp9e.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-038",
@@ -1692,21 +1692,21 @@ window.SHOP={
   {
    "code": "CS-7508",
    "name": "Lutron Dissolved Oxygen Meter DO-5509 Taiwan",
+   "variants": [],
    "sub": "sycngbl",
    "subs": [
     "sycngbl"
    ],
    "short": "Lutron DO-5509 dissolved oxygen meter, made in Taiwan.",
    "long": "Portable dissolved oxygen meter from Lutron for measuring DO in water. Commonly used in aquaculture, wastewater and environmental checks.\n\nSpecifications\n• Parameter: Dissolved oxygen\n• Model: DO-5509\n• Brand: Lutron\n• Origin: Taiwan\n\nIn the box\n• DO-5509 meter\n• DO probe\n• Battery\n• Instruction manual",
-   "price": 15500,
+   "price": 16000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Taiwan",
    "images": [
     "images/cs-7508-t5jdv68d.jpg",
     "images/cs-7508-2knrl7tl.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-28132",
@@ -1747,20 +1747,20 @@ window.SHOP={
   {
    "code": "HN-022",
    "name": "Hanna HI7061L General Purpose Cleaning Solution (500 mL)",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "General purpose electrode cleaning solution, 500 mL bottle.",
    "long": "General purpose cleaning solution for pH electrodes. It removes common deposits and contaminants from the glass bulb and junction so that the electrode regains a fast, stable response. Used during regular electrode maintenance in laboratories, water testing and food or process work.\n\nSpecifications\n• Type: general purpose electrode cleaning solution\n• Volume: 500 mL bottle\n• Use: soak the electrode for about 15 minutes, rinse with water, then recondition in storage solution\n• Not for use on electrodes with special cleaning requirements – check the electrode manual\n\nIn the box\n• Hanna HI7061L cleaning solution, 500 mL bottle",
-   "price": 2399,
+   "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-022-3nq19v5v.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-9042",
@@ -1802,6 +1802,7 @@ window.SHOP={
   {
    "code": "HN-004",
    "name": "Hanna HI-98303 Pocket Conductivity Tester (0 to 2000 µS/cm)",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2",
@@ -1809,16 +1810,15 @@ window.SHOP={
    ],
    "short": "Waterproof pocket EC tester, 0 to 2000 µS/cm, automatic one point calibration.",
    "long": "Low range pocket conductivity tester for drinking water, water conditioning, irrigation and environmental monitoring. A large LCD shows EC and temperature at the same time, and the exposed temperature probe gives automatic temperature compensation. The graphite electrode resists oxidation and polarization. Operation is two buttons, one for on and off and one for calibration.\n\nSpecifications\n• EC range: 0 to 2000 µS/cm, resolution 1 µS/cm, accuracy ±2% of full scale\n• Calibration: automatic, one point at 1413 µS/cm\n• Temperature compensation: automatic, 0 to 50°C\n• Temperature display: 0.0 to 50.0°C (°C or °F), ±0.5°C\n• Battery: CR2032, about 250 hours of continuous use\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 75 g\n\nIn the box\n• HI98303 DiST 3 tester\n• CR2032 battery\n• 1413 µS/cm calibration solution sachets (4)\n• Storage and protection sleeve\n• Instruction manual and quality certificate",
-   "price": 8199,
+   "price": 8500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-004-et7qb3y1.jpg",
     "images/hn-004-nyk8d5cu.jpg",
     "images/hn-004-sc41l6ri.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-82219",
@@ -1841,20 +1841,20 @@ window.SHOP={
   {
    "code": "CS-41521",
    "name": "Free Chlorine Checker Reagents (25 Tests)",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Hanna reagents for free chlorine Checker HC, 25 tests.",
    "long": "Replacement reagent set for Hanna free chlorine Checker HC colorimeters. Each pack contains reagents for 25 tests.\n\nSpecifications\n• Type: reagent set for free chlorine checker\n• Number of tests: 25\n• Manufacturer: Hanna Instruments\n\nIn the box\n• Reagents for 25 free chlorine tests",
-   "price": 1500,
+   "price": 1600,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/cs-41521-fzyryblk.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-22441",
@@ -1897,21 +1897,21 @@ window.SHOP={
   {
    "code": "CS-35862",
    "name": "Iron Checker Reagent HI721-25 Hanna",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Hanna HI721-25 reagent set for the HI721 iron checker.",
    "long": "Replacement reagent set for the Hanna HI721 iron Checker HC. Used with the checker to measure iron in water samples.\n\nSpecifications\n• Type: reagent set for HI721 iron checker\n• Model: HI721-25\n• Number of tests: 25\n• Manufacturer: Hanna Instruments\n\nIn the box\n• Reagents for 25 iron tests",
-   "price": 1500,
+   "price": 1600,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/cs-35862-6tb0y8d7.jpg",
     "images/cs-35862-uvrlh9vr.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-2322",
@@ -1975,40 +1975,40 @@ window.SHOP={
   {
    "code": "HN-027",
    "name": "Hanna Alkalinity Checker meter HI-772",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
    ],
    "short": "Marine alkalinity Checker HC, 0.0 to 20.0 dKH.",
    "long": "Handheld Checker HC colorimeter that reads alkalinity directly in dKH. Zero the checker with your sample, add the reagent, insert the vial and press the button. Designed as a more accurate alternative to chemical test kits for saltwater aquariums and marine applications.\n\nSpecifications\n• Parameter: Marine alkalinity\n• Range: 0.0 to 20.0 dKH\n• Resolution: 0.1 dKH\n• Accuracy at 25°C: ±0.3 dKH ±5% of reading\n• Light source: LED at 610 nm, silicon photocell detector\n• Auto shut-off: after 10 minutes\n• Power: 1.5 V AAA battery\n\nIn the box\n• HI772 Checker HC\n• Sample cuvettes with caps (2)\n• Alkalinity reagent starter kit (25 tests)\n• Syringe with tip\n• 1.5 V AAA battery\n• Instruction manual and quick start guide",
-   "price": 8199,
+   "price": 8500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-027-z8isz3or.jpg",
     "images/hn-027-c02bw55o.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-52717",
    "name": "pH Test Kit Hi-38058 - Range 4.0 - 10.0 pH",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
    ],
    "short": "Hanna HI38058 chemical pH test kit, 4.0 to 10.0 pH.",
    "long": "Chemical test kit for checking pH of water samples across the 4.0 to 10.0 pH range. Quick colour-based results on site without an instrument.\n\nSpecifications\n• Parameter: pH\n• Range: 4.0 to 10.0 pH\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI38058\n\nIn the box\n• pH reagent and accessories\n• Sample vial\n• Instruction sheet",
-   "price": 9500,
+   "price": 10500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/cs-52717-j0emn4rh.jpg",
     "images/cs-52717-c6pfd6hw.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-67362",
@@ -2031,22 +2031,22 @@ window.SHOP={
   {
    "code": "HN-013",
    "name": "HI-715 Ammonia Medium Range Checker for Freshwater",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
    ],
    "short": "Handheld ammonia colorimeter, 0.00 to 9.99 ppm NH3-N, 0.01 ppm resolution.",
    "long": "Hanna HI715 Ammonia Medium Range Checker HC is a pocket-size digital colorimeter for one parameter, ammonia. Add the reagents to the sample, put the cuvette in the meter and press one button to read the result, with no color chart to match by eye. Designed for freshwater samples. Used for water quality, environmental monitoring, plating and education.\n\nSpecifications\n• Range: 0.00 to 9.99 ppm NH3-N, resolution 0.01 ppm\n• Accuracy: ±0.05 ppm ±5% of reading at 25°C\n• Method: adaptation of ASTM D1426-92 (Nessler), the sample turns yellow\n• Light source: LED at 470 nm, silicon photocell detector\n• Battery: one 1.5 V AAA, auto-off after 10 minutes\n• Environment: 0 to 50°C, up to 95% RH non-condensing\n• Size and weight: 86 x 61 x 37.5 mm, 64 g\n• Extra reagents: HI715-26 reagent set (25 tests), sold separately\n\nIn the box\n• HI715 Checker HC colorimeter\n• Sample cuvettes with caps (2)\n• Ammonia medium range reagent starter kit (25 tests)\n• Battery\n• Instructions and quick start guide",
-   "price": 8199,
+   "price": 8500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-013-o5gt0g9v.jpg",
     "images/hn-013-rt6hqhz6.jpg",
     "images/hn-013-1jnoyjdo.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-033",
@@ -2070,6 +2070,7 @@ window.SHOP={
   {
    "code": "CS-9414",
    "name": "Digital Kitchen Scale 10Kg SF-400 China",
+   "variants": [],
    "sub": "c2s3",
    "subs": [
     "c2s3",
@@ -2077,14 +2078,13 @@ window.SHOP={
    ],
    "short": "SF-400 digital kitchen scale, 10 kg capacity.",
    "long": "Compact digital scale for the kitchen and for simple weighing jobs in shops and small laboratories.\n\nSpecifications\n• Capacity: 10 kg\n• Model: SF-400\n• Type: digital kitchen scale\n• Origin: China\n\nIn the box\n• SF-400 scale\n• Battery",
-   "price": 350,
+   "price": 400,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-9414-mb39sjcd.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-53448",
@@ -2126,21 +2126,21 @@ window.SHOP={
   {
    "code": "HN-014",
    "name": "Buffer Solution pH 7.01 Hanna 1000 ml Bottle HI-707",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Hanna pH 7.01 calibration buffer, 1 L bottle, accuracy ±0.01 pH at 25°C.",
    "long": "Hanna pH 7.01 calibration buffer solution in a 1 liter bottle (HI7007/1L). Use it to calibrate pH meters, to check that the meter and electrode are working properly, and to extend electrode life through routine maintenance. The solution is dyed green so the pH 7 buffer is easy to spot, and the airtight bottle has a tamper-proof seal.\n\nSpecifications\n• Value: pH 7.01 at 25°C, accuracy ±0.01 pH\n• Volume: 1 L bottle\n• Traceability: traceable to NIST standard reference materials\n• Shelf life: five years from manufacture, unopened\n• Lot number and expiry date are printed on the label\n• Produced to ISO 3696 / BS 3978",
-   "price": 2799,
+   "price": 3000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-024-hu0k3l26.jpg",
     "images/hn-024-4yeolmk8.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-4658",
@@ -2219,6 +2219,7 @@ window.SHOP={
   {
    "code": "CS-92660",
    "name": "TDS Meter (China)",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2",
@@ -2229,11 +2230,10 @@ window.SHOP={
    "price": 700,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-92660-d3nnh41a.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-5120",
@@ -2257,6 +2257,7 @@ window.SHOP={
   {
    "code": "HN-006",
    "name": "Hanna HI2211 Benchtop pH/mV Meter with 0.01 Resolution",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1",
@@ -2264,19 +2265,19 @@ window.SHOP={
    ],
    "short": "Benchtop pH, mV and temperature meter, 0.01 pH resolution, 1 or 2 point calibration.",
    "long": "Benchtop pH and temperature meter that also reads ORP in mV. Calibration is automatic, one or two point, guided step by step on the LCD, with five memorized buffers. It has automatic temperature compensation, a reading stability indicator and a recall function. A good everyday meter for school and college labs, water testing and quality control.\n\nSpecifications\n• pH range: -2.00 to 16.00 pH, resolution 0.01 pH, accuracy ±0.01 pH\n• Calibration: automatic, 1 or 2 points, memorized buffers pH 4.01, 6.86, 7.01, 9.18, 10.01\n• mV range: ±399.9 mV (0.1 mV) and ±2000 mV (1 mV)\n• Temperature: -9.9 to 120.0°C, resolution 0.1°C, ±0.5°C, automatic or manual compensation\n• Input impedance: 10^12 ohm\n• Power: 12 VDC adapter\n• Size and weight: 240 x 182 x 74 mm, 2.81 kg\n\nIn the box\n• HI2211 meter\n• HI1131B glass body pH electrode\n• HI7662 stainless steel temperature probe\n• HI76404N electrode holder\n• pH 4.01 and pH 7.01 buffer sachets\n• Electrode cleaning solution sachet\n• 12 VDC adapter\n• Instruction manual",
-   "price": 38500,
+   "price": 40000,
    "stock": "in",
    "featured": 1,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-006-nmvmz6tx.jpg",
     "images/hn-006-23r6a8ar.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-52137",
    "name": "Mini Magnetic Stirrer C1 Adjustable Stirrer 3L",
+   "variants": [],
    "sub": "sf4zcsj",
    "subs": [
     "sf4zcsj"
@@ -2286,16 +2287,16 @@ window.SHOP={
    "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-52137-ieb2hgtq.jpg",
     "images/cs-52137-j73vpiku.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-13716",
    "name": "Turbidity Meter-Lutron TU-2016 Made in Taiwan",
+   "variants": [],
    "sub": "c2s3",
    "subs": [
     "c2s3"
@@ -2305,12 +2306,11 @@ window.SHOP={
    "price": 48000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Taiwan",
    "images": [
     "images/cs-13716-96yi5y90.jpg",
     "images/cs-13716-flclzwmh.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-010",
@@ -2451,6 +2451,7 @@ window.SHOP={
   {
    "code": "HN-005",
    "name": "Hanna HI-98304 Pocket Conductivity Tester (0 to 20.00 mS/cm)",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2",
@@ -2458,17 +2459,16 @@ window.SHOP={
    ],
    "short": "Waterproof pocket EC tester, 0.00 to 20.00 mS/cm, automatic one point calibration.",
    "long": "High range pocket conductivity tester for water treatment, boilers and cooling towers, hydroponics and general lab use. The LCD shows EC and temperature together, and the exposed temperature probe gives fast automatic temperature compensation. Two button operation, with automatic calibration at 12.88 mS/cm.\n\nSpecifications\n• EC range: 0.00 to 20.00 mS/cm, resolution 0.01 mS/cm, accuracy ±2% of full scale\n• Calibration: automatic, one point at 12.88 mS/cm\n• Temperature compensation: automatic, 0 to 50°C\n• Temperature display: 0.0 to 50.0°C (°C or °F), ±0.5°C\n• Battery: CR2032, about 250 hours of continuous use\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 75 g\n\nIn the box\n• HI98304 DiST 4 tester\n• CR2032 battery\n• 12.88 mS/cm calibration solution sachets (4)\n• Storage and protection sleeve\n• Instruction manual and quality certificate",
-   "price": 8199,
+   "price": 8500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-005-kn9ctt0v.jpg",
     "images/hn-005-h7zam21k.jpg",
     "images/hn-005-20yvm3q1.jpg",
     "images/hn-005-gz4bj52n.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-5706",
@@ -2577,24 +2577,25 @@ window.SHOP={
   {
    "code": "HN-023",
    "name": "Hanna 3.5M KCl Electrolyte Solution 30ml for Double Junction Electrodes (30ml)",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "3.5M KCl refilling electrolyte, 30 ml, for double junction electrodes.",
    "long": "3.5M potassium chloride electrolyte for refillable double junction pH and ORP electrodes. Topping up the reference chamber with fresh electrolyte keeps the reference potential stable and gives dependable readings over the life of the electrode.\n\nSpecifications\n• Type: KCl reference electrolyte\n• Concentration: 3.5 M KCl\n• Volume: 30 ml\n• Use: refilling the reference chamber of refillable double junction electrodes\n\nIn the box\n• 3.5M KCl electrolyte solution, 30 ml bottle",
-   "price": 2499,
+   "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-023-7idl6wpf.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-044",
    "name": "pH Paper Strips for PH Measuring Merck, Germany",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t",
@@ -2606,12 +2607,11 @@ window.SHOP={
    "price": 920,
    "stock": "in",
    "featured": 1,
-   "origin": "",
+   "origin": "Germany",
    "images": [
     "images/hn-044-tgwcesb9.jpg",
     "images/hn-044-p71jltjw.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-39569",
@@ -2709,6 +2709,7 @@ window.SHOP={
   {
    "code": "CS-4444",
    "name": "Zeal PH1000 Digital Thermometer Hygrometer Min / Max Ideal for Greenhouse",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me",
@@ -2720,12 +2721,11 @@ window.SHOP={
    "price": 850,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "United Kingdom",
    "images": [
     "images/cs-4444-7pdpn2s8.jpg",
     "images/cs-4444-ltpr04l2.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-43125",
@@ -2749,21 +2749,21 @@ window.SHOP={
   {
    "code": "HN-030",
    "name": "Sulphate Test kit Hanna-HI38000(100 tests)",
+   "variants": [],
    "sub": "s2n9u18",
    "subs": [
     "s2n9u18"
    ],
    "short": "Hanna HI38000 sulphate test kit, 100 tests.",
    "long": "Chemical test kit for determining sulphate in water samples. Used for water treatment, boiler and cooling water, irrigation water and general laboratory screening where a quick field result is needed.\n\nSpecifications\n• Parameter: Sulphate\n• Number of tests: 100\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI38000\n\nIn the box\n• Sulphate reagents for 100 tests\n• Sample vials and accessories\n• Instruction sheet",
-   "price": 13999,
+   "price": 13500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-030-pbceydaa.jpg",
     "images/hn-030-qtladen0.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-23086",
@@ -2805,6 +2805,7 @@ window.SHOP={
   {
    "code": "HN-007",
    "name": "Hanna Checktemp Digital Thermometer HI98501",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -2814,13 +2815,12 @@ window.SHOP={
    "price": 6299,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-007-uh6nbrh6.jpg",
     "images/hn-007-to0trsv4.jpg",
     "images/hn-007-1ci8wujn.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-6148",
@@ -3368,19 +3368,6 @@ window.SHOP={
   {
    "code": "CS-34420",
    "name": "Measuring Cylinder China (25ml/50ml/100ml/250ml/500ml/1000ml)",
-   "sub": "szjdhbt",
-   "subs": [
-    "szjdhbt"
-   ],
-   "short": "Measuring Cylinder China, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.",
-   "long": "Graduated measuring cylinder for measuring volumes of liquids in the laboratory. Available in 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: graduated measuring cylinder\n• Sizes: 25ml/50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Measuring Cylinder, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-34420-ue5ellqn.jpg"
-   ],
    "variants": [
     {
      "name": "25ml",
@@ -3412,6 +3399,19 @@ window.SHOP={
      "price": 700,
      "images": []
     }
+   ],
+   "sub": "szjdhbt",
+   "subs": [
+    "szjdhbt"
+   ],
+   "short": "Measuring Cylinder China, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Graduated measuring cylinder for measuring volumes of liquids in the laboratory. Available in 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: graduated measuring cylinder\n• Sizes: 25ml/50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Measuring Cylinder, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "China",
+   "images": [
+    "images/cs-34420-ue5ellqn.jpg"
    ]
   },
   {
