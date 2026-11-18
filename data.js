@@ -492,6 +492,7 @@ window.SHOP={
   {
    "code": "CS-60928",
    "name": "Sartorius Filter Paper 0.45 um 47 mm Vacuum Membrane Filter",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -501,8 +502,9 @@ window.SHOP={
    "price": 3200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-60928-vr5mmiz7.jpg"
+   ]
   },
   {
    "code": "HN-034",
@@ -1971,9 +1973,10 @@ window.SHOP={
   {
    "code": "HN-046",
    "name": "Hydraulic GSM Cutter with Round Blade Knife",
-   "sub": "sz7qw3t",
+   "variants": [],
+   "sub": "szxirb6",
    "subs": [
-    "sz7qw3t"
+    "szxirb6"
    ],
    "short": "Hydraulic GSM cutter with round blade knife for fabric sampling.",
    "long": "Hydraulic GSM cutter that cuts a fabric specimen of exact area with a round blade, so that fabric weight in grams per square metre (GSM) can be calculated quickly after weighing. Used in textile laboratories and garment factories for fabric quality control.\n\nSpecifications\n• Type: hydraulic GSM cutter\n• Cutting tool: round blade knife\n• Use: cutting fabric specimens of fixed area for GSM calculation\n• Suitable for woven and knitted fabrics\n\nIn the box\n• Hydraulic GSM cutter with round blade knife",
@@ -1982,8 +1985,7 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/hn-046-wuycdxuc.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-014",
