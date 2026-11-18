@@ -26,7 +26,10 @@ window.SHOP={
     "c1s1",
     "c1s2",
     "c1s3",
-    "c1s6"
+    "c1s6",
+    "sryqr8c",
+    "sxxpmfc",
+    "s8ygcdr"
    ]
   },
   {
@@ -3481,6 +3484,53 @@ window.SHOP={
   {
    "code": "CS-43519",
    "name": "Glass Pipette HBG Germany (0.1ml/0.2ml/0.5ml/1ml/2ml/5ml/10ml/20ml/25ml)",
+   "variants": [
+    {
+     "name": "0.1ml",
+     "price": 250,
+     "images": []
+    },
+    {
+     "name": "0.2ml",
+     "price": 250,
+     "images": []
+    },
+    {
+     "name": "0.5ml",
+     "price": 250,
+     "images": []
+    },
+    {
+     "name": "1ml",
+     "price": 250,
+     "images": []
+    },
+    {
+     "name": "2ml",
+     "price": 250,
+     "images": []
+    },
+    {
+     "name": "5ml",
+     "price": 300,
+     "images": []
+    },
+    {
+     "name": "10ml",
+     "price": 350,
+     "images": []
+    },
+    {
+     "name": "20ml",
+     "price": 400,
+     "images": []
+    },
+    {
+     "name": "25ml",
+     "price": 450,
+     "images": []
+    }
+   ],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -3490,53 +3540,59 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": []
   },
   {
    "code": "CS-57042",
    "name": "Litmus Red Indicator",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "sz7qw3t",
    "subs": [
-    "sbtuofc"
+    "sz7qw3t"
    ],
    "short": "Red litmus indicator for testing alkalis.",
    "long": "Red litmus indicator for a quick check of whether a solution is alkaline. Red litmus turns blue in an alkaline (basic) solution and stays red in acid. Widely used in school and college laboratories.\n\nSpecifications\n• Type: red litmus indicator\n• Result: turns blue in alkaline solution\n• Use: qualitative acid-base testing\n\nIn the box\n• Red litmus indicator",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-57042-1hnwnql4.jpg",
+    "images/cs-57042-esm6rsnf.jpg"
+   ]
   },
   {
    "code": "CS-95549",
    "name": "Litmus Blue Indicator",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "sz7qw3t",
    "subs": [
-    "sbtuofc"
+    "sz7qw3t"
    ],
    "short": "Blue litmus indicator for testing acids.",
    "long": "Blue litmus indicator for a quick check of whether a solution is acidic. Blue litmus turns red in an acidic solution and stays blue in alkali. Widely used in school and college laboratories.\n\nSpecifications\n• Type: blue litmus indicator\n• Result: turns red in acidic solution\n• Use: qualitative acid-base testing\n\nIn the box\n• Blue litmus indicator",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-95549-2nethub3.jpg"
+   ]
   },
   {
    "code": "CS-79540",
    "name": "Magnifying Glass with Light Including Battery 75mm",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "s8ygcdr",
    "subs": [
-    "sbtuofc"
+    "s8ygcdr"
    ],
    "short": "75 mm magnifying glass with built-in light, battery included.",
-   "long": "Hand magnifying glass with a built-in light for clearer viewing of small text, specimens and parts. Battery included.\n\nSpecifications\n• Lens diameter: 75 mm\n• Built-in light\n• Battery included\n\nIn the box\n• Magnifying glass with light\n• Battery",
-   "price": null,
+   "long": "Hand magnifying glass with a built-in light for clearer viewing of small text, specimens and parts. Battery included.\n\nSpecifications\nHigh quality and crystal-clear Magnification with LED light\n\nMG2B-5 Double Magnification Magnifying Glass\n\nModel: MG2B-5\nLens size: 75mm, 19mm\nMagnification: 3X, 8X bifocal lens\nWith 2 LED, include 3 LR1130 button cells\nPush Switch to Turn ON/OFF\n\nIn the box\n• Magnifying glass with light\n• Battery",
+   "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-79540-pn35fvyg.jpg"
+   ]
   },
   {
    "code": "CS-13805",
@@ -3556,77 +3612,96 @@ window.SHOP={
   {
    "code": "CS-71088",
    "name": "Heating Mantle 250ml",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "sryqr8c",
    "subs": [
-    "sbtuofc"
+    "sryqr8c"
    ],
    "short": "Heating mantle for 250 ml flask.",
    "long": "Heating mantle for gentle, even heating of a 250 ml round-bottom flask in the laboratory, for distillation, reflux and extraction work.\n\nSpecifications\n• Type: heating mantle\n• Flask size: 250 ml\n\nIn the box\n• Heating mantle\n• Power cord",
-   "price": null,
+   "price": 5500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-71088-oyuyux8i.jpg"
+   ]
   },
   {
    "code": "CS-42680",
    "name": "Heating Mantle 500ml",
-   "sub": "sbtuofc",
+   "variants": [
+    {
+     "name": "500ml",
+     "price": 6500,
+     "images": []
+    }
+   ],
+   "sub": "sryqr8c",
    "subs": [
-    "sbtuofc"
+    "sryqr8c"
    ],
    "short": "Heating mantle for 500 ml flask.",
-   "long": "Heating mantle for gentle, even heating of a 500 ml round-bottom flask in the laboratory, for distillation, reflux and extraction work.\n\nSpecifications\n• Type: heating mantle\n• Flask size: 500 ml\n\nIn the box\n• Heating mantle\n• Power cord",
-   "price": null,
+   "long": "Heating mantle for gentle, even heating of a 500 ml round-bottom flask in the laboratory, for distillation, reflux and extraction work.\n\nSpecifications\n• Type: heating mantle\n• Flask size:250ml, 500 ml\n\nIn the box\n• Heating mantle\n• Power cord",
+   "price": 6500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-42680-hqpixyn6.jpg"
+   ]
   },
   {
    "code": "CS-95148",
    "name": "Army Magnetic Compass",
+   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
    ],
    "short": "Army-style magnetic compass for direction finding.",
    "long": "Magnetic compass in the army style for finding direction in the field, for hiking, camping and navigation.\n\nSpecifications\n• Type: magnetic compass\n• Style: army / field compass\n\nIn the box\n• Compass",
-   "price": null,
+   "price": 950,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-95148-x2vxm04c.jpg",
+    "images/cs-95148-q75pv2dg.jpg",
+    "images/cs-95148-osz8l4qx.jpg"
+   ]
   },
   {
    "code": "CS-16801",
    "name": "Compass",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "sxxpmfc",
    "subs": [
-    "sbtuofc"
+    "sxxpmfc"
    ],
    "short": "Magnetic compass.",
    "long": "Magnetic compass for finding direction and for physics and geography practicals.\n\nSpecifications\n• Type: magnetic compass\n\nIn the box\n• Compass",
-   "price": null,
+   "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-16801-5fq4w7tt.jpg"
+   ]
   },
   {
    "code": "CS-30580",
    "name": "Counting Glass SDL USA",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "s8ygcdr",
    "subs": [
-    "sbtuofc"
+    "s8ygcdr"
    ],
    "short": "SDL counting glass (thread counter), USA.",
    "long": "Counting glass for textile work. Place it on the fabric and count the threads per unit length to find the fabric construction. Used in textile laboratories and quality control.\n\nSpecifications\n• Type: textile counting glass\n• Brand: SDL\n• Origin: USA\n• Use: counting threads in woven fabric\n\nIn the box\n• Counting glass",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-30580-01vjw9rv.jpg",
+    "images/cs-30580-8k65lbjc.jpg"
+   ]
   }
  ],
  "subs": [
@@ -3841,6 +3916,18 @@ window.SHOP={
   {
    "id": "ssqekpg",
    "name": "Volumetric Flask"
+  },
+  {
+   "id": "sryqr8c",
+   "name": "Heating Mental"
+  },
+  {
+   "id": "sxxpmfc",
+   "name": "Compass"
+  },
+  {
+   "id": "s8ygcdr",
+   "name": "Magnifying/Counting Glass"
   }
  ]
 };
