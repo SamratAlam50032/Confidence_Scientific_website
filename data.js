@@ -82,7 +82,11 @@ window.SHOP={
     "suxv0es",
     "c16s2",
     "sp7hn9z",
-    "sf4zcsj"
+    "sf4zcsj",
+    "smv50c9",
+    "s2d9p1q",
+    "s4qm7uc",
+    "s1hn0il"
    ]
   },
   {
@@ -2968,6 +2972,227 @@ window.SHOP={
     "images/cs-83413-sw6p6fdm.jpg"
    ],
    "variants": []
+  },
+  {
+   "code": "CS-70738",
+   "name": "Glass Beaker Pyrex (50ml/100ml/250ml/500ml/1000ml)",
+   "variants": [
+    {
+     "name": "50ml",
+     "price": 75,
+     "images": []
+    },
+    {
+     "name": "100ml",
+     "price": 90,
+     "images": []
+    },
+    {
+     "name": "250ml",
+     "price": 110,
+     "images": []
+    },
+    {
+     "name": "500ml",
+     "price": 160,
+     "images": []
+    },
+    {
+     "name": "1000ml",
+     "price": 300,
+     "images": []
+    }
+   ],
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Glass Beaker Pyrex, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Glass beaker with a pouring spout and graduation marks, for mixing, heating and holding liquids in the laboratory. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: beaker, low form with spout, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Glass Beaker, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-70738-5hu45yug.jpg",
+    "images/cs-70738-oblzl0g2.jpg"
+   ]
+  },
+  {
+   "code": "CS-90449",
+   "name": "Glass Beaker China (50ml/100ml/250ml/500ml/1000ml)",
+   "variants": [
+    {
+     "name": "50ml",
+     "price": 70,
+     "images": []
+    },
+    {
+     "name": "100ml",
+     "price": 85,
+     "images": []
+    },
+    {
+     "name": "250ml",
+     "price": 100,
+     "images": []
+    },
+    {
+     "name": "500ml",
+     "price": 150,
+     "images": []
+    },
+    {
+     "name": "1000ml",
+     "price": 280,
+     "images": []
+    }
+   ],
+   "sub": "smv50c9",
+   "subs": [
+    "smv50c9",
+    "s2d9p1q",
+    "s4qm7uc",
+    "s1hn0il"
+   ],
+   "short": "Glass Beaker China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Glass beaker with a pouring spout and graduation marks, for mixing, heating and holding liquids in the laboratory. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: beaker, low form with spout, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Glass Beaker, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-90449-e3oz5x86.jpg"
+   ]
+  },
+  {
+   "code": "CS-58974",
+   "name": "Conical Flask Pyrex (50ml/100ml/250ml/500ml/1000ml)",
+   "variants": [],
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Conical Flask Pyrex, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Conical (Erlenmeyer) flask with a narrow neck and graduation marks, used for titrations, mixing, heating and storing solutions. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: conical (Erlenmeyer) flask, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Conical Flask, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-58974-ujrgd9pa.jpg",
+    "images/cs-58974-k8s7q8b9.jpg"
+   ]
+  },
+  {
+   "code": "CS-45049",
+   "name": "Conical Flask China (50ml/100ml/250ml/500ml/1000ml)",
+   "variants": [],
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Conical Flask China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Conical (Erlenmeyer) flask with a narrow neck and graduation marks, used for titrations, mixing, heating and storing solutions. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: conical (Erlenmeyer) flask, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Conical Flask, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-45049-wnxmubb4.jpg",
+    "images/cs-45049-394ntcre.jpg"
+   ]
+  },
+  {
+   "code": "CS-28177",
+   "name": "Measuring Cylinder Pyrex (10ml/25ml/50ml/100ml/250ml/500ml/1000ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Measuring Cylinder Pyrex, 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Graduated measuring cylinder for measuring volumes of liquids in the laboratory. Available in 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: graduated measuring cylinder\n• Sizes: 10ml/25ml/50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Measuring Cylinder, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-34420",
+   "name": "Measuring Cylinder China (10ml/25ml/50ml/100ml/250ml/500ml/1000ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Measuring Cylinder China, 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Graduated measuring cylinder for measuring volumes of liquids in the laboratory. Available in 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: graduated measuring cylinder\n• Sizes: 10ml/25ml/50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Measuring Cylinder, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-98767",
+   "name": "Volumetric Flask Pyrex (50ml/100ml/250ml/500ml/1000ml)",
+   "variants": [],
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Volumetric Flask Pyrex, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Volumetric flask with a single graduation mark and a stopper, used for preparing standard solutions and dilutions of an exact volume. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: volumetric flask, single mark, with stopper\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Volumetric Flask, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-98767-7os9i41l.jpg",
+    "images/cs-98767-tcn401yu.jpg"
+   ]
+  },
+  {
+   "code": "CS-10844",
+   "name": "Volumetric Flask China (50ml/100ml/250ml/500ml/1000ml)",
+   "variants": [],
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Volumetric Flask China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Volumetric flask with a single graduation mark and a stopper, used for preparing standard solutions and dilutions of an exact volume. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: volumetric flask, single mark, with stopper\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Volumetric Flask, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-10844-bl96d6wk.jpg"
+   ]
+  },
+  {
+   "code": "CS-54388",
+   "name": "Lab Bottle (50ml/100ml/250ml/500ml/1000ml/2000ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Lab Bottle, 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.",
+   "long": "Laboratory bottle with a cap for storing reagents, solutions and samples. Available in 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.\n\nSpecifications\n• Type: laboratory bottle with cap\n• Sizes: 50ml/100ml/250ml/500ml/1000ml/2000ml\n\nIn the box\n• Lab Bottle, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-75957",
+   "name": "Lab Bottle China (50ml/100ml/250ml/500ml/1000ml/2000ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Lab Bottle China, 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.",
+   "long": "Laboratory bottle with a cap for storing reagents, solutions and samples. Available in 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.\n\nSpecifications\n• Type: laboratory bottle with cap\n• Sizes: 50ml/100ml/250ml/500ml/1000ml/2000ml\n• Origin: China\n\nIn the box\n• Lab Bottle, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
   }
  ],
  "subs": [
@@ -3154,6 +3379,26 @@ window.SHOP={
   {
    "id": "s7cmald",
    "name": "Lactometer"
+  },
+  {
+   "id": "sbtuofc",
+   "name": "General"
+  },
+  {
+   "id": "smv50c9",
+   "name": "Beaker"
+  },
+  {
+   "id": "s2d9p1q",
+   "name": "Conical Flask"
+  },
+  {
+   "id": "s4qm7uc",
+   "name": "Lab Bottle"
+  },
+  {
+   "id": "s1hn0il",
+   "name": "Reagent Bottle"
   }
  ]
 };
