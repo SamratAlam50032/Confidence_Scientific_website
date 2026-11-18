@@ -779,6 +779,7 @@ window.SHOP={
   {
    "code": "CS-19421",
    "name": "Phenol Red Indicator 25g Research Lab",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -788,8 +789,9 @@ window.SHOP={
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-19421-f532mthd.jpg"
+   ]
   },
   {
    "code": "CS-79595",
@@ -1010,6 +1012,7 @@ window.SHOP={
   {
    "code": "CS-72421",
    "name": "Smart Sensor Temperature Humidity Clock SM807",
+   "variants": [],
    "sub": "shsdp0x",
    "subs": [
     "shsdp0x",
@@ -1021,8 +1024,9 @@ window.SHOP={
    "price": 500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-72421-frxiu730.jpg"
+   ]
   },
   {
    "code": "CS-92899",
@@ -1262,17 +1266,19 @@ window.SHOP={
   {
    "code": "CS-44125",
    "name": "Citric Acid 500 gm, Merck Germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
    ],
    "short": "Citric acid, 500 g pack.",
    "long": "Citric acid for laboratory use in buffer preparation, titrations and general analysis. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Citric acid\n• Pack size: 500 g\n• Brand: Merck\n• Origin: Germany\n\nIn the box\n• Citric acid, 500 g bottle",
-   "price": 600,
+   "price": 700,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-44125-et476wqu.jpg"
+   ]
   },
   {
    "code": "CS-25375",
@@ -1316,6 +1322,7 @@ window.SHOP={
   {
    "code": "CS-20398",
    "name": "Labratory handheld digital multi thermometer model:-P3050",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1325,12 +1332,14 @@ window.SHOP={
    "price": 1000,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-20398-tggtby2p.jpg"
+   ]
   },
   {
    "code": "CS-21427",
    "name": "Digital Magnetic stirrer with hotplate 85-2",
+   "variants": [],
    "sub": "sf4zcsj",
    "subs": [
     "sf4zcsj"
@@ -1340,8 +1349,9 @@ window.SHOP={
    "price": 10500,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-21427-7ighluwn.jpg"
+   ]
   },
   {
    "code": "CS-32633",
@@ -1457,6 +1467,7 @@ window.SHOP={
   {
    "code": "HN-024",
    "name": "Hanna Iron Test Kit HI-3834 Romania",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -1466,8 +1477,10 @@ window.SHOP={
    "price": 3499,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/hn-024-lbvbbzmp.jpg",
+    "images/hn-024-z0oze16t.jpg"
+   ]
   },
   {
    "code": "CS-8226",
@@ -1523,18 +1536,20 @@ window.SHOP={
   },
   {
    "code": "CS-36866",
-   "name": "Sodium Fluoride 500g Merck India",
-   "sub": "se65abx",
+   "name": "Sodium Fluoride 500g Merck Germany",
+   "variants": [],
+   "sub": "c4s1",
    "subs": [
-    "se65abx"
+    "c4s1"
    ],
    "short": "Sodium fluoride, 500 g pack.",
    "long": "Sodium fluoride for laboratory use, for example in preparing fluoride standards. Toxic – handle with great care. Store tightly closed and use suitable protective equipment.\n\nSpecifications\n• Chemical: Sodium fluoride\n• Pack size: 500 g\n• Brand: Merck\n• Origin: India\n\nIn the box\n• Sodium fluoride, 500 g bottle",
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-36866-wlxiz2zm.jpg"
+   ]
   },
   {
    "code": "HN-021",
@@ -1967,17 +1982,20 @@ window.SHOP={
   {
    "code": "CS-53448",
    "name": "Cowbell Lactometer for Milk Purity Test",
+   "variants": [],
    "sub": "s7cmald",
    "subs": [
     "s7cmald"
    ],
    "short": "Lactometer for checking milk purity.",
    "long": "Lactometer that measures the density of milk, helping to spot adulteration such as added water. Float it in a milk sample and read the scale.\n\nSpecifications\n• Type: milk lactometer\n• Use: milk purity test\n\nIn the box\n• Lactometer",
-   "price": 120,
+   "price": 140,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-53448-9a6qg4ei.jpg",
+    "images/cs-53448-lncl75pu.jpg"
+   ]
   },
   {
    "code": "HN-046",
