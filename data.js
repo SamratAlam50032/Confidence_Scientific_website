@@ -348,23 +348,6 @@ window.SHOP={
    "variants": []
   },
   {
-   "code": "CS-86351",
-   "name": "Wire Net with Asbestos for Laboratory Use",
-   "sub": "s916j9x",
-   "subs": [
-    "s916j9x"
-   ],
-   "short": "Wire gauze with asbestos centre.",
-   "long": "Wire gauze that spreads heat evenly under flasks and beakers during heating.\n\nSpecifications\n• Type: wire gauze with centre\n• Use: even heating of glassware\n\nIn the box\n• Wire gauze",
-   "price": 60,
-   "stock": "in",
-   "featured": 0,
-   "images": [
-    "images/cs-86351-1stoy6wu.jpg"
-   ],
-   "variants": []
-  },
-  {
    "code": "CS-6696",
    "name": "UNI-T UT306s Infrared Thermometer(-50~500°C) (-58~932°F)",
    "sub": "seja7me",
@@ -379,6 +362,23 @@ window.SHOP={
    "images": [
     "images/cs-6696-aqjpjcq9.jpg",
     "images/cs-6696-3whbce5q.jpg"
+   ],
+   "variants": []
+  },
+  {
+   "code": "CS-86351",
+   "name": "Wire Net with Asbestos for Laboratory Use",
+   "sub": "s916j9x",
+   "subs": [
+    "s916j9x"
+   ],
+   "short": "Wire gauze with asbestos centre.",
+   "long": "Wire gauze that spreads heat evenly under flasks and beakers during heating.\n\nSpecifications\n• Type: wire gauze with centre\n• Use: even heating of glassware\n\nIn the box\n• Wire gauze",
+   "price": 60,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-86351-1stoy6wu.jpg"
    ],
    "variants": []
   },
@@ -656,6 +656,7 @@ window.SHOP={
   {
    "code": "CS-70455",
    "name": "Whatman Filter Papers 125 mm Grade-1 (Copy)",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -665,8 +666,10 @@ window.SHOP={
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-70455-1vuh9cyz.jpg",
+    "images/cs-70455-lqqp0beb.jpg"
+   ]
   },
   {
    "code": "HN-032",
@@ -1398,6 +1401,7 @@ window.SHOP={
   {
    "code": "CS-85614",
    "name": "Whatman Filter Papers 125 mm Grade-1",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -1407,8 +1411,10 @@ window.SHOP={
    "price": 1400,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-85614-u9aj0810.jpg",
+    "images/cs-85614-e5ma2a4i.jpg"
+   ]
   },
   {
    "code": "CS-23956",
@@ -1743,6 +1749,7 @@ window.SHOP={
   {
    "code": "CS-22441",
    "name": "Filter Papers Grade-42 Whatman 12.5 cm (Copy)",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -1752,8 +1759,10 @@ window.SHOP={
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-22441-gd8i45el.jpg",
+    "images/cs-22441-9yjs86s8.jpg"
+   ]
   },
   {
    "code": "CS-62775",
@@ -2244,6 +2253,7 @@ window.SHOP={
   {
    "code": "CS-21503",
    "name": "Filter Papers Grade-42 Whatman 12.5 cm",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -2253,8 +2263,10 @@ window.SHOP={
    "price": 1400,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-21503-7vlju29q.jpg",
+    "images/cs-21503-71lwb3yj.jpg"
+   ]
   },
   {
    "code": "CS-2606",
