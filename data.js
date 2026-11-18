@@ -2,8 +2,8 @@ window.SHOP={
  "settings": {
   "name": "Confidence Scientific",
   "tagline": "Laboratory instruments",
-  "headline": "All lab and testing instruments in just one click.",
-  "intro": "We supply all kind of chemicals, glass wares,  school-college lab items , textile equipment's, hatchery items & scientific instruments .",
+  "headline": "All lab and testing instruments in just one click",
+  "intro": "We supply all kind of chemicals, glass wares,  school-college lab items , textile equipment's, hatchery items & scientific instruments",
   "whatsapp": "8801819277821",
   "phones": [
    "01819277821",
