@@ -3331,9 +3331,9 @@ window.SHOP={
      "images": []
     }
    ],
-   "sub": "sbtuofc",
+   "sub": "ssqekpg",
    "subs": [
-    "sbtuofc"
+    "ssqekpg"
    ],
    "short": "Volumetric Flask China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
    "long": "Volumetric flask with a single graduation mark and a stopper, used for preparing standard solutions and dilutions of an exact volume. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: volumetric flask, single mark, with stopper\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Volumetric Flask, in the size you order",
