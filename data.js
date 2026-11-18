@@ -3268,20 +3268,6 @@ window.SHOP={
   {
    "code": "CS-45049",
    "name": "Conical Flask China (50ml/100ml/250ml/500ml/1000ml)",
-   "sub": "s2d9p1q",
-   "subs": [
-    "s2d9p1q"
-   ],
-   "short": "Conical Flask China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
-   "long": "Conical (Erlenmeyer) flask with a narrow neck and graduation marks, used for titrations, mixing, heating and storing solutions. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: conical (Erlenmeyer) flask, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Conical Flask, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-45049-394ntcre.jpg",
-    "images/cs-45049-wnxmubb4.jpg"
-   ],
    "variants": [
     {
      "name": "50ml",
@@ -3308,25 +3294,25 @@ window.SHOP={
      "price": 450,
      "images": []
     }
+   ],
+   "sub": "s2d9p1q",
+   "subs": [
+    "s2d9p1q"
+   ],
+   "short": "Conical Flask China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Conical (Erlenmeyer) flask with a narrow neck and graduation marks, used for titrations, mixing, heating and storing solutions. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: conical (Erlenmeyer) flask, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Conical Flask, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "China",
+   "images": [
+    "images/cs-45049-394ntcre.jpg",
+    "images/cs-45049-wnxmubb4.jpg"
    ]
   },
   {
    "code": "CS-28177",
    "name": "Measuring Cylinder Pyrex (10ml/25ml/50ml/100ml/250ml/500ml/1000ml)",
-   "sub": "szjdhbt",
-   "subs": [
-    "szjdhbt"
-   ],
-   "short": "Measuring Cylinder Pyrex, 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.",
-   "long": "Graduated measuring cylinder for measuring volumes of liquids in the laboratory. Available in 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: graduated measuring cylinder\n• Sizes: 10ml/25ml/50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Measuring Cylinder, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-28177-fnfl8o3p.jpg",
-    "images/cs-28177-clpeepgz.jpg"
-   ],
    "variants": [
     {
      "name": "10ml",
@@ -3363,6 +3349,20 @@ window.SHOP={
      "price": 800,
      "images": []
     }
+   ],
+   "sub": "szjdhbt",
+   "subs": [
+    "szjdhbt"
+   ],
+   "short": "Measuring Cylinder Pyrex, 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Graduated measuring cylinder for measuring volumes of liquids in the laboratory. Available in 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: graduated measuring cylinder\n• Sizes: 10ml/25ml/50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Measuring Cylinder, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "India",
+   "images": [
+    "images/cs-28177-fnfl8o3p.jpg",
+    "images/cs-28177-clpeepgz.jpg"
    ]
   },
   {
@@ -3417,20 +3417,6 @@ window.SHOP={
   {
    "code": "CS-98767",
    "name": "Volumetric Flask Pyrex (10ml/50ml/100ml/250ml/500ml/1000ml)",
-   "sub": "ssqekpg",
-   "subs": [
-    "ssqekpg"
-   ],
-   "short": "Volumetric Flask Pyrex 10ml, 50ml, 100ml, 250ml, 500ml, 1000ml.",
-   "long": "Volumetric flask with a single graduation mark and a stopper, used for preparing standard solutions and dilutions of an exact volume. Available in 10ml, 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: volumetric flask, single mark, with stopper\n• Sizes: 10ml/50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Volumetric Flask, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-98767-7os9i41l.jpg",
-    "images/cs-98767-tcn401yu.jpg"
-   ],
    "variants": [
     {
      "name": "10ml",
@@ -3462,24 +3448,25 @@ window.SHOP={
      "price": 650,
      "images": []
     }
+   ],
+   "sub": "ssqekpg",
+   "subs": [
+    "ssqekpg"
+   ],
+   "short": "Volumetric Flask Pyrex 10ml, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Volumetric flask with a single graduation mark and a stopper, used for preparing standard solutions and dilutions of an exact volume. Available in 10ml, 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: volumetric flask, single mark, with stopper\n• Sizes: 10ml/50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Volumetric Flask, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "India",
+   "images": [
+    "images/cs-98767-7os9i41l.jpg",
+    "images/cs-98767-tcn401yu.jpg"
    ]
   },
   {
    "code": "CS-10844",
    "name": "Volumetric Flask China (50ml/100ml/250ml/500ml/1000ml)",
-   "sub": "ssqekpg",
-   "subs": [
-    "ssqekpg"
-   ],
-   "short": "Volumetric Flask China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
-   "long": "Volumetric flask with a single graduation mark and a stopper, used for preparing standard solutions and dilutions of an exact volume. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: volumetric flask, single mark, with stopper\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Volumetric Flask, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-10844-bl96d6wk.jpg"
-   ],
    "variants": [
     {
      "name": "50ml",
@@ -3506,25 +3493,24 @@ window.SHOP={
      "price": 650,
      "images": []
     }
+   ],
+   "sub": "ssqekpg",
+   "subs": [
+    "ssqekpg"
+   ],
+   "short": "Volumetric Flask China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Volumetric flask with a single graduation mark and a stopper, used for preparing standard solutions and dilutions of an exact volume. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: volumetric flask, single mark, with stopper\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Volumetric Flask, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "China",
+   "images": [
+    "images/cs-10844-bl96d6wk.jpg"
    ]
   },
   {
    "code": "CS-54388",
    "name": "Lab Bottle Pyrex (50ml/100ml/250ml/500ml/1000ml/2000ml)",
-   "sub": "s4qm7uc",
-   "subs": [
-    "s4qm7uc"
-   ],
-   "short": "Lab Bottle, 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.",
-   "long": "Laboratory bottle with a cap for storing reagents, solutions and samples. Available in 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.\n\nSpecifications\n• Type: laboratory bottle with cap\n• Sizes: 50ml/100ml/250ml/500ml/1000ml/2000ml\n\nIn the box\n• Lab Bottle, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-54388-rj7e3rad.jpg",
-    "images/cs-54388-a55v3spb.jpg"
-   ],
    "variants": [
     {
      "name": "50ml",
@@ -3551,25 +3537,25 @@ window.SHOP={
      "price": 800,
      "images": []
     }
+   ],
+   "sub": "s4qm7uc",
+   "subs": [
+    "s4qm7uc"
+   ],
+   "short": "Lab Bottle, 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.",
+   "long": "Laboratory bottle with a cap for storing reagents, solutions and samples. Available in 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.\n\nSpecifications\n• Type: laboratory bottle with cap\n• Sizes: 50ml/100ml/250ml/500ml/1000ml/2000ml\n\nIn the box\n• Lab Bottle, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "India",
+   "images": [
+    "images/cs-54388-rj7e3rad.jpg",
+    "images/cs-54388-a55v3spb.jpg"
    ]
   },
   {
    "code": "CS-75957",
    "name": "Lab Bottle China (100ml/250ml/500ml/1000ml/2000ml)",
-   "sub": "s4qm7uc",
-   "subs": [
-    "s4qm7uc"
-   ],
-   "short": "Lab Bottle China, 100ml, 250ml, 500ml, 1000ml, 2000ml.",
-   "long": "Laboratory bottle with a cap for storing reagents, solutions and samples. Available in 100ml, 250ml, 500ml, 1000ml, 2000ml.\n\nSpecifications\n• Type: laboratory bottle with cap\n• Sizes: 100ml/250ml/500ml/1000ml/2000ml\n• Origin: China\n\nIn the box\n• Lab Bottle, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-75957-cb6getzx.jpg",
-    "images/cs-75957-mri49vfw.jpg"
-   ],
    "variants": [
     {
      "name": "100ml",
@@ -3591,24 +3577,25 @@ window.SHOP={
      "price": 700,
      "images": []
     }
+   ],
+   "sub": "s4qm7uc",
+   "subs": [
+    "s4qm7uc"
+   ],
+   "short": "Lab Bottle China, 100ml, 250ml, 500ml, 1000ml, 2000ml.",
+   "long": "Laboratory bottle with a cap for storing reagents, solutions and samples. Available in 100ml, 250ml, 500ml, 1000ml, 2000ml.\n\nSpecifications\n• Type: laboratory bottle with cap\n• Sizes: 100ml/250ml/500ml/1000ml/2000ml\n• Origin: China\n\nIn the box\n• Lab Bottle, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "China",
+   "images": [
+    "images/cs-75957-cb6getzx.jpg",
+    "images/cs-75957-mri49vfw.jpg"
    ]
   },
   {
    "code": "CS-91727",
    "name": "Glass Pipette Pyrex (1ml/2ml/5ml/10ml/20ml/25ml/50ml)",
-   "sub": "c16s2",
-   "subs": [
-    "c16s2"
-   ],
-   "short": "Pyrex glass pipette, 1 ml to 50 ml.",
-   "long": "Glass pipette for measuring and transferring liquid volumes accurately in the laboratory. Available in sizes from 1 ml to 50 ml.\n\nSpecifications\n• Type: glass pipette\n• Brand: Pyrex\n• Sizes: 1 ml, 2 ml, 5 ml, 10 ml, 20 ml, 25 ml, 50 ml\n\nIn the box\n• Pipette, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-91727-0qogrszh.jpg"
-   ],
    "variants": [
     {
      "name": "1ml",
@@ -3645,25 +3632,24 @@ window.SHOP={
      "price": 250,
      "images": []
     }
+   ],
+   "sub": "c16s2",
+   "subs": [
+    "c16s2"
+   ],
+   "short": "Pyrex glass pipette, 1 ml to 50 ml.",
+   "long": "Glass pipette for measuring and transferring liquid volumes accurately in the laboratory. Available in sizes from 1 ml to 50 ml.\n\nSpecifications\n• Type: glass pipette\n• Brand: Pyrex\n• Sizes: 1 ml, 2 ml, 5 ml, 10 ml, 20 ml, 25 ml, 50 ml\n\nIn the box\n• Pipette, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "India",
+   "images": [
+    "images/cs-91727-0qogrszh.jpg"
    ]
   },
   {
    "code": "CS-43519",
    "name": "Glass Pipette HBG Germany (0.1ml/0.2ml/0.5ml/1ml/2ml/5ml/10ml/20ml/25ml)",
-   "sub": "sbtuofc",
-   "subs": [
-    "sbtuofc"
-   ],
-   "short": "HBG Germany glass pipette, 0.1 ml to 25 ml.",
-   "long": "Glass pipette from HBG, Germany, for measuring and transferring liquid volumes accurately in the laboratory. Available in sizes from 0.1 ml to 25 ml.\n\nSpecifications\n• Type: glass pipette\n• Brand: HBG\n• Origin: Germany\n• Sizes: 0.1 ml, 0.2 ml, 0.5 ml, 1 ml, 2 ml, 5 ml, 10 ml, 20 ml, 25 ml\n\nIn the box\n• Pipette, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-43519-yo0wav7r.jpg",
-    "images/cs-43519-sf0w4wu0.jpg"
-   ],
    "variants": [
     {
      "name": "0.1ml",
@@ -3710,11 +3696,26 @@ window.SHOP={
      "price": 450,
      "images": []
     }
+   ],
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "HBG Germany glass pipette, 0.1 ml to 25 ml.",
+   "long": "Glass pipette from HBG, Germany, for measuring and transferring liquid volumes accurately in the laboratory. Available in sizes from 0.1 ml to 25 ml.\n\nSpecifications\n• Type: glass pipette\n• Brand: HBG\n• Origin: Germany\n• Sizes: 0.1 ml, 0.2 ml, 0.5 ml, 1 ml, 2 ml, 5 ml, 10 ml, 20 ml, 25 ml\n\nIn the box\n• Pipette, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "Germany",
+   "images": [
+    "images/cs-43519-yo0wav7r.jpg",
+    "images/cs-43519-sf0w4wu0.jpg"
    ]
   },
   {
    "code": "CS-57042",
    "name": "Litmus Red Indicator",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -3724,12 +3725,11 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-57042-1hnwnql4.jpg",
     "images/cs-57042-esm6rsnf.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-95549",
@@ -3752,6 +3752,7 @@ window.SHOP={
   {
    "code": "CS-79540",
    "name": "Magnifying Glass with Light Including Battery 75mm",
+   "variants": [],
    "sub": "s8ygcdr",
    "subs": [
     "s8ygcdr",
@@ -3762,29 +3763,14 @@ window.SHOP={
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-79540-pn35fvyg.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-13805",
    "name": "Reagent Bottle China (125ml/250ml/500ml/1000ml)",
-   "sub": "s1hn0il",
-   "subs": [
-    "s1hn0il"
-   ],
-   "short": "Reagent bottle, China, 125 ml to 1000 ml.",
-   "long": "Laboratory reagent bottle for storing chemicals and solutions. Available in sizes from 125 ml to 1000 ml.\n\nSpecifications\n• Type: reagent bottle\n• Sizes: 125 ml, 250 ml, 500 ml, 1000 ml\n• Origin: China\n\nIn the box\n• Reagent bottle, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-13805-5icq6y4h.jpg",
-    "images/cs-13805-tqr4azue.jpg"
-   ],
    "variants": [
     {
      "name": "125ml",
@@ -3806,6 +3792,20 @@ window.SHOP={
      "price": 350,
      "images": []
     }
+   ],
+   "sub": "s1hn0il",
+   "subs": [
+    "s1hn0il"
+   ],
+   "short": "Reagent bottle, China, 125 ml to 1000 ml.",
+   "long": "Laboratory reagent bottle for storing chemicals and solutions. Available in sizes from 125 ml to 1000 ml.\n\nSpecifications\n• Type: reagent bottle\n• Sizes: 125 ml, 250 ml, 500 ml, 1000 ml\n• Origin: China\n\nIn the box\n• Reagent bottle, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "China",
+   "images": [
+    "images/cs-13805-5icq6y4h.jpg",
+    "images/cs-13805-tqr4azue.jpg"
    ]
   },
   {
@@ -3829,6 +3829,13 @@ window.SHOP={
   {
    "code": "CS-42680",
    "name": "Heating Mantle 500ml",
+   "variants": [
+    {
+     "name": "500ml",
+     "price": 6500,
+     "images": []
+    }
+   ],
    "sub": "sryqr8c",
    "subs": [
     "sryqr8c"
@@ -3838,16 +3845,9 @@ window.SHOP={
    "price": 6500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-42680-hqpixyn6.jpg"
-   ],
-   "variants": [
-    {
-     "name": "500ml",
-     "price": 6500,
-     "images": []
-    }
    ]
   },
   {
@@ -3873,6 +3873,7 @@ window.SHOP={
   {
    "code": "CS-16801",
    "name": "Compass",
+   "variants": [],
    "sub": "sxxpmfc",
    "subs": [
     "sxxpmfc"
@@ -3882,15 +3883,15 @@ window.SHOP={
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-16801-5fq4w7tt.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-30580",
    "name": "Counting Glass SDL USA",
+   "variants": [],
    "sub": "s8ygcdr",
    "subs": [
     "s8ygcdr",
@@ -3901,12 +3902,11 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "United States",
    "images": [
     "images/cs-30580-01vjw9rv.jpg",
     "images/cs-30580-8k65lbjc.jpg"
-   ],
-   "variants": []
+   ]
   }
  ],
  "subs": [
