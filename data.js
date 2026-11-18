@@ -2391,10 +2391,18 @@ window.SHOP={
   {
    "code": "CS-68295",
    "name": "Magnifying Glass 90 mm",
+   "variants": [
+    {
+     "name": "75mm",
+     "price": 160,
+     "images": []
+    }
+   ],
    "sub": "c3s1",
    "subs": [
     "c3s1",
-    "sarg0tn"
+    "sarg0tn",
+    "s8ygcdr"
    ],
    "short": "Magnifying glass, 90 mm lens.",
    "long": "Hand magnifying glass with a 90 mm lens for reading, inspecting specimens and general observation.\n\nSpecifications\n• Lens diameter: 90 mm\n• Type: hand magnifier\n\nIn the box\n• Magnifying glass",
@@ -2404,13 +2412,6 @@ window.SHOP={
    "images": [
     "images/cs-68295-uj0fwl7j.jpg",
     "images/cs-68295-y3dqamxg.jpg"
-   ],
-   "variants": [
-    {
-     "name": "75mm",
-     "price": 160,
-     "images": []
-    }
    ]
   },
   {
@@ -3583,7 +3584,8 @@ window.SHOP={
    "variants": [],
    "sub": "s8ygcdr",
    "subs": [
-    "s8ygcdr"
+    "s8ygcdr",
+    "sarg0tn"
    ],
    "short": "75 mm magnifying glass with built-in light, battery included.",
    "long": "Hand magnifying glass with a built-in light for clearer viewing of small text, specimens and parts. Battery included.\n\nSpecifications\nHigh quality and crystal-clear Magnification with LED light\n\nMG2B-5 Double Magnification Magnifying Glass\n\nModel: MG2B-5\nLens size: 75mm, 19mm\nMagnification: 3X, 8X bifocal lens\nWith 2 LED, include 3 LR1130 button cells\nPush Switch to Turn ON/OFF\n\nIn the box\n• Magnifying glass with light\n• Battery",
@@ -3691,7 +3693,8 @@ window.SHOP={
    "variants": [],
    "sub": "s8ygcdr",
    "subs": [
-    "s8ygcdr"
+    "s8ygcdr",
+    "sarg0tn"
    ],
    "short": "SDL counting glass (thread counter), USA.",
    "long": "Counting glass for textile work. Place it on the fabric and count the threads per unit length to find the fabric construction. Used in textile laboratories and quality control.\n\nSpecifications\n• Type: textile counting glass\n• Brand: SDL\n• Origin: USA\n• Use: counting threads in woven fabric\n\nIn the box\n• Counting glass",
