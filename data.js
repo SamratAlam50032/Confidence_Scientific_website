@@ -2,8 +2,8 @@ window.SHOP={
  "settings": {
   "name": "Confidence Scientific",
   "tagline": "Laboratory instruments",
-  "headline": "Lab and testing instruments, ready when you need them.",
-  "intro": "Water testing, temperature, moisture, electrical and dimensional meters for labs, dairies, farms and factories.",
+  "headline": "All lab and testing instruments in just one click.",
+  "intro": "We supply all kind of chemicals, glass wares,  school-college lab items , textile equipment's, hatchery items & scientific instruments .",
   "whatsapp": "8801819277821",
   "phones": [
    "01819277821",
@@ -11,7 +11,7 @@ window.SHOP={
   ],
   "email": "confidencesci@gmail.com",
   "address": "34,Hatkhola Road ,Tikatuli , Dhaka-1203",
-  "map": "",
+  "map": "https://www.google.com/maps/place/Confidence+Scientific+Co./@23.7213133,90.4176149,17z/data=!3m1!4b1!4m6!3m5!1s0x3755b8522f4d809f:0xba0395468636876f!8m2!3d23.7213084!4d90.4201898!16s%2Fg%2F11b61rh3zh?entry=ttu&g_ep=EgoyMDI2MTExNi4wIKXMDSoASAFQAw%3D%3D",
   "tgToken": "",
   "tgChat": "",
   "w3Key": "38e17721-56e7-48a0-8f47-ac4b2fef87d4"
