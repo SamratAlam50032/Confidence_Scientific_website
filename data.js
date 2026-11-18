@@ -3155,9 +3155,46 @@ window.SHOP={
   {
    "code": "CS-28177",
    "name": "Measuring Cylinder Pyrex (10ml/25ml/50ml/100ml/250ml/500ml/1000ml)",
-   "sub": "sbtuofc",
+   "variants": [
+    {
+     "name": "10ml",
+     "price": 140,
+     "images": []
+    },
+    {
+     "name": "25ml",
+     "price": 160,
+     "images": []
+    },
+    {
+     "name": "50ml",
+     "price": 170,
+     "images": []
+    },
+    {
+     "name": "100ml",
+     "price": 220,
+     "images": []
+    },
+    {
+     "name": "250ml",
+     "price": 280,
+     "images": []
+    },
+    {
+     "name": "500ml",
+     "price": 450,
+     "images": []
+    },
+    {
+     "name": "1000ml",
+     "price": 800,
+     "images": []
+    }
+   ],
+   "sub": "szjdhbt",
    "subs": [
-    "sbtuofc"
+    "szjdhbt"
    ],
    "short": "Measuring Cylinder Pyrex, 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.",
    "long": "Graduated measuring cylinder for measuring volumes of liquids in the laboratory. Available in 10ml, 25ml, 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: graduated measuring cylinder\n• Sizes: 10ml/25ml/50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Measuring Cylinder, in the size you order",
@@ -3167,8 +3204,7 @@ window.SHOP={
    "images": [
     "images/cs-28177-fnfl8o3p.jpg",
     "images/cs-28177-clpeepgz.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-34420",
