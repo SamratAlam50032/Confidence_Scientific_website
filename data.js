@@ -86,7 +86,8 @@ window.SHOP={
     "smv50c9",
     "s2d9p1q",
     "s4qm7uc",
-    "s1hn0il"
+    "s1hn0il",
+    "szjdhbt"
    ]
   },
   {
@@ -496,7 +497,6 @@ window.SHOP={
   {
    "code": "CS-60928",
    "name": "Sartorius Filter Paper 0.45 um 47 mm Vacuum Membrane Filter",
-   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -508,7 +508,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-60928-vr5mmiz7.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-034",
@@ -660,7 +661,6 @@ window.SHOP={
   {
    "code": "CS-70455",
    "name": "Whatman Filter Papers 125 mm Grade-1 (Copy)",
-   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -673,7 +673,8 @@ window.SHOP={
    "images": [
     "images/cs-70455-1vuh9cyz.jpg",
     "images/cs-70455-lqqp0beb.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-032",
@@ -783,7 +784,6 @@ window.SHOP={
   {
    "code": "CS-19421",
    "name": "Phenol Red Indicator 25g Research Lab",
-   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -795,7 +795,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-19421-f532mthd.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-79595",
@@ -1016,7 +1017,6 @@ window.SHOP={
   {
    "code": "CS-72421",
    "name": "Smart Sensor Temperature Humidity Clock SM807",
-   "variants": [],
    "sub": "shsdp0x",
    "subs": [
     "shsdp0x",
@@ -1030,7 +1030,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-72421-frxiu730.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-92899",
@@ -1270,7 +1271,6 @@ window.SHOP={
   {
    "code": "CS-44125",
    "name": "Citric Acid 500 gm, Merck Germany",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1282,7 +1282,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-44125-et476wqu.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-25375",
@@ -1326,7 +1327,6 @@ window.SHOP={
   {
    "code": "CS-20398",
    "name": "Labratory handheld digital multi thermometer model:-P3050",
-   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me"
@@ -1338,12 +1338,12 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-20398-tggtby2p.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-21427",
    "name": "Digital Magnetic stirrer with hotplate 85-2",
-   "variants": [],
    "sub": "sf4zcsj",
    "subs": [
     "sf4zcsj"
@@ -1355,7 +1355,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-21427-7ighluwn.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-32633",
@@ -1415,7 +1416,6 @@ window.SHOP={
   {
    "code": "CS-85614",
    "name": "Whatman Filter Papers 125 mm Grade-1",
-   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -1428,7 +1428,8 @@ window.SHOP={
    "images": [
     "images/cs-85614-u9aj0810.jpg",
     "images/cs-85614-e5ma2a4i.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-23956",
@@ -1471,7 +1472,6 @@ window.SHOP={
   {
    "code": "HN-024",
    "name": "Hanna Iron Test Kit HI-3834 Romania",
-   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
@@ -1484,7 +1484,8 @@ window.SHOP={
    "images": [
     "images/hn-024-lbvbbzmp.jpg",
     "images/hn-024-z0oze16t.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-8226",
@@ -1541,7 +1542,6 @@ window.SHOP={
   {
    "code": "CS-36866",
    "name": "Sodium Fluoride 500g Merck Germany",
-   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1553,7 +1553,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-36866-wlxiz2zm.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-021",
@@ -1768,7 +1769,6 @@ window.SHOP={
   {
    "code": "CS-22441",
    "name": "Filter Papers Grade-42 Whatman 12.5 cm (Copy)",
-   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -1781,7 +1781,8 @@ window.SHOP={
    "images": [
     "images/cs-22441-gd8i45el.jpg",
     "images/cs-22441-9yjs86s8.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-62775",
@@ -1986,7 +1987,6 @@ window.SHOP={
   {
    "code": "CS-53448",
    "name": "Cowbell Lactometer for Milk Purity Test",
-   "variants": [],
    "sub": "s7cmald",
    "subs": [
     "s7cmald"
@@ -1999,12 +1999,12 @@ window.SHOP={
    "images": [
     "images/cs-53448-9a6qg4ei.jpg",
     "images/cs-53448-lncl75pu.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-046",
    "name": "Hydraulic GSM Cutter with Round Blade Knife",
-   "variants": [],
    "sub": "szxirb6",
    "subs": [
     "szxirb6"
@@ -2016,7 +2016,8 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/hn-046-wuycdxuc.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-014",
@@ -2275,7 +2276,6 @@ window.SHOP={
   {
    "code": "CS-21503",
    "name": "Filter Papers Grade-42 Whatman 12.5 cm",
-   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -2288,7 +2288,8 @@ window.SHOP={
    "images": [
     "images/cs-21503-7vlju29q.jpg",
     "images/cs-21503-71lwb3yj.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-2606",
@@ -2976,6 +2977,19 @@ window.SHOP={
   {
    "code": "CS-70738",
    "name": "Glass Beaker Pyrex (50ml/100ml/250ml/500ml/1000ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Glass Beaker Pyrex, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Glass beaker with a pouring spout and graduation marks, for mixing, heating and holding liquids in the laboratory. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: beaker, low form with spout, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Glass Beaker, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-70738-5hu45yug.jpg",
+    "images/cs-70738-oblzl0g2.jpg"
+   ],
    "variants": [
     {
      "name": "50ml",
@@ -3002,24 +3016,26 @@ window.SHOP={
      "price": 300,
      "images": []
     }
-   ],
-   "sub": "sbtuofc",
-   "subs": [
-    "sbtuofc"
-   ],
-   "short": "Glass Beaker Pyrex, 50ml, 100ml, 250ml, 500ml, 1000ml.",
-   "long": "Glass beaker with a pouring spout and graduation marks, for mixing, heating and holding liquids in the laboratory. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: beaker, low form with spout, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Glass Beaker, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "images": [
-    "images/cs-70738-5hu45yug.jpg",
-    "images/cs-70738-oblzl0g2.jpg"
    ]
   },
   {
    "code": "CS-90449",
    "name": "Glass Beaker China (50ml/100ml/250ml/500ml/1000ml)",
+   "sub": "smv50c9",
+   "subs": [
+    "smv50c9",
+    "s2d9p1q",
+    "s4qm7uc",
+    "s1hn0il"
+   ],
+   "short": "Glass Beaker China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Glass beaker with a pouring spout and graduation marks, for mixing, heating and holding liquids in the laboratory. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: beaker, low form with spout, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Glass Beaker, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-90449-e3oz5x86.jpg"
+   ],
    "variants": [
     {
      "name": "50ml",
@@ -3046,30 +3062,41 @@ window.SHOP={
      "price": 280,
      "images": []
     }
-   ],
-   "sub": "smv50c9",
-   "subs": [
-    "smv50c9",
-    "s2d9p1q",
-    "s4qm7uc",
-    "s1hn0il"
-   ],
-   "short": "Glass Beaker China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
-   "long": "Glass beaker with a pouring spout and graduation marks, for mixing, heating and holding liquids in the laboratory. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: beaker, low form with spout, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Glass Beaker, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "images": [
-    "images/cs-90449-e3oz5x86.jpg"
    ]
   },
   {
    "code": "CS-58974",
    "name": "Conical Flask Pyrex (50ml/100ml/250ml/500ml/1000ml)",
-   "variants": [],
-   "sub": "sbtuofc",
+   "variants": [
+    {
+     "name": "50ml",
+     "price": 110,
+     "images": []
+    },
+    {
+     "name": "100ml",
+     "price": 130,
+     "images": []
+    },
+    {
+     "name": "250ml",
+     "price": 160,
+     "images": []
+    },
+    {
+     "name": "500ml",
+     "price": 280,
+     "images": []
+    },
+    {
+     "name": "1000ml",
+     "price": 450,
+     "images": []
+    }
+   ],
+   "sub": "s2d9p1q",
    "subs": [
-    "sbtuofc"
+    "s2d9p1q"
    ],
    "short": "Conical Flask Pyrex, 50ml, 100ml, 250ml, 500ml, 1000ml.",
    "long": "Conical (Erlenmeyer) flask with a narrow neck and graduation marks, used for titrations, mixing, heating and storing solutions. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: conical (Erlenmeyer) flask, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Conical Flask, in the size you order",
@@ -3084,10 +3111,36 @@ window.SHOP={
   {
    "code": "CS-45049",
    "name": "Conical Flask China (50ml/100ml/250ml/500ml/1000ml)",
-   "variants": [],
-   "sub": "sbtuofc",
+   "variants": [
+    {
+     "name": "50ml",
+     "price": 100,
+     "images": []
+    },
+    {
+     "name": "100ml",
+     "price": 120,
+     "images": []
+    },
+    {
+     "name": "250ml",
+     "price": 145,
+     "images": []
+    },
+    {
+     "name": "500ml",
+     "price": 270,
+     "images": []
+    },
+    {
+     "name": "1000ml",
+     "price": 450,
+     "images": []
+    }
+   ],
+   "sub": "s2d9p1q",
    "subs": [
-    "sbtuofc"
+    "s2d9p1q"
    ],
    "short": "Conical Flask China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
    "long": "Conical (Erlenmeyer) flask with a narrow neck and graduation marks, used for titrations, mixing, heating and storing solutions. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: conical (Erlenmeyer) flask, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Conical Flask, in the size you order",
@@ -3111,7 +3164,10 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
+   "images": [
+    "images/cs-28177-fnfl8o3p.jpg",
+    "images/cs-28177-clpeepgz.jpg"
+   ],
    "variants": []
   },
   {
@@ -3126,13 +3182,14 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
+   "images": [
+    "images/cs-34420-ue5ellqn.jpg"
+   ],
    "variants": []
   },
   {
    "code": "CS-98767",
    "name": "Volumetric Flask Pyrex (50ml/100ml/250ml/500ml/1000ml)",
-   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -3145,12 +3202,12 @@ window.SHOP={
    "images": [
     "images/cs-98767-7os9i41l.jpg",
     "images/cs-98767-tcn401yu.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-10844",
    "name": "Volumetric Flask China (50ml/100ml/250ml/500ml/1000ml)",
-   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -3162,11 +3219,13 @@ window.SHOP={
    "featured": 0,
    "images": [
     "images/cs-10844-bl96d6wk.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-54388",
-   "name": "Lab Bottle (50ml/100ml/250ml/500ml/1000ml/2000ml)",
+   "name": "Lab Bottle Pyrex (50ml/100ml/250ml/500ml/1000ml/2000ml)",
+   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -3176,12 +3235,15 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-54388-rj7e3rad.jpg",
+    "images/cs-54388-a55v3spb.jpg"
+   ]
   },
   {
    "code": "CS-75957",
    "name": "Lab Bottle China (50ml/100ml/250ml/500ml/1000ml/2000ml)",
+   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -3191,8 +3253,10 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-75957-cb6getzx.jpg",
+    "images/cs-75957-mri49vfw.jpg"
+   ]
   }
  ],
  "subs": [
@@ -3399,6 +3463,10 @@ window.SHOP={
   {
    "id": "s1hn0il",
    "name": "Reagent Bottle"
+  },
+  {
+   "id": "szjdhbt",
+   "name": "Measuring Cylinder"
   }
  ]
 };
