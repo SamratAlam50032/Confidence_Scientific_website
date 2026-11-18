@@ -3480,7 +3480,9 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/cs-91727-0qogrszh.jpg"
+   ]
   },
   {
    "code": "CS-43519",
@@ -3541,7 +3543,10 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": []
+   "images": [
+    "images/cs-43519-yo0wav7r.jpg",
+    "images/cs-43519-sf0w4wu0.jpg"
+   ]
   },
   {
    "code": "CS-57042",
@@ -3599,17 +3604,41 @@ window.SHOP={
   {
    "code": "CS-13805",
    "name": "Reagent Bottle China (125ml/250ml/500ml/1000ml)",
-   "sub": "sbtuofc",
+   "variants": [
+    {
+     "name": "125ml",
+     "price": 140,
+     "images": []
+    },
+    {
+     "name": "250ml",
+     "price": 180,
+     "images": []
+    },
+    {
+     "name": "500ml",
+     "price": 230,
+     "images": []
+    },
+    {
+     "name": "1000ml",
+     "price": 350,
+     "images": []
+    }
+   ],
+   "sub": "s1hn0il",
    "subs": [
-    "sbtuofc"
+    "s1hn0il"
    ],
    "short": "Reagent bottle, China, 125 ml to 1000 ml.",
    "long": "Laboratory reagent bottle for storing chemicals and solutions. Available in sizes from 125 ml to 1000 ml.\n\nSpecifications\n• Type: reagent bottle\n• Sizes: 125 ml, 250 ml, 500 ml, 1000 ml\n• Origin: China\n\nIn the box\n• Reagent bottle, in the size you order",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-13805-5icq6y4h.jpg",
+    "images/cs-13805-tqr4azue.jpg"
+   ]
   },
   {
    "code": "CS-71088",
