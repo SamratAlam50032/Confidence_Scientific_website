@@ -333,7 +333,7 @@ header.top{padding:8px 0 0!important}.bar{gap:10px!important}.cband{margin-top:6
   </div></div></div>
 
 <div class="modal" id="cartModal" hidden><div class="mbox small" role="dialog" aria-modal="true" aria-label="Cart">
-  <div class="mtop"><h2 style="margin-right:auto;font-size:20px">Your cart</h2><button class="btn ghost" id="cclose" type="button">Close</button></div>
+  <div class="mtop"><h2 style="margin-right:auto;font-size:20px">Your cart</h2><button class="btn ghost" id="cartclose" type="button">Close</button></div>
   <div id="clist"></div>
   <div class="csub" id="csub" hidden><span>Subtotal</span><b id="csubv"></b></div>
   <div class="cnote" id="cnote" hidden></div>
@@ -514,7 +514,7 @@ function drawCart(){const L=$("#clist");L.innerHTML="";let sum=0,un=0;
     r.querySelector(".qm").onclick=()=>{if(it.q>1)it.q--;else cart.splice(k,1);saveCart()};r.querySelector(".qp").onclick=()=>{it.q++;saveCart()};r.querySelector(".qx").onclick=()=>{cart.splice(k,1);saveCart()};L.appendChild(r)});
   $("#csub").hidden=$("#cacts").hidden=!cart.length;$("#csubv").textContent=pt(sum);const n=$("#cnote");n.hidden=!un;n.textContent=un?un+" item(s) have no listed price and are not in the subtotal. We will confirm them when we call you.":""}
 function openCart(){drawCart();$("#cartModal").hidden=false}
-$("#cartBtn").onclick=openCart;$("#cclose").onclick=$("#ccont").onclick=()=>$("#cartModal").hidden=true;
+$("#cartBtn").onclick=openCart;$("#cartclose").onclick=$("#ccont").onclick=()=>$("#cartModal").hidden=true;
 $("#cgo").onclick=()=>{if(!cart.length)return;$("#cartModal").hidden=true;cartMode=true;curP=cart[0].p;curVr=null;$("#otitle").textContent="Checkout";$("#oqf").hidden=true;
   $("#osum").innerHTML="<b></b><span></span>";$("#osum b").textContent=cart.reduce((a,i)=>a+i.q,0)+" item(s) in cart";$("#osum span").textContent="Subtotal: "+$("#csubv").textContent;
   $("#oform").hidden=false;$("#odone").hidden=true;$("#oplaced").hidden=true;$("#ofail").hidden=true;$("#oerr").hidden=true;const sb=$("#oform button[type=submit]");sb.disabled=false;sb.textContent=hasAuto()?"Place order":"Review order";$("#orderModal").hidden=false;$("#oname").focus()};
