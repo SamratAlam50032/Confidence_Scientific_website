@@ -3022,21 +3022,6 @@ window.SHOP={
   {
    "code": "CS-90449",
    "name": "Glass Beaker China (50ml/100ml/250ml/500ml/1000ml)",
-   "sub": "smv50c9",
-   "subs": [
-    "smv50c9",
-    "s2d9p1q",
-    "s4qm7uc",
-    "s1hn0il"
-   ],
-   "short": "Glass Beaker China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
-   "long": "Glass beaker with a pouring spout and graduation marks, for mixing, heating and holding liquids in the laboratory. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: beaker, low form with spout, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Glass Beaker, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "images": [
-    "images/cs-90449-e3oz5x86.jpg"
-   ],
    "variants": [
     {
      "name": "50ml",
@@ -3063,6 +3048,18 @@ window.SHOP={
      "price": 280,
      "images": []
     }
+   ],
+   "sub": "smv50c9",
+   "subs": [
+    "smv50c9"
+   ],
+   "short": "Glass Beaker China, 50ml, 100ml, 250ml, 500ml, 1000ml.",
+   "long": "Glass beaker with a pouring spout and graduation marks, for mixing, heating and holding liquids in the laboratory. Available in 50ml, 100ml, 250ml, 500ml, 1000ml.\n\nSpecifications\n• Type: beaker, low form with spout, graduated\n• Sizes: 50ml/100ml/250ml/500ml/1000ml\n• Origin: China\n\nIn the box\n• Glass Beaker, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [
+    "images/cs-90449-e3oz5x86.jpg"
    ]
   },
   {
@@ -3393,14 +3390,35 @@ window.SHOP={
   },
   {
    "code": "CS-75957",
-   "name": "Lab Bottle China (50ml/100ml/250ml/500ml/1000ml/2000ml)",
-   "variants": [],
-   "sub": "sbtuofc",
-   "subs": [
-    "sbtuofc"
+   "name": "Lab Bottle China (100ml/250ml/500ml/1000ml/2000ml)",
+   "variants": [
+    {
+     "name": "100ml",
+     "price": 250,
+     "images": []
+    },
+    {
+     "name": "250ml",
+     "price": 350,
+     "images": []
+    },
+    {
+     "name": "500ml",
+     "price": 450,
+     "images": []
+    },
+    {
+     "name": "1000ml",
+     "price": 700,
+     "images": []
+    }
    ],
-   "short": "Lab Bottle China, 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.",
-   "long": "Laboratory bottle with a cap for storing reagents, solutions and samples. Available in 50ml, 100ml, 250ml, 500ml, 1000ml, 2000ml.\n\nSpecifications\n• Type: laboratory bottle with cap\n• Sizes: 50ml/100ml/250ml/500ml/1000ml/2000ml\n• Origin: China\n\nIn the box\n• Lab Bottle, in the size you order",
+   "sub": "s4qm7uc",
+   "subs": [
+    "s4qm7uc"
+   ],
+   "short": "Lab Bottle China, 100ml, 250ml, 500ml, 1000ml, 2000ml.",
+   "long": "Laboratory bottle with a cap for storing reagents, solutions and samples. Available in 100ml, 250ml, 500ml, 1000ml, 2000ml.\n\nSpecifications\n• Type: laboratory bottle with cap\n• Sizes: 100ml/250ml/500ml/1000ml/2000ml\n• Origin: China\n\nIn the box\n• Lab Bottle, in the size you order",
    "price": null,
    "stock": "in",
    "featured": 0,
