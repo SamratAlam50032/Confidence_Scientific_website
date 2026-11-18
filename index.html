@@ -237,6 +237,20 @@ header.top{padding:10px 0 0}
 .dd{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;max-width:calc(100vw - 16px)}
 .dd::-webkit-scrollbar{width:8px}.dd::-webkit-scrollbar-thumb{background:var(--brown);border-radius:99px}.dd::-webkit-scrollbar-track{background:rgba(139,90,43,.15);border-radius:99px}
 .brand{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.hact{display:flex;gap:8px;align-items:center}
+.cartb{position:relative;display:inline-flex;align-items:center;justify-content:center;padding:8px 11px;background:var(--surface);color:var(--ink);border-color:var(--line)}
+.cartb .cn{position:absolute;top:-7px;right:-7px;min-width:19px;height:19px;border-radius:99px;background:#c0392b;color:#fff;font:700 11px/19px var(--f-body);text-align:center;padding:0 4px}
+.crow{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+.cth{width:54px;height:54px;flex:none;border-radius:8px;background:var(--tint);overflow:hidden}.cth img{width:100%;height:100%;object-fit:cover;display:block}
+.cin{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.cin small{color:var(--muted)}
+.cq{display:flex;gap:8px;align-items:center;margin-top:4px}.cq button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;min-width:30px;height:30px;font:600 15px var(--f-body);cursor:pointer}.cq .qx{font-size:12px;padding:0 8px;color:#a33;border:0;background:none;text-decoration:underline}
+#madd{background:transparent;color:var(--accent);border-color:var(--accent)}
+.cpr{font-weight:700;white-space:nowrap}
+.csub{display:flex;justify-content:space-between;font-size:17px;padding:12px 0 4px}.cnote{font-size:13px;color:var(--muted)}
+.cacts{display:flex;gap:8px;margin-top:12px}.cacts .btn{flex:1}.cempty{text-align:center;color:var(--muted);padding:24px 0}
+header.top{padding:8px 0 0!important}.bar{gap:10px!important}.cband{margin-top:6px!important;padding-top:6px!important}.cband .catnav{padding-bottom:8px!important}
+.banner{margin-top:10px!important;padding:22px 26px!important;gap:14px!important}.banner p{margin:6px 0 12px!important}.sec{padding:18px 0 4px!important}
+@media(max-width:820px){.banner{padding:16px 16px!important}.bar .brand{margin-right:auto}}
 .pvbar{display:flex;align-items:center;gap:12px;margin:16px 0 0}
 .pvbar .crumb{margin:0}
 .back{width:40px;height:40px;flex:none;border-radius:50%;border:0;background:#111;color:#fff;display:grid;place-items:center;padding:0;cursor:pointer;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .15s,background .15s}
@@ -262,7 +276,7 @@ header.top{padding:10px 0 0}
   <div class="bar">
     <div class="brand" id="brand" role="link" tabindex="0" title="Home"><span id="bn"></span><small id="bt"></small></div>
     <div class="search"><input id="q" type="search" placeholder="Search products, e.g. pH meter, caliper" aria-label="Search products" autocomplete="off"><div class="sug" id="sug" hidden></div></div>
-    <button class="btn" id="openContact" type="button">Contact us</button>
+    <div class="hact"><button class="btn cartb" id="cartBtn" type="button" aria-label="Open cart"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg><span class="cn" id="cartN" hidden>0</span></button><button class="btn" id="openContact" type="button">Contact us</button></div>
   </div>
   <div class="cband"><button class="carr l" id="cprev" type="button" aria-label="Scroll categories left" hidden>&lsaquo;</button><nav class="catnav" id="catnav" aria-label="Categories"></nav><button class="carr r" id="cnext" type="button" aria-label="Scroll categories right" hidden>&rsaquo;</button></div>
 </div></header>
@@ -303,7 +317,7 @@ header.top{padding:10px 0 0}
   <div class="pvbar"><button class="back" id="pback" type="button" aria-label="Go back"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 5l-7 7 7 7"/></svg></button><div class="crumb" id="pcrumb"></div></div>
   <div class="pvbox"><div class="mgrid">
     <div><div class="gmain" id="gmain"></div><div class="gthumbs" id="gthumbs"></div></div>
-    <div class="info"><div class="cat" id="mcat"></div><h2 id="mname"></h2><div class="code" id="mcode"></div><div class="price" id="mprice"></div><div id="mvwrap" hidden><div class="k">Size / option</div><div class="vars" id="mvars"></div></div><div><span class="tag" id="mtag"></span></div><div class="mdesc" id="mdesc"></div><div class="acts"><button class="btn" id="mbuy" type="button">Buy now</button><button class="btn ghost" id="mcontact" type="button">Contact us</button></div></div>
+    <div class="info"><div class="cat" id="mcat"></div><h2 id="mname"></h2><div class="code" id="mcode"></div><div class="price" id="mprice"></div><div id="mvwrap" hidden><div class="k">Size / option</div><div class="vars" id="mvars"></div></div><div><span class="tag" id="mtag"></span></div><div class="mdesc" id="mdesc"></div><div class="acts"><button class="btn" id="mbuy" type="button">Buy now</button><button class="btn o" id="madd" type="button">Add to cart</button><button class="btn ghost" id="mcontact" type="button">Contact us</button></div></div>
   </div></div>
   <div id="prel"></div>
 </section>
@@ -318,11 +332,18 @@ header.top{padding:10px 0 0}
     <div id="cmailbox"><div class="k">Email</div><div class="sel" id="cmail"></div><button class="btn ghost" id="cmailcopy" type="button" style="margin-top:6px">Copy email</button></div>
   </div></div></div>
 
+<div class="modal" id="cartModal" hidden><div class="mbox small" role="dialog" aria-modal="true" aria-label="Cart">
+  <div class="mtop"><h2 style="margin-right:auto;font-size:20px">Your cart</h2><button class="btn ghost" id="cclose" type="button">Close</button></div>
+  <div id="clist"></div>
+  <div class="csub" id="csub" hidden><span>Subtotal</span><b id="csubv"></b></div>
+  <div class="cnote" id="cnote" hidden></div>
+  <div class="cacts" id="cacts" hidden><button class="btn ghost" id="ccont" type="button">Continue shopping</button><button class="btn" id="cgo" type="button">Checkout</button></div>
+</div></div>
 <div class="modal" id="orderModal" hidden><div class="mbox small" role="dialog" aria-modal="true" aria-label="Buy now">
-  <div class="mtop"><h2 style="margin-right:auto;font-size:20px">Buy now</h2><button class="btn ghost" id="ocontact" type="button">Contact us</button><button class="btn ghost" id="oclose" type="button">Close</button></div>
+  <div class="mtop"><h2 id="otitle" style="margin-right:auto;font-size:20px">Buy now</h2><button class="btn ghost" id="ocontact" type="button">Contact us</button><button class="btn ghost" id="oclose" type="button">Close</button></div>
   <div class="osum" id="osum"></div>
   <form id="oform" novalidate>
-    <div class="f"><label for="oq">Quantity</label><input id="oq" type="number" min="1" value="1" inputmode="numeric"></div>
+    <div class="f" id="oqf"><label for="oq">Quantity</label><input id="oq" type="number" min="1" value="1" inputmode="numeric"></div>
     <div class="f"><label for="oname">Your name</label><input id="oname" autocomplete="name"></div>
     <div class="f"><label for="ophone">Phone number</label><input id="ophone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01XXXXXXXXX"></div>
     <div class="f"><label for="oaddr">Address</label><textarea id="oaddr" rows="2" autocomplete="street-address"></textarea></div>
@@ -419,7 +440,7 @@ function renderProd(p){
   vb.textContent="";$("#mvwrap").hidden=!vs.length;
   vs.forEach((v,k)=>{const b=document.createElement("button");b.type="button";b.textContent=v.name;b.onclick=()=>pick(k);vb.appendChild(b)});
   pick(vs.length?0:-1);
-  $("#mbuy").onclick=()=>{openOrder(p,curVr)};$("#mcontact").onclick=()=>openContact();
+  $("#mbuy").onclick=()=>{openOrder(p,curVr)};$("#madd").onclick=()=>addCart(p,curVr);$("#mcontact").onclick=()=>openContact();
 }
 document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".modal").forEach(m=>m.hidden=true)});document.querySelectorAll(".modal").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)m.hidden=true}));
 function go(c,s){showHome(false);q="";$("#q").value="";cat=c;sub=s;draw();$("#all").scrollIntoView({behavior:"smooth"})}
@@ -452,17 +473,17 @@ function openContact(){$("#contactModal").hidden=false}
 $("#openContact").onclick=openContact;
 $("#cclose").onclick=()=>$("#contactModal").hidden=true;
 $("#cmailcopy").onclick=async()=>{const t=$("#cmail").textContent;try{await navigator.clipboard.writeText(t);$("#cmailcopy").textContent="Copied"}catch(e){const r=document.createRange();r.selectNodeContents($("#cmail"));const sl=getSelection();sl.removeAllRanges();sl.addRange(r);$("#cmailcopy").textContent="Selected, now copy"}setTimeout(()=>$("#cmailcopy").textContent="Copy email",1800)};
-let curP=null;
-function openOrder(p,v){curP=p;curVr=v||null;$("#osum").innerHTML="<b></b><span></span>";$("#osum b").textContent=p[0]+(v?" ("+v.name+")":"");$("#osum span").textContent="Code: "+p[6]+"  |  "+(v&&v.price?pt(v.price):priceTxt(p));
+let curP=null,cartMode=false;
+function openOrder(p,v){cartMode=false;$("#oqf").hidden=false;$("#otitle").textContent="Buy now";curP=p;curVr=v||null;$("#osum").innerHTML="<b></b><span></span>";$("#osum b").textContent=p[0]+(v?" ("+v.name+")":"");$("#osum span").textContent="Code: "+p[6]+"  |  "+(v&&v.price?pt(v.price):priceTxt(p));
   $("#oform").hidden=false;$("#odone").hidden=true;$("#oplaced").hidden=true;$("#ofail").hidden=true;$("#oerr").hidden=true;const sb=$("#oform button[type=submit]");sb.disabled=false;sb.textContent=hasAuto()?"Place order":"Review order";$("#orderModal").hidden=false;$("#oname").focus()}
 $("#oclose").onclick=()=>$("#orderModal").hidden=true;
 $("#ocontact").onclick=()=>{$("#orderModal").hidden=true;openContact()};
 $("#oform").addEventListener("submit",e=>{e.preventDefault();
   const v=id=>$("#"+id).value.trim(),qn=parseInt(v("oq"),10),ph=v("ophone").replace(/[\s-]/g,"");let m="";
-  if(!(qn>=1))m="Enter a quantity of 1 or more.";else if(!v("oname"))m="Enter your name.";else if(!/^(\+?88)?01[3-9]\d{8}$/.test(ph))m="Enter a valid Bangladesh mobile number, like 01XXXXXXXXX.";
+  if(!cartMode&&!(qn>=1))m="Enter a quantity of 1 or more.";else if(!v("oname"))m="Enter your name.";else if(!/^(\+?88)?01[3-9]\d{8}$/.test(ph))m="Enter a valid Bangladesh mobile number, like 01XXXXXXXXX.";
   else if(!v("oaddr"))m="Enter your address.";else if(!v("odist"))m="Select your district.";else if(!v("othana"))m="Enter your thana or upazila.";
   const er=$("#oerr");if(m){er.textContent=m;er.hidden=false;return}er.hidden=true;
-  const txt="New order for "+SHOP+"\n\nProduct: "+curP[0]+(curVr?"\nSize/Option: "+curVr.name:"")+"\nCode: "+curP[6]+"\nQuantity: "+qn+"\n\nName: "+v("oname")+"\nPhone: "+ph+"\nAddress: "+v("oaddr")+"\nThana/Upazila: "+v("othana")+"\nDistrict: "+v("odist");
+  const txt="New order for "+SHOP+"\n\n"+(cartMode?cartText():"Product: "+curP[0]+(curVr?"\nSize/Option: "+curVr.name:"")+"\nCode: "+curP[6]+"\nQuantity: "+qn)+"\n\nName: "+v("oname")+"\nPhone: "+ph+"\nAddress: "+v("oaddr")+"\nThana/Upazila: "+v("othana")+"\nDistrict: "+v("odist");
   $("#omsg").value=txt;$("#osend").href="https://wa.me/"+WA+"?text="+encodeURIComponent(txt);$("#osend").hidden=!WA;if(hasAuto()){placeAuto(txt,qn);return}$("#oform").hidden=true;$("#odone").hidden=false});
 const hasAuto=()=>!!((S.tgToken&&S.tgChat)||S.w3Key);
 async function notifyOrder(txt,subj,nm){const jobs=[];
@@ -472,11 +493,32 @@ async function notifyOrder(txt,subj,nm){const jobs=[];
   return res.some(Boolean)}
 async function placeAuto(txt,qn){
   const btn=$("#oform button[type=submit]");btn.disabled=true;btn.textContent="Placing order...";
-  const ok=await notifyOrder(txt,"New order: "+curP[0],$("#oname").value.trim());
+  const ok=await notifyOrder(txt,"New order: "+(cartMode?cart.length+" item(s)":curP[0]),$("#oname").value.trim());
   btn.disabled=false;btn.textContent="Place order";
   $("#oform").hidden=true;
-  if(ok){$("#oph").textContent=$("#ophone").value.trim();$("#osum2").textContent=curP[0]+(curVr?" ("+curVr.name+")":"")+"  x "+qn;$("#oplaced").hidden=false}
+  if(ok){$("#oph").textContent=$("#ophone").value.trim();$("#osum2").textContent=cartMode?cart.map(i=>i.p[0]+(i.v?" ("+i.v.name+")":"")+" x "+i.q).join(", "):curP[0]+(curVr?" ("+curVr.name+")":"")+"  x "+qn;$("#oplaced").hidden=false;if(cartMode){cart=[];saveCart()}}
   else{$("#ofail").hidden=false;$("#odone").hidden=false}}
+let cart=[];
+try{const raw=JSON.parse(localStorage.getItem("cs-cart")||"[]");cart=raw.map(r=>{const p=P.find(x=>x[6]===r.c);if(!p)return null;const v=r.v?(p[11]||[]).find(x=>x.name===r.v):null;return{p,v:v||null,q:Math.max(1,r.q|0)}}).filter(Boolean)}catch(e){}
+function saveCart(){try{localStorage.setItem("cs-cart",JSON.stringify(cart.map(i=>({c:i.p[6],v:i.v?i.v.name:"",q:i.q}))))}catch(e){}updCart()}
+const unit=i=>Number(i.v&&i.v.price?i.v.price:i.p[7])||0;
+function updCart(){const n=cart.reduce((a,i)=>a+i.q,0),b=$("#cartN");b.textContent=n;b.hidden=!n;if(!$("#cartModal").hidden)drawCart()}
+function addCart(p,v){if((p[11]||[]).length&&!v){v=null}const f=cart.find(i=>i.p===p&&(i.v?i.v.name:"")===(v?v.name:""));if(f)f.q++;else cart.push({p,v:v||null,q:1});saveCart();const b=$("#madd");if(b){b.textContent="Added \u2713";setTimeout(()=>b.textContent="Add to cart",1400)}}
+function cartText(){let t="Items:\n",sum=0,un=0;cart.forEach((i,k)=>{const u=unit(i);t+=(k+1)+". "+i.p[0]+(i.v?" ("+i.v.name+")":"")+" | Code: "+i.p[6]+" | Qty: "+i.q+(u?" x "+pt(u)+" = "+pt(u*i.q):" | Price on request")+"\n";if(u)sum+=u*i.q;else un++});t+="\nSubtotal: "+pt(sum)+(un?" (+ "+un+" item(s) price on request)":"");return t}
+function drawCart(){const L=$("#clist");L.innerHTML="";let sum=0,un=0;
+  if(!cart.length){L.innerHTML='<p class="cempty">Your cart is empty.</p>'}
+  cart.forEach((it,k)=>{const u=unit(it);if(u)sum+=u*it.q;else un++;const r=document.createElement("div");r.className="crow";
+    r.innerHTML='<div class="cth"></div><div class="cin"><b></b><small></small><div class="cq"><button type="button" class="qm" aria-label="Decrease">&minus;</button><span></span><button type="button" class="qp" aria-label="Increase">+</button><button type="button" class="qx">Remove</button></div></div><div class="cpr"></div>';
+    const img=(it.v&&it.v.images&&it.v.images[0])||(it.p[9]&&it.p[9][0]);if(img){const im=document.createElement("img");im.src=img;im.alt="";r.querySelector(".cth").appendChild(im)}
+    r.querySelector("b").textContent=it.p[0];r.querySelector("small").textContent=(it.v?it.v.name+" | ":"")+"Code: "+it.p[6];r.querySelector(".cq span").textContent=it.q;r.querySelector(".cpr").textContent=u?pt(u*it.q):"On request";
+    r.querySelector(".qm").onclick=()=>{if(it.q>1)it.q--;else cart.splice(k,1);saveCart()};r.querySelector(".qp").onclick=()=>{it.q++;saveCart()};r.querySelector(".qx").onclick=()=>{cart.splice(k,1);saveCart()};L.appendChild(r)});
+  $("#csub").hidden=$("#cacts").hidden=!cart.length;$("#csubv").textContent=pt(sum);const n=$("#cnote");n.hidden=!un;n.textContent=un?un+" item(s) have no listed price and are not in the subtotal. We will confirm them when we call you.":""}
+function openCart(){drawCart();$("#cartModal").hidden=false}
+$("#cartBtn").onclick=openCart;$("#cclose").onclick=$("#ccont").onclick=()=>$("#cartModal").hidden=true;
+$("#cgo").onclick=()=>{if(!cart.length)return;$("#cartModal").hidden=true;cartMode=true;curP=cart[0].p;curVr=null;$("#otitle").textContent="Checkout";$("#oqf").hidden=true;
+  $("#osum").innerHTML="<b></b><span></span>";$("#osum b").textContent=cart.reduce((a,i)=>a+i.q,0)+" item(s) in cart";$("#osum span").textContent="Subtotal: "+$("#csubv").textContent;
+  $("#oform").hidden=false;$("#odone").hidden=true;$("#oplaced").hidden=true;$("#ofail").hidden=true;$("#oerr").hidden=true;const sb=$("#oform button[type=submit]");sb.disabled=false;sb.textContent=hasAuto()?"Place order":"Review order";$("#orderModal").hidden=false;$("#oname").focus()};
+updCart();
 $("#ohome").onclick=()=>{$("#orderModal").hidden=true;$("#oform").reset();showHome(false);window.scrollTo(0,0)};
 $("#oedit").onclick=()=>{$("#oform").hidden=false;$("#odone").hidden=true};
 $("#ocopy").onclick=async()=>{const m=$("#omsg");try{await navigator.clipboard.writeText(m.value);$("#ocopy").textContent="Copied"}catch(e){m.select();$("#ocopy").textContent="Selected, now copy"}setTimeout(()=>$("#ocopy").textContent="Copy order",1800)};
