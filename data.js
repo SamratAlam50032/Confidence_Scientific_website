@@ -3426,6 +3426,171 @@ window.SHOP={
     "images/cs-75957-cb6getzx.jpg",
     "images/cs-75957-mri49vfw.jpg"
    ]
+  },
+  {
+   "code": "CS-91727",
+   "name": "Glass Pipette Pyrex (1ml/2ml/5ml/10ml/20ml/25ml/50ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Pyrex glass pipette, 1 ml to 50 ml.",
+   "long": "Glass pipette for measuring and transferring liquid volumes accurately in the laboratory. Available in sizes from 1 ml to 50 ml.\n\nSpecifications\n• Type: glass pipette\n• Brand: Pyrex\n• Sizes: 1 ml, 2 ml, 5 ml, 10 ml, 20 ml, 25 ml, 50 ml\n\nIn the box\n• Pipette, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-43519",
+   "name": "Glass Pipette HBG Germany (0.1ml/0.2ml/0.5ml/1ml/2ml/5ml/10ml/20ml/25ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "HBG Germany glass pipette, 0.1 ml to 25 ml.",
+   "long": "Glass pipette from HBG, Germany, for measuring and transferring liquid volumes accurately in the laboratory. Available in sizes from 0.1 ml to 25 ml.\n\nSpecifications\n• Type: glass pipette\n• Brand: HBG\n• Origin: Germany\n• Sizes: 0.1 ml, 0.2 ml, 0.5 ml, 1 ml, 2 ml, 5 ml, 10 ml, 20 ml, 25 ml\n\nIn the box\n• Pipette, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-57042",
+   "name": "Litmus Red Indicator",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Red litmus indicator for testing alkalis.",
+   "long": "Red litmus indicator for a quick check of whether a solution is alkaline. Red litmus turns blue in an alkaline (basic) solution and stays red in acid. Widely used in school and college laboratories.\n\nSpecifications\n• Type: red litmus indicator\n• Result: turns blue in alkaline solution\n• Use: qualitative acid-base testing\n\nIn the box\n• Red litmus indicator",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-95549",
+   "name": "Litmus Blue Indicator",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Blue litmus indicator for testing acids.",
+   "long": "Blue litmus indicator for a quick check of whether a solution is acidic. Blue litmus turns red in an acidic solution and stays blue in alkali. Widely used in school and college laboratories.\n\nSpecifications\n• Type: blue litmus indicator\n• Result: turns red in acidic solution\n• Use: qualitative acid-base testing\n\nIn the box\n• Blue litmus indicator",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-79540",
+   "name": "Magnifying Glass with Light Including Battery 75mm",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "75 mm magnifying glass with built-in light, battery included.",
+   "long": "Hand magnifying glass with a built-in light for clearer viewing of small text, specimens and parts. Battery included.\n\nSpecifications\n• Lens diameter: 75 mm\n• Built-in light\n• Battery included\n\nIn the box\n• Magnifying glass with light\n• Battery",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-13805",
+   "name": "Reagent Bottle China (125ml/250ml/500ml/1000ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Reagent bottle, China, 125 ml to 1000 ml.",
+   "long": "Laboratory reagent bottle for storing chemicals and solutions. Available in sizes from 125 ml to 1000 ml.\n\nSpecifications\n• Type: reagent bottle\n• Sizes: 125 ml, 250 ml, 500 ml, 1000 ml\n• Origin: China\n\nIn the box\n• Reagent bottle, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-71088",
+   "name": "Heating Mantle 250ml",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Heating mantle for 250 ml flask.",
+   "long": "Heating mantle for gentle, even heating of a 250 ml round-bottom flask in the laboratory, for distillation, reflux and extraction work.\n\nSpecifications\n• Type: heating mantle\n• Flask size: 250 ml\n\nIn the box\n• Heating mantle\n• Power cord",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-42680",
+   "name": "Heating Mantle 500ml",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Heating mantle for 500 ml flask.",
+   "long": "Heating mantle for gentle, even heating of a 500 ml round-bottom flask in the laboratory, for distillation, reflux and extraction work.\n\nSpecifications\n• Type: heating mantle\n• Flask size: 500 ml\n\nIn the box\n• Heating mantle\n• Power cord",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-95148",
+   "name": "Army Magnetic Compass",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Army-style magnetic compass for direction finding.",
+   "long": "Magnetic compass in the army style for finding direction in the field, for hiking, camping and navigation.\n\nSpecifications\n• Type: magnetic compass\n• Style: army / field compass\n\nIn the box\n• Compass",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-16801",
+   "name": "Compass",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Magnetic compass.",
+   "long": "Magnetic compass for finding direction and for physics and geography practicals.\n\nSpecifications\n• Type: magnetic compass\n\nIn the box\n• Compass",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-30580",
+   "name": "Counting Glass SDL USA",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "SDL counting glass (thread counter), USA.",
+   "long": "Counting glass for textile work. Place it on the fabric and count the threads per unit length to find the fabric construction. Used in textile laboratories and quality control.\n\nSpecifications\n• Type: textile counting glass\n• Brand: SDL\n• Origin: USA\n• Use: counting threads in woven fabric\n\nIn the box\n• Counting glass",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "images": [],
+   "variants": []
   }
  ],
  "subs": [
