@@ -1142,6 +1142,7 @@ window.SHOP={
   {
    "code": "CS-71559",
    "name": "Copper Sulfate Pentahydrate, 500gm Merck, India",
+   "variants": [],
    "sub": "se65abx",
    "subs": [
     "se65abx"
@@ -1151,11 +1152,10 @@ window.SHOP={
    "price": 650,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-71559-de3op6of.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-48315",
@@ -1238,6 +1238,7 @@ window.SHOP={
   {
    "code": "CS-35313",
    "name": "Potassium Chloride 500 gm Merck, Germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1247,11 +1248,10 @@ window.SHOP={
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Germany",
    "images": [
     "images/cs-35313-dc8r0d8k.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-9975",
@@ -1334,6 +1334,7 @@ window.SHOP={
   {
    "code": "CS-44125",
    "name": "Citric Acid 500 gm, Merck Germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1343,11 +1344,10 @@ window.SHOP={
    "price": 700,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Germany",
    "images": [
     "images/cs-44125-et476wqu.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-25375",
@@ -1601,6 +1601,7 @@ window.SHOP={
   {
    "code": "CS-88029",
    "name": "Phenolphthalein Indicator 25g Powder RL",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -1610,15 +1611,15 @@ window.SHOP={
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-88029-uvqe0ixt.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-36866",
    "name": "Sodium Fluoride 500g Merck Germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1628,11 +1629,10 @@ window.SHOP={
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Germany",
    "images": [
     "images/cs-36866-wlxiz2zm.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-021",
@@ -1765,6 +1765,7 @@ window.SHOP={
   {
    "code": "CS-9042",
    "name": "Potassium Dichromate 500gm Merck Germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1774,30 +1775,29 @@ window.SHOP={
    "price": 1500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Germany",
    "images": [
     "images/cs-9042-fbz55nt1.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-29067",
    "name": "Family TDS Meter Hanna (Copy)",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2"
    ],
    "short": "Pocket-size family TDS meter.",
    "long": "Pocket TDS meter for quickly checking total dissolved solids in drinking water, aquariums and hydroponics.\n\nSpecifications\n• Parameter: Total dissolved solids (TDS)\n• Type: pocket TDS meter\n• Display: digital LCD\n\nIn the box\n• TDS meter\n• Protective cap\n• Battery",
-   "price": 1800,
+   "price": 2000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-29067-zoy9fy9p.jpg",
     "images/cs-29067-rq2ve05x.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-004",
@@ -1823,6 +1823,7 @@ window.SHOP={
   {
    "code": "CS-82219",
    "name": "Citric Acid 500gm, Merck Germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -1835,8 +1836,7 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-82219-lbks0rf4.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-41521",
@@ -2145,6 +2145,7 @@ window.SHOP={
   {
    "code": "CS-4658",
    "name": "Calcium chloride 500gm merck germany",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -2154,15 +2155,15 @@ window.SHOP={
    "price": 650,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Germany",
    "images": [
     "images/cs-4658-sdsotiz6.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-7166",
    "name": "Smart Sensor Infrared Thermometer AR320",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me",
@@ -2173,30 +2174,29 @@ window.SHOP={
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Taiwan",
    "images": [
     "images/cs-7166-kjta7hse.jpg",
     "images/cs-7166-gghukg2e.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-2681",
    "name": "Sodium Hydroxide Pellets 500g Merck India",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
    ],
    "short": "Sodium hydroxide (NaOH) pellets, 500 g pack.",
    "long": "Sodium hydroxide pellets for laboratory use such as titrations, solution preparation and pH adjustment. A strong, corrosive base. Store in a tightly closed container and use suitable protective equipment.\n\nSpecifications\n• Brand: Merck\n• Pack size: 500 g\n• Chemical: Sodium hydroxide (NaOH)\n• Form: pellets\n• Origin: India\n\nIn the box\n• Sodium hydroxide (NaOH) pellets, 500 g bottle",
-   "price": 500,
+   "price": 600,
    "stock": "in",
    "featured": 1,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-2681-1gscbh9q.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-037",
@@ -2490,7 +2490,8 @@ window.SHOP={
   },
   {
    "code": "CS-82861",
-   "name": "PH Meter (China)",
+   "name": "PH Meter",
+   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1",
@@ -2502,11 +2503,10 @@ window.SHOP={
    "price": 650,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-82861-o5omv226.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-68295",
@@ -2616,6 +2616,7 @@ window.SHOP={
   {
    "code": "CS-39569",
    "name": "Sodium Thiosulfate Extra Pure 500gm Research Lab",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -2625,15 +2626,15 @@ window.SHOP={
    "price": 800,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-39569-unzql8iv.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-33969",
    "name": "Digital Stick Thermometer",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me",
@@ -2645,16 +2646,16 @@ window.SHOP={
    "price": 300,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-33969-p3cliatx.jpg",
     "images/cs-33969-hiztkd7b.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-7891",
    "name": "Sodium Chloride 500gm (Merck Germany)",
+   "variants": [],
    "sub": "c4s1",
    "subs": [
     "c4s1"
@@ -2664,15 +2665,15 @@ window.SHOP={
    "price": 550,
    "stock": "in",
    "featured": 1,
-   "origin": "",
+   "origin": "Germany",
    "images": [
     "images/cs-7891-um47kkv1.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-79988",
    "name": "EDTA Disodium Salt 99% AR 500g (Ethylenediamine Tetra acetic Acid) RL",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -2682,11 +2683,10 @@ window.SHOP={
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-79988-1f864t7k.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-16846",
@@ -2884,6 +2884,7 @@ window.SHOP={
   {
    "code": "CS-36231",
    "name": "Sodium Phosphate Dibasic Anhydrous 500g Research Lab",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -2893,11 +2894,10 @@ window.SHOP={
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-36231-tq535dj8.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-75617",
@@ -3853,6 +3853,7 @@ window.SHOP={
   {
    "code": "CS-95148",
    "name": "Army Magnetic Compass",
+   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -3862,13 +3863,12 @@ window.SHOP={
    "price": 950,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-95148-x2vxm04c.jpg",
     "images/cs-95148-q75pv2dg.jpg",
     "images/cs-95148-osz8l4qx.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-16801",
