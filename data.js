@@ -411,7 +411,7 @@ window.SHOP={
    ],
    "short": "SF-400C electronic compact scale.",
    "long": "Electronic compact scale for everyday weighing in the lab, workshop, kitchen or shop.\n\nSpecifications\n• Model: SF-400C\n• Type: electronic compact scale\n\nIn the box\n• SF-400C scale\n• Battery",
-   "price": 1500,
+   "price": 1600,
    "stock": "in",
    "featured": 0,
    "origin": "China",
@@ -1274,20 +1274,20 @@ window.SHOP={
   {
    "code": "CS-89376",
    "name": "Simple Pendulum for Physics Laboratory",
+   "variants": [],
    "sub": "sbaxipc",
    "subs": [
     "sbaxipc"
    ],
    "short": "Simple pendulum set for physics experiments.",
    "long": "Simple pendulum apparatus for physics practicals such as finding the time period and the acceleration due to gravity.\n\nSpecifications\n• Type: simple pendulum\n• Use: physics laboratory experiments\n\nIn the box\n• Pendulum apparatus",
-   "price": 400,
+   "price": 450,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Bangladesh",
    "images": [
     "images/cs-89376-bbzil8hw.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-79431",
@@ -1352,20 +1352,6 @@ window.SHOP={
   {
    "code": "CS-25375",
    "name": "Vinyl Hand Gloves 100 Piece 1 Box",
-   "sub": "sx0h7dd",
-   "subs": [
-    "sx0h7dd"
-   ],
-   "short": "Vinyl disposable gloves, box of 100.",
-   "long": "Disposable vinyl gloves for laboratory, food handling, cleaning and general protection.\n\nSpecifications\n• Material: vinyl\n• Pack size: 100 pieces per box\n\nIn the box\n• Vinyl gloves, 100 pieces",
-   "price": 500,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-25375-1u57eo46.jpg",
-    "images/cs-25375-h2fb5pw9.jpg"
-   ],
    "variants": [
     {
      "name": "S",
@@ -1387,6 +1373,20 @@ window.SHOP={
      "price": null,
      "images": []
     }
+   ],
+   "sub": "sx0h7dd",
+   "subs": [
+    "sx0h7dd"
+   ],
+   "short": "Vinyl disposable gloves, box of 100.",
+   "long": "Disposable vinyl gloves for laboratory, food handling, cleaning and general protection.\n\nSpecifications\n• Material: vinyl\n• Pack size: 100 pieces per box\n\nIn the box\n• Vinyl gloves, 100 pieces",
+   "price": 500,
+   "stock": "in",
+   "featured": 0,
+   "origin": "China",
+   "images": [
+    "images/cs-25375-1u57eo46.jpg",
+    "images/cs-25375-h2fb5pw9.jpg"
    ]
   },
   {
@@ -1447,6 +1447,7 @@ window.SHOP={
   {
    "code": "CS-56060",
    "name": "Glass Slide Plain 76 mm 72 Pcs box",
+   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1",
@@ -1455,15 +1456,14 @@ window.SHOP={
    ],
    "short": "Plain glass microscope slides, box of 72.",
    "long": "Plain glass slides for preparing specimens for microscope viewing.\n\nSpecifications\n• Type: plain glass microscope slides\n• Length: 76 mm\n• Pack size: 72 pieces\n\nIn the box\n• Glass slides, 72 pieces",
-   "price": 120,
+   "price": 140,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-56060-fu2dlptm.jpg",
     "images/cs-56060-e5q0zrey.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-048",
@@ -1637,20 +1637,20 @@ window.SHOP={
   {
    "code": "HN-021",
    "name": "Hanna HI70300 pH Electrode Storage Solution, 500mL",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Storage solution for pH electrodes, 500 mL bottle.",
    "long": "Ready-to-use storage solution for pH electrodes. Keeping the glass bulb and junction in this solution between measurements keeps the electrode hydrated and responsive and helps extend its working life. Never store a pH electrode in distilled or deionized water.\n\nSpecifications\n• Type: pH electrode storage solution\n• Volume: 500 mL bottle\n• Use: storage of pH electrodes between measurements and during transport\n• Suitable for Hanna and other standard pH electrodes\n\nIn the box\n• Hanna HI70300 storage solution, 500 mL bottle",
-   "price": 2399,
+   "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-021-1xg6xtmp.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-75162",
@@ -1729,6 +1729,7 @@ window.SHOP={
   {
    "code": "CS-82358",
    "name": "Dissection Box / Biology Box for Laboratory (Pakistan)",
+   "variants": [],
    "sub": "s700fib",
    "subs": [
     "s700fib"
@@ -1738,11 +1739,10 @@ window.SHOP={
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Pakistan",
    "images": [
     "images/cs-82358-tq9mrpmf.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-022",
@@ -1954,6 +1954,7 @@ window.SHOP={
   {
    "code": "CS-45641",
    "name": "Digital Micrometer 0-25mm With Large Display",
+   "variants": [],
    "sub": "sqnvh0o",
    "subs": [
     "sqnvh0o",
@@ -1962,15 +1963,14 @@ window.SHOP={
    ],
    "short": "Digital micrometer, 0-25 mm, large display.",
    "long": "Digital micrometer with a large display for easy reading of thickness and diameter measurements.\n\nSpecifications\n• Range: 0 to 25 mm\n• Type: digital micrometer\n• Display: large digital LCD\n\nIn the box\n• Digital micrometer\n• Battery",
-   "price": 4000,
+   "price": 4500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-45641-jepkisxk.jpg",
     "images/cs-45641-1abm6uif.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-027",
@@ -2315,23 +2315,23 @@ window.SHOP={
   {
    "code": "HN-010",
    "name": "Hanna HI-701 Free Chlorine Handheld Colorimeter, Checker HC (Chlorine Meter)",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
    ],
    "short": "Handheld free chlorine colorimeter, 0.00 to 2.50 ppm, 0.01 ppm resolution.",
    "long": "Handheld colorimeter dedicated to free chlorine, a more accurate alternative to colour matching test kits. It uses a fixed wavelength LED and a silicon photocell, with a built-in timer and one button operation. Designed for freshwater samples such as drinking water, pools and spas, vegetable wash water, education and environmental testing.\n\nSpecifications\n• Range: 0.00 to 2.50 ppm (mg/L) free chlorine, resolution 0.01 ppm\n• Accuracy: ±0.03 ppm ±3% of reading\n• Method: adaptation of USEPA method 330.5, DPD reagent\n• Light source: LED at 525 nm, silicon photocell detector\n• Battery: 1 x 1.5 V AAA\n• Auto shut-off: after 2 minutes of non-use\n• Environment: 0 to 50°C, up to 95% RH non-condensing\n• Size and weight: 81.5 x 61 x 37.5 mm, 64 g\n\nIn the box\n• HI701 Checker HC\n• 2 sample cuvettes with caps\n• Free chlorine reagent starter kit (6 tests)\n• Battery\n• Instructions and quick start guide",
-   "price": 8199,
+   "price": 8500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-010-fc49238x.jpg",
     "images/hn-010-rrv1m4pw.jpg",
     "images/hn-010-j2njg600.jpg",
     "images/hn-010-3n5ux7dk.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-042",
@@ -2433,20 +2433,20 @@ window.SHOP={
   {
    "code": "HN-017",
    "name": "Hanna HI7031L 1413 µS/cm Conductivity Standard (1413), 500mL",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Hanna 1413 µS/cm conductivity standard, 500 mL bottle, NIST traceable.",
    "long": "Hanna HI7031L conductivity standard, 1413 µS/cm, in a 500 mL bottle. Use it to calibrate and check conductivity (EC) meters. It is prepared against a NIST-traceable potassium chloride solution. The airtight bottle has a tamper-proof seal, and a chart of the actual µS/cm value at different temperatures is printed on each bottle.\n\nSpecifications\n• Value: 1413 µS/cm\n• Volume: 500 mL bottle\n• Traceability: prepared against NIST-traceable potassium chloride, per ISO 3696 / BS 3978\n• Shelf life: five years from manufacture, unopened\n• Lot number and expiry date are printed on the label",
-   "price": null,
+   "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-017-w7nzue45.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-005",
@@ -2538,41 +2538,41 @@ window.SHOP={
   {
    "code": "HN-031",
    "name": "Sulfite Chemical Test Kit Hanna–HI3822 (110 Tests)",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
    ],
    "short": "Hanna HI3822 sulfite test kit, 110 tests.",
    "long": "Chemical test kit for determining sulfite in water. Commonly used to check sulfite levels in boiler water treatment, where residual sulfite protects against dissolved oxygen corrosion.\n\nSpecifications\n• Parameter: Sulfite\n• Number of tests: 110\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI3822\n\nIn the box\n• Sulfite reagents for 110 tests\n• Sample vial and accessories\n• Instruction sheet",
-   "price": 12999,
+   "price": 12500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-031-8zj1qg15.jpg",
     "images/hn-031-d9zw3hn5.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-011",
    "name": "Ammonia Test Kit for Seawater Replacement Reagents (25 tests) - HI3826",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
    ],
    "short": "Replacement reagents for the Hanna HI3826 seawater ammonia test kit, about 25 tests.",
    "long": "Refill reagent set (HI3826-025) for the Hanna HI3826 Ammonia Test Kit for Seawater. The kit measures ammonia as NH3-N in seawater with a colorimetric Nessler method, and you read the result by matching the color against the comparison cube. Reagents are pre-made, and each bottle is marked with a lot number and expiry date. Used to monitor ammonia in rivers, estuaries and bays, where ammonia can be toxic to aquatic life.\n\nSpecifications\n• Refills: HI3826 Ammonia Test Kit for Seawater\n• Range: 0.0 to 2.5 mg/L (ppm) NH3-N, resolution 0.5 mg/L\n• Method: Nessler, colorimetric\n• Number of tests: about 25\n\nIn the pack\n• Ammonia Reagent 1 for seawater, 20 mL dropper bottle\n• Nessler Reagent, 20 mL dropper bottle\n\nThis pack holds reagents only. The sample beaker and color comparison cube come with the full kit.",
-   "price": 5599,
+   "price": 5800,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-011-460qj8v7.jpg",
     "images/hn-011-z89w9a79.jpg",
     "images/hn-011-m6ui7bo2.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-023",
@@ -2786,6 +2786,7 @@ window.SHOP={
   {
    "code": "CS-25922",
    "name": "Dissection Box / Biology Box for Laboratory",
+   "variants": [],
    "sub": "s700fib",
    "subs": [
     "s700fib",
@@ -2796,11 +2797,10 @@ window.SHOP={
    "price": 500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Pakistan",
    "images": [
     "images/cs-25922-hcaifn5l.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-007",
