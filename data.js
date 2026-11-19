@@ -1545,21 +1545,21 @@ window.SHOP={
   {
    "code": "HN-024",
    "name": "Hanna Iron Test Kit HI-3834 Romania",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
    ],
    "short": "Hanna HI3834 chemical test kit for iron in water.",
    "long": "Hanna chemical test kit for determining iron in water samples. The kit is designed for quick on-site checks without an instrument and is commonly used for drinking water, boiler water and general water quality work.\n\nSpecifications\n• Parameter: Iron\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI3834\n\nIn the box\n• Iron test kit HI3834 with reagents and accessories\n• Instruction sheet",
-   "price": 3499,
+   "price": 3700,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-024-lbvbbzmp.jpg",
     "images/hn-024-z0oze16t.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-8226",
@@ -2013,6 +2013,7 @@ window.SHOP={
   {
    "code": "CS-67362",
    "name": "Ammonia Buffer Solution 500mL Research Lab",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -2022,11 +2023,10 @@ window.SHOP={
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-67362-a09t9hec.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-013",
@@ -2375,21 +2375,21 @@ window.SHOP={
   {
    "code": "HN-026",
    "name": "Hanna Alkalinity Test Kit HI-3811 (100 Tests)",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
    ],
    "short": "Hanna HI3811 alkalinity test kit, 100 tests.",
    "long": "Chemical titration test kit for measuring total alkalinity of water. It is quick to use on site and is suited to drinking water, aquaculture, pools, boilers and general water quality checks.\n\nSpecifications\n• Parameter: Alkalinity\n• Number of tests: 100\n• Type: chemical test kit (titration)\n• Manufacturer: Hanna Instruments\n• Model: HI3811\n\nIn the box\n• Alkalinity reagents for 100 tests\n• Sample vial and accessories\n• Instruction sheet",
-   "price": 6799,
+   "price": 7000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-026-o0reo0ua.jpg",
     "images/hn-026-zh2je2e4.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-21503",
