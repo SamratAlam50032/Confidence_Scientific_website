@@ -990,21 +990,21 @@ window.SHOP={
   {
    "code": "HN-025",
    "name": "Hanna HI-721 Iron Checker Handheld Colorimeter 0.00 to 5.00 ppm Range",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
    ],
    "short": "Checker HC handheld colorimeter for iron, 0.00 to 5.00 ppm.",
    "long": "Handheld Checker HC colorimeter dedicated to iron. Single-button operation, a fixed-wavelength LED light source and a silicon photodetector give repeatable results that are more reliable than visual test kits. Used for water treatment, boiler water, drinking water and industrial process checks.\n\nSpecifications\n• Parameter: Iron\n• Range: 0.00 to 5.00 ppm (mg/L)\n• Resolution: 0.01 ppm\n• Method: colorimetric\n• Light source: LED, silicon photocell detector\n• Auto shut-off: after 10 minutes of non-use\n• Power: 1.5 V AAA battery\n• Size and weight: 86 x 61 x 37.5 mm, about 64 g\n\nIn the box\n• HI721 Checker HC\n• Sample cuvettes with caps (2)\n• Iron reagents starter set\n• 1.5 V AAA battery\n• Instruction manual and quick start guide",
-   "price": 8199,
+   "price": 8500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-025-a8il6xzq.jpg",
     "images/hn-025-hlmitzez.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-039",
@@ -1066,6 +1066,7 @@ window.SHOP={
   {
    "code": "CS-72421",
    "name": "Smart Sensor Temperature Humidity Clock SM807",
+   "variants": [],
    "sub": "shsdp0x",
    "subs": [
     "shsdp0x",
@@ -1074,14 +1075,13 @@ window.SHOP={
    ],
    "short": "Smart Sensor SM807 temperature, humidity and clock meter.",
    "long": "Digital meter from Smart Sensor that shows temperature, humidity and time in one unit, for rooms, storerooms and laboratories.\n\nSpecifications\n• Parameters: Temperature, humidity and time\n• Model: SM807\n• Brand: Smart Sensor\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": 500,
+   "price": 550,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Taiwan",
    "images": [
     "images/cs-72421-frxiu730.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-92899",
@@ -1124,6 +1124,7 @@ window.SHOP={
   {
    "code": "HN-036",
    "name": "James Heal ECE Phosphate Reference Detergent (B) 2kg Tub",
+   "variants": [],
    "sub": "sllqrmv",
    "subs": [
     "sllqrmv"
@@ -1136,8 +1137,7 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/hn-036-5m1oz7u5.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-71559",
@@ -1220,20 +1220,20 @@ window.SHOP={
   {
    "code": "CS-2951",
    "name": "Total Hardness Test Kit for Water. HI-3812",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
    ],
    "short": "Hanna HI3812 chemical test kit for total hardness of water.",
    "long": "Hanna chemical test kit for measuring total hardness of water. A simple titration-style procedure gives quick on-site results without an instrument, useful for drinking water, boiler and cooling water, aquaculture and general water quality checks.\n\nSpecifications\n• Parameter: Total hardness\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI3812\n\nIn the box\n• Total hardness reagents and accessories\n• Sample containers and syringe\n• Instruction sheet",
-   "price": 3599,
+   "price": 3800,
    "stock": "in",
    "featured": 1,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/cs-2951-6vmgucvf.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-35313",
@@ -2977,23 +2977,23 @@ window.SHOP={
   {
    "code": "CS-9385",
    "name": "Hanna HI-98108 pHep+ pH Meter with Auto Calibration",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
    ],
    "short": "Hanna pHep+ waterproof pocket pH meter with automatic calibration.",
    "long": "Waterproof pocket pH tester from the Hanna pHep+ range. Automatic calibration recognises the buffer solutions and guides you through the procedure, so accurate pH readings are easy to get even for new users. Suitable for laboratory, school, water and food work.\n\nSpecifications\n• Parameter: pH\n• Range: 0.0 to 14.0 pH\n• Resolution: 0.1 pH\n• Calibration: automatic\n• Waterproof body with LCD display\n• Model: HI98108 (pHep+)\n\nIn the box\n• HI98108 pHep+ pH meter\n• Battery\n• Instruction manual",
-   "price": 8199,
+   "price": 8500,
    "stock": "in",
    "featured": 1,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/cs-9385-4ren8haj.jpg",
     "images/cs-9385-6jtoqinn.jpg",
     "images/cs-9385-atlq7k1z.jpg",
     "images/cs-9385-v7ej1lil.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-029",
@@ -3040,6 +3040,7 @@ window.SHOP={
   {
    "code": "CS-83124",
    "name": "Wood Thermometer for Room",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me",
@@ -3050,12 +3051,11 @@ window.SHOP={
    "price": 120,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-83124-dckn9mhh.jpg",
     "images/cs-83124-59e4boju.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-020",
@@ -3116,6 +3116,7 @@ window.SHOP={
   {
    "code": "CS-83413",
    "name": "Eriochrome Black-T AR 25g Research Lab",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -3125,11 +3126,10 @@ window.SHOP={
    "price": 600,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-83413-sw6p6fdm.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-70738",
