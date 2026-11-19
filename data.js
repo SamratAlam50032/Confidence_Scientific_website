@@ -3699,7 +3699,8 @@ window.SHOP={
    ],
    "sub": "sbtuofc",
    "subs": [
-    "sbtuofc"
+    "sbtuofc",
+    "c16s2"
    ],
    "short": "HBG Germany glass pipette, 0.1 ml to 25 ml.",
    "long": "Glass pipette from HBG, Germany, for measuring and transferring liquid volumes accurately in the laboratory. Available in sizes from 0.1 ml to 25 ml.\n\nSpecifications\n• Type: glass pipette\n• Brand: HBG\n• Origin: Germany\n• Sizes: 0.1 ml, 0.2 ml, 0.5 ml, 1 ml, 2 ml, 5 ml, 10 ml, 20 ml, 25 ml\n\nIn the box\n• Pipette, in the size you order",
