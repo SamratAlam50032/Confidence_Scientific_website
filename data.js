@@ -595,6 +595,7 @@ window.SHOP={
   {
    "code": "CS-53106",
    "name": "Digital Vernier Caliper 150 mm Plastic Slide Caliper 6 Inch",
+   "variants": [],
    "sub": "swurakr",
    "subs": [
     "swurakr",
@@ -606,12 +607,11 @@ window.SHOP={
    "price": 750,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-53106-c450wz5k.jpg",
     "images/cs-53106-hd17e0v3.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-1188",
@@ -709,21 +709,21 @@ window.SHOP={
   {
    "code": "HN-032",
    "name": "Hanna Glass pH Electrode HI-1131B with BNC Connector",
+   "variants": [],
    "sub": "c1s6",
    "subs": [
     "c1s6"
    ],
    "short": "Refillable glass-body pH electrode with BNC connector.",
    "long": "Refillable glass-body pH electrode with a BNC connector, suitable for general purpose laboratory pH measurement with standard benchtop pH meters. Regular cleaning, correct storage and fresh electrolyte keep the response fast and stable.\n\nSpecifications\n• Type: pH electrode, glass body, refillable\n• Connector: BNC\n• Use: general purpose laboratory pH measurement\n• Storage: in electrode storage solution, never in distilled water\n\nIn the box\n• HI1131B pH electrode\n• Protective cap\n• Instruction sheet",
-   "price": 20199,
+   "price": 20500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-032-cp784j5y.jpg",
     "images/hn-032-p6o2lkno.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-012",
@@ -820,6 +820,7 @@ window.SHOP={
   {
    "code": "CS-19421",
    "name": "Phenol Red Indicator 25g Research Lab",
+   "variants": [],
    "sub": "c4s2",
    "subs": [
     "c4s2"
@@ -829,11 +830,10 @@ window.SHOP={
    "price": 1200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-19421-f532mthd.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-79595",
@@ -875,6 +875,7 @@ window.SHOP={
   {
    "code": "CS-85060",
    "name": "Test Tube Rack (Plastic) 6 Hole",
+   "variants": [],
    "sub": "suxv0es",
    "subs": [
     "suxv0es",
@@ -887,11 +888,10 @@ window.SHOP={
    "price": 80,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Bangladesh",
    "images": [
     "images/cs-85060-p1oqu7sk.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-043",
@@ -970,7 +970,8 @@ window.SHOP={
   },
   {
    "code": "CS-74987",
-   "name": "Digital Weighing Scale 6000gm (0.1gm) DIGI Germany – High Precision Electronic Balance",
+   "name": "Digital Weighing Scale 6000gm (0.1gm) DIGI Scale – High Precision Electronic Balance",
+   "variants": [],
    "sub": "s8fyg6m",
    "subs": [
     "s8fyg6m"
@@ -980,12 +981,11 @@ window.SHOP={
    "price": 6000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Taiwan",
    "images": [
     "images/cs-74987-dgb3sj7p.jpg",
     "images/cs-74987-awfxvkvu.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-025",
@@ -1047,6 +1047,7 @@ window.SHOP={
   {
    "code": "CS-76494",
    "name": "ATC Portable Salinity Refractometer 0-100 ppt (0-100%)",
+   "variants": [],
    "sub": "siwv6py",
    "subs": [
     "siwv6py"
@@ -1056,12 +1057,11 @@ window.SHOP={
    "price": 2200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-76494-eoxsk70f.jpg",
     "images/cs-76494-unscs8t2.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-72421",
@@ -1200,22 +1200,22 @@ window.SHOP={
   },
   {
    "code": "HN-015",
-   "name": "Buffer Solution pH 4.01 Hanna 1000 ml Bottle HI-704",
+   "name": "Buffer Solution pH 4.01 Hanna 1000 ml Bottle HI-7004",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Hanna pH 4.01 calibration buffer, 1 L bottle, accuracy ±0.01 pH at 25°C.",
    "long": "Hanna pH 4.01 calibration buffer solution in a 1 liter bottle (HI7004/1L). Use it to calibrate pH meters and to check that the meter and electrode are working properly. pH 4.01 is the usual acid-side calibration point, useful for water purification and food work. The bottle is color-coded red for pH 4.01. In an emergency the buffer can also be used as an electrode storage solution.\n\nSpecifications\n• Value: pH 4.01 at 25°C, accuracy ±0.01 pH\n• Volume: 1 L bottle\n• Traceability: standardised in accordance with NIST\n• Expiry date is printed on the label\n• Store at about 25°C, away from direct sunlight",
-   "price": 2799,
+   "price": 3000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-025-e0qocnu3.jpg",
     "images/hn-025-xzte2p8w.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-2951",
@@ -1291,7 +1291,8 @@ window.SHOP={
   },
   {
    "code": "CS-79431",
-   "name": "Vernier Slide Caliper 150mm China",
+   "name": "Vernier Slide Caliper 150mm",
+   "variants": [],
    "sub": "swurakr",
    "subs": [
     "swurakr",
@@ -1303,12 +1304,11 @@ window.SHOP={
    "price": 350,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-79431-f1pus2gx.jpg",
     "images/cs-79431-axkip3on.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-045",
@@ -1655,6 +1655,7 @@ window.SHOP={
   {
    "code": "CS-75162",
    "name": "Grain Moisture Meter GMK-303RS, Korea for Accurate Moisture Measurement",
+   "variants": [],
    "sub": "sypo0sw",
    "subs": [
     "sypo0sw"
@@ -1667,8 +1668,7 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-75162-af42e06z.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-80513",
@@ -2691,6 +2691,7 @@ window.SHOP={
   {
    "code": "CS-16846",
    "name": "AND-GULF HL-600 Digital Balance",
+   "variants": [],
    "sub": "susfg99",
    "subs": [
     "susfg99"
@@ -2703,8 +2704,7 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-16846-i7rv7xte.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-4444",
@@ -2844,6 +2844,7 @@ window.SHOP={
   {
    "code": "CS-8367",
    "name": "Smart Sensor AR8211+ Digital TDS Meter",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2",
@@ -2854,17 +2855,17 @@ window.SHOP={
    "price": 3500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Taiwan",
    "images": [
     "images/cs-8367-7dw9458v.jpg",
     "images/cs-8367-1kjkj73s.jpg",
     "images/cs-8367-5d5nq8ue.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-2814",
    "name": "Zeal Thermometer 110C",
+   "variants": [],
    "sub": "seja7me",
    "subs": [
     "seja7me",
@@ -2878,8 +2879,7 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-2814-dkn6wxp7.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-36231",
@@ -2902,6 +2902,7 @@ window.SHOP={
   {
    "code": "CS-75617",
    "name": "TDS Meter",
+   "variants": [],
    "sub": "c2s2",
    "subs": [
     "c2s2",
@@ -2912,11 +2913,10 @@ window.SHOP={
    "price": 400,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-75617-gqeee9c5.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-46692",
@@ -2940,6 +2940,7 @@ window.SHOP={
   {
    "code": "CS-60374",
    "name": "Glass Rod",
+   "variants": [],
    "sub": "s916j9x",
    "subs": [
     "s916j9x",
@@ -2950,15 +2951,15 @@ window.SHOP={
    "price": 60,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-60374-gr9fyd55.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-9032",
    "name": "Smart Sensor Humidity and Temperature Meter AS847 Probe Type",
+   "variants": [],
    "sub": "shsdp0x",
    "subs": [
     "shsdp0x"
@@ -2968,11 +2969,10 @@ window.SHOP={
    "price": 4000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Taiwan",
    "images": [
     "images/cs-9032-dv5bnmnl.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-9385",
@@ -2998,25 +2998,26 @@ window.SHOP={
   {
    "code": "HN-029",
    "name": "Nitrite Test kit Hanna-HI3873 (100 tests)",
+   "variants": [],
    "sub": "c1s2",
    "subs": [
     "c1s2"
    ],
    "short": "Hanna HI3873 nitrite test kit, 100 tests.",
    "long": "Chemical test kit for determining nitrite in water. Easy procedure with fast results, suited to aquaculture, drinking water, cooling water and general water quality monitoring.\n\nSpecifications\n• Parameter: Nitrite\n• Number of tests: 100\n• Type: chemical test kit\n• Manufacturer: Hanna Instruments\n• Model: HI3873\n\nIn the box\n• Nitrite reagents for 100 tests\n• Sample vials and accessories\n• Colour reference and instruction sheet",
-   "price": 6499,
+   "price": 6500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-029-rrw47a0d.jpg",
     "images/hn-029-qciw4blo.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-001",
    "name": "Hanna HI-98107 Pocket pH Meter",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1",
@@ -3024,18 +3025,17 @@ window.SHOP={
    ],
    "short": "Pocket pH tester, 0.0 to 14.0 pH, 0.1 resolution, automatic temperature compensation.",
    "long": "Slim pocket pH tester from the Hanna pHep series. A large LCD shows pH and temperature together, and two-button operation with automatic 1 or 2 point calibration keeps setup quick. The cloth junction electrode has a larger surface area than a standard ceramic junction and can be taken out for cleaning. Used for drinking water, aquariums, pools and ponds.\n\nSpecifications\n• pH range: 0.0 to 14.0, resolution 0.1 pH, accuracy ±0.2 pH at 25°C\n• Calibration: automatic, 1 or 2 points (pH 4.01, 7.01, 10.01)\n• Temperature: 0.0 to 50.0°C, ±0.5°C, automatic compensation, °C or °F display\n• Battery: CR2032, about 1000 hours of continuous use\n• Auto shut-off: 8 min, 60 min or off\n• Size and weight: 160 x 40 x 17 mm, 75 g\n\nIn the box\n• pHep pH tester\n• CR2032 battery\n• pH 4.01 buffer sachet (1)\n• pH 7.01 buffer sachets (2)\n• Electrode cleaning solution sachet\n• Protective sleeve\n• Instruction manual and quality certificate",
-   "price": 6799,
+   "price": 7000,
    "stock": "in",
    "featured": 1,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-001-smw5zjdp.jpg",
     "images/hn-001-cc3j1l1d.jpg",
     "images/hn-001-o9ifwmi6.jpg",
     "images/hn-001-wuex7nxe.jpg",
     "images/hn-001-1esxtpey.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-83124",
@@ -3060,20 +3060,20 @@ window.SHOP={
   {
    "code": "HN-020",
    "name": "12880 µS/cm Conductivity Standard w/ COA (500mL Bottle)",
+   "variants": [],
    "sub": "c1s3",
    "subs": [
     "c1s3"
    ],
    "short": "Hanna 12880 µS/cm conductivity standard with Certificate of Analysis, 500 mL.",
    "long": "Hanna HI7030L-C conductivity standard, 12880 µS/cm, in a 500 mL bottle, supplied with a Certificate of Analysis (COA). Use it to calibrate and check conductivity (EC) meters in the high range. The COA lists the product code, lot number, mean lot value, reference materials used, manufacturing date and expiry date.\n\nSpecifications\n• Value: 12880 µS/cm\n• Volume: 500 mL bottle, airtight with tamper-proof seal\n• Traceability: prepared against NIST-traceable potassium chloride, per ISO 3696 / BS 3978, using certified balances, Class A glassware and certified thermometers\n• Shelf life: five years from manufacture, unopened\n• A temperature chart of the actual µS/cm value is printed on each bottle",
-   "price": 2399,
+   "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/hn-020-junwofzm.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-040",
@@ -3097,6 +3097,7 @@ window.SHOP={
   {
    "code": "CS-42480",
    "name": "Wooden Geometry Box-White board geometry box-",
+   "variants": [],
    "sub": "sqe8bzx",
    "subs": [
     "sqe8bzx"
@@ -3106,12 +3107,11 @@ window.SHOP={
    "price": 700,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Bangladesh",
    "images": [
     "images/cs-42480-4a591srj.jpg",
     "images/cs-42480-j87crx30.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-83413",
