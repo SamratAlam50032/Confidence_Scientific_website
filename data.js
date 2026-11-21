@@ -2352,9 +2352,11 @@ window.SHOP={
   {
    "code": "CS-28132",
    "name": "Analog DC Voltmeter",
+   "variants": [],
    "sub": "sbaxipc",
    "subs": [
-    "sbaxipc"
+    "sbaxipc",
+    "sek48tp"
    ],
    "short": "Analog DC voltmeter.",
    "long": "Analog moving-coil voltmeter for measuring direct voltage in physics and electrical practicals.\n\nSpecifications\n• Type: analog DC voltmeter\n• Use: measuring direct voltage\n\nIn the box\n• Voltmeter",
@@ -2364,8 +2366,7 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-28132-yrbgmbmi.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-045",
@@ -4060,12 +4061,12 @@ window.SHOP={
    "name": "Mathematics"
   },
   {
-   "id": "swurakr",
-   "name": "Vernier & Slide Caliper"
-  },
-  {
    "id": "sek48tp",
    "name": "Electric lab"
+  },
+  {
+   "id": "swurakr",
+   "name": "Vernier & Slide Caliper"
   },
   {
    "id": "sarg0tn",
