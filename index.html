@@ -268,6 +268,16 @@ header.top{padding:8px 0 0!important}.bar{gap:10px!important}.cband{margin-top:6
 @supports not selector(::-webkit-scrollbar){.catnav{scrollbar-color:var(--brown) var(--brown-soft)}}
 .mi>button{background:var(--surface);border:1.5px solid var(--line);border-radius:10px;padding:9px 14px}
 .mi>button:hover,.mi>button:focus-visible{border-color:var(--brown);color:var(--brown)}
+.fchip{display:inline-flex;align-items:center;gap:0;border:1px solid var(--ink);border-radius:99px;overflow:hidden;font-size:14px;background:var(--surface)}
+.fchip>span{padding:6px 12px;font-weight:600}
+.crumb .fclose{border:0;border-left:1px solid var(--ink);border-radius:0;background:var(--ink);color:#fff;font:600 13px var(--f-body);padding:7px 14px;cursor:pointer}
+.crumb .fclose:hover{background:#000;color:#fff;border-color:#000}
+section.contact{background:#123B44;color:#EAF4F2;border-top:0;border-radius:14px;padding:34px 28px 38px;margin:26px 0 30px}
+section.contact h2{color:#fff}section.contact h2 #cn{color:#7FD6C8}
+section.contact .k{color:#8FC9C0}section.contact .sel,section.contact #caddr{color:#fff;font-weight:500}
+section.contact a:not(.btn){color:#7FD6C8}
+section.contact .btn.ghost{background:transparent;color:#fff;border-color:#7FD6C8}section.contact .btn.ghost:hover{background:#7FD6C8;color:#123B44}
+@media(max-width:560px){section.contact{padding:26px 18px 30px}}
 </style>
 
 </head>
@@ -460,9 +470,10 @@ function draw(){
   const t=q.toLowerCase(), list=P.filter(p=>(cat<0||(sub<0?inC(p,cat):inS(p,cat,sub)))&&(!t||(p[0]+" "+p[6]+" "+p[3]+" "+p[10].map(x=>C[x[0]][0]+" "+C[x[0]][1][x[1]]).join(" ")).toLowerCase().includes(t)));
   drawSubs();const cr=$("#crumb");cr.textContent="";
   const add=(txt,fn)=>{const b=document.createElement("button");b.type="button";b.textContent=txt;b.onclick=fn;cr.appendChild(b)};
-  const sp=document.createElement("span");sp.textContent=list.length+" items";cr.appendChild(sp);
-  if(cat>=0)add(C[cat][0]+(sub>=0?" / "+C[cat][1][sub]:"")+"  ✕",()=>{cat=-1;sub=-1;draw()});
-  if(q)add("Search: "+q+"  ✕",()=>{q="";$("#q").value="";draw()});
+  const sp=document.createElement("span");sp.textContent=list.length+(list.length===1?" item":" items");cr.appendChild(sp);
+  const clr=(txt,fn)=>{const w=document.createElement("span");w.className="fchip";const l=document.createElement("span");l.textContent=txt;const b=document.createElement("button");b.type="button";b.className="fclose";b.textContent="Close \u2715";b.setAttribute("aria-label","Clear this filter");b.onclick=fn;w.append(l,b);cr.appendChild(w)};
+  if(cat>=0)clr(C[cat][0]+(sub>=0?" / "+C[cat][1][sub]:""),()=>{cat=-1;sub=-1;draw()});
+  if(q)clr("Search: "+q,()=>{q="";$("#q").value="";draw()});
   $("#empty").hidden=list.length>0;$("#empty").textContent=P.length?"No product matches. Try a shorter word or clear the filter.":"Products are being added. Please check back soon or contact us.";
   const g=$("#grid");g.textContent="";list.forEach(p=>g.appendChild(card(p)));
   const f=$("#fgrid");f.textContent="";$("#featured").hidden=!FEAT.length;FEAT.forEach(p=>{const c=card(p);const s=document.createElement("div");s.className="star";s.textContent="Featured";c.querySelector("h3").before(s);f.appendChild(c)});
