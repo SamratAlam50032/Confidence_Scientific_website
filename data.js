@@ -26,10 +26,7 @@ window.SHOP={
     "c1s1",
     "c1s2",
     "c1s3",
-    "c1s6",
-    "sryqr8c",
-    "sxxpmfc",
-    "s8ygcdr"
+    "c1s6"
    ]
   },
   {
@@ -47,7 +44,7 @@ window.SHOP={
   },
   {
    "id": "c5",
-   "name": "School /College Lab Items",
+   "name": "School-College Lab Items",
    "prefix": "CS",
    "image": "",
    "subs": [
@@ -154,7 +151,7 @@ window.SHOP={
   },
   {
    "id": "c16",
-   "name": "Research Lab Item",
+   "name": "Research Item",
    "prefix": "CS",
    "image": "",
    "subs": [
@@ -181,7 +178,9 @@ window.SHOP={
     "siwv6py",
     "sf4zcsj",
     "sypo0sw",
-    "ss4u9za"
+    "ss4u9za",
+    "s8ygcdr",
+    "sxxpmfc"
    ]
   },
   {
@@ -204,7 +203,8 @@ window.SHOP={
     "c3s1",
     "c2s1",
     "c2s2",
-    "c16s2"
+    "c16s2",
+    "sryqr8c"
    ]
   }
  ],
@@ -3932,24 +3932,28 @@ window.SHOP={
    "name": "pH Meters"
   },
   {
-   "id": "c1s4",
-   "name": "Soil Kits & Meters"
-  },
-  {
    "id": "c2s2",
    "name": "TDS & EC Meters"
+  },
+  {
+   "id": "swxfygo",
+   "name": "Salinity Meter"
+  },
+  {
+   "id": "c1s4",
+   "name": "Soil Kits & Meters"
   },
   {
    "id": "c2s3",
    "name": "Turbidity Meters"
   },
   {
-   "id": "c3s1",
-   "name": "Glass items"
+   "id": "c4s1",
+   "name": "MERCK (Germany)"
   },
   {
-   "id": "c4s1",
-   "name": "MERCK(Germany)"
+   "id": "se65abx",
+   "name": "MERCK (India)"
   },
   {
    "id": "c4s2",
@@ -3964,12 +3968,8 @@ window.SHOP={
    "name": "HIMEDIA(India)"
   },
   {
-   "id": "c16s2",
-   "name": "Pipettes"
-  },
-  {
    "id": "s2n9u18",
-   "name": "Multifiber/Fabrics"
+   "name": "Multifiber & Fabrics"
   },
   {
    "id": "sllqrmv",
@@ -3986,10 +3986,6 @@ window.SHOP={
   {
    "id": "sz7qw3t",
    "name": "pH/Filter/Litmus paper"
-  },
-  {
-   "id": "se65abx",
-   "name": "MERCK India"
   },
   {
    "id": "sa3zbrq",
@@ -4010,10 +4006,6 @@ window.SHOP={
   {
    "id": "s8fyg6m",
    "name": "0.1gm-6kg(counting)"
-  },
-  {
-   "id": "suxv0es",
-   "name": "Test Tube"
   },
   {
    "id": "sxnmns4",
@@ -4045,15 +4037,11 @@ window.SHOP={
   },
   {
    "id": "s1nowxi",
-   "name": "Stop \\Watch"
+   "name": "Stop Watch"
   },
   {
    "id": "ss4u9za",
    "name": "Soil Test products"
-  },
-  {
-   "id": "sp7hn9z",
-   "name": "Burette"
   },
   {
    "id": "sbaxipc",
@@ -4073,7 +4061,7 @@ window.SHOP={
   },
   {
    "id": "swurakr",
-   "name": "Vernier/Slide Caliper"
+   "name": "Vernier & Slide Caliper"
   },
   {
    "id": "sek48tp",
@@ -4088,8 +4076,12 @@ window.SHOP={
    "name": "Water Testing Item"
   },
   {
-   "id": "swxfygo",
-   "name": "Salinity Meter"
+   "id": "suxv0es",
+   "name": "Test Tube"
+  },
+  {
+   "id": "sp7hn9z",
+   "name": "Burette"
   },
   {
    "id": "s7cmald",
@@ -4098,6 +4090,14 @@ window.SHOP={
   {
    "id": "sbtuofc",
    "name": "General"
+  },
+  {
+   "id": "c3s1",
+   "name": "Glass items"
+  },
+  {
+   "id": "c16s2",
+   "name": "Pipettes"
   },
   {
    "id": "smv50c9",
@@ -4133,7 +4133,7 @@ window.SHOP={
   },
   {
    "id": "s8ygcdr",
-   "name": "Magnifying/Counting Glass"
+   "name": "Magnifying & Counting Glass"
   }
  ]
 };
