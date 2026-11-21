@@ -1263,21 +1263,21 @@ window.SHOP={
   {
    "code": "CS-57042",
    "name": "Litmus Red Indicator",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
    ],
    "short": "Red litmus indicator for testing alkalis.",
    "long": "Red litmus indicator for a quick check of whether a solution is alkaline. Red litmus turns blue in an alkaline (basic) solution and stays red in acid. Widely used in school and college laboratories.\n\nSpecifications\n• Type: red litmus indicator\n• Result: turns blue in alkaline solution\n• Use: qualitative acid-base testing\n\nIn the box\n• Red litmus indicator",
-   "price": null,
+   "price": 45,
    "stock": "in",
    "featured": 0,
    "origin": "",
    "images": [
     "images/cs-57042-1hnwnql4.jpg",
     "images/cs-57042-esm6rsnf.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-43519",
@@ -3555,20 +3555,20 @@ window.SHOP={
   {
    "code": "CS-95549",
    "name": "Litmus Blue Indicator",
+   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
    ],
    "short": "Blue litmus indicator for testing acids.",
    "long": "Blue litmus indicator for a quick check of whether a solution is acidic. Blue litmus turns red in an acidic solution and stays blue in alkali. Widely used in school and college laboratories.\n\nSpecifications\n• Type: blue litmus indicator\n• Result: turns red in acidic solution\n• Use: qualitative acid-base testing\n\nIn the box\n• Blue litmus indicator",
-   "price": null,
+   "price": 45,
    "stock": "in",
    "featured": 0,
    "origin": "",
    "images": [
     "images/cs-95549-2nethub3.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "HN-027",
@@ -3908,6 +3908,470 @@ window.SHOP={
    "images": [
     "images/cs-83413-sw6p6fdm.jpg"
    ],
+   "variants": []
+  },
+  {
+   "code": "CS-11611",
+   "name": "Soil Moisture Meter Takemura DM-15",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Takemura DM-15 soil moisture meter.",
+   "long": "Soil moisture meter from Takemura. Push the probe into the soil to check the moisture level, helping with watering, farming, gardening and soil testing.\n\nSpecifications\n• Parameter: Soil moisture\n• Model: DM-15\n• Brand: Takemura\n• Type: probe-type meter\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-71614",
+   "name": "Soil Moisture Meter Takemura DM-13",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Takemura DM-13 soil moisture meter.",
+   "long": "Soil moisture meter from Takemura. Push the probe into the soil to check the moisture level, helping with watering, farming, gardening and soil testing.\n\nSpecifications\n• Parameter: Soil moisture\n• Model: DM-13\n• Brand: Takemura\n• Type: probe-type meter\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-24750",
+   "name": "Glass Burette 50ml Pyrex",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Pyrex glass burette, 50 ml.",
+   "long": "Glass burette with a stopcock for delivering exact volumes of liquid during titrations. Graduated, 50 ml capacity.\n\nSpecifications\n• Type: glass burette with stopcock\n• Capacity: 50 ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Glass burette, 50 ml",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-61547",
+   "name": "Paper Moisture Meter Model: DM200P",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "DM200P moisture meter for paper.",
+   "long": "Moisture meter for checking the moisture content of paper, board and similar sheet materials. Helps keep storage and production quality under control.\n\nSpecifications\n• Parameter: Moisture content of paper\n• Model: DM200P\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-28485",
+   "name": "Textile Moisture Meter Model: DM200T",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "DM200T moisture meter for textiles.",
+   "long": "Moisture meter for checking the moisture content of fabric, yarn and other textile materials, useful in textile mills, stores and quality control.\n\nSpecifications\n• Parameter: Moisture content of textiles\n• Model: DM200T\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-99734",
+   "name": "Spirit Lamp",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Laboratory spirit lamp.",
+   "long": "Spirit lamp with a wick, used as a simple flame source for heating in laboratories and school practicals. Burns spirit (alcohol).\n\nSpecifications\n• Type: spirit lamp\n• Fuel: spirit (alcohol)\n\nIn the box\n• Spirit lamp with wick and cap",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-15677",
+   "name": "Filtration Unit Pyrex 1L",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Pyrex vacuum filtration unit, 1 L.",
+   "long": "Glass filtration unit for vacuum filtration in the laboratory, used with a membrane filter to separate solids from liquids. 1 litre capacity.\n\nSpecifications\n• Type: glass vacuum filtration unit\n• Capacity: 1 L\n• Brand: Pyrex\n\nIn the box\n• Filtration unit assembly (funnel, receiving flask and clamp)",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-28201",
+   "name": "Digital Grain Moisture Meter Model-AR991 China",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "AR991 digital grain moisture meter, China.",
+   "long": "Digital moisture meter for grains such as rice, wheat and maize. Checking moisture content quickly helps with harvesting, drying, storage and trading.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: AR991\n• Origin: China\n• Display: digital\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-24756",
+   "name": "Grain Moisture Meter GMK-303RS Portable Grain Moisture Meter",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "GMK-303RS portable grain moisture meter.",
+   "long": "Portable moisture meter for grains such as rice, wheat and maize. A quick check of moisture content helps with harvesting, drying, storage and trading.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: GMK-303RS\n• Type: portable moisture meter\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-80228",
+   "name": "Petri Dish Pyrex",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Pyrex glass petri dish.",
+   "long": "Glass petri dish with a lid for culturing microorganisms, holding samples and general laboratory use.\n\nSpecifications\n• Type: glass petri dish\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Petri dish",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-40419",
+   "name": "Petri Dish China",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Glass petri dish, China.",
+   "long": "Glass petri dish with a lid for culturing microorganisms, holding samples and general laboratory use.\n\nSpecifications\n• Type: glass petri dish\n• Origin: China\n\nIn the box\n• Petri dish",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-28319",
+   "name": "Petri Dish Anam Bura Germany",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Petri dish, Anam Bura, Germany.",
+   "long": "Petri dish with a lid for culturing microorganisms, holding samples and general laboratory use.\n\nSpecifications\n• Type: petri dish\n• Brand: Anam Bura\n• Origin: Germany\n\nIn the box\n• Petri dish",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-29344",
+   "name": "DRAMINSKI GMM Mini Grain Moisture Meter, Poland",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Draminski GMM mini grain moisture meter, Poland.",
+   "long": "Compact grain moisture meter from Draminski, Poland, for quick moisture checks of grains and seeds in the field, at storage and during trading.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: GMM mini\n• Brand: Draminski\n• Origin: Poland\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-14345",
+   "name": "Imported Grain Moisture Meter LDS 1G",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Imported LDS-1G grain moisture meter.",
+   "long": "Imported grain moisture meter for quick moisture checks of grains such as rice, wheat and maize.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: LDS-1G\n• Type: imported\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-96889",
+   "name": "Diamond Aluminum Foil Paper 37.5 SQ",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Diamond aluminum foil roll, 37.5 SQ.",
+   "long": "Aluminum foil roll for wrapping, covering and general use in the kitchen, laboratory and packing.\n\nSpecifications\n• Brand: Diamond\n• Material: aluminum foil\n• Size: 37.5 SQ\n\nIn the box\n• Aluminum foil roll",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-17954",
+   "name": "Diamond Aluminum Foil Paper 25 SQ",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Diamond aluminum foil roll, 25 SQ.",
+   "long": "Aluminum foil roll for wrapping, covering and general use in the kitchen, laboratory and packing.\n\nSpecifications\n• Brand: Diamond\n• Material: aluminum foil\n• Size: 25 SQ\n\nIn the box\n• Aluminum foil roll",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-27922",
+   "name": "Plastic Beaker Polylab India (100ml/250ml/500ml/1000ml/2000ml/5000ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Polylab plastic beaker, 100 ml to 5000 ml.",
+   "long": "Plastic laboratory beaker with graduations, light and break-resistant, for mixing and holding liquids. Available in 100 ml, 250 ml, 500 ml, 1000 ml, 2000 ml and 5000 ml.\n\nSpecifications\n• Type: plastic beaker, graduated\n• Sizes: 100 ml, 250 ml, 500 ml, 1000 ml, 2000 ml, 5000 ml\n• Brand: Polylab\n• Origin: India\n\nIn the box\n• Beaker, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-40336",
+   "name": "Wash Bottle Polylab India (250ml/500ml/1000ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Polylab wash bottle, 250 ml to 1000 ml.",
+   "long": "Plastic wash bottle with a nozzle for rinsing glassware and dispensing distilled water or solvents in the laboratory. Available in 250 ml, 500 ml and 1000 ml.\n\nSpecifications\n• Type: plastic wash bottle\n• Sizes: 250 ml, 500 ml, 1000 ml\n• Brand: Polylab\n• Origin: India\n\nIn the box\n• Wash bottle, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-80287",
+   "name": "Plastic Measuring Cylinder Polylab India (50ml/100ml/250ml/500ml)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Polylab plastic measuring cylinder, 50 ml to 500 ml.",
+   "long": "Plastic graduated measuring cylinder for measuring liquid volumes. Light and break-resistant. Available in 50 ml, 100 ml, 250 ml and 500 ml.\n\nSpecifications\n• Type: plastic measuring cylinder, graduated\n• Sizes: 50 ml, 100 ml, 250 ml, 500 ml\n• Brand: Polylab\n• Origin: India\n\nIn the box\n• Measuring cylinder, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-68749",
+   "name": "Plastic Test Tube Stand (3 Tier, 20×20 Tube)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Plastic 3-tier test tube stand, 20×20 tube.",
+   "long": "Plastic test tube stand with three tiers for holding many test tubes upright in an organised way during experiments and storage.\n\nSpecifications\n• Type: plastic test tube stand\n• Tiers: 3\n• Tube configuration: 20×20 tube\n\nIn the box\n• Test tube stand",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-79025",
+   "name": "pH/EC/TDS/Temperature Meter with HI1285-51 Electrode; EC Range: 0 to 6000 µS/cm, TDS Range: 0 to 3000 ppm (mg/L) Hanna, Romania",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Hanna pH/EC/TDS/temperature meter with HI1285-51 electrode.",
+   "long": "Hanna multiparameter meter that measures pH, EC, TDS and temperature with one HI1285-51 electrode. Suited to water quality checks in the laboratory and in the field.\n\nSpecifications\n• Parameters: pH, EC, TDS and temperature\n• Electrode: HI1285-51\n• EC range: 0 to 6000 µS/cm\n• TDS range: 0 to 3000 ppm (mg/L)\n• Brand: Hanna Instruments\n• Origin: Romania\n\nIn the box\n• Meter\n• HI1285-51 electrode\n• Battery\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-64136",
+   "name": "Hanna HI-839800 25 Vial COD Reactor",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Hanna HI839800 COD reactor, 25 vials.",
+   "long": "COD reactor for heating COD reagent vials during digestion. Holds up to 25 vials at a time, so many samples can be digested together before the COD reading.\n\nSpecifications\n• Type: COD reactor\n• Model: HI839800\n• Capacity: 25 vials\n• Brand: Hanna Instruments\n\nIn the box\n• COD reactor\n• Power cord\n• Instruction manual",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-36894",
+   "name": "COD High/Medium/Low Range Reagent Vials with Barcode, Dichromate Method (25 tests)",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "COD reagent vials with barcode, dichromate method, 25 tests.",
+   "long": "Ready-to-use COD reagent vials with barcode for the dichromate method. Each pack has 25 tests. COD is measured in three ranges, so you can pick the vial that fits your sample: low range, medium range and high range.\n\nSpecifications\n• Parameter: Chemical oxygen demand (COD)\n• Method: dichromate\n• Number of tests: 25 per pack\n• Ranges: low (0 to 150 mg/L), medium (0 to 1500 mg/L), high (0 to 15000 mg/L)\n• Barcode on vials\n• Brand: Hanna Instruments\n\nIn the box\n• 25 COD reagent vials in the range you order (low, medium or high)",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-22219",
+   "name": "Pocket pH Meter Range 0-14",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Pocket pH meter, 0 to 14 pH.",
+   "long": "Pocket pH meter for quick pH checks of water and solutions in the laboratory, school and field.\n\nSpecifications\n• Parameter: pH\n• Range: 0 to 14 pH\n• Type: pocket pH meter\n\nIn the box\n• pH meter\n• Protective cap\n• Battery",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-25505",
+   "name": "James Heal Control Fabrics 100 x 30 mm",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "James Heal control fabrics, 100 x 30 mm.",
+   "long": "Control fabrics from James Heal, used in textile testing to check that a test method or instrument is giving consistent results.\n\nSpecifications\n• Type: control fabric\n• Size: 100 x 30 mm\n• Brand: James Heal\n\nIn the box\n• Control fabric pieces",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-12672",
+   "name": "James Heal Impregnated Test Paper 100mm x 75mm Test Fabrics",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "James Heal impregnated test paper, 100 x 75 mm.",
+   "long": "Impregnated test paper from James Heal for use with test fabrics in textile colour fastness testing.\n\nSpecifications\n• Type: impregnated test paper\n• Size: 100 mm x 75 mm\n• Brand: James Heal\n\nIn the box\n• Impregnated test paper sheets",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-62873",
+   "name": "Milk Butyrometer Glass 10.75ml for Milk Fat Test",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Glass milk butyrometer for milk fat test.",
+   "long": "Glass butyrometer for measuring the fat content of milk by the Gerber method. Milk, sulphuric acid and amyl alcohol are added, the butyrometer is centrifuged, and the fat percentage is read from the scale.\n\nSpecifications\n• Type: glass milk butyrometer\n• Milk volume: 10.75 ml\n• Use: milk fat test (Gerber method)\n\nIn the box\n• Butyrometer",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-54818",
+   "name": "Milk Pipette 10.75 ml for Milk Test",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Milk pipette, 10.75 ml, for milk test.",
+   "long": "Glass pipette that delivers 10.75 ml of milk, for the Gerber milk fat test.\n\nSpecifications\n• Type: glass milk pipette\n• Volume: 10.75 ml\n• Use: milk fat test (Gerber method)\n\nIn the box\n• Milk pipette",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
+   "variants": []
+  },
+  {
+   "code": "CS-36049",
+   "name": "10ml Glass Vial",
+   "sub": "sbtuofc",
+   "subs": [
+    "sbtuofc"
+   ],
+   "short": "Glass vial, 10 ml.",
+   "long": "Glass vial for storing small samples, reagents and solutions in the laboratory.\n\nSpecifications\n• Type: glass vial\n• Capacity: 10 ml\n\nIn the box\n• Glass vial",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [],
    "variants": []
   }
  ],
