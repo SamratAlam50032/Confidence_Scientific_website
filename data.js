@@ -26,7 +26,8 @@ window.SHOP={
     "c1s1",
     "c1s2",
     "c1s3",
-    "c1s6"
+    "c1s6",
+    "s1ev2ev"
    ]
   },
   {
@@ -88,7 +89,8 @@ window.SHOP={
     "s4qm7uc",
     "s1hn0il",
     "szjdhbt",
-    "ssqekpg"
+    "ssqekpg",
+    "slsps97"
    ]
   },
   {
@@ -1263,7 +1265,6 @@ window.SHOP={
   {
    "code": "CS-57042",
    "name": "Litmus Red Indicator",
-   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -1277,7 +1278,8 @@ window.SHOP={
    "images": [
     "images/cs-57042-1hnwnql4.jpg",
     "images/cs-57042-esm6rsnf.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-43519",
@@ -1360,24 +1362,6 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-79595-3rwfbr8u.jpg"
-   ],
-   "variants": []
-  },
-  {
-   "code": "CS-75162",
-   "name": "Grain Moisture Meter GMK-303RS, Korea for Accurate Moisture Measurement",
-   "sub": "sypo0sw",
-   "subs": [
-    "sypo0sw"
-   ],
-   "short": "GMK-303RS grain moisture meter, Korea.",
-   "long": "Portable moisture meter for grains such as rice, wheat and maize. A quick check of moisture content helps with harvesting, drying, storage and trading.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: GMK-303RS\n• Origin: Korea\n• Type: portable moisture meter\n\nIn the box\n• GMK-303RS moisture meter\n• Battery\n• Instruction manual",
-   "price": 31000,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-75162-af42e06z.jpg"
    ],
    "variants": []
   },
@@ -2352,7 +2336,6 @@ window.SHOP={
   {
    "code": "CS-28132",
    "name": "Analog DC Voltmeter",
-   "variants": [],
    "sub": "sbaxipc",
    "subs": [
     "sbaxipc",
@@ -2366,7 +2349,8 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-28132-yrbgmbmi.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-045",
@@ -3555,7 +3539,6 @@ window.SHOP={
   {
    "code": "CS-95549",
    "name": "Litmus Blue Indicator",
-   "variants": [],
    "sub": "sz7qw3t",
    "subs": [
     "sz7qw3t"
@@ -3568,7 +3551,8 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-95549-2nethub3.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "HN-027",
@@ -3913,182 +3897,237 @@ window.SHOP={
   {
    "code": "CS-11611",
    "name": "Soil Moisture Meter Takemura DM-15",
-   "sub": "sbtuofc",
+   "sub": "s1ev2ev",
    "subs": [
-    "sbtuofc"
+    "s1ev2ev",
+    "c1s4",
+    "c2s1"
    ],
    "short": "Takemura DM-15 soil moisture meter.",
    "long": "Soil moisture meter from Takemura. Push the probe into the soil to check the moisture level, helping with watering, farming, gardening and soil testing.\n\nSpecifications\n• Parameter: Soil moisture\n• Model: DM-15\n• Brand: Takemura\n• Type: probe-type meter\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": null,
+   "price": 7000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
+   "origin": "Japan",
+   "images": [
+    "images/cs-11611-79k4u9ul.jpg",
+    "images/cs-11611-frqnwwub.jpg",
+    "images/cs-11611-3143b8h4.jpg",
+    "images/cs-11611-zcbclbgo.jpg",
+    "images/cs-11611-p79tvdn9.jpg"
+   ],
    "variants": []
   },
   {
    "code": "CS-71614",
    "name": "Soil Moisture Meter Takemura DM-13",
-   "sub": "sbtuofc",
+   "sub": "c1s4",
    "subs": [
-    "sbtuofc"
+    "c1s4",
+    "c2s1"
    ],
    "short": "Takemura DM-13 soil moisture meter.",
    "long": "Soil moisture meter from Takemura. Push the probe into the soil to check the moisture level, helping with watering, farming, gardening and soil testing.\n\nSpecifications\n• Parameter: Soil moisture\n• Model: DM-13\n• Brand: Takemura\n• Type: probe-type meter\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": null,
+   "price": 6500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
+   "origin": "Japan",
+   "images": [
+    "images/cs-71614-mglepgwz.jpg",
+    "images/cs-71614-ib5wpfm5.jpg",
+    "images/cs-71614-fas6ii97.jpg",
+    "images/cs-71614-i41jnjoj.jpg"
+   ],
    "variants": []
   },
   {
    "code": "CS-24750",
    "name": "Glass Burette 50ml Pyrex",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "sp7hn9z",
    "subs": [
-    "sbtuofc"
+    "sp7hn9z",
+    "c3s1"
    ],
    "short": "Pyrex glass burette, 50 ml.",
    "long": "Glass burette with a stopcock for delivering exact volumes of liquid during titrations. Graduated, 50 ml capacity.\n\nSpecifications\n• Type: glass burette with stopcock\n• Capacity: 50 ml\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Glass burette, 50 ml",
-   "price": null,
+   "price": 400,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "India",
+   "images": [
+    "images/cs-24750-1qtcwnhl.jpg",
+    "images/cs-24750-lfbaykvd.jpg",
+    "images/cs-24750-ve7h9mas.jpg"
+   ]
   },
   {
    "code": "CS-61547",
    "name": "Paper Moisture Meter Model: DM200P",
-   "sub": "sbtuofc",
+   "sub": "s1ev2ev",
    "subs": [
-    "sbtuofc"
+    "s1ev2ev"
    ],
    "short": "DM200P moisture meter for paper.",
    "long": "Moisture meter for checking the moisture content of paper, board and similar sheet materials. Helps keep storage and production quality under control.\n\nSpecifications\n• Parameter: Moisture content of paper\n• Model: DM200P\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": null,
+   "price": 12000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
+   "origin": "China",
+   "images": [
+    "images/cs-61547-t73i1oq3.jpg",
+    "images/cs-61547-g87fjrdw.jpg",
+    "images/cs-61547-kq3mpq03.jpg",
+    "images/cs-61547-wpx45xag.jpg"
+   ],
    "variants": []
   },
   {
    "code": "CS-28485",
    "name": "Textile Moisture Meter Model: DM200T",
-   "sub": "sbtuofc",
+   "sub": "s1ev2ev",
    "subs": [
-    "sbtuofc"
+    "s1ev2ev"
    ],
    "short": "DM200T moisture meter for textiles.",
    "long": "Moisture meter for checking the moisture content of fabric, yarn and other textile materials, useful in textile mills, stores and quality control.\n\nSpecifications\n• Parameter: Moisture content of textiles\n• Model: DM200T\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": null,
+   "price": 13000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
+   "origin": "China",
+   "images": [
+    "images/cs-28485-a1esiud5.jpg",
+    "images/cs-28485-yoywasqf.jpg",
+    "images/cs-28485-m7fukvnw.jpg"
+   ],
    "variants": []
   },
   {
    "code": "CS-99734",
    "name": "Spirit Lamp",
-   "sub": "sbtuofc",
+   "sub": "c3s1",
    "subs": [
-    "sbtuofc"
+    "c3s1"
    ],
    "short": "Laboratory spirit lamp.",
    "long": "Spirit lamp with a wick, used as a simple flame source for heating in laboratories and school practicals. Burns spirit (alcohol).\n\nSpecifications\n• Type: spirit lamp\n• Fuel: spirit (alcohol)\n\nIn the box\n• Spirit lamp with wick and cap",
-   "price": null,
+   "price": 180,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
+   "origin": "China",
+   "images": [
+    "images/cs-99734-6if6d1rn.jpg",
+    "images/cs-99734-9mjzyyxp.jpg",
+    "images/cs-99734-lhlnn0hy.jpg"
+   ],
    "variants": []
   },
   {
    "code": "CS-15677",
    "name": "Filtration Unit Pyrex 1L",
-   "sub": "sbtuofc",
+   "sub": "c3s1",
    "subs": [
-    "sbtuofc"
+    "c3s1"
    ],
    "short": "Pyrex vacuum filtration unit, 1 L.",
    "long": "Glass filtration unit for vacuum filtration in the laboratory, used with a membrane filter to separate solids from liquids. 1 litre capacity.\n\nSpecifications\n• Type: glass vacuum filtration unit\n• Capacity: 1 L\n• Brand: Pyrex\n\nIn the box\n• Filtration unit assembly (funnel, receiving flask and clamp)",
-   "price": null,
+   "price": 6500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
+   "origin": "India",
+   "images": [
+    "images/cs-15677-vlc0x3ja.jpg",
+    "images/cs-15677-1of3r5fb.jpg"
+   ],
    "variants": []
   },
   {
    "code": "CS-28201",
    "name": "Digital Grain Moisture Meter Model-AR991 China",
-   "sub": "sbtuofc",
+   "sub": "s1ev2ev",
    "subs": [
-    "sbtuofc"
+    "s1ev2ev"
    ],
    "short": "AR991 digital grain moisture meter, China.",
    "long": "Digital moisture meter for grains such as rice, wheat and maize. Checking moisture content quickly helps with harvesting, drying, storage and trading.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: AR991\n• Origin: China\n• Display: digital\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": null,
+   "price": 2500,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
+   "origin": "China",
+   "images": [
+    "images/cs-28201-tiflc7ck.jpg",
+    "images/cs-28201-ye3xxh6b.jpg",
+    "images/cs-28201-bon8ljhy.jpg"
+   ],
    "variants": []
   },
   {
    "code": "CS-24756",
    "name": "Grain Moisture Meter GMK-303RS Portable Grain Moisture Meter",
-   "sub": "sbtuofc",
+   "sub": "s1ev2ev",
    "subs": [
-    "sbtuofc"
+    "s1ev2ev",
+    "sypo0sw"
    ],
    "short": "GMK-303RS portable grain moisture meter.",
    "long": "Portable moisture meter for grains such as rice, wheat and maize. A quick check of moisture content helps with harvesting, drying, storage and trading.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: GMK-303RS\n• Type: portable moisture meter\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": null,
+   "price": 31000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
+   "origin": "South Korea",
+   "images": [
+    "images/cs-24756-dlfl8l30.jpg",
+    "images/cs-24756-nnb0imts.jpg",
+    "images/cs-24756-lsk4to9d.jpg",
+    "images/cs-24756-cfaxfpn2.jpg"
+   ],
    "variants": []
   },
   {
    "code": "CS-80228",
    "name": "Petri Dish Pyrex",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "c3s1",
    "subs": [
-    "sbtuofc"
+    "c3s1"
    ],
    "short": "Pyrex glass petri dish.",
    "long": "Glass petri dish with a lid for culturing microorganisms, holding samples and general laboratory use.\n\nSpecifications\n• Type: glass petri dish\n• Brand: Pyrex\n• Material: borosilicate glass\n\nIn the box\n• Petri dish",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "India",
+   "images": [
+    "images/cs-80228-rhdszr7g.jpg",
+    "images/cs-80228-ftizrskl.jpg",
+    "images/cs-80228-7zlphz23.jpg",
+    "images/cs-80228-2lkqru2l.jpg"
+   ]
   },
   {
    "code": "CS-40419",
    "name": "Petri Dish China",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "c3s1",
    "subs": [
-    "sbtuofc"
+    "c3s1"
    ],
    "short": "Glass petri dish, China.",
    "long": "Glass petri dish with a lid for culturing microorganisms, holding samples and general laboratory use.\n\nSpecifications\n• Type: glass petri dish\n• Origin: China\n\nIn the box\n• Petri dish",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "China",
+   "images": [
+    "images/cs-40419-h8tpfv9x.jpg",
+    "images/cs-40419-90xzowgc.jpg",
+    "images/cs-40419-ygld6xlo.jpg"
+   ]
   },
   {
    "code": "CS-28319",
    "name": "Petri Dish Anam Bura Germany",
+   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -4099,108 +4138,137 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "origin": "",
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-28319-9di2t0iw.jpg",
+    "images/cs-28319-gu9kk21e.jpg",
+    "images/cs-28319-tsz5h3xd.jpg"
+   ]
   },
   {
    "code": "CS-29344",
    "name": "DRAMINSKI GMM Mini Grain Moisture Meter, Poland",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "s1ev2ev",
    "subs": [
-    "sbtuofc"
+    "s1ev2ev",
+    "sypo0sw"
    ],
    "short": "Draminski GMM mini grain moisture meter, Poland.",
-   "long": "Compact grain moisture meter from Draminski, Poland, for quick moisture checks of grains and seeds in the field, at storage and during trading.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: GMM mini\n• Brand: Draminski\n• Origin: Poland\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": null,
+   "long": "Compact grain moisture meter from Draminski, Poland, for quick moisture checks of grains and seeds in the field, at storage and during trading.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: GMM mini\n• Brand: Draminski\n• Origin: Poland\n\nCommon Wheat: 7.2% – 35.0% \nBrown Rice: 8.0% – 23.8% \nWhite Rice: 5.0% – 35.0% \nMaize (Corn): 8.0% – 30.0% এবং 30.0% – 43.0% \nMustard: 5.0% – 35.0% \nMillet: 4.0% – 18.6% \nSoya (Soybean): 7.5% – 30.0% \nChickpeas: 5.0% – 35.0% \nGreen Coffee (Arabica): 5.5% – 40% \nGreen Coffee (Robusta): 6.0% – 40% \nSunflower Seeds: 5.0% – 35.0% \nOats: 5.0% – 35.0% \nRye: 8.0% – 35.0% \nPea: 8.0% – 33.0%\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
+   "price": 41000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "Poland",
+   "images": [
+    "images/cs-29344-kn6hk5qo.jpg",
+    "images/cs-29344-6tna97jp.jpg",
+    "images/cs-29344-sf6bb8vt.jpg",
+    "images/cs-29344-jcqqqaj6.jpg"
+   ]
   },
   {
    "code": "CS-14345",
    "name": "Imported Grain Moisture Meter LDS 1G",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "s1ev2ev",
    "subs": [
-    "sbtuofc"
+    "s1ev2ev",
+    "sypo0sw"
    ],
    "short": "Imported LDS-1G grain moisture meter.",
    "long": "Imported grain moisture meter for quick moisture checks of grains such as rice, wheat and maize.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: LDS-1G\n• Type: imported\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "China",
+   "images": [
+    "images/cs-14345-ahcm9cav.jpg",
+    "images/cs-14345-vxft2dht.jpg",
+    "images/cs-14345-8uwsjevh.jpg"
+   ]
   },
   {
    "code": "CS-96889",
    "name": "Diamond Aluminum Foil Paper 37.5 SQ",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "sarg0tn",
    "subs": [
-    "sbtuofc"
+    "sarg0tn"
    ],
    "short": "Diamond aluminum foil roll, 37.5 SQ.",
    "long": "Aluminum foil roll for wrapping, covering and general use in the kitchen, laboratory and packing.\n\nSpecifications\n• Brand: Diamond\n• Material: aluminum foil\n• Size: 37.5 SQ\n\nIn the box\n• Aluminum foil roll",
-   "price": null,
+   "price": 180,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "China",
+   "images": [
+    "images/cs-96889-14v8qgxa.jpg",
+    "images/cs-96889-q1lb2iir.jpg"
+   ]
   },
   {
    "code": "CS-17954",
    "name": "Diamond Aluminum Foil Paper 25 SQ",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "sarg0tn",
    "subs": [
-    "sbtuofc"
+    "sarg0tn"
    ],
    "short": "Diamond aluminum foil roll, 25 SQ.",
    "long": "Aluminum foil roll for wrapping, covering and general use in the kitchen, laboratory and packing.\n\nSpecifications\n• Brand: Diamond\n• Material: aluminum foil\n• Size: 25 SQ\n\nIn the box\n• Aluminum foil roll",
-   "price": null,
+   "price": 160,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "China",
+   "images": [
+    "images/cs-17954-b2p6pjrq.jpg",
+    "images/cs-17954-fw9lxlb1.jpg"
+   ]
   },
   {
    "code": "CS-27922",
    "name": "Plastic Beaker Polylab India (100ml/250ml/500ml/1000ml/2000ml/5000ml)",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "slsps97",
    "subs": [
-    "sbtuofc"
+    "slsps97"
    ],
    "short": "Polylab plastic beaker, 100 ml to 5000 ml.",
    "long": "Plastic laboratory beaker with graduations, light and break-resistant, for mixing and holding liquids. Available in 100 ml, 250 ml, 500 ml, 1000 ml, 2000 ml and 5000 ml.\n\nSpecifications\n• Type: plastic beaker, graduated\n• Sizes: 100 ml, 250 ml, 500 ml, 1000 ml, 2000 ml, 5000 ml\n• Brand: Polylab\n• Origin: India\n\nIn the box\n• Beaker, in the size you order",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "India",
+   "images": [
+    "images/cs-27922-chevdr32.jpg",
+    "images/cs-27922-ouw44zy7.jpg",
+    "images/cs-27922-azc1z18b.jpg"
+   ]
   },
   {
    "code": "CS-40336",
    "name": "Wash Bottle Polylab India (250ml/500ml/1000ml)",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "slsps97",
    "subs": [
-    "sbtuofc"
+    "slsps97",
+    "sarg0tn"
    ],
    "short": "Polylab wash bottle, 250 ml to 1000 ml.",
    "long": "Plastic wash bottle with a nozzle for rinsing glassware and dispensing distilled water or solvents in the laboratory. Available in 250 ml, 500 ml and 1000 ml.\n\nSpecifications\n• Type: plastic wash bottle\n• Sizes: 250 ml, 500 ml, 1000 ml\n• Brand: Polylab\n• Origin: India\n\nIn the box\n• Wash bottle, in the size you order",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "India",
+   "images": [
+    "images/cs-40336-450vrt4i.jpg",
+    "images/cs-40336-blbgoue4.jpg"
+   ]
   },
   {
    "code": "CS-80287",
    "name": "Plastic Measuring Cylinder Polylab India (50ml/100ml/250ml/500ml)",
+   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -4211,8 +4279,11 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "origin": "",
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-80287-npdgoymo.jpg",
+    "images/cs-80287-w3kypvph.jpg",
+    "images/cs-80287-tb1rdxd8.jpg"
+   ]
   },
   {
    "code": "CS-68749",
@@ -4281,50 +4352,60 @@ window.SHOP={
   {
    "code": "CS-22219",
    "name": "Pocket pH Meter Range 0-14",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "c2s1",
    "subs": [
-    "sbtuofc"
+    "c2s1"
    ],
    "short": "Pocket pH meter, 0 to 14 pH.",
    "long": "Pocket pH meter for quick pH checks of water and solutions in the laboratory, school and field.\n\nSpecifications\n• Parameter: pH\n• Range: 0 to 14 pH\n• Type: pocket pH meter\n\nIn the box\n• pH meter\n• Protective cap\n• Battery",
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "China",
+   "images": [
+    "images/cs-22219-c2cex2td.jpg",
+    "images/cs-22219-fnzsx49b.jpg"
+   ]
   },
   {
    "code": "CS-25505",
    "name": "James Heal Control Fabrics 100 x 30 mm",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "s2n9u18",
    "subs": [
-    "sbtuofc"
+    "s2n9u18"
    ],
    "short": "James Heal control fabrics, 100 x 30 mm.",
    "long": "Control fabrics from James Heal, used in textile testing to check that a test method or instrument is giving consistent results.\n\nSpecifications\n• Type: control fabric\n• Size: 100 x 30 mm\n• Brand: James Heal\n\nIn the box\n• Control fabric pieces",
-   "price": null,
+   "price": 1200,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "United Kingdom",
+   "images": [
+    "images/cs-25505-r3qvy5fe.jpg",
+    "images/cs-25505-5vob96un.jpg",
+    "images/cs-25505-wbcud8ks.jpg"
+   ]
   },
   {
    "code": "CS-12672",
    "name": "James Heal Impregnated Test Paper 100mm x 75mm Test Fabrics",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "s2n9u18",
    "subs": [
-    "sbtuofc"
+    "s2n9u18"
    ],
    "short": "James Heal impregnated test paper, 100 x 75 mm.",
    "long": "Impregnated test paper from James Heal for use with test fabrics in textile colour fastness testing.\n\nSpecifications\n• Type: impregnated test paper\n• Size: 100 mm x 75 mm\n• Brand: James Heal\n\nIn the box\n• Impregnated test paper sheets",
-   "price": null,
+   "price": 1400,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "United Kingdom",
+   "images": [
+    "images/cs-12672-d74o6ae7.jpg",
+    "images/cs-12672-p7xx0cfo.jpg"
+   ]
   },
   {
    "code": "CS-62873",
@@ -4361,9 +4442,10 @@ window.SHOP={
   {
    "code": "CS-36049",
    "name": "10ml Glass Vial",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "c3s1",
    "subs": [
-    "sbtuofc"
+    "c3s1"
    ],
    "short": "Glass vial, 10 ml.",
    "long": "Glass vial for storing small samples, reagents and solutions in the laboratory.\n\nSpecifications\n• Type: glass vial\n• Capacity: 10 ml\n\nIn the box\n• Glass vial",
@@ -4371,8 +4453,11 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "origin": "",
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-36049-8xa4kogl.jpg",
+    "images/cs-36049-c5d2upqo.jpg",
+    "images/cs-36049-gcjeon6y.jpg"
+   ]
   }
  ],
  "subs": [
@@ -4599,6 +4684,14 @@ window.SHOP={
   {
    "id": "s8ygcdr",
    "name": "Magnifying & Counting Glass"
+  },
+  {
+   "id": "s1ev2ev",
+   "name": "Moisture Meter"
+  },
+  {
+   "id": "slsps97",
+   "name": "Plastic Jug & Beaker"
   }
  ]
 };
