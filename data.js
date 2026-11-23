@@ -4353,6 +4353,7 @@ window.SHOP={
   {
    "code": "CS-79025",
    "name": "pH EC TDS Temperature Multipara Meter HI9811-51 with HI1285-51 Electrode; EC Range: 0 to 6000 µS/cm, TDS Range: 00 to 3000 ppm (mg/L) Hanna, Romania",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -4368,8 +4369,7 @@ window.SHOP={
     "images/cs-79025-983t2f2m.jpg",
     "images/cs-79025-xm349dl6.jpg",
     "images/cs-79025-6bri0c98.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-64136",
@@ -4394,6 +4394,23 @@ window.SHOP={
   {
    "code": "CS-36894",
    "name": "COD High/Medium/Low Range Reagent Vials with Barcode, Dichromate Method (25 tests)",
+   "variants": [
+    {
+     "name": "Low Range 0-150",
+     "price": 8500,
+     "images": []
+    },
+    {
+     "name": "Mid Range 0-1500",
+     "price": 8500,
+     "images": []
+    },
+    {
+     "name": "High Range 0-15000",
+     "price": 8500,
+     "images": []
+    }
+   ],
    "sub": "c1s2",
    "subs": [
     "c1s2",
@@ -4409,23 +4426,6 @@ window.SHOP={
     "images/cs-36894-pqh740z3.jpg",
     "images/cs-36894-64iuv2rz.jpg",
     "images/cs-36894-b7uce415.jpg"
-   ],
-   "variants": [
-    {
-     "name": "Low Range",
-     "price": 8500,
-     "images": []
-    },
-    {
-     "name": "Mid Range",
-     "price": 8500,
-     "images": []
-    },
-    {
-     "name": "High Range",
-     "price": 8500,
-     "images": []
-    }
    ]
   },
   {
