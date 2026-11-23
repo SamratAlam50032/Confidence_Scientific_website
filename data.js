@@ -317,6 +317,7 @@ window.SHOP={
   {
    "code": "CS-82861",
    "name": "PH Meter",
+   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1",
@@ -331,8 +332,7 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-82861-o5omv226.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-56060",
