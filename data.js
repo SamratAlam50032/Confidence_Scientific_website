@@ -317,7 +317,6 @@ window.SHOP={
   {
    "code": "CS-82861",
    "name": "PH Meter",
-   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1",
@@ -332,7 +331,8 @@ window.SHOP={
    "origin": "",
    "images": [
     "images/cs-82861-o5omv226.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-56060",
@@ -4043,7 +4043,6 @@ window.SHOP={
   {
    "code": "CS-28201",
    "name": "Digital Grain Moisture Meter Model-AR991 China",
-   "variants": [],
    "sub": "s1ev2ev",
    "subs": [
     "s1ev2ev"
@@ -4058,7 +4057,8 @@ window.SHOP={
     "images/cs-28201-tiflc7ck.jpg",
     "images/cs-28201-ye3xxh6b.jpg",
     "images/cs-28201-bon8ljhy.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-24756",
@@ -4106,7 +4106,6 @@ window.SHOP={
   {
    "code": "CS-40419",
    "name": "Petri Dish China",
-   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1"
@@ -4121,7 +4120,8 @@ window.SHOP={
     "images/cs-40419-h8tpfv9x.jpg",
     "images/cs-40419-90xzowgc.jpg",
     "images/cs-40419-ygld6xlo.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-28319",
@@ -4168,7 +4168,6 @@ window.SHOP={
   {
    "code": "CS-14345",
    "name": "Imported Grain Moisture Meter LDS 1G",
-   "variants": [],
    "sub": "s1ev2ev",
    "subs": [
     "s1ev2ev",
@@ -4184,7 +4183,8 @@ window.SHOP={
     "images/cs-14345-ahcm9cav.jpg",
     "images/cs-14345-vxft2dht.jpg",
     "images/cs-14345-8uwsjevh.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-96889",
@@ -4227,6 +4227,21 @@ window.SHOP={
   {
    "code": "CS-27922",
    "name": "Plastic Beaker Polylab India (100ml/250ml/500ml/1000ml/2000ml/5000ml)",
+   "sub": "slsps97",
+   "subs": [
+    "slsps97"
+   ],
+   "short": "Polylab plastic beaker, 100 ml to 5000 ml.",
+   "long": "Plastic laboratory beaker with graduations, light and break-resistant, for mixing and holding liquids. Available in 100 ml, 250 ml, 500 ml, 1000 ml, 2000 ml and 5000 ml.\n\nSpecifications\n• Type: plastic beaker, graduated\n• Sizes: 100 ml, 250 ml, 500 ml, 1000 ml, 2000 ml, 5000 ml\n• Brand: Polylab\n• Origin: India\n\nIn the box\n• Beaker, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "India",
+   "images": [
+    "images/cs-27922-chevdr32.jpg",
+    "images/cs-27922-ouw44zy7.jpg",
+    "images/cs-27922-azc1z18b.jpg"
+   ],
    "variants": [
     {
      "name": "100ml",
@@ -4258,26 +4273,26 @@ window.SHOP={
      "price": 650,
      "images": []
     }
-   ],
-   "sub": "slsps97",
-   "subs": [
-    "slsps97"
-   ],
-   "short": "Polylab plastic beaker, 100 ml to 5000 ml.",
-   "long": "Plastic laboratory beaker with graduations, light and break-resistant, for mixing and holding liquids. Available in 100 ml, 250 ml, 500 ml, 1000 ml, 2000 ml and 5000 ml.\n\nSpecifications\n• Type: plastic beaker, graduated\n• Sizes: 100 ml, 250 ml, 500 ml, 1000 ml, 2000 ml, 5000 ml\n• Brand: Polylab\n• Origin: India\n\nIn the box\n• Beaker, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "India",
-   "images": [
-    "images/cs-27922-chevdr32.jpg",
-    "images/cs-27922-ouw44zy7.jpg",
-    "images/cs-27922-azc1z18b.jpg"
    ]
   },
   {
    "code": "CS-40336",
    "name": "Wash Bottle Polylab India (250ml/500ml/1000ml)",
+   "sub": "slsps97",
+   "subs": [
+    "slsps97",
+    "sarg0tn"
+   ],
+   "short": "Polylab wash bottle, 250 ml to 1000 ml.",
+   "long": "Plastic wash bottle with a nozzle for rinsing glassware and dispensing distilled water or solvents in the laboratory. Available in 250 ml, 500 ml and 1000 ml.\n\nSpecifications\n• Type: plastic wash bottle\n• Sizes: 250 ml, 500 ml, 1000 ml\n• Brand: Polylab\n• Origin: India\n\nIn the box\n• Wash bottle, in the size you order",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "India",
+   "images": [
+    "images/cs-40336-450vrt4i.jpg",
+    "images/cs-40336-blbgoue4.jpg"
+   ],
    "variants": [
     {
      "name": "250ml",
@@ -4294,21 +4309,6 @@ window.SHOP={
      "price": 210,
      "images": []
     }
-   ],
-   "sub": "slsps97",
-   "subs": [
-    "slsps97",
-    "sarg0tn"
-   ],
-   "short": "Polylab wash bottle, 250 ml to 1000 ml.",
-   "long": "Plastic wash bottle with a nozzle for rinsing glassware and dispensing distilled water or solvents in the laboratory. Available in 250 ml, 500 ml and 1000 ml.\n\nSpecifications\n• Type: plastic wash bottle\n• Sizes: 250 ml, 500 ml, 1000 ml\n• Brand: Polylab\n• Origin: India\n\nIn the box\n• Wash bottle, in the size you order",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "India",
-   "images": [
-    "images/cs-40336-450vrt4i.jpg",
-    "images/cs-40336-blbgoue4.jpg"
    ]
   },
   {
@@ -4353,7 +4353,6 @@ window.SHOP={
   {
    "code": "CS-79025",
    "name": "pH EC TDS Temperature Multipara Meter HI9811-51 with HI1285-51 Electrode; EC Range: 0 to 6000 µS/cm, TDS Range: 00 to 3000 ppm (mg/L) Hanna, Romania",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -4369,7 +4368,8 @@ window.SHOP={
     "images/cs-79025-983t2f2m.jpg",
     "images/cs-79025-xm349dl6.jpg",
     "images/cs-79025-6bri0c98.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-64136",
@@ -4394,6 +4394,22 @@ window.SHOP={
   {
    "code": "CS-36894",
    "name": "COD High/Medium/Low Range Reagent Vials with Barcode, Dichromate Method (25 tests)",
+   "sub": "c1s2",
+   "subs": [
+    "c1s2",
+    "c1s3"
+   ],
+   "short": "COD reagent vials with barcode, dichromate method, 25 tests.",
+   "long": "Ready-to-use COD reagent vials with barcode for the dichromate method. Each pack has 25 tests. COD is measured in three ranges, so you can pick the vial that fits your sample: low range, medium range and high range.\n\nSpecifications\n• Parameter: Chemical oxygen demand (COD)\n• Method: dichromate\n• Number of tests: 25 per pack\n• Ranges: low (0 to 150 mg/L), medium (0 to 1500 mg/L), high (0 to 15000 mg/L)\n• Barcode on vials\n• Brand: Hanna Instruments\n\nIn the box\n• 25 COD reagent vials in the range you order (low, medium or high)",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "Romania",
+   "images": [
+    "images/cs-36894-pqh740z3.jpg",
+    "images/cs-36894-64iuv2rz.jpg",
+    "images/cs-36894-b7uce415.jpg"
+   ],
    "variants": [
     {
      "name": "Low Range 0-150",
@@ -4410,22 +4426,6 @@ window.SHOP={
      "price": 8500,
      "images": []
     }
-   ],
-   "sub": "c1s2",
-   "subs": [
-    "c1s2",
-    "c1s3"
-   ],
-   "short": "COD reagent vials with barcode, dichromate method, 25 tests.",
-   "long": "Ready-to-use COD reagent vials with barcode for the dichromate method. Each pack has 25 tests. COD is measured in three ranges, so you can pick the vial that fits your sample: low range, medium range and high range.\n\nSpecifications\n• Parameter: Chemical oxygen demand (COD)\n• Method: dichromate\n• Number of tests: 25 per pack\n• Ranges: low (0 to 150 mg/L), medium (0 to 1500 mg/L), high (0 to 15000 mg/L)\n• Barcode on vials\n• Brand: Hanna Instruments\n\nIn the box\n• 25 COD reagent vials in the range you order (low, medium or high)",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "Romania",
-   "images": [
-    "images/cs-36894-pqh740z3.jpg",
-    "images/cs-36894-64iuv2rz.jpg",
-    "images/cs-36894-b7uce415.jpg"
    ]
   },
   {
@@ -4470,6 +4470,7 @@ window.SHOP={
   {
    "code": "CS-12672",
    "name": "James Heal Impregnated Test Paper 100mm x 75mm Test Fabrics",
+   "variants": [],
    "sub": "s2n9u18",
    "subs": [
     "s2n9u18"
@@ -4483,13 +4484,11 @@ window.SHOP={
    "images": [
     "images/cs-12672-d74o6ae7.jpg",
     "images/cs-12672-p7xx0cfo.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-62873",
    "name": "Milk Butyrometer Glass 10.75ml for Milk Fat Test",
-   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -4500,12 +4499,12 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "origin": "India",
-   "images": []
+   "images": [],
+   "variants": []
   },
   {
    "code": "CS-54818",
    "name": "Milk Pipette 10.75 ml for Milk Test",
-   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -4516,12 +4515,12 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "origin": "India",
-   "images": []
+   "images": [],
+   "variants": []
   },
   {
    "code": "CS-36049",
    "name": "10ml Glass Vial",
-   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1"
@@ -4536,7 +4535,8 @@ window.SHOP={
     "images/cs-36049-8xa4kogl.jpg",
     "images/cs-36049-c5d2upqo.jpg",
     "images/cs-36049-gcjeon6y.jpg"
-   ]
+   ],
+   "variants": []
   }
  ],
  "subs": [
