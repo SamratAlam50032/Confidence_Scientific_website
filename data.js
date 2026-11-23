@@ -132,8 +132,7 @@ window.SHOP={
    "subs": [
     "susfg99",
     "s8fyg6m",
-    "sxnmns4",
-    "shsdp0x"
+    "sxnmns4"
    ]
   },
   {
@@ -690,7 +689,6 @@ window.SHOP={
   {
    "code": "HN-025",
    "name": "Hanna HI-721 Iron Checker Handheld Colorimeter 0.00 to 5.00 ppm Range",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -704,7 +702,8 @@ window.SHOP={
    "images": [
     "images/hn-025-a8il6xzq.jpg",
     "images/hn-025-hlmitzez.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-4444",
@@ -3518,7 +3517,6 @@ window.SHOP={
   {
    "code": "CS-9385",
    "name": "Hanna HI-98108 pHep+ pH Meter with Auto Calibration",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -3534,7 +3532,8 @@ window.SHOP={
     "images/cs-9385-6jtoqinn.jpg",
     "images/cs-9385-atlq7k1z.jpg",
     "images/cs-9385-v7ej1lil.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-95549",
@@ -4288,7 +4287,6 @@ window.SHOP={
   {
    "code": "CS-68749",
    "name": "Plastic Test Tube Stand (3 Tier, 20×20 Tube)",
-   "variants": [],
    "sub": "suxv0es",
    "subs": [
     "suxv0es",
@@ -4302,12 +4300,12 @@ window.SHOP={
    "origin": "India",
    "images": [
     "images/cs-68749-kekns48v.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-79025",
    "name": "pH EC TDS Temperature Multipara Meter HI9811-51 with HI1285-51 Electrode; EC Range: 0 to 6000 µS/cm, TDS Range: 00 to 3000 ppm (mg/L) Hanna, Romania",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -4323,12 +4321,12 @@ window.SHOP={
     "images/cs-79025-983t2f2m.jpg",
     "images/cs-79025-xm349dl6.jpg",
     "images/cs-79025-6bri0c98.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-64136",
    "name": "Hanna HI-839800 25 Vial COD Reactor",
-   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -4343,11 +4341,28 @@ window.SHOP={
     "images/cs-64136-zo1k2avz.jpg",
     "images/cs-64136-1dn2b7np.jpg",
     "images/cs-64136-oqsh496b.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-36894",
    "name": "COD High/Medium/Low Range Reagent Vials with Barcode, Dichromate Method (25 tests)",
+   "sub": "c1s2",
+   "subs": [
+    "c1s2",
+    "c1s3"
+   ],
+   "short": "COD reagent vials with barcode, dichromate method, 25 tests.",
+   "long": "Ready-to-use COD reagent vials with barcode for the dichromate method. Each pack has 25 tests. COD is measured in three ranges, so you can pick the vial that fits your sample: low range, medium range and high range.\n\nSpecifications\n• Parameter: Chemical oxygen demand (COD)\n• Method: dichromate\n• Number of tests: 25 per pack\n• Ranges: low (0 to 150 mg/L), medium (0 to 1500 mg/L), high (0 to 15000 mg/L)\n• Barcode on vials\n• Brand: Hanna Instruments\n\nIn the box\n• 25 COD reagent vials in the range you order (low, medium or high)",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [
+    "images/cs-36894-pqh740z3.jpg",
+    "images/cs-36894-64iuv2rz.jpg",
+    "images/cs-36894-b7uce415.jpg"
+   ],
    "variants": [
     {
      "name": "Low Range",
@@ -4364,28 +4379,11 @@ window.SHOP={
      "price": 8500,
      "images": []
     }
-   ],
-   "sub": "c1s2",
-   "subs": [
-    "c1s2",
-    "c1s3"
-   ],
-   "short": "COD reagent vials with barcode, dichromate method, 25 tests.",
-   "long": "Ready-to-use COD reagent vials with barcode for the dichromate method. Each pack has 25 tests. COD is measured in three ranges, so you can pick the vial that fits your sample: low range, medium range and high range.\n\nSpecifications\n• Parameter: Chemical oxygen demand (COD)\n• Method: dichromate\n• Number of tests: 25 per pack\n• Ranges: low (0 to 150 mg/L), medium (0 to 1500 mg/L), high (0 to 15000 mg/L)\n• Barcode on vials\n• Brand: Hanna Instruments\n\nIn the box\n• 25 COD reagent vials in the range you order (low, medium or high)",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-36894-pqh740z3.jpg",
-    "images/cs-36894-64iuv2rz.jpg",
-    "images/cs-36894-b7uce415.jpg"
    ]
   },
   {
    "code": "CS-22219",
    "name": "Pocket pH Meter Range 0-14",
-   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1"
@@ -4399,7 +4397,8 @@ window.SHOP={
    "images": [
     "images/cs-22219-c2cex2td.jpg",
     "images/cs-22219-fnzsx49b.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-25505",
