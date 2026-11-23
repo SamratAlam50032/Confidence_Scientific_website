@@ -4043,6 +4043,7 @@ window.SHOP={
   {
    "code": "CS-28201",
    "name": "Digital Grain Moisture Meter Model-AR991 China",
+   "variants": [],
    "sub": "s1ev2ev",
    "subs": [
     "s1ev2ev"
@@ -4057,8 +4058,7 @@ window.SHOP={
     "images/cs-28201-tiflc7ck.jpg",
     "images/cs-28201-ye3xxh6b.jpg",
     "images/cs-28201-bon8ljhy.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-24756",
@@ -4106,6 +4106,7 @@ window.SHOP={
   {
    "code": "CS-40419",
    "name": "Petri Dish China",
+   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1"
@@ -4120,8 +4121,7 @@ window.SHOP={
     "images/cs-40419-h8tpfv9x.jpg",
     "images/cs-40419-90xzowgc.jpg",
     "images/cs-40419-ygld6xlo.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-28319",
@@ -4168,6 +4168,7 @@ window.SHOP={
   {
    "code": "CS-14345",
    "name": "Imported Grain Moisture Meter LDS 1G",
+   "variants": [],
    "sub": "s1ev2ev",
    "subs": [
     "s1ev2ev",
@@ -4175,7 +4176,7 @@ window.SHOP={
    ],
    "short": "Imported LDS-1G grain moisture meter.",
    "long": "Imported grain moisture meter for quick moisture checks of grains such as rice, wheat and maize.\n\nSpecifications\n• Parameter: Grain moisture content\n• Model: LDS-1G\n• Type: imported\n\nIn the box\n• Meter\n• Battery\n• Instruction manual",
-   "price": null,
+   "price": 12000,
    "stock": "in",
    "featured": 0,
    "origin": "China",
@@ -4183,8 +4184,7 @@ window.SHOP={
     "images/cs-14345-ahcm9cav.jpg",
     "images/cs-14345-vxft2dht.jpg",
     "images/cs-14345-8uwsjevh.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-96889",
@@ -4421,7 +4421,7 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/cs-36894-pqh740z3.jpg",
     "images/cs-36894-64iuv2rz.jpg",
@@ -4489,54 +4489,54 @@ window.SHOP={
   {
    "code": "CS-62873",
    "name": "Milk Butyrometer Glass 10.75ml for Milk Fat Test",
+   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
    ],
    "short": "Glass milk butyrometer for milk fat test.",
    "long": "Glass butyrometer for measuring the fat content of milk by the Gerber method. Milk, sulphuric acid and amyl alcohol are added, the butyrometer is centrifuged, and the fat percentage is read from the scale.\n\nSpecifications\n• Type: glass milk butyrometer\n• Milk volume: 10.75 ml\n• Use: milk fat test (Gerber method)\n\nIn the box\n• Butyrometer",
-   "price": null,
+   "price": 140,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "India",
+   "images": []
   },
   {
    "code": "CS-54818",
    "name": "Milk Pipette 10.75 ml for Milk Test",
+   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
    ],
    "short": "Milk pipette, 10.75 ml, for milk test.",
    "long": "Glass pipette that delivers 10.75 ml of milk, for the Gerber milk fat test.\n\nSpecifications\n• Type: glass milk pipette\n• Volume: 10.75 ml\n• Use: milk fat test (Gerber method)\n\nIn the box\n• Milk pipette",
-   "price": null,
+   "price": 120,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "India",
+   "images": []
   },
   {
    "code": "CS-36049",
    "name": "10ml Glass Vial",
+   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1"
    ],
    "short": "Glass vial, 10 ml.",
    "long": "Glass vial for storing small samples, reagents and solutions in the laboratory.\n\nSpecifications\n• Type: glass vial\n• Capacity: 10 ml\n\nIn the box\n• Glass vial",
-   "price": null,
+   "price": 35,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "China",
    "images": [
     "images/cs-36049-8xa4kogl.jpg",
     "images/cs-36049-c5d2upqo.jpg",
     "images/cs-36049-gcjeon6y.jpg"
-   ],
-   "variants": []
+   ]
   }
  ],
  "subs": [
