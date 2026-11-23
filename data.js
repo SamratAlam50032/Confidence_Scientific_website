@@ -4296,10 +4296,10 @@ window.SHOP={
    ],
    "short": "Plastic 3-tier test tube stand, 20×20 tube.",
    "long": "Plastic test tube stand with three tiers for holding many test tubes upright in an organised way during experiments and storage.\n\nSpecifications\n• Type: plastic test tube stand\n• Tiers: 3\n• Tube configuration: 20×20 tube\n\nIn the box\n• Test tube stand",
-   "price": null,
+   "price": 400,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "India",
    "images": [
     "images/cs-68749-kekns48v.jpg"
    ]
@@ -4348,9 +4348,27 @@ window.SHOP={
   {
    "code": "CS-36894",
    "name": "COD High/Medium/Low Range Reagent Vials with Barcode, Dichromate Method (25 tests)",
-   "sub": "sbtuofc",
+   "variants": [
+    {
+     "name": "Low Range",
+     "price": 8500,
+     "images": []
+    },
+    {
+     "name": "Mid Range",
+     "price": 8500,
+     "images": []
+    },
+    {
+     "name": "High Range",
+     "price": 8500,
+     "images": []
+    }
+   ],
+   "sub": "c1s2",
    "subs": [
-    "sbtuofc"
+    "c1s2",
+    "c1s3"
    ],
    "short": "COD reagent vials with barcode, dichromate method, 25 tests.",
    "long": "Ready-to-use COD reagent vials with barcode for the dichromate method. Each pack has 25 tests. COD is measured in three ranges, so you can pick the vial that fits your sample: low range, medium range and high range.\n\nSpecifications\n• Parameter: Chemical oxygen demand (COD)\n• Method: dichromate\n• Number of tests: 25 per pack\n• Ranges: low (0 to 150 mg/L), medium (0 to 1500 mg/L), high (0 to 15000 mg/L)\n• Barcode on vials\n• Brand: Hanna Instruments\n\nIn the box\n• 25 COD reagent vials in the range you order (low, medium or high)",
@@ -4358,27 +4376,30 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "origin": "",
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-36894-pqh740z3.jpg",
+    "images/cs-36894-64iuv2rz.jpg",
+    "images/cs-36894-b7uce415.jpg"
+   ]
   },
   {
    "code": "CS-22219",
    "name": "Pocket pH Meter Range 0-14",
+   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1"
    ],
    "short": "Pocket pH meter, 0 to 14 pH.",
    "long": "Pocket pH meter for quick pH checks of water and solutions in the laboratory, school and field.\n\nSpecifications\n• Parameter: pH\n• Range: 0 to 14 pH\n• Type: pocket pH meter\n\nIn the box\n• pH meter\n• Protective cap\n• Battery",
-   "price": null,
+   "price": 550,
    "stock": "in",
    "featured": 0,
    "origin": "China",
    "images": [
     "images/cs-22219-c2cex2td.jpg",
     "images/cs-22219-fnzsx49b.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-25505",
