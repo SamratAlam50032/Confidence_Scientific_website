@@ -690,6 +690,7 @@ window.SHOP={
   {
    "code": "HN-025",
    "name": "Hanna HI-721 Iron Checker Handheld Colorimeter 0.00 to 5.00 ppm Range",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -703,8 +704,7 @@ window.SHOP={
    "images": [
     "images/hn-025-a8il6xzq.jpg",
     "images/hn-025-hlmitzez.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-4444",
@@ -3518,12 +3518,13 @@ window.SHOP={
   {
    "code": "CS-9385",
    "name": "Hanna HI-98108 pHep+ pH Meter with Auto Calibration",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
    ],
    "short": "Hanna pHep+ waterproof pocket pH meter with automatic calibration.",
-   "long": "Waterproof pocket pH tester from the Hanna pHep+ range. Automatic calibration recognises the buffer solutions and guides you through the procedure, so accurate pH readings are easy to get even for new users. Suitable for laboratory, school, water and food work.\n\nSpecifications\n• Parameter: pH\n• Range: 0.0 to 14.0 pH\n• Resolution: 0.1 pH\n• Calibration: automatic\n• Waterproof body with LCD display\n• Model: HI98108 (pHep+)\n\nIn the box\n• HI98108 pHep+ pH meter\n• Battery\n• Instruction manual",
+   "long": "Waterproof pocket pH tester from the Hanna pHep+ range. Automatic calibration recognises the buffer solutions and guides you through the procedure, so accurate pH readings are easy to get even for new users. Suitable for laboratory, school, water and food work.\n\nSpecifications\n• Parameter: pH\n• Range: 0.0 to 14.0 pH\n• Resolution: 0.1 pH\n• Calibration: automatic\n• Waterproof body with LCD display\n• Model: HI98108 (pHep+)\n\nIn the box\n• HI98108 pHep+ pH meter\n• Instruction manual\n• HI70007 pH 7.01 calibration solution sachet, \n• HI70032 1382 ppm (mg/L) calibration solution sachet,\n• HI70031 1413 µS/cm calibration solution sachet, \n• HI700661 electrode cleaning solution sachets (2), \n• 9v battery (1), \n• instructions and rugged carrying case.",
    "price": 8500,
    "stock": "in",
    "featured": 1,
@@ -3533,8 +3534,7 @@ window.SHOP={
     "images/cs-9385-6jtoqinn.jpg",
     "images/cs-9385-atlq7k1z.jpg",
     "images/cs-9385-v7ej1lil.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-95549",
@@ -3943,7 +3943,6 @@ window.SHOP={
   {
    "code": "CS-24750",
    "name": "Glass Burette 50ml Pyrex",
-   "variants": [],
    "sub": "sp7hn9z",
    "subs": [
     "sp7hn9z",
@@ -3959,7 +3958,8 @@ window.SHOP={
     "images/cs-24750-1qtcwnhl.jpg",
     "images/cs-24750-lfbaykvd.jpg",
     "images/cs-24750-ve7h9mas.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-61547",
@@ -4086,7 +4086,6 @@ window.SHOP={
   {
    "code": "CS-80228",
    "name": "Petri Dish Pyrex",
-   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1"
@@ -4102,12 +4101,12 @@ window.SHOP={
     "images/cs-80228-ftizrskl.jpg",
     "images/cs-80228-7zlphz23.jpg",
     "images/cs-80228-2lkqru2l.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-40419",
    "name": "Petri Dish China",
-   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1"
@@ -4122,12 +4121,12 @@ window.SHOP={
     "images/cs-40419-h8tpfv9x.jpg",
     "images/cs-40419-90xzowgc.jpg",
     "images/cs-40419-ygld6xlo.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-28319",
    "name": "Petri Dish Anam Bura Germany",
-   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -4142,12 +4141,12 @@ window.SHOP={
     "images/cs-28319-9di2t0iw.jpg",
     "images/cs-28319-gu9kk21e.jpg",
     "images/cs-28319-tsz5h3xd.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-29344",
    "name": "DRAMINSKI GMM Mini Grain Moisture Meter, Poland",
-   "variants": [],
    "sub": "s1ev2ev",
    "subs": [
     "s1ev2ev",
@@ -4164,12 +4163,12 @@ window.SHOP={
     "images/cs-29344-6tna97jp.jpg",
     "images/cs-29344-sf6bb8vt.jpg",
     "images/cs-29344-jcqqqaj6.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-14345",
    "name": "Imported Grain Moisture Meter LDS 1G",
-   "variants": [],
    "sub": "s1ev2ev",
    "subs": [
     "s1ev2ev",
@@ -4185,12 +4184,12 @@ window.SHOP={
     "images/cs-14345-ahcm9cav.jpg",
     "images/cs-14345-vxft2dht.jpg",
     "images/cs-14345-8uwsjevh.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-96889",
    "name": "Diamond Aluminum Foil Paper 37.5 SQ",
-   "variants": [],
    "sub": "sarg0tn",
    "subs": [
     "sarg0tn"
@@ -4204,12 +4203,12 @@ window.SHOP={
    "images": [
     "images/cs-96889-14v8qgxa.jpg",
     "images/cs-96889-q1lb2iir.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-17954",
    "name": "Diamond Aluminum Foil Paper 25 SQ",
-   "variants": [],
    "sub": "sarg0tn",
    "subs": [
     "sarg0tn"
@@ -4223,12 +4222,12 @@ window.SHOP={
    "images": [
     "images/cs-17954-b2p6pjrq.jpg",
     "images/cs-17954-fw9lxlb1.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-27922",
    "name": "Plastic Beaker Polylab India (100ml/250ml/500ml/1000ml/2000ml/5000ml)",
-   "variants": [],
    "sub": "slsps97",
    "subs": [
     "slsps97"
@@ -4243,12 +4242,12 @@ window.SHOP={
     "images/cs-27922-chevdr32.jpg",
     "images/cs-27922-ouw44zy7.jpg",
     "images/cs-27922-azc1z18b.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-40336",
    "name": "Wash Bottle Polylab India (250ml/500ml/1000ml)",
-   "variants": [],
    "sub": "slsps97",
    "subs": [
     "slsps97",
@@ -4263,12 +4262,12 @@ window.SHOP={
    "images": [
     "images/cs-40336-450vrt4i.jpg",
     "images/cs-40336-blbgoue4.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-80287",
    "name": "Plastic Measuring Cylinder Polylab India (50ml/100ml/250ml/500ml)",
-   "variants": [],
    "sub": "sbtuofc",
    "subs": [
     "sbtuofc"
@@ -4283,14 +4282,17 @@ window.SHOP={
     "images/cs-80287-npdgoymo.jpg",
     "images/cs-80287-w3kypvph.jpg",
     "images/cs-80287-tb1rdxd8.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-68749",
    "name": "Plastic Test Tube Stand (3 Tier, 20×20 Tube)",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "suxv0es",
    "subs": [
-    "sbtuofc"
+    "suxv0es",
+    "c3s1"
    ],
    "short": "Plastic 3-tier test tube stand, 20×20 tube.",
    "long": "Plastic test tube stand with three tiers for holding many test tubes upright in an organised way during experiments and storage.\n\nSpecifications\n• Type: plastic test tube stand\n• Tiers: 3\n• Tube configuration: 20×20 tube\n\nIn the box\n• Test tube stand",
@@ -4298,31 +4300,38 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "origin": "",
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-68749-kekns48v.jpg"
+   ]
   },
   {
    "code": "CS-79025",
-   "name": "pH/EC/TDS/Temperature Meter with HI1285-51 Electrode; EC Range: 0 to 6000 µS/cm, TDS Range: 0 to 3000 ppm (mg/L) Hanna, Romania",
-   "sub": "sbtuofc",
+   "name": "pH EC TDS Temperature Multipara Meter HI9811-51 with HI1285-51 Electrode; EC Range: 0 to 6000 µS/cm, TDS Range: 00 to 3000 ppm (mg/L) Hanna, Romania",
+   "variants": [],
+   "sub": "c1s1",
    "subs": [
-    "sbtuofc"
+    "c1s1"
    ],
    "short": "Hanna pH/EC/TDS/temperature meter with HI1285-51 electrode.",
-   "long": "Hanna multiparameter meter that measures pH, EC, TDS and temperature with one HI1285-51 electrode. Suited to water quality checks in the laboratory and in the field.\n\nSpecifications\n• Parameters: pH, EC, TDS and temperature\n• Electrode: HI1285-51\n• EC range: 0 to 6000 µS/cm\n• TDS range: 0 to 3000 ppm (mg/L)\n• Brand: Hanna Instruments\n• Origin: Romania\n\nIn the box\n• Meter\n• HI1285-51 electrode\n• Battery\n• Instruction manual",
-   "price": null,
+   "long": "Hanna multiparameter meter that measures pH, EC, TDS and temperature with one HI1285-51 electrode. Suited to water quality checks in the laboratory and in the field.\n\nSpecifications\n• Parameters: pH, EC, TDS and temperature\n• Electrode: HI1285-51\n• EC range: 0 to 6000 µS/cm\n• TDS range: 0 to 3000 ppm (mg/L)\n• Brand: Hanna Instruments\n• Origin: Romania\n\nIn the box\n• Meter\n• HI1285-51 electrode\n• Battery\n• Instruction manual\nHI70007 pH 7.01 calibration solution sachet, \nHI70032 1382 ppm (mg/L) calibration solution sachet, \nHI70031 1413 µS/cm calibration solution sachet, \nHI700661 electrode cleaning solution sachets (2), \n9v battery (1), \ninstructions and rugged carrying case.",
+   "price": 32000,
    "stock": "in",
    "featured": 0,
-   "origin": "",
-   "images": [],
-   "variants": []
+   "origin": "Romania",
+   "images": [
+    "images/cs-79025-794s8goq.jpg",
+    "images/cs-79025-983t2f2m.jpg",
+    "images/cs-79025-xm349dl6.jpg",
+    "images/cs-79025-6bri0c98.jpg"
+   ]
   },
   {
    "code": "CS-64136",
    "name": "Hanna HI-839800 25 Vial COD Reactor",
-   "sub": "sbtuofc",
+   "variants": [],
+   "sub": "c1s1",
    "subs": [
-    "sbtuofc"
+    "c1s1"
    ],
    "short": "Hanna HI839800 COD reactor, 25 vials.",
    "long": "COD reactor for heating COD reagent vials during digestion. Holds up to 25 vials at a time, so many samples can be digested together before the COD reading.\n\nSpecifications\n• Type: COD reactor\n• Model: HI839800\n• Capacity: 25 vials\n• Brand: Hanna Instruments\n\nIn the box\n• COD reactor\n• Power cord\n• Instruction manual",
@@ -4330,8 +4339,11 @@ window.SHOP={
    "stock": "in",
    "featured": 0,
    "origin": "",
-   "images": [],
-   "variants": []
+   "images": [
+    "images/cs-64136-zo1k2avz.jpg",
+    "images/cs-64136-1dn2b7np.jpg",
+    "images/cs-64136-oqsh496b.jpg"
+   ]
   },
   {
    "code": "CS-36894",
@@ -4352,7 +4364,6 @@ window.SHOP={
   {
    "code": "CS-22219",
    "name": "Pocket pH Meter Range 0-14",
-   "variants": [],
    "sub": "c2s1",
    "subs": [
     "c2s1"
@@ -4366,12 +4377,12 @@ window.SHOP={
    "images": [
     "images/cs-22219-c2cex2td.jpg",
     "images/cs-22219-fnzsx49b.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-25505",
    "name": "James Heal Control Fabrics 100 x 30 mm",
-   "variants": [],
    "sub": "s2n9u18",
    "subs": [
     "s2n9u18"
@@ -4386,12 +4397,12 @@ window.SHOP={
     "images/cs-25505-r3qvy5fe.jpg",
     "images/cs-25505-5vob96un.jpg",
     "images/cs-25505-wbcud8ks.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-12672",
    "name": "James Heal Impregnated Test Paper 100mm x 75mm Test Fabrics",
-   "variants": [],
    "sub": "s2n9u18",
    "subs": [
     "s2n9u18"
@@ -4405,7 +4416,8 @@ window.SHOP={
    "images": [
     "images/cs-12672-d74o6ae7.jpg",
     "images/cs-12672-p7xx0cfo.jpg"
-   ]
+   ],
+   "variants": []
   },
   {
    "code": "CS-62873",
@@ -4442,7 +4454,6 @@ window.SHOP={
   {
    "code": "CS-36049",
    "name": "10ml Glass Vial",
-   "variants": [],
    "sub": "c3s1",
    "subs": [
     "c3s1"
@@ -4457,7 +4468,8 @@ window.SHOP={
     "images/cs-36049-8xa4kogl.jpg",
     "images/cs-36049-c5d2upqo.jpg",
     "images/cs-36049-gcjeon6y.jpg"
-   ]
+   ],
+   "variants": []
   }
  ],
  "subs": [
