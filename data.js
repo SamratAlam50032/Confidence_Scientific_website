@@ -4327,6 +4327,7 @@ window.SHOP={
   {
    "code": "CS-64136",
    "name": "Hanna HI-839800 25 Vial COD Reactor",
+   "variants": [],
    "sub": "c1s1",
    "subs": [
     "c1s1"
@@ -4336,33 +4337,16 @@ window.SHOP={
    "price": null,
    "stock": "in",
    "featured": 0,
-   "origin": "",
+   "origin": "Romania",
    "images": [
     "images/cs-64136-zo1k2avz.jpg",
     "images/cs-64136-1dn2b7np.jpg",
     "images/cs-64136-oqsh496b.jpg"
-   ],
-   "variants": []
+   ]
   },
   {
    "code": "CS-36894",
    "name": "COD High/Medium/Low Range Reagent Vials with Barcode, Dichromate Method (25 tests)",
-   "sub": "c1s2",
-   "subs": [
-    "c1s2",
-    "c1s3"
-   ],
-   "short": "COD reagent vials with barcode, dichromate method, 25 tests.",
-   "long": "Ready-to-use COD reagent vials with barcode for the dichromate method. Each pack has 25 tests. COD is measured in three ranges, so you can pick the vial that fits your sample: low range, medium range and high range.\n\nSpecifications\n• Parameter: Chemical oxygen demand (COD)\n• Method: dichromate\n• Number of tests: 25 per pack\n• Ranges: low (0 to 150 mg/L), medium (0 to 1500 mg/L), high (0 to 15000 mg/L)\n• Barcode on vials\n• Brand: Hanna Instruments\n\nIn the box\n• 25 COD reagent vials in the range you order (low, medium or high)",
-   "price": null,
-   "stock": "in",
-   "featured": 0,
-   "origin": "",
-   "images": [
-    "images/cs-36894-pqh740z3.jpg",
-    "images/cs-36894-64iuv2rz.jpg",
-    "images/cs-36894-b7uce415.jpg"
-   ],
    "variants": [
     {
      "name": "Low Range",
@@ -4379,6 +4363,22 @@ window.SHOP={
      "price": 8500,
      "images": []
     }
+   ],
+   "sub": "c1s2",
+   "subs": [
+    "c1s2",
+    "c1s3"
+   ],
+   "short": "COD reagent vials with barcode, dichromate method, 25 tests.",
+   "long": "Ready-to-use COD reagent vials with barcode for the dichromate method. Each pack has 25 tests. COD is measured in three ranges, so you can pick the vial that fits your sample: low range, medium range and high range.\n\nSpecifications\n• Parameter: Chemical oxygen demand (COD)\n• Method: dichromate\n• Number of tests: 25 per pack\n• Ranges: low (0 to 150 mg/L), medium (0 to 1500 mg/L), high (0 to 15000 mg/L)\n• Barcode on vials\n• Brand: Hanna Instruments\n\nIn the box\n• 25 COD reagent vials in the range you order (low, medium or high)",
+   "price": null,
+   "stock": "in",
+   "featured": 0,
+   "origin": "",
+   "images": [
+    "images/cs-36894-pqh740z3.jpg",
+    "images/cs-36894-64iuv2rz.jpg",
+    "images/cs-36894-b7uce415.jpg"
    ]
   },
   {
